@@ -38,7 +38,7 @@ NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY", "").strip()
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 TELEGRAM_BOT_USERNAME = os.getenv("TELEGRAM_BOT_USERNAME", "threatbytebot").strip().lstrip("@")
-SITE_URL = os.getenv("SITE_URL", "http://localhost:8080/frontend/index.html").rstrip("/")
+SITE_URL = os.getenv("SITE_URL", "https://mukulgrover.github.io/ThreatByte").rstrip("/")
 
 # NVIDIA NIM LLM Configuration
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
