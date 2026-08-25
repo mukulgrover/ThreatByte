@@ -1,15 +1,23 @@
-# 🛡️ ThreatByte — Daily Cyber Threat Intelligence & Incident Analysis
+# 🛡️ ThreatByte — Automated Cyber Threat Intelligence & Incident Platform
 
-[![GitHub Actions Cron](https://img.shields.io/badge/Daily%20Briefing-06%3A00%20UTC-3b82f6?style=for-the-badge&logo=githubactions&logoColor=white)](.github/workflows/daily_briefing.yml)
-[![AI Threat Reasoning](https://img.shields.io/badge/AI%20Reasoning-NVIDIA%20NIM%20(Llama%203.1)-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://build.nvidia.com)
+[![Live Portal](https://img.shields.io/badge/Live%20Portal-ThreatByte-3b82f6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mukulgrover.github.io/ThreatByte)
+[![Daily Briefing](https://img.shields.io/badge/Daily%20Briefing-06%3A00%20UTC-3b82f6?style=for-the-badge&logo=githubactions&logoColor=white)](.github/workflows/daily_briefing.yml)
+[![AI Threat Engine](https://img.shields.io/badge/AI%20Engine-NVIDIA%20NIM%20(Llama%203.1)-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://build.nvidia.com)
 [![Telegram Bot](https://img.shields.io/badge/Telegram%20Bot-%40threatbytebot-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/threatbytebot)
-[![Zero Cost](https://img.shields.io/badge/Cost-%240%20%2F%20100%25%20Free%20Tier-10b981?style=for-the-badge)](https://github.com)
+[![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](LICENSE)
 
-> **ThreatByte** is an automated, analyst-grade Cyber Threat Intelligence (CTI) platform that gathers breaking 24-hour cybersecurity news, data leaks, and zero-day disclosures, synthesizes them using **NVIDIA NIM LLM reasoning** (with CVSS severity, CVE tags, root causes, and actionable defense checklists), broadcasts daily morning bulletins to a **Telegram Bot** (`@threatbytebot`), and delivers an interactive **Cyber Threat Portal**.
+> **ThreatByte** is an automated, analyst-grade Cyber Threat Intelligence (CTI) platform. It continuously aggregates breaking 24-hour telemetry on zero-days, ransomware intrusions, data breaches, and active software exploits across premier security feeds, synthesizes deep technical dossiers via **NVIDIA NIM AI reasoning**, broadcasts morning intelligence bulletins to **Telegram**, and publishes an interactive **Cyber Threat Intelligence Web Portal**.
 
 ---
 
-## ⚡ Architecture Flow
+## 🌐 Live Access
+
+- **Web Portal**: [https://mukulgrover.github.io/ThreatByte](https://mukulgrover.github.io/ThreatByte)
+- **Telegram Bot**: [@threatbytebot](https://t.me/threatbytebot) *(Type `/start` or `/today` for instant bulletins)*
+
+---
+
+## ⚡ System Architecture
 
 ```
    ┌─────────────────────────────────────────────────────────────┐
@@ -27,9 +35,9 @@
                                   ▼
    ┌─────────────────────────────────────────────────────────────┐
    │           AI Threat Reasoning Engine (NVIDIA NIM)           │
-   │  - Severity Classification (Critical / High / Med / Low)    │
-   │  - CVE Extraction & Threat Actor Profiling                  │
-   │  - Root Cause & Technical Attack Vector Breakdown           │
+   │  - Severity Scoring (CVSS 1.0–10.0 / Critical / High / Med) │
+   │  - CVE Identifier Extraction & Threat Actor Profiling       │
+   │  - Technical Root Cause & Attack Vector Analysis            │
    │  - Actionable Defense & Mitigation Checklists               │
    └──────────────────────────────┬──────────────────────────────┘
                                   │
@@ -38,73 +46,108 @@
    ┌───────────────────────────┐     ┌───────────────────────────┐
    │    Telegram Bot Channel   │     │    ThreatByte Web Portal  │
    │  - @threatbytebot auto-   │     │  - Editorial Dark UI      │
-   │    subscribers & welcome  │     │  - Search & CVE filter    │
+   │    subscriber broadcast   │     │  - Live CVE & Tag Search  │
    │  - Morning 06:00 UTC brief│     │  - Historical Archives    │
-   │  - /today on-demand cmd   │     │  - Mitigation checkbooks  │
+   │  - /today on-demand cmd   │     │  - Defense Checklists     │
    └───────────────────────────┘     └───────────────────────────┘
 ```
 
 ---
 
-## ✨ Key Features
+## ✨ Core Capabilities
 
-- 🧠 **Analyst-Grade AI Synthesis**: Employs **NVIDIA NIM** (`meta/llama-3.1-70b-instruct`) for human-like threat reasoning, CVE identification, and concrete mitigation steps.
-- 🤖 **Interactive Telegram Bot (`@threatbytebot`)**:
+- 🧠 **Analyst-Grade AI Synthesis**: Employs **NVIDIA NIM** (`meta/llama-3.1-8b-instruct` / `70b`) to extract root causes, affected software versions, CVEs, and actionable defense checklists.
+- 🤖 **Automated Telegram Subscriber Delivery**:
   - Anyone can open [t.me/threatbytebot](https://t.me/threatbytebot) and press **Start** to subscribe.
   - Automatically receives morning bulletins every day at `06:00 UTC`.
-  - On-demand commands: `/today`, `/subscribe`, `/help`.
-- 📰 **Editorial Web Portal**: Clean, human-first editorial design with lead story focus, verified source tags, interactive mitigation accordions, live CVE search, and historical date archives.
-- 💸 **100% Free-Tier Architecture**:
-  - Compute / Cron: GitHub Actions (Free 2,000 mins/mo)
-  - AI Inference: NVIDIA NIM Free Tier
-  - Telegram API: Free Bot API
-  - Web Hosting: GitHub Pages / Vercel ($0)
+  - Supports on-demand intelligence commands: `/today`, `/subscribe`, `/help`.
+- 📰 **Editorial Web Portal**: Designed with an authentic, human-curated publication layout featuring lead story focus, verified source tags, interactive mitigation accordions, live CVE search, and historical date archives.
+- 💸 **Zero-Maintenance & 100% Free-Tier Architecture**:
+  - **Scheduler**: GitHub Actions (Scheduled Cron)
+  - **Inference**: NVIDIA NIM Free API Tier
+  - **Distribution**: Telegram Bot API
+  - **Hosting**: GitHub Pages
 
 ---
 
-## 🚀 Quickstart
+## 🛠️ Tech Stack & Infrastructure
 
-### 1. Run Pipeline
-```bash
-# Clone & install dependencies
-pip install -r backend/requirements.txt
+| Component | Technology | Description |
+|---|---|---|
+| **Collector & Scraper** | Python 3.12, BeautifulSoup4, Feedparser | Multi-source CTI feed aggregation with 24h window deduplication |
+| **Reasoning Engine** | NVIDIA NIM API (`meta/llama-3.1-8b-instruct`) | Structured threat extraction, severity classification & mitigation generation |
+| **Broadcasting** | Telegram Bot API (`@threatbytebot`) | Subscriber registration and automated morning HTML bulletin delivery |
+| **Web Frontend** | Vanilla HTML5, CSS3, JavaScript (ES6+) | Dark editorial portal, live search, CVSS meters, and date archives |
+| **Automation** | GitHub Actions Workflow | Daily automated cron at 06:00 UTC with auto-commit & deploy |
 
-# Run the pipeline (fetches news, reasons via NVIDIA NIM, updates web data & notifies Telegram)
-python backend/generator.py
+---
+
+## 📂 Repository Structure
+
+```
+ThreatByte/
+├── .github/
+│   └── workflows/
+│       └── daily_briefing.yml        # Scheduled GitHub Actions cron runner
+├── backend/
+│   ├── config.py                     # CTI feed configs, prompts, and settings
+│   ├── scraper.py                    # RSS & feed scrapers with deduplication
+│   ├── ai_enricher.py                # NVIDIA NIM AI reasoning & threat analysis
+│   ├── telegram_bot.py               # Telegram subscriber manager & broadcaster
+│   ├── bot_service.py                # Background Telegram bot interactive listener
+│   ├── generator.py                  # Master orchestration pipeline
+│   └── requirements.txt              # Python dependencies
+├── data/
+│   ├── latest.json                   # Latest day's structured threat intelligence
+│   ├── archive.json                  # Historical archive index
+│   ├── subscribers.json              # Registered Telegram bot subscriber chat IDs
+│   └── daily/                        # Historical daily intelligence payloads
+├── frontend/
+│   ├── index.html                    # Editorial Web Portal SPA
+│   ├── css/
+│   │   └── style.css                 # Dark editorial theme & responsive grid
+│   └── js/
+│       └── app.js                    # Dynamic feed rendering, search & filters
+├── index.html                        # Root redirect for GitHub Pages deployment
+├── .env.example                      # Environment variables template
+├── LICENSE                           # MIT License
+└── README.md                         # Project documentation
 ```
 
-### 2. View Web Dashboard
+---
+
+## 💻 Local Development
+
+### 1. Clone & Setup
 ```bash
+git clone https://github.com/mukulgrover/ThreatByte.git
+cd ThreatByte
+
+# Install dependencies
+pip install -r backend/requirements.txt
+```
+
+### 2. Configure Environment (Optional)
+Copy `.env.example` to `.env` and fill in your keys:
+```env
+NVIDIA_API_KEY=your_nvidia_nim_api_key_here
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+TELEGRAM_BOT_USERNAME=threatbytebot
+SITE_URL=https://mukulgrover.github.io/ThreatByte
+```
+
+### 3. Run Pipeline
+```bash
+# Execute aggregation, AI reasoning, and data generation
+python backend/generator.py
+
+# Launch web portal locally
 python -m http.server 8080
 # Open http://localhost:8080/frontend/index.html in your browser
-```
-
-### 3. Run Optional 24/7 Telegram Bot Listener
-```bash
-python backend/bot_service.py
-```
-
----
-
-## 💼 LinkedIn Announcement Post Template
-
-```markdown
-🚀 Excited to launch ThreatByte — an open-access, AI-powered Cyber Threat Intelligence platform built on 100% free-tier architecture!
-
-🔍 Security teams and CISOs face a relentless flood of alerts, breaches, and zero-day disclosures every single day. ThreatByte cuts through the noise:
-1️⃣ Scrapes & deduplicates breaking 24h threat telemetry across BleepingComputer, The Hacker News, Dark Reading, and KrebsOnSecurity.
-2️⃣ Reasons through technical impact via NVIDIA NIM (Llama 3.1 70B) to extract CVSS severities, affected products, root causes, and actionable defense checklists.
-3️⃣ Dispatches curated morning briefings directly to our Telegram Bot (@threatbytebot).
-4️⃣ Updates an interactive threat portal with historical date archives.
-
-🔗 Live Web Portal: https://mukulgrover.github.io/ThreatByte
-📲 Join the Daily Telegram Bot: https://t.me/threatbytebot
-💻 Open Source Repository: https://github.com/mukulgrover/ThreatByte
-
-#CyberSecurity #ThreatIntelligence #Infosec #DevSecOps #NVIDIA #AI #Python #OpenSource
 ```
 
 ---
 
 ## 📜 License
-MIT License. Open-source and free for all security practitioners.
+
+This project is licensed under the [MIT License](LICENSE) — free and open for the global cybersecurity community.

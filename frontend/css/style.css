@@ -697,6 +697,86 @@ body {
   color: var(--accent-blue);
 }
 
+/* CVSS Bar Row */
+.article-cvss-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.cvss-label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.cvss-label strong {
+  color: var(--text-primary);
+}
+
+.cvss-progress-track {
+  flex: 1;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.cvss-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.cvss-progress-fill.CRITICAL {
+  background: var(--accent-red);
+}
+
+.cvss-progress-fill.HIGH {
+  background: var(--accent-amber);
+}
+
+.cvss-progress-fill.MEDIUM {
+  background: var(--accent-blue);
+}
+
+.cvss-progress-fill.LOW {
+  background: var(--accent-emerald);
+}
+
+/* CVE & Vendor Row */
+.cve-vendor-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.vendor-tag {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.actor-highlight {
+  color: var(--accent-amber);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
 /* CVE Chips */
 .cve-wrap {
   display: flex;
@@ -712,10 +792,13 @@ body {
   background: var(--accent-red-dim);
   color: var(--accent-red);
   border: 1px solid var(--accent-red-border);
-  padding: 2px 6px;
+  padding: 2px 7px;
   border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: background var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all var(--transition);
 }
 
 .cve-badge:hover {

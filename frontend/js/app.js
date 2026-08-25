@@ -247,8 +247,17 @@ function renderFeedGrid() {
 
   elements.cardsGrid.innerHTML = state.filteredArticles.map((art, idx) => {
     const sev = art.severity || 'MEDIUM';
+    const score = art.severity_score || (sev === 'CRITICAL' ? 9.5 : sev === 'HIGH' ? 8.2 : 6.0);
+    const scorePercent = Math.min(100, Math.round((score / 10) * 100));
+
     const cvesHtml = (art.cve_ids || []).map(cve => `
-      <span class="cve-badge" onclick="filterByCve('${escapeHtml(cve)}')">${escapeHtml(cve)}</span>
+      <span class="cve-badge" onclick="filterByCve('${escapeHtml(cve)}')">
+        <i class="fa-solid fa-bug"></i> ${escapeHtml(cve)}
+      </span>
+    `).join('');
+
+    const vendorsHtml = (art.affected_vendors || []).map(v => `
+      <span class="vendor-tag"><i class="fa-solid fa-layer-group"></i> ${escapeHtml(v)}</span>
     `).join('');
 
     const mitigationsHtml = (art.actionable_mitigations || []).map(m => `
@@ -266,7 +275,7 @@ function renderFeedGrid() {
               <span class="tag-category">${escapeHtml(art.threat_category || 'Security')}</span>
             </div>
             <div class="meta-source-time">
-              <span>${escapeHtml(art.source || 'CTI')}</span> &bull; <span>${timeAgo}</span>
+              <span>${escapeHtml(art.source || 'CTI Feed')}</span> &bull; <span>${timeAgo}</span>
             </div>
           </div>
 
@@ -274,7 +283,19 @@ function renderFeedGrid() {
             ${escapeHtml(art.title)}
           </h3>
 
-          ${cvesHtml ? `<div class="cve-wrap">${cvesHtml}</div>` : ''}
+          <div class="article-cvss-bar-row">
+            <div class="cvss-label">CVSS Impact: <strong>${score}/10</strong></div>
+            <div class="cvss-progress-track">
+              <div class="cvss-progress-fill ${sev}" style="width: ${scorePercent}%;"></div>
+            </div>
+          </div>
+
+          ${cvesHtml || vendorsHtml ? `
+            <div class="cve-vendor-row">
+              ${cvesHtml}
+              ${vendorsHtml}
+            </div>
+          ` : ''}
 
           <p class="article-summary">
             ${escapeHtml(art.executive_summary || '')}
@@ -282,12 +303,16 @@ function renderFeedGrid() {
 
           <div class="article-accordion">
             <button class="accordion-btn" onclick="toggleAccordion(this)">
-              <span>Technical Breakdown & Mitigations</span>
+              <span><i class="fa-solid fa-shield-halved"></i> Technical Breakdown & Defense</span>
               <i class="fa-solid fa-chevron-down"></i>
             </button>
             <div class="accordion-body">
-              <p><strong>Attack Vector:</strong> ${escapeHtml(art.technical_breakdown || 'Telemetry developing.')}</p>
-              ${mitigationsHtml ? `<ul class="mitigation-checklist">${mitigationsHtml}</ul>` : ''}
+              <p><strong>Root Cause & Vector:</strong> ${escapeHtml(art.technical_breakdown || 'Telemetry developing.')}</p>
+              ${art.threat_actor && art.threat_actor !== 'Unknown' ? `<p style="margin-top: 6px;"><strong>Attributed Actor:</strong> <span class="actor-highlight">${escapeHtml(art.threat_actor)}</span></p>` : ''}
+              ${mitigationsHtml ? `
+                <div style="margin-top: 8px; font-weight: 600; color: var(--accent-emerald);">Actionable Defense:</div>
+                <ul class="mitigation-checklist">${mitigationsHtml}</ul>
+              ` : ''}
             </div>
           </div>
         </div>
@@ -296,8 +321,8 @@ function renderFeedGrid() {
           <a href="${escapeHtml(art.url || '#')}" target="_blank" rel="noopener noreferrer" class="source-link-btn">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Full Source
           </a>
-          <button class="card-copy-btn" onclick="copyCardDossier(${idx})" title="Copy Dossier">
-            <i class="fa-regular fa-copy"></i>
+          <button class="card-copy-btn" onclick="copyCardDossier(${idx})" title="Copy Dossier to Clipboard">
+            <i class="fa-regular fa-copy"></i> Copy Dossier
           </button>
         </div>
       </article>
