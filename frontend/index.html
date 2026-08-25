@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThreatByte — Daily Cyber Threat Intelligence & Incident Briefing</title>
+  <meta name="description" content="ThreatByte delivers curated, analyst-grade daily cybersecurity briefings on zero-days, ransomware campaigns, data breaches, and active exploit telemetry.">
+  
+  <!-- Modern Editorial & Technical Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Daily alert bulletin">
+    <div class="container announcement-container">
+      <div class="announcement-left">
+        <span class="live-pulse"></span>
+        <strong>DAILY INTEL DISPATCH</strong>
+        <span class="divider">/</span>
+        <span id="announcement-status">Curating 24-hour threat telemetry across verified security sources</span>
+      </div>
+      <div class="announcement-right">
+        <a href="https://t.me/threatbytebot" target="_blank" class="announcement-link">
+          <i class="fa-brands fa-telegram"></i> Get Morning Telegram Alerts (@threatbytebot)
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Editorial Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="header-brand-wrap">
+        <a href="index.html" class="brand-link">
+          <div class="brand-mark">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <div class="brand-text">
+            <h1 class="brand-title">ThreatByte</h1>
+            <p class="brand-tagline">Cyber Threat Intelligence & Incident Analysis</p>
+          </div>
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <!-- Date Archive Dropdown -->
+        <div class="date-select-group">
+          <i class="fa-regular fa-calendar-check"></i>
+          <select id="briefing-date-select" aria-label="Select Edition Date">
+            <option value="latest">Latest Edition (Live)</option>
+          </select>
+        </div>
+
+        <!-- Telegram Join CTA -->
+        <a href="https://t.me/threatbytebot" target="_blank" class="btn btn-telegram-nav" title="Join on Telegram">
+          <i class="fa-brands fa-telegram"></i>
+          <span>Join Bot Channel</span>
+        </a>
+
+        <!-- Copy Full Briefing -->
+        <button class="btn btn-outline" id="btn-copy-briefing" title="Copy Full Briefing for LinkedIn / Team Sharing">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span>Share Briefing</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Executive Summary Dashboard -->
+  <main class="container page-content">
+    
+    <!-- Hero / Lead Story Section -->
+    <section class="lead-hero-section" id="lead-hero-section">
+      <div class="lead-hero-badge-row">
+        <span class="hero-edition-pill" id="hero-edition-date">Today's Edition</span>
+        <span class="hero-threat-status" id="hero-threat-status">Threat Level: Analyzing...</span>
+        <span class="hero-read-time"><i class="fa-regular fa-clock"></i> 4 min read</span>
+      </div>
+      <h2 class="lead-hero-title" id="lead-hero-title">
+        Loading today's lead threat intelligence report...
+      </h2>
+      <p class="lead-hero-summary" id="lead-hero-summary">
+        Aggregating intelligence on active zero-days, enterprise ransomware intrusions, and critical software vulnerabilities from the last 24 hours.
+      </p>
+      <div class="lead-hero-footer" id="lead-hero-footer">
+        <a href="#feed-section" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-down"></i> Explore All Incidents
+        </a>
+        <a href="https://t.me/threatbytebot" target="_blank" class="btn btn-telegram">
+          <i class="fa-brands fa-telegram"></i> Subscribe on Telegram (@threatbytebot)
+        </a>
+      </div>
+    </section>
+
+    <!-- Key Metrics Bar -->
+    <section class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-num" id="stat-total-incidents">0</div>
+        <div class="metric-title">24H Incidents Analyzed</div>
+        <div class="metric-desc">Curated across 6 major CTI feeds</div>
+      </div>
+      <div class="metric-card metric-critical">
+        <div class="metric-num" id="stat-critical-threats">0</div>
+        <div class="metric-title">Critical / Zero-Days</div>
+        <div class="metric-desc">Requiring immediate defender action</div>
+      </div>
+      <div class="metric-card metric-cve">
+        <div class="metric-num" id="stat-unique-cves">0</div>
+        <div class="metric-title">Tracked CVE Identifiers</div>
+        <div class="metric-desc">Actively targeted vulnerabilities</div>
+      </div>
+      <div class="metric-card metric-ai">
+        <div class="metric-num" id="stat-ai-model">NVIDIA NIM</div>
+        <div class="metric-title">Reasoning Engine</div>
+        <div class="metric-desc">Llama 3.1 70B CTI synthesis</div>
+      </div>
+    </section>
+
+    <!-- Telegram Free Subscription Box -->
+    <section class="telegram-sub-banner">
+      <div class="tg-sub-left">
+        <div class="tg-sub-icon">
+          <i class="fa-brands fa-telegram"></i>
+        </div>
+        <div class="tg-sub-content">
+          <h3>Get Daily Morning Cyber Intelligence on Telegram</h3>
+          <p>Subscribe to <strong>@threatbytebot</strong> for automated 06:00 UTC morning bulletins covering breaking data leaks, ransomware, and zero-day mitigations.</p>
+        </div>
+      </div>
+      <div class="tg-sub-right">
+        <a href="https://t.me/threatbytebot" target="_blank" class="btn btn-telegram-sub">
+          <i class="fa-brands fa-telegram"></i> Start Telegram Bot
+        </a>
+      </div>
+    </section>
+
+    <!-- Filter & Search Toolbar -->
+    <section class="toolbar-wrap" id="feed-section">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="search-input" placeholder="Search by CVE (e.g. CVE-2026), vendor, ransomware group, or keyword..." autocomplete="off">
+        <button id="clear-search-btn" class="clear-search-btn hidden" aria-label="Clear search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="filter-row">
+        <!-- Category Filter -->
+        <div class="pill-group" id="category-pills-container">
+          <button class="pill active" data-category="ALL">All Topics</button>
+          <button class="pill" data-category="0-Day & Exploit">Zero-Days & Exploits</button>
+          <button class="pill" data-category="Ransomware">Ransomware</button>
+          <button class="pill" data-category="Data Breach">Data Breaches</button>
+          <button class="pill" data-category="Nation-State/APT">Nation-State / APT</button>
+          <button class="pill" data-category="Cloud & Supply Chain">Supply Chain</button>
+          <button class="pill" data-category="Vulnerability / Advisory">Vulnerabilities</button>
+        </div>
+
+        <!-- Severity Filter -->
+        <div class="severity-group" id="severity-filters-container">
+          <button class="sev-btn active" data-severity="ALL">All Severity</button>
+          <button class="sev-btn sev-critical" data-severity="CRITICAL">Critical</button>
+          <button class="sev-btn sev-high" data-severity="HIGH">High</button>
+          <button class="sev-btn sev-medium" data-severity="MEDIUM">Medium</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feed Meta Bar -->
+    <div class="feed-meta-bar">
+      <span class="feed-count" id="results-count-text">Displaying curated incidents</span>
+      <span class="feed-time" id="feed-generated-time">Last updated: Syncing...</span>
+    </div>
+
+    <!-- Threat Intelligence Article Feed -->
+    <section class="threat-feed-grid" id="threat-cards-grid">
+      <div class="feed-loading">
+        <div class="editorial-spinner"></div>
+        <p>Loading curated threat intelligence dispatch...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Detailed Incident Modal Dialog -->
+  <div class="modal-overlay hidden" id="incident-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-tags">
+          <span class="modal-badge-sev" id="modal-sev-badge">CRITICAL</span>
+          <span class="modal-badge-cat" id="modal-category">Ransomware</span>
+        </div>
+        <button class="modal-close" id="modal-close-btn" aria-label="Close dialog">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="modal-source-link">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Read Original Source
+        </a>
+        <button class="btn btn-primary" id="modal-copy-btn">
+          <i class="fa-solid fa-copy"></i> Copy Dossier
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Editorial Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-col-left">
+        <div class="footer-brand">
+          <i class="fa-solid fa-shield-virus"></i> ThreatByte
+        </div>
+        <p class="footer-about">
+          ThreatByte is an open-access, automated cybersecurity threat intelligence daily briefing platform. Ingesting, deduplicating, and reasoning over 24-hour global threat telemetry via NVIDIA NIM AI models.
+        </p>
+      </div>
+      <div class="footer-col-right">
+        <div class="footer-links">
+          <a href="https://t.me/threatbytebot" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram Bot (@threatbytebot)</a>
+          <a href="https://github.com/mukulgrover/ThreatByte" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+          <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <p class="footer-credit">
+          Automated Daily Pipeline • 100% Free-Tier Architecture • GitHub Actions + NVIDIA NIM + Telegram Bot API
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
