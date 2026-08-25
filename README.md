@@ -4,16 +4,18 @@
 [![Daily Briefing](https://img.shields.io/badge/Daily%20Briefing-06%3A00%20UTC-3b82f6?style=for-the-badge&logo=githubactions&logoColor=white)](.github/workflows/daily_briefing.yml)
 [![AI Threat Engine](https://img.shields.io/badge/AI%20Engine-NVIDIA%20NIM%20(Llama%203.1)-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://build.nvidia.com)
 [![Telegram Bot](https://img.shields.io/badge/Telegram%20Bot-%40threatbytebot-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/threatbytebot)
+[![LinkedIn Post](https://img.shields.io/badge/LinkedIn-Announcement%20Post-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://lnkd.in/p/dQvbGb7g)
 [![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](LICENSE)
 
 > **ThreatByte** is an automated, analyst-grade Cyber Threat Intelligence (CTI) platform. It continuously aggregates breaking 24-hour telemetry on zero-days, ransomware intrusions, data breaches, and active software exploits across premier security feeds, synthesizes deep technical dossiers via **NVIDIA NIM AI reasoning**, broadcasts morning intelligence bulletins to **Telegram**, and publishes an interactive **Cyber Threat Intelligence Web Portal**.
 
 ---
 
-## 🌐 Live Access
+## 🌐 Live Access & Community
 
 - **Web Portal**: [https://mukulgrover.github.io/ThreatByte](https://mukulgrover.github.io/ThreatByte)
 - **Telegram Bot**: [@threatbytebot](https://t.me/threatbytebot) *(Type `/start` or `/today` for instant bulletins)*
+- **LinkedIn Announcement**: [Read the Launch Post](https://lnkd.in/p/dQvbGb7g)
 
 ---
 
