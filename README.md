@@ -15,6 +15,7 @@
 
 - **Web Portal**: [https://mukulgrover.github.io/ThreatByte](https://mukulgrover.github.io/ThreatByte)
 - **Telegram Bot**: [@threatbytebot](https://t.me/threatbytebot) *(Type `/start` or `/today` for instant bulletins)*
+- **Author Profile**: [Mukul Kumar on LinkedIn](https://www.linkedin.com/in/mukul-kumar-169215245/)
 - **LinkedIn Announcement**: [Read the Launch Post](https://lnkd.in/p/dQvbGb7g)
 
 ---
