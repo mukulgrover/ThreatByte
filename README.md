@@ -25,7 +25,7 @@
 ```
    ┌─────────────────────────────────────────────────────────────┐
    │             Automated Trigger (100% Free)                   │
-   │        GitHub Actions Cron (Every day at 06:00 UTC)         │
+   │        GitHub Actions Cron (Every day at 08:00 AM IST)      │
    └──────────────────────────────┬──────────────────────────────┘
                                   │
                                   ▼
@@ -50,7 +50,7 @@
    │    Telegram Bot Channel   │     │    ThreatByte Web Portal  │
    │  - @threatbytebot auto-   │     │  - Editorial Dark UI      │
    │    subscriber broadcast   │     │  - Live CVE & Tag Search  │
-   │  - Morning 06:00 UTC brief│     │  - Historical Archives    │
+   │  - Morning 08:00 AM IST   │     │  - Historical Archives    │
    │  - /today on-demand cmd   │     │  - Defense Checklists     │
    └───────────────────────────┘     └───────────────────────────┘
 ```
@@ -62,7 +62,7 @@
 - 🧠 **Analyst-Grade AI Synthesis**: Employs **NVIDIA NIM** (`meta/llama-3.1-8b-instruct` / `70b`) to extract root causes, affected software versions, CVEs, and actionable defense checklists.
 - 🤖 **Automated Telegram Subscriber Delivery**:
   - Anyone can open [t.me/threatbytebot](https://t.me/threatbytebot) and press **Start** to subscribe.
-  - Automatically receives morning bulletins every day at `06:00 UTC`.
+  - Automatically receives morning bulletins every day at `08:00 AM IST` (`02:30 UTC`).
   - Supports on-demand intelligence commands: `/today`, `/subscribe`, `/help`.
 - 📰 **Editorial Web Portal**: Designed with an authentic, human-curated publication layout featuring lead story focus, verified source tags, interactive mitigation accordions, live CVE search, and historical date archives.
 - 💸 **Zero-Maintenance & 100% Free-Tier Architecture**:
@@ -81,7 +81,7 @@
 | **Reasoning Engine** | NVIDIA NIM API (`meta/llama-3.1-8b-instruct`) | Structured threat extraction, severity classification & mitigation generation |
 | **Broadcasting** | Telegram Bot API (`@threatbytebot`) | Subscriber registration and automated morning HTML bulletin delivery |
 | **Web Frontend** | Vanilla HTML5, CSS3, JavaScript (ES6+) | Dark editorial portal, live search, CVSS meters, and date archives |
-| **Automation** | GitHub Actions Workflow | Daily automated cron at 06:00 UTC with auto-commit & deploy |
+| **Automation** | GitHub Actions Workflow | Daily automated cron at 08:00 AM IST (02:30 UTC) with auto-commit & deploy |
 
 ---
 

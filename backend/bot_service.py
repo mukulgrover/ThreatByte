@@ -87,7 +87,7 @@ def start_bot_polling():
                     help_msg = (
                         "🛡️ <b>ThreatByte Bot Commands:</b>\n\n"
                         "• /today - Get today's breaking threat intelligence dispatch\n"
-                        "• /subscribe - Ensure you are registered for 06:00 UTC morning bulletins\n"
+                        "• /subscribe - Ensure you are registered for 08:00 AM IST morning bulletins\n"
                         "• /help - Display this command menu\n\n"
                         f"🌐 Web Portal: {SITE_URL}"
                     )
