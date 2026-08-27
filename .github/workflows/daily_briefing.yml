@@ -1,9 +1,14 @@
-name: CyberPulse Daily Threat Intelligence Pipeline
+name: ThreatByte Daily Threat Intelligence Pipeline
 
 on:
   schedule:
-    # Runs everyday at 02:30 UTC (08:00 AM IST / 10:30 PM EDT prev day)
+    # Multiple cron slots to guarantee delivery despite GitHub Actions queue delays
+    # Primary: 02:30 UTC (08:00 AM IST)
+    # Secondary: 02:45 UTC (08:15 AM IST)
+    # Tertiary: 03:00 UTC (08:30 AM IST)
     - cron: '30 2 * * *'
+    - cron: '45 2 * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch: # Allows manual run button from GitHub Actions UI
 
 # Permissions for committing updated data and deploying to GitHub Pages
@@ -24,6 +29,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
@@ -47,12 +53,13 @@ jobs:
 
       - name: Commit & Push Updated Data
         run: |
-          git config --global user.name "CyberPulse Bot [GitHub Action]"
-          git config --global user.email "action@github.com"
+          git config --global user.name "ThreatByte Bot [GitHub Action]"
+          git config --global user.email "bot@threatbyte.io"
           git add data/
           if git diff --staged --quiet; then
             echo "No data changes to commit."
           else
             git commit -m "chore(data): auto-update daily threat intel [$(date -u +'%Y-%m-%d')]"
-            git push
+            git pull --rebase origin main || true
+            git push origin HEAD:main
           fi

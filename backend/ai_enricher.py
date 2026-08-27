@@ -119,14 +119,8 @@ def analyze_with_nvidia_nim(raw_article: Dict[str, Any], model: str = NVIDIA_DEF
     if not NVIDIA_API_KEY:
         return None
 
-    user_prompt = f"""
-SOURCE: {raw_article.get('source')}
-HEADLINE: {raw_article.get('title')}
-ARTICLE CONTENT:
-{raw_article.get('content')}
-
-Analyze the cybersecurity event above according to the system instructions and output strictly valid JSON.
-"""
+    content_snippet = (raw_article.get('content') or '')[:500]
+    user_prompt = f"SOURCE: {raw_article.get('source')}\nHEADLINE: {raw_article.get('title')}\nCONTENT: {content_snippet}"
 
     headers = {
         "Authorization": f"Bearer {NVIDIA_API_KEY}",
@@ -139,13 +133,13 @@ Analyze the cybersecurity event above according to the system instructions and o
             {"role": "system", "content": CTI_SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt}
         ],
-        "temperature": 0.2,
-        "max_tokens": 1000
+        "temperature": 0.1,
+        "max_tokens": 500
     }
 
     try:
         url = f"{NVIDIA_BASE_URL}/chat/completions"
-        resp = requests.post(url, headers=headers, json=payload, timeout=16)
+        resp = requests.post(url, headers=headers, json=payload, timeout=12)
         
         if resp.status_code == 200:
             data = resp.json()
@@ -170,14 +164,10 @@ Analyze the cybersecurity event above according to the system instructions and o
                 
             return parsed
         else:
-            print(f"[!] NVIDIA NIM API returned status {resp.status_code}: {resp.text[:200]}", flush=True)
-            # Try fallback model if default failed with non-auth error
-            if model != NVIDIA_FALLBACK_MODEL and resp.status_code != 401:
-                print(f"[*] Attempting fallback model {NVIDIA_FALLBACK_MODEL}...", flush=True)
-                return analyze_with_nvidia_nim(raw_article, model=NVIDIA_FALLBACK_MODEL)
+            print(f"[!] NVIDIA NIM API returned status {resp.status_code}", flush=True)
 
     except Exception as e:
-        print(f"[!] Error calling NVIDIA NIM API: {e}", flush=True)
+        print(f"[!] NVIDIA NIM inference error / timeout: {e}", flush=True)
 
     return None
 

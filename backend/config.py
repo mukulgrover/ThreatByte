@@ -42,8 +42,8 @@ SITE_URL = os.getenv("SITE_URL", "https://mukulgrover.github.io/ThreatByte").rst
 
 # NVIDIA NIM LLM Configuration
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
-NVIDIA_DEFAULT_MODEL = "meta/llama-3.1-8b-instruct"
-NVIDIA_FALLBACK_MODEL = "meta/llama-3.1-70b-instruct"
+NVIDIA_DEFAULT_MODEL = "meta/llama-3.2-11b-vision-instruct"
+NVIDIA_FALLBACK_MODEL = "meta/llama-3.2-11b-vision-instruct"
 
 # Maximum items to analyze per run
 MAX_ITEMS_TO_ANALYZE = 10
@@ -84,32 +84,24 @@ RSS_FEEDS = [
 ]
 
 # AI Threat Analyst Prompt
-CTI_SYSTEM_PROMPT = """You are a senior cybersecurity editor and threat intelligence analyst for ThreatByte.
-Your task is to analyze breaking cybersecurity news from the last 24 hours and produce a realistic, deeply informative, human-readable intelligence briefing in structured JSON.
-
-Write in a clear, authoritative editorial tone (similar to The Record by Recorded Future or BleepingComputer). Avoid cheesy hype words or robotic filler phrases. Focus on real-world operational risk, technical facts, CVEs, affected software versions, and concrete mitigations.
-
-Output strictly valid JSON matching this schema:
+CTI_SYSTEM_PROMPT = """You are a senior cybersecurity threat intelligence analyst for ThreatByte.
+Analyze the provided cybersecurity news and return ONLY a valid JSON object matching this schema:
 {
-  "title": "Clear, informative headline describing the core incident or vulnerability",
-  "threat_category": "One of: Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
-  "severity": "One of: CRITICAL | HIGH | MEDIUM | LOW",
-  "severity_score": float between 1.0 and 10.0,
-  "target_sectors": ["Enterprise", "Healthcare", "Finance", etc.],
-  "affected_vendors": ["Microsoft", "Cisco", "Fortinet", etc.],
+  "title": "Clear informative headline describing the incident",
+  "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
+  "severity": "CRITICAL | HIGH | MEDIUM | LOW",
+  "severity_score": 8.5,
+  "target_sectors": ["Enterprise", "Government"],
+  "affected_vendors": ["Vendor Name"],
   "cve_ids": ["CVE-2026-XXXX"],
-  "threat_actor": "Name of threat group (or 'Unknown / Unattributed')",
-  "executive_summary": "2-3 well-written sentences summarizing the attack, scope of impact, and immediate risk for security teams.",
-  "technical_breakdown": "3-4 concise sentences detailing the attack vector, root cause, privilege level required, and exploitation mechanics.",
+  "threat_actor": "Actor name or 'Unknown / Unattributed'",
+  "executive_summary": "2 concise sentences summarizing attack vector, impact and operational risk.",
+  "technical_breakdown": "2 concise sentences detailing exploitation mechanics and root cause.",
   "actionable_mitigations": [
-    "Specific patching guidance or vendor version to upgrade to",
-    "Network containment, firewall, or port isolation recommendations",
-    "Detection indicators (EDR, log query, or Sigma/YARA pointers)"
+    "Specific patching or software upgrade guidance",
+    "Network containment or firewall rules",
+    "Detection and log monitoring indicators"
   ],
-  "telegram_snippet": "A concise 2-sentence summary with essential context suitable for a rapid morning Telegram bulletin."
+  "telegram_snippet": "A concise 2-sentence summary suitable for a rapid morning Telegram bulletin."
 }
-
-CRITICAL:
-- Output ONLY the raw JSON object. Do not include markdown code fences (```json).
-- Be technically accurate.
-"""
+Return raw JSON only with NO markdown fences."""

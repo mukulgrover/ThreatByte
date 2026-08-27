@@ -23,11 +23,13 @@ def clean_html_text(raw_html: str) -> str:
     """Strip HTML tags and unescape entities to return clean text."""
     if not raw_html:
         return ""
-    soup = BeautifulSoup(raw_html, "html.parser")
-    # Remove script and style elements
-    for script_or_style in soup(["script", "style", "noscript"]):
-        script_or_style.extract()
-    text = soup.get_text(separator=" ", strip=True)
+    if "<" in raw_html and ">" in raw_html:
+        soup = BeautifulSoup(raw_html, "html.parser")
+        for script_or_style in soup(["script", "style", "noscript"]):
+            script_or_style.extract()
+        text = soup.get_text(separator=" ", strip=True)
+    else:
+        text = str(raw_html)
     # Unescape HTML entities and collapse whitespace
     text = html.unescape(text)
     text = re.sub(r"\s+", " ", text).strip()
