@@ -113,6 +113,20 @@ body {
   color: var(--text-muted);
 }
 
+.status-indicator-tag {
+  color: var(--accent-emerald);
+  font-size: 11.5px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--accent-emerald-dim);
+  padding: 2px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  white-space: nowrap;
+}
+
 .announcement-link {
   color: var(--accent-telegram);
   text-decoration: none;

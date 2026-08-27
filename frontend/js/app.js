@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', async () => {
  */
 async function loadArchiveIndex() {
   try {
-    const res = await fetch('../data/archive.json');
+    const cacheBuster = `?v=${Date.now()}`;
+    const res = await fetch(`../data/archive.json${cacheBuster}`, { cache: 'no-store' });
     if (res.ok) {
       const data = await res.json();
       state.archiveList = data;
@@ -87,10 +88,11 @@ async function loadBriefingData(targetDate = 'latest') {
   `;
 
   let payload = null;
-  const path = targetDate === 'latest' ? '../data/latest.json' : `../data/daily/${targetDate}.json`;
+  const cacheBuster = `?v=${Date.now()}`;
+  const path = targetDate === 'latest' ? `../data/latest.json${cacheBuster}` : `../data/daily/${targetDate}.json${cacheBuster}`;
 
   try {
-    const res = await fetch(path);
+    const res = await fetch(path, { cache: 'no-store' });
     if (res.ok) {
       payload = await res.json();
     } else {
@@ -99,7 +101,8 @@ async function loadBriefingData(targetDate = 'latest') {
   } catch (err) {
     console.warn(`Failed to fetch ${path}, retrying with root fallback:`, err);
     try {
-      const altRes = await fetch('data/latest.json');
+      const altPath = targetDate === 'latest' ? `data/latest.json${cacheBuster}` : `data/daily/${targetDate}.json${cacheBuster}`;
+      const altRes = await fetch(altPath, { cache: 'no-store' });
       if (altRes.ok) payload = await altRes.json();
     } catch (e) {}
   }
