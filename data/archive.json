@@ -1,10 +1,10 @@
 [
   {
     "date": "2026-08-27",
-    "top_headline": "Recent Citrix NetScaler Vulnerability Exploited in the Wild",
+    "top_headline": "Carhartt data breach exposes information of 12.9 million accounts",
     "total_incidents": 10,
-    "critical_threats": 6,
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
   },
   {
     "date": "2026-08-26",
