@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-08-30",
+    "top_headline": "Five Critical WordPress Plugin and Theme Flaws Enable Site Takeover or RCE",
+    "total_incidents": 8,
+    "critical_threats": 3,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-08-29",
     "top_headline": "McKesson discloses breach after ShinyHunters claims patient data theft",
     "total_incidents": 10,
