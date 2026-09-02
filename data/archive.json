@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-09-02",
-    "top_headline": "SonicWall Warns of Actively Exploited SMA1000 Zero-Day Flaws",
+    "top_headline": "SonicWall warns of actively exploited SMA1000 zero-day flaws",
     "total_incidents": 10,
     "critical_threats": 5,
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
