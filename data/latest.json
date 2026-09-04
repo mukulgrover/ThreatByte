@@ -1,23 +1,24 @@
 {
   "date": "2026-09-04",
-  "generated_at": "2026-09-04 07:25:35 UTC",
+  "generated_at": "2026-09-04 07:44:04 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 2,
+    "critical_threats": 3,
     "high_threats": 4,
-    "medium_threats": 4,
-    "low_threats": 0,
-    "unique_cves_count": 2,
+    "medium_threats": 2,
+    "low_threats": 1,
+    "unique_cves_count": 3,
     "unique_cves": [
       "CVE-2026-20212",
+      "CVE-2026-XXXX",
       "Unknown"
     ],
     "top_affected_vendors": [
       "Hewlett Packard Enterprise (HPE)",
-      "Cisco",
+      "Manchester Airports Group (MAG)",
       "H\u00f4pital priv\u00e9 de la Loire",
       "Coder",
-      "ReliaQuest"
+      "Dropbox"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
@@ -38,45 +39,66 @@
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "HPE has patched a critical vulnerability in ArubaOS-CX that could lead to remote code execution, posing a significant risk to enterprise networks. The patch is highly recommended to prevent potential exploitation.",
-      "technical_breakdown": "The vulnerability allows for remote code execution due to an insecure deserialization of user input, which can be exploited by an attacker to execute arbitrary code on the affected system. The patch addresses this issue by implementing proper input validation and sanitization.",
+      "executive_summary": "HPE has patched a critical vulnerability in ArubaOS-CX that could lead to remote code execution. This flaw poses a significant operational risk to enterprise networks.",
+      "technical_breakdown": "The vulnerability allows for remote code execution due to an unauthenticated input validation issue. The flaw can be exploited by sending a crafted request to the affected system.",
       "actionable_mitigations": [
         "Apply the latest patch for ArubaOS-CX",
         "Implement network segmentation and access controls",
-        "Monitor system logs for suspicious activity"
+        "Monitor for suspicious traffic and log anomalies"
       ],
-      "telegram_snippet": "HPE has patched a critical vulnerability in ArubaOS-CX that could lead to remote code execution. Apply the latest patch to prevent potential exploitation.",
+      "telegram_snippet": "HPE patches critical ArubaOS-CX flaw, apply latest patch to prevent remote code execution.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-critical-arubaos-cx-remote-code-execution-flaw/",
       "published_at": "2026-09-03T18:28:12+00:00"
     },
     {
-      "title": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root",
-      "threat_category": "Vulnerability / Advisory",
+      "title": "Manchester Airports Group Data on 8.8 Million People Leaked After Ransom Refusal",
+      "threat_category": "Data Breach",
       "severity": "CRITICAL",
-      "severity_score": 9.8,
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Transportation"
+      ],
+      "affected_vendors": [
+        "Manchester Airports Group (MAG)"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A hacker group leaked 550GB of Manchester Airports Group data, affecting 8.8 million people, after the company reportedly refused to pay a ransom demand. The group claims to have gained access via exposed admin keys.",
+      "technical_breakdown": "The hacker group exploited exposed admin keys to gain unauthorized access to Manchester Airports Group's systems, resulting in a large-scale data breach. The group's use of exposed admin keys highlights poor security practices and lack of access controls.",
+      "actionable_mitigations": [
+        "Implement multi-factor authentication and regular key rotation to prevent exploitation of exposed admin keys",
+        "Conduct thorough vulnerability assessments and penetration testing to identify and remediate security weaknesses",
+        "Implement robust access controls and least privilege principles to limit the impact of a potential breach"
+      ],
+      "telegram_snippet": "Manchester Airports Group data on 8.8 million people leaked after ransom refusal, with hacker group claiming access via exposed admin keys.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/manchester-airports-group-data-on-8-8-million-people-leaked-after-ransom-refusal/",
+      "published_at": "2026-09-03T15:35:19+00:00"
+    },
+    {
+      "title": "BraZetsu Malware Turns Compromised Windows Hosts Into Criminal Marketplace Inventory",
+      "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
       "target_sectors": [
         "Enterprise",
         "Government"
       ],
-      "affected_vendors": [
-        "Cisco"
-      ],
-      "cve_ids": [
-        "CVE-2026-20212"
-      ],
+      "affected_vendors": [],
+      "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A critical security flaw in Cisco Nexus 9000 switches allows unauthenticated remote attackers to execute code as root. The vulnerability has a CVSS score of 9.8 and no workaround for any IOS XR version.",
-      "technical_breakdown": "The Nexus vulnerability, tracked as CVE-2026-20212, is a critical security flaw affecting 10 Silicon One-based Nexus 9000 switches. The flaw allows an unauthenticated, remote attacker to execute code as root.",
+      "executive_summary": "BraZetsu is a sophisticated Python-based Windows malware framework that turns compromised hosts into commercial inventory for Initial Access Brokers, posing a significant threat to enterprise and government sectors. This malware framework fuels an underground marketplace, commercializing access to compromised hosts.",
+      "technical_breakdown": "BraZetsu is a comprehensive master toolkit that empowers Initial Access Brokers by turning compromised systems into highly valuable commercial assets. The malware framework is built using Python, allowing for flexibility and customization.",
       "actionable_mitigations": [
-        "Apply patches released by Cisco to address the vulnerability",
-        "Implement network containment or firewall rules to restrict access to affected switches",
-        "Monitor logs for suspicious activity and implement detection indicators"
+        "Ensure all Windows systems are patched with the latest security updates",
+        "Implement robust network segmentation and access controls",
+        "Monitor for suspicious activity and implement detection and log monitoring indicators"
       ],
-      "telegram_snippet": "Critical Cisco Nexus 9000 flaw allows unauthenticated remote attackers to run code as root, with a CVSS score of 9.8 and no workaround for any IOS XR version.",
+      "telegram_snippet": "BraZetsu malware turns compromised Windows hosts into commercial inventory for Initial Access Brokers, posing a significant threat to enterprise and government sectors. Ensure all Windows systems are patched and implement robust network segmentation and access controls.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
-      "published_at": "2026-09-03T15:52:07+00:00"
+      "url": "https://thehackernews.com/2026/09/brazetsu-malware-turns-compromised.html",
+      "published_at": "2026-09-03T15:26:47+00:00"
     },
     {
       "title": "French hospital fined \u20ac500,000 after breach exposes data of 727,000",
@@ -114,14 +136,14 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Threat actors are targeting large enterprises through fake merger and acquisition scams, aiming to dupe midlevel employees into initiating large financial transfers. This campaign, known as 'Phantom Deal', involves extensive research on targeted companies to increase the likelihood of success.",
-      "technical_breakdown": "Threat actors are studying companies in extreme detail to identify vulnerabilities and midlevel employees who can be manipulated into initiating large financial transfers. This campaign relies on social engineering tactics to deceive employees into performing unauthorized transactions.",
+      "executive_summary": "Threat actors are targeting large enterprises through fake merger and acquisition scams, aiming to dupe midlevel employees into initiating large financial transfers. This campaign demonstrates a high level of research and targeting, posing a significant operational risk.",
+      "technical_breakdown": "The campaign, known as 'Phantom Deal', involves threat actors studying companies in extreme detail to identify vulnerabilities. They then use this information to craft convincing fake merger and acquisition scenarios, often targeting midlevel employees with authority to initiate large financial transfers.",
       "actionable_mitigations": [
         "Implement robust financial transfer controls and approval processes",
-        "Conduct regular security awareness training for employees",
-        "Monitor financial transactions for suspicious activity"
+        "Conduct regular security awareness training for employees, particularly midlevel staff",
+        "Monitor financial transactions and systems for suspicious activity"
       ],
-      "telegram_snippet": "Large enterprises targeted in fake merger & acquisition scams, with threat actors studying companies in detail to dupe midlevel employees into initiating large financial transfers.",
+      "telegram_snippet": "Threat actors are targeting large enterprises through fake merger and acquisition scams, aiming to dupe employees into initiating large financial transfers. Companies must implement robust controls and awareness training to mitigate this risk.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/large-enterprises-fake-merger-acquisition-scams",
       "published_at": "2026-09-03T20:18:14+00:00"
@@ -130,7 +152,7 @@
       "title": "Coder's registry infrastructure compromised to push malicious modules",
       "threat_category": "Cloud & Supply Chain",
       "severity": "HIGH",
-      "severity_score": 8.0,
+      "severity_score": 8.2,
       "target_sectors": [
         "Enterprise"
       ],
@@ -139,43 +161,45 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Attackers compromised Coder's Cloudflare infrastructure to deliver malicious Terraform modules containing credential-stealing code, posing a significant risk to users who downloaded the affected modules. This incident highlights the importance of securing cloud infrastructure and supply chain dependencies.",
-      "technical_breakdown": "Attackers added unauthorized registry servers to Coder's Cloudflare infrastructure, which delivered malicious Terraform modules containing credential-stealing code. The malicious modules were likely distributed through Coder's registry, allowing attackers to steal credentials from unsuspecting users.",
+      "executive_summary": "Attackers compromised Coder's Cloudflare infrastructure to deliver malicious Terraform modules containing credential-stealing code. This attack highlights the risk of supply chain compromises in cloud-based infrastructure.",
+      "technical_breakdown": "Attackers added unauthorized registry servers to Coder's Cloudflare infrastructure, which delivered malicious Terraform modules. These modules contained credential-stealing code, which was executed by unsuspecting users.",
       "actionable_mitigations": [
-        "Verify the authenticity of downloaded modules and registry servers",
-        "Implement strict access controls and monitoring for cloud infrastructure",
-        "Use secure and trusted supply chain dependencies"
+        "Verify the authenticity of Terraform modules before use",
+        "Monitor Cloudflare infrastructure for unauthorized changes",
+        "Implement detection and log monitoring for suspicious Terraform module activity"
       ],
-      "telegram_snippet": "Attackers compromised Coder's Cloudflare infrastructure to deliver malicious Terraform modules, stealing credentials from users who downloaded the affected modules.",
+      "telegram_snippet": "Coder's Cloudflare infrastructure compromised to deliver malicious Terraform modules containing credential-stealing code. Users are advised to verify module authenticity and monitor for suspicious activity.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/coders-registry-infrastructure-compromised-to-push-malicious-modules/",
       "published_at": "2026-09-03T20:04:24+00:00"
     },
     {
-      "title": "Manchester Airports Group Data on 8.8 Million People Leaked After Ransom Refusal",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/manchester-airports-group-data-on-8-8-million-people-leaked-after-ransom-refusal/",
-      "published_at": "2026-09-03T15:35:19+00:00",
-      "threat_category": "Ransomware",
+      "title": "CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps",
+      "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
       "severity": "HIGH",
-      "severity_score": 8.8,
+      "severity_score": 8.0,
       "target_sectors": [
         "Enterprise",
-        "Critical Infrastructure"
+        "Government"
       ],
       "affected_vendors": [
-        "General Industry"
+        "Dropbox"
       ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Manchester Airports Group Data on 8.8 Million People Leaked After Ransom Refusal. Hacker group published roughly 550GB of data after MAG reportedly refused to pay a ransom demand; the group says it gained access via exposed admin keys.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "cve_ids": [
+        "Unknown"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Attackers use real tools, fake login pages, and software guides to trick victims into clicking on malicious links or allowing unauthorized access. Over 5,000 Dropbox accounts have been compromised.",
+      "technical_breakdown": "Attackers use phishing kits and OAuth traps to gain unauthorized access to sensitive information. Victims are tricked into clicking on malicious links or allowing access through fake login pages and software guides.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Verify the authenticity of login pages and software guides before clicking on links or allowing access",
+        "Use two-factor authentication to add an extra layer of security",
+        "Monitor account activity for suspicious behavior"
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Manchester Airports Group Data on 8.8 Million People Leaked After Ransom Refusal \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "Over 5,000 Dropbox accounts hacked through phishing kits and OAuth traps. Verify login pages and use two-factor authentication to stay safe.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
+      "published_at": "2026-09-03T18:02:47+00:00"
     },
     {
       "title": "ShinyHunters 'Breach' ReliaQuest: What We Missed",
@@ -190,23 +214,23 @@
       ],
       "cve_ids": [],
       "threat_actor": "ShinyHunters",
-      "executive_summary": "ShinyHunters, a notorious data breach group, may have compromised ReliaQuest, a cybersecurity firm. The breach could potentially expose sensitive information.",
-      "technical_breakdown": "The breach is believed to have occurred through an unknown vulnerability, allowing ShinyHunters to gain unauthorized access to ReliaQuest's systems.",
+      "executive_summary": "ShinyHunters, a notorious data breach group, may have breached ReliaQuest, a cybersecurity company. The breach could potentially expose sensitive information and compromise ReliaQuest's own security offerings.",
+      "technical_breakdown": "The breach is believed to have occurred through an unknown vector, with ShinyHunters exploiting a vulnerability in ReliaQuest's systems. The exact nature of the vulnerability is still unknown.",
       "actionable_mitigations": [
         "Review and update access controls and permissions",
-        "Implement regular security audits and vulnerability assessments",
-        "Monitor for suspicious activity and implement detection and response measures"
+        "Implement additional security measures to prevent similar breaches",
+        "Monitor for suspicious activity and potential data exfiltration"
       ],
-      "telegram_snippet": "ShinyHunters may have breached ReliaQuest, a cybersecurity firm, potentially exposing sensitive information. The breach is believed to have occurred through an unknown vulnerability.",
+      "telegram_snippet": "ShinyHunters may have breached ReliaQuest, a cybersecurity company, potentially exposing sensitive information and compromising security offerings.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cybersecurity-operations/what-we-missed-did-shinyhunters-breach-reliaquest",
       "published_at": "2026-09-03T19:42:39+00:00"
     },
     {
-      "title": "ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories",
+      "title": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
-      "published_at": "2026-09-03T18:02:47+00:00",
+      "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
+      "published_at": "2026-09-03T15:52:07+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -215,70 +239,48 @@
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "General Industry"
+        "Cisco"
       ],
-      "cve_ids": [],
+      "cve_ids": [
+        "CVE-2026-20212"
+      ],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories. The worst part is how normal these attacks look.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root. Cisco has released patches to address a critical security flaw affecting 10 Silicon One-based Nexus 9000 switches that could allow an unauthenticated, remote attacker to execute code as root, alongside an IOS XR hardening release bundling 7 umbrella CVEs, 2 of which are rated 9.8, with no workaround for any IOS XR version.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Cisco. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "BraZetsu Malware Turns Compromised Windows Hosts Into Criminal Marketplace Inventory",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/brazetsu-malware-turns-compromised.html",
-      "published_at": "2026-09-03T15:26:47+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "BraZetsu Malware Turns Compromised Windows Hosts Into Criminal Marketplace Inventory. Cybersecurity researchers have disclosed details of a sophisticated Python-based Windows malware framework called BraZetsu that fuels an underground marketplace commercializing access to compromised hosts.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: BraZetsu Malware Turns Compromised Windows Hosts Into Criminal Marketplace Inventory \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root \u2014 Impacting Cisco. Immediate patching and log auditing recommended."
     },
     {
       "title": "Microsoft: KB5120998 mouse reset bug affects only non-English PCs",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-kb5120998-mouse-reset-bug-affects-only-non-english-pcs/",
-      "published_at": "2026-09-03T15:22:33+00:00",
       "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "severity": "LOW",
+      "severity_score": 2.5,
       "target_sectors": [
         "Enterprise",
-        "Critical Infrastructure"
+        "Government"
       ],
       "affected_vendors": [
         "Microsoft"
       ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft: KB5120998 mouse reset bug affects only non-English PCs. Microsoft says a known issue that reverts mouse settings after installing the KB5120998 August 2026 preview update affects only non-English Windows 11 systems.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+      "cve_ids": [
+        "CVE-2026-XXXX"
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft: KB5120998 mouse reset bug affects only non-English PCs \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A known issue with the KB5120998 August 2026 preview update affects non-English Windows 11 systems, reverting mouse settings. This issue is limited to non-English systems and does not affect English-speaking users.",
+      "technical_breakdown": "The KB5120998 update contains a bug that resets mouse settings on non-English Windows 11 systems. This issue is caused by a known issue in the update.",
+      "actionable_mitigations": [
+        "Apply the latest KB5120998 update with caution, monitoring mouse settings for any issues",
+        "Consider delaying the installation of the KB5120998 update until a fix is available",
+        "Verify mouse settings after installing the update to ensure they have not been reset"
+      ],
+      "telegram_snippet": "Microsoft reports a known issue with KB5120998 update affecting non-English Windows 11 systems, resetting mouse settings. Users are advised to apply the update with caution and monitor mouse settings.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-kb5120998-mouse-reset-bug-affects-only-non-english-pcs/",
+      "published_at": "2026-09-03T15:22:33+00:00"
     }
   ]
 }
