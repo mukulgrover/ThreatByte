@@ -1,16 +1,15 @@
 {
   "date": "2026-09-04",
-  "generated_at": "2026-09-04 07:22:40 UTC",
+  "generated_at": "2026-09-04 07:25:35 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 2,
-    "high_threats": 5,
-    "medium_threats": 2,
-    "low_threats": 1,
-    "unique_cves_count": 3,
+    "high_threats": 4,
+    "medium_threats": 4,
+    "low_threats": 0,
+    "unique_cves_count": 2,
     "unique_cves": [
       "CVE-2026-20212",
-      "CVE-2026-XXXX",
       "Unknown"
     ],
     "top_affected_vendors": [
@@ -18,7 +17,7 @@
       "Cisco",
       "H\u00f4pital priv\u00e9 de la Loire",
       "Coder",
-      "Microsoft"
+      "ReliaQuest"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
@@ -39,14 +38,14 @@
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "HPE has patched a critical vulnerability in ArubaOS-CX that could lead to remote code execution. This flaw affects enterprise networks and requires immediate attention to prevent potential exploitation.",
-      "technical_breakdown": "The vulnerability allows for remote code execution due to an unauthenticated input validation issue in the ArubaOS-CX network operating system. HPE has released patches to address this flaw and prevent exploitation.",
+      "executive_summary": "HPE has patched a critical vulnerability in ArubaOS-CX that could lead to remote code execution, posing a significant risk to enterprise networks. The patch is highly recommended to prevent potential exploitation.",
+      "technical_breakdown": "The vulnerability allows for remote code execution due to an insecure deserialization of user input, which can be exploited by an attacker to execute arbitrary code on the affected system. The patch addresses this issue by implementing proper input validation and sanitization.",
       "actionable_mitigations": [
-        "Apply the latest patches for ArubaOS-CX as soon as possible",
-        "Implement network segmentation and access controls to limit exposure",
-        "Monitor network traffic for suspicious activity and implement detection and response measures"
+        "Apply the latest patch for ArubaOS-CX",
+        "Implement network segmentation and access controls",
+        "Monitor system logs for suspicious activity"
       ],
-      "telegram_snippet": "HPE patches critical ArubaOS-CX remote code execution flaw. Apply patches immediately to prevent potential exploitation.",
+      "telegram_snippet": "HPE has patched a critical vulnerability in ArubaOS-CX that could lead to remote code execution. Apply the latest patch to prevent potential exploitation.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-critical-arubaos-cx-remote-code-execution-flaw/",
       "published_at": "2026-09-03T18:28:12+00:00"
@@ -68,13 +67,13 @@
       ],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "A critical security flaw in Cisco Nexus 9000 switches allows unauthenticated remote attackers to execute code as root. The vulnerability has a CVSS score of 9.8 and no workaround for any IOS XR version.",
-      "technical_breakdown": "The Nexus vulnerability, tracked as CVE-2026-20212, is a critical security flaw that could allow an unauthenticated, remote attacker to execute code as root. The vulnerability is present in 10 Silicon One-based Nexus 9000 switches.",
+      "technical_breakdown": "The Nexus vulnerability, tracked as CVE-2026-20212, is a critical security flaw affecting 10 Silicon One-based Nexus 9000 switches. The flaw allows an unauthenticated, remote attacker to execute code as root.",
       "actionable_mitigations": [
         "Apply patches released by Cisco to address the vulnerability",
         "Implement network containment or firewall rules to restrict access to affected switches",
         "Monitor logs for suspicious activity and implement detection indicators"
       ],
-      "telegram_snippet": "Critical Cisco Nexus 9000 flaw allows unauthenticated remote attackers to run code as root, with no workaround for any IOS XR version.",
+      "telegram_snippet": "Critical Cisco Nexus 9000 flaw allows unauthenticated remote attackers to run code as root, with a CVSS score of 9.8 and no workaround for any IOS XR version.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
       "published_at": "2026-09-03T15:52:07+00:00"
@@ -92,14 +91,14 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A French hospital was fined \u20ac500,000 for failing to protect patient data, exposing 727,000 records. The breach highlights the importance of robust data protection measures in the healthcare sector.",
-      "technical_breakdown": "The hospital's failure to implement adequate data protection measures led to the exposure of sensitive patient information. The breach was likely caused by a lack of proper security protocols and training.",
+      "executive_summary": "A French hospital was fined \u20ac500,000 after a data breach exposed the personal data of 727,000 individuals. The breach highlights the importance of robust data protection measures in the healthcare sector.",
+      "technical_breakdown": "The breach occurred due to inadequate data protection measures, allowing unauthorized access to sensitive patient information. The exact root cause of the breach is unclear, but it is believed to be related to a failure to implement proper security protocols.",
       "actionable_mitigations": [
         "Implement robust data encryption and access controls",
-        "Conduct regular security audits and training for staff",
-        "Monitor for suspicious activity and implement incident response plans"
+        "Conduct regular security audits and vulnerability assessments",
+        "Train staff on data protection best practices"
       ],
-      "telegram_snippet": "French hospital fined \u20ac500,000 for failing to protect patient data, exposing 727,000 records. The breach highlights the importance of robust data protection measures in the healthcare sector.",
+      "telegram_snippet": "French hospital fined \u20ac500,000 after data breach exposes 727,000 records, highlighting importance of robust data protection in healthcare.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/french-hospital-fined-500-000-after-breach-exposes-data-of-727-000/",
       "published_at": "2026-09-03T22:01:37+00:00"
@@ -115,14 +114,14 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Threat actors are targeting large enterprises through fake merger and acquisition scams, aiming to dupe midlevel employees into initiating large financial transfers. This campaign demonstrates a high level of research and planning, indicating a sophisticated threat actor.",
-      "technical_breakdown": "The threat actors are studying companies in extreme detail, gathering information on financial structures and employee roles to increase the likelihood of successful social engineering attacks. This information is then used to craft convincing emails and phone calls that appear to be legitimate business communications.",
+      "executive_summary": "Threat actors are targeting large enterprises through fake merger and acquisition scams, aiming to dupe midlevel employees into initiating large financial transfers. This campaign, known as 'Phantom Deal', involves extensive research on targeted companies to increase the likelihood of success.",
+      "technical_breakdown": "Threat actors are studying companies in extreme detail to identify vulnerabilities and midlevel employees who can be manipulated into initiating large financial transfers. This campaign relies on social engineering tactics to deceive employees into performing unauthorized transactions.",
       "actionable_mitigations": [
-        "Implement strict financial transfer controls and approval processes",
-        "Conduct regular security awareness training for employees, focusing on merger and acquisition scams",
-        "Monitor financial transactions and employee activity for suspicious behavior"
+        "Implement robust financial transfer controls and approval processes",
+        "Conduct regular security awareness training for employees",
+        "Monitor financial transactions for suspicious activity"
       ],
-      "telegram_snippet": "Large enterprises targeted in fake merger and acquisition scams, with threat actors studying companies in detail to dupe midlevel employees into initiating large financial transfers.",
+      "telegram_snippet": "Large enterprises targeted in fake merger & acquisition scams, with threat actors studying companies in detail to dupe midlevel employees into initiating large financial transfers.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/large-enterprises-fake-merger-acquisition-scams",
       "published_at": "2026-09-03T20:18:14+00:00"
@@ -131,7 +130,7 @@
       "title": "Coder's registry infrastructure compromised to push malicious modules",
       "threat_category": "Cloud & Supply Chain",
       "severity": "HIGH",
-      "severity_score": 8.5,
+      "severity_score": 8.0,
       "target_sectors": [
         "Enterprise"
       ],
@@ -140,41 +139,17 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Attackers compromised Coder's Cloudflare infrastructure to deliver malicious Terraform modules containing credential-stealing code, posing a significant risk to users who downloaded the compromised modules. This incident highlights the importance of verifying the authenticity of third-party modules and infrastructure.",
+      "executive_summary": "Attackers compromised Coder's Cloudflare infrastructure to deliver malicious Terraform modules containing credential-stealing code, posing a significant risk to users who downloaded the affected modules. This incident highlights the importance of securing cloud infrastructure and supply chain dependencies.",
       "technical_breakdown": "Attackers added unauthorized registry servers to Coder's Cloudflare infrastructure, which delivered malicious Terraform modules containing credential-stealing code. The malicious modules were likely distributed through Coder's registry, allowing attackers to steal credentials from unsuspecting users.",
       "actionable_mitigations": [
-        "Verify the authenticity of third-party modules and infrastructure before use",
-        "Use secure and trusted registry servers for module distribution",
-        "Monitor for suspicious activity and detect credential-stealing code"
+        "Verify the authenticity of downloaded modules and registry servers",
+        "Implement strict access controls and monitoring for cloud infrastructure",
+        "Use secure and trusted supply chain dependencies"
       ],
-      "telegram_snippet": "Coder's registry infrastructure compromised, delivering malicious Terraform modules with credential-stealing code. Users who downloaded the compromised modules are at risk of credential theft.",
+      "telegram_snippet": "Attackers compromised Coder's Cloudflare infrastructure to deliver malicious Terraform modules, stealing credentials from users who downloaded the affected modules.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/coders-registry-infrastructure-compromised-to-push-malicious-modules/",
       "published_at": "2026-09-03T20:04:24+00:00"
-    },
-    {
-      "title": "CEO Phishing Kits and OAuth Traps: Normalizing Social Engineering Attacks",
-      "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Attackers are using normal-looking phishing kits and OAuth traps to gain access to sensitive information, often through social engineering tactics such as fake login pages and software guides.",
-      "technical_breakdown": "Attackers are utilizing real tools and fake login pages to trick victims into clicking on malicious links or allowing unauthorized access, often with a single wrong letter in a web address being enough to compromise security.",
-      "actionable_mitigations": [
-        "Verify the authenticity of login pages and software guides before clicking on links or allowing access",
-        "Use two-factor authentication and monitor account activity for suspicious behavior",
-        "Regularly update software and plugins to prevent exploitation of known vulnerabilities"
-      ],
-      "telegram_snippet": "Attackers are using normal-looking phishing kits and OAuth traps to gain access to sensitive information, often through social engineering tactics. Verify login pages and software guides before clicking on links or allowing access.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
-      "published_at": "2026-09-03T18:02:47+00:00"
     },
     {
       "title": "Manchester Airports Group Data on 8.8 Million People Leaked After Ransom Refusal",
@@ -203,10 +178,35 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Manchester Airports Group Data on 8.8 Million People Leaked After Ransom Refusal \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "What We Missed: Did ShinyHunters 'Breach' ReliaQuest?",
+      "title": "ShinyHunters 'Breach' ReliaQuest: What We Missed",
+      "threat_category": "Data Breach",
+      "severity": "MEDIUM",
+      "severity_score": 6.0,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [
+        "ReliaQuest"
+      ],
+      "cve_ids": [],
+      "threat_actor": "ShinyHunters",
+      "executive_summary": "ShinyHunters, a notorious data breach group, may have compromised ReliaQuest, a cybersecurity firm. The breach could potentially expose sensitive information.",
+      "technical_breakdown": "The breach is believed to have occurred through an unknown vulnerability, allowing ShinyHunters to gain unauthorized access to ReliaQuest's systems.",
+      "actionable_mitigations": [
+        "Review and update access controls and permissions",
+        "Implement regular security audits and vulnerability assessments",
+        "Monitor for suspicious activity and implement detection and response measures"
+      ],
+      "telegram_snippet": "ShinyHunters may have breached ReliaQuest, a cybersecurity firm, potentially exposing sensitive information. The breach is believed to have occurred through an unknown vulnerability.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cybersecurity-operations/what-we-missed-did-shinyhunters-breach-reliaquest",
-      "published_at": "2026-09-03T19:42:39+00:00",
+      "published_at": "2026-09-03T19:42:39+00:00"
+    },
+    {
+      "title": "ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
+      "published_at": "2026-09-03T18:02:47+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -219,14 +219,14 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "What We Missed: Did ShinyHunters 'Breach' ReliaQuest?. In this video conversation, Dark Reading editors discuss some of the news they didn't get a chance to cover, from the latest antics of ShinyHunters to.",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories. The worst part is how normal these attacks look.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: What We Missed: Did ShinyHunters 'Breach' ReliaQuest? \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "BraZetsu Malware Turns Compromised Windows Hosts Into Criminal Marketplace Inventory",
@@ -256,31 +256,29 @@
     },
     {
       "title": "Microsoft: KB5120998 mouse reset bug affects only non-English PCs",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-kb5120998-mouse-reset-bug-affects-only-non-english-pcs/",
+      "published_at": "2026-09-03T15:22:33+00:00",
       "threat_category": "Vulnerability / Advisory",
-      "severity": "LOW",
-      "severity_score": 2.5,
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
         "Microsoft"
       ],
-      "cve_ids": [
-        "CVE-2026-XXXX"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A known issue with the KB5120998 August 2026 preview update affects non-English Windows 11 systems, resetting mouse settings. This issue is limited to non-English systems and does not pose a significant security risk.",
-      "technical_breakdown": "The KB5120998 update contains a bug that reverts mouse settings after installation, affecting non-English Windows 11 systems. This issue is caused by a known issue in the update.",
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Microsoft: KB5120998 mouse reset bug affects only non-English PCs. Microsoft says a known issue that reverts mouse settings after installing the KB5120998 August 2026 preview update affects only non-English Windows 11 systems.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Specific patching or software upgrade guidance: Install the latest KB5120998 update with English language settings",
-        "Network containment or firewall rules: No specific rules required",
-        "Detection and log monitoring indicators: Monitor for mouse setting changes after update installation"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Microsoft reports a known issue with KB5120998 update affecting non-English Windows 11 systems, resetting mouse settings. No security risk posed, but users should install update with English language settings.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-kb5120998-mouse-reset-bug-affects-only-non-english-pcs/",
-      "published_at": "2026-09-03T15:22:33+00:00"
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft: KB5120998 mouse reset bug affects only non-English PCs \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     }
   ]
 }
