@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-06",
+    "top_headline": "Unpatched Magento and Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
+    "total_incidents": 9,
+    "critical_threats": 6,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-09-05",
     "top_headline": "IDScan sued over alleged data breach affecting 153 million drivers",
     "total_incidents": 10,
