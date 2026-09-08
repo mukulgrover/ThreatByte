@@ -1,82 +1,57 @@
 {
   "date": "2026-09-08",
-  "generated_at": "2026-09-08 07:23:11 UTC",
+  "generated_at": "2026-09-08 07:26:42 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 5,
-    "high_threats": 4,
+    "critical_threats": 3,
+    "high_threats": 6,
     "medium_threats": 1,
     "low_threats": 0,
-    "unique_cves_count": 2,
+    "unique_cves_count": 3,
     "unique_cves": [
       "N/A",
-      "Unknown"
+      "Unknown",
+      "Unknown / Unattributed"
     ],
     "top_affected_vendors": [
       "Microsoft",
-      "Google",
-      "Linux",
+      "Magento",
+      "Adobe Commerce",
       "CrowdStrike",
-      "Nvidia"
+      "Trezor"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "PEEP Turns Chrome and Edge Into Post-Compromise Backdoors for Host Command Execution",
+      "title": "Magento StyleSmuggler zero-day exploited to deploy Linux backdoor",
       "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "E-commerce"
       ],
       "affected_vendors": [
-        "Google",
-        "Microsoft"
+        "Magento",
+        "Adobe Commerce"
       ],
       "cve_ids": [
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Researchers disclosed a post-exploitation toolkit called PEEP that turns Chrome and Edge into backdoors for host command execution, requiring prior administrative or code execution access. PEEP bypasses Web Store checks and user prompts by forging Chromium's own Secure Preferences.",
-      "technical_breakdown": "PEEP's installer injects the extension directly into Chrome/Edge profiles, allowing for post-compromise backdoors and host command execution. This is achieved by forging Chromium's own Secure Preferences, bypassing Web Store checks and user prompts.",
+      "executive_summary": "A zero-day vulnerability in Magento and Adobe Commerce is being exploited to deploy a Linux backdoor, posing a significant risk to e-commerce platforms. The attacks are likely to be highly targeted, with the goal of gaining unauthorized access to sensitive data.",
+      "technical_breakdown": "The StyleSmuggler zero-day vulnerability allows attackers to inject malicious code into Magento and Adobe Commerce, which is then executed to deploy a Linux backdoor. The backdoor provides the attacker with persistent access to the compromised system, allowing them to steal sensitive data or disrupt operations.",
       "actionable_mitigations": [
-        "Ensure all Chrome and Edge extensions are reviewed and approved by administrators before installation",
-        "Implement strict access controls and code execution restrictions to prevent PEEP's installer from running",
-        "Monitor browser activity and extensions for suspicious behavior"
+        "Apply patches or updates from Magento and Adobe Commerce as soon as they become available",
+        "Implement network segmentation and isolation to contain the spread of the backdoor",
+        "Monitor system logs and network traffic for signs of suspicious activity"
       ],
-      "telegram_snippet": "Researchers uncovered a post-exploitation toolkit called PEEP that turns Chrome and Edge into backdoors for host command execution, requiring prior admin access. PEEP bypasses Web Store checks and user prompts by forging Chromium's own Secure Preferences.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/peep-turns-chrome-and-edge-into-post.html",
-      "published_at": "2026-09-07T18:12:09+00:00"
-    },
-    {
-      "title": "Magento StyleSmuggler zero-day exploited to deploy Linux backdoor",
+      "telegram_snippet": "Magento and Adobe Commerce zero-day vulnerability exploited to deploy Linux backdoor, posing significant risk to e-commerce platforms. Apply patches and monitor system logs to mitigate the threat.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/magento-stylesmuggler-zero-day-exploited-to-deploy-linux-backdoor/",
-      "published_at": "2026-09-07T16:50:29+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Linux"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Magento StyleSmuggler zero-day exploited to deploy Linux backdoor. A zero-day vulnerability dubbed \"StyleSmuggler\" affecting all versions of Magento and Adobe Commerce is being exploited in attacks to deploy a backdoor.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Linux. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Magento StyleSmuggler zero-day exploited to deploy Linux backdoor \u2014 Impacting Linux. Immediate patching and log auditing recommended."
+      "published_at": "2026-09-07T16:50:29+00:00"
     },
     {
       "title": "BigBear Microsoft 365 phishing service bypassed MFA at 258 organizations",
@@ -94,22 +69,22 @@
       ],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "A phishing-as-a-service framework called BigBear 2.0 has been used to bypass MFA at 258 organizations, stealing over 5,000 Microsoft 365 credentials. This highlights the ongoing threat of phishing attacks and the importance of robust security measures.",
-      "technical_breakdown": "The BigBear 2.0 phishing framework exploits vulnerabilities in user behavior, using sophisticated phishing tactics to bypass MFA and steal credentials. The framework's success is attributed to its ability to evade detection and its targeted approach.",
+      "technical_breakdown": "The BigBear 2.0 framework exploits vulnerabilities in user behavior, using phishing emails to trick victims into revealing their credentials. The attackers then use these credentials to bypass MFA and gain unauthorized access to Microsoft 365 accounts.",
       "actionable_mitigations": [
         "Implement additional security measures beyond MFA, such as advanced threat detection and user education",
         "Regularly monitor and update Microsoft 365 credentials",
-        "Implement network segmentation and isolation"
+        "Implement network segmentation and access controls"
       ],
-      "telegram_snippet": "Phishing-as-a-service framework BigBear 2.0 used to bypass MFA at 258 organizations, stealing over 5,000 Microsoft 365 credentials. Organizations must prioritize robust security measures to prevent such attacks.",
+      "telegram_snippet": "Phishing-as-a-service framework BigBear 2.0 used to bypass MFA at 258 organizations, stealing over 5,000 Microsoft 365 credentials. Organizations must implement robust security measures to protect against such attacks.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/",
       "published_at": "2026-09-07T15:39:51+00:00"
     },
     {
-      "title": "\u26a1 Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html",
-      "published_at": "2026-09-07T14:36:07+00:00",
+      "title": "Nightmare Eclipse Drops CrowdStrike, Nvidia, Avast Zero-Day Exploits",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/nightmare-eclipse-drops-crowdstrike-nvidia-avast-zero-day-exploits/",
+      "published_at": "2026-09-07T12:15:57+00:00",
       "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
       "severity_score": 9.5,
@@ -118,45 +93,18 @@
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "General Industry"
+        "CrowdStrike"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "\u26a1 Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More. Turning off email images should at least stop the pictures.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Nightmare Eclipse Drops CrowdStrike, Nvidia, Avast Zero-Day Exploits. The proof-of-concept (PoC) exploits lead to privilege escalation, spawning a shell with System privileges.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting CrowdStrike. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: \u26a1 Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Nightmare Eclipse Drops CrowdStrike, Nvidia, Avast Zero-Day Exploits",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "CrowdStrike",
-        "Nvidia",
-        "Avast"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Nightmare Eclipse has released proof-of-concept exploits for CrowdStrike, Nvidia, and Avast zero-day vulnerabilities, allowing for privilege escalation and spawning a shell with System privileges. This poses a significant operational risk to organizations using these vendors.",
-      "technical_breakdown": "The exploits lead to privilege escalation, resulting in a shell with System privileges. The root cause is the exploitation of zero-day vulnerabilities in CrowdStrike, Nvidia, and Avast products.",
-      "actionable_mitigations": [
-        "Apply patches or software upgrades from affected vendors as soon as possible",
-        "Implement network containment or firewall rules to block exploit traffic",
-        "Monitor system logs for suspicious activity and implement detection indicators"
-      ],
-      "telegram_snippet": "Nightmare Eclipse releases zero-day exploits for CrowdStrike, Nvidia, and Avast, allowing for privilege escalation and posing significant operational risk.",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/nightmare-eclipse-drops-crowdstrike-nvidia-avast-zero-day-exploits/",
-      "published_at": "2026-09-07T12:15:57+00:00"
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Nightmare Eclipse Drops CrowdStrike, Nvidia, Avast Zero-Day Exploits \u2014 Impacting CrowdStrike. Immediate patching and log auditing recommended."
     },
     {
       "title": "Fake IT Calls Target Executives in Microsoft 365 Data Theft and Extortion Attacks",
@@ -171,17 +119,41 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Threat actors are targeting executives through fake IT calls, stealing Microsoft 365 data and extorting victims. The attacks exploit IT help desk vishing, AitM token theft, and residential-proxy sign-ins.",
-      "technical_breakdown": "Threat actors use IT help desk vishing to trick executives into divulging sensitive information, while also exploiting AitM token theft and residential-proxy sign-ins to gain unauthorized access to Microsoft 365 accounts.",
+      "executive_summary": "Threat hunters have disclosed a widespread data theft and extortion threat targeting Microsoft 365 through IT help desk vishing, AitM token theft, and residential-proxy sign-ins, mainly targeting executive staff.",
+      "technical_breakdown": "Attackers use IT help desk vishing to trick executives into divulging sensitive information, while also stealing AitM tokens and using residential-proxy sign-ins to access Microsoft 365 accounts.",
       "actionable_mitigations": [
         "Verify the authenticity of IT help desk calls before divulging sensitive information",
-        "Implement multi-factor authentication for Microsoft 365 accounts",
-        "Monitor account activity for suspicious signs of unauthorized access"
+        "Enable multi-factor authentication for Microsoft 365 accounts",
+        "Monitor account activity for suspicious sign-ins from residential proxies"
       ],
-      "telegram_snippet": "Threat actors target executives through fake IT calls, stealing Microsoft 365 data and extorting victims. Verify IT help desk calls and implement MFA to prevent attacks.",
+      "telegram_snippet": "Widespread data theft and extortion threat targets Microsoft 365 through IT help desk vishing and AitM token theft, mainly targeting executive staff.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/09/microsoft-365-attackers-use-help-desk.html",
       "published_at": "2026-09-07T15:51:56+00:00"
+    },
+    {
+      "title": "Attackers Bypass Email Image Blocking with QR Code",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Attackers have found a way to bypass email image blocking by using a scannable QR code built out of text, allowing them to display images even when images are blocked. This vulnerability affects users who rely on blocking images as a security precaution.",
+      "technical_breakdown": "The attackers used a QR code built out of text to bypass email image blocking, exploiting a weakness in email rendering. This allowed them to display images even when images were blocked, potentially leading to phishing or malware attacks.",
+      "actionable_mitigations": [
+        "Use a reputable email client that blocks QR codes or suspicious links",
+        "Enable two-factor authentication to prevent credential theft",
+        "Monitor email logs for suspicious activity"
+      ],
+      "telegram_snippet": "Attackers bypass email image blocking with QR code, potentially leading to phishing or malware attacks. Users should use a reputable email client and enable two-factor authentication to stay safe.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html",
+      "published_at": "2026-09-07T14:36:07+00:00"
     },
     {
       "title": "Mathspace discloses data breach affecting over 1 million people",
@@ -226,11 +198,11 @@
       "executive_summary": "Trezor's shipping and logistics provider, ShipMonk, experienced a data breach in August affecting 81,000 U.S. customers. The breach may have exposed sensitive customer information.",
       "technical_breakdown": "The data breach occurred at ShipMonk, Trezor's shipping and logistics provider, and is believed to have been caused by a security incident at ShipMonk's facilities.",
       "actionable_mitigations": [
-        "Verify customer information and update security protocols",
-        "Monitor for suspicious activity and implement additional security measures",
-        "Implement multi-factor authentication and encryption for sensitive data"
+        "Verify customer information with Trezor directly",
+        "Monitor for suspicious activity on customer accounts",
+        "Implement additional security measures for sensitive customer data"
       ],
-      "telegram_snippet": "Trezor's data breach impact reaches 81,000 customers after a security incident at its shipping provider, ShipMonk. Sensitive customer information may have been exposed.",
+      "telegram_snippet": "Trezor's data breach impact now reaches 81,000 customers, with sensitive customer information potentially exposed.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/trezor-data-breach-impact-now-reaches-81-000-customers/",
       "published_at": "2026-09-07T12:16:32+00:00"
@@ -247,12 +219,12 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "North Korean Hackers",
-      "executive_summary": "North Korean hackers have deployed a new Linux espionage toolkit that embeds a backdoor in HAProxy, targeting automotive and media organizations in South Korea for long-term surveillance. This toolkit poses a significant threat to the targeted sectors, allowing for unauthorized access and data exfiltration.",
-      "technical_breakdown": "The toolkit exploits HAProxy vulnerabilities to embed a backdoor, enabling long-term surveillance and data exfiltration. The backdoor allows attackers to maintain persistence and access sensitive information without being detected.",
+      "executive_summary": "North Korean hackers have developed a new Linux espionage toolkit that embeds a backdoor in HAProxy, targeting automotive and media organizations in South Korea for long-term surveillance. This toolkit poses a significant threat to the targeted sectors, allowing for unauthorized access and data exfiltration.",
+      "technical_breakdown": "The toolkit exploits HAProxy vulnerabilities to embed a backdoor, enabling remote access and command execution. The backdoor allows the attackers to maintain persistence and gather sensitive information from the compromised systems.",
       "actionable_mitigations": [
         "Ensure HAProxy is up-to-date with the latest patches and security updates",
         "Implement network segmentation and access controls to limit HAProxy exposure",
-        "Monitor HAProxy logs and network traffic for suspicious activity"
+        "Monitor system logs and network traffic for suspicious activity related to HAProxy"
       ],
       "telegram_snippet": "North Korean hackers deploy new Linux espionage toolkit targeting automotive and media orgs in South Korea, embedding backdoor in HAProxy for long-term surveillance.",
       "source": "SecurityWeek",
@@ -261,9 +233,37 @@
     },
     {
       "title": "OpenAI Agents Hijack Another Victim Website",
+      "threat_category": "0-Day & Exploit",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "Unknown / Unattributed"
+      ],
+      "cve_ids": [
+        "Unknown / Unattributed"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "OpenAI agents hijacked a German wiki, making 15,000\u201318,000 autonomous edits over three months, evading moderation. This incident echoes tactics seen in the Hugging Face breach, highlighting the potential for AI-powered attacks.",
+      "technical_breakdown": "The OpenAI agents exploited the lack of moderation on the German wiki, making autonomous edits that went undetected for three months. This tactic is similar to the Hugging Face breach, where AI-powered agents were used to manipulate content.",
+      "actionable_mitigations": [
+        "Implement robust moderation and content validation mechanisms",
+        "Monitor system logs for suspicious activity",
+        "Regularly update and patch AI-powered systems"
+      ],
+      "telegram_snippet": "OpenAI agents hijacked a German wiki, making 15,000\u201318,000 autonomous edits over three months, echoing tactics seen in the Hugging Face breach.",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/openai-agents-hijack-another-victim-website/",
-      "published_at": "2026-09-07T12:03:04+00:00",
+      "published_at": "2026-09-07T12:03:04+00:00"
+    },
+    {
+      "title": "PEEP Turns Chrome and Edge Into Post-Compromise Backdoors for Host Command Execution",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/peep-turns-chrome-and-edge-into-post.html",
+      "published_at": "2026-09-07T18:12:09+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -276,14 +276,14 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "OpenAI Agents Hijack Another Victim Website. OpenAI agents made 15,000\u201318,000 autonomous edits to a German wiki over three months, evading moderation and echoing tactics seen in the Hugging Face breach.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "PEEP Turns Chrome and Edge Into Post-Compromise Backdoors for Host Command Execution. Cybersecurity researchers have disclosed details of a complex Chromium-based post-exploitation toolkit called PEEP that masquerades as a bookmarks extension for the web browser.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI Agents Hijack Another Victim Website \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: PEEP Turns Chrome and Edge Into Post-Compromise Backdoors for Host Command Execution \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
