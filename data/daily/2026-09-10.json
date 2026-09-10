@@ -1,20 +1,22 @@
 {
   "date": "2026-09-10",
-  "generated_at": "2026-09-10 07:31:25 UTC",
+  "generated_at": "2026-09-10 07:53:08 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 2,
-    "high_threats": 4,
+    "critical_threats": 3,
+    "high_threats": 3,
     "medium_threats": 4,
     "low_threats": 0,
-    "unique_cves_count": 2,
+    "unique_cves_count": 3,
     "unique_cves": [
       "CVE-2025-25249",
-      "CVE-2026-20079"
+      "CVE-2026-20079",
+      "Unknown / Unattributed"
     ],
     "top_affected_vendors": [
       "Microsoft",
       "Cisco",
+      "AdaptHealth",
       "Google",
       "Fortinet"
     ],
@@ -50,15 +52,11 @@
     },
     {
       "title": "Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/",
-      "published_at": "2026-09-09T21:40:44+00:00",
-      "threat_category": "0-Day & Exploit",
+      "threat_category": "Vulnerability / Advisory",
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
+        "Enterprise"
       ],
       "affected_vendors": [
         "Cisco"
@@ -66,15 +64,45 @@
       "cve_ids": [
         "CVE-2026-20079"
       ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks. Cisco has confirmed that a maximum-severity authentication bypass vulnerability tracked as CVE-2026-20079 in its Secure Firewall Management Center (FMC) software is being actively exploited in attacks.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Cisco. Further technical telemetry is developing.",
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A maximum-severity authentication bypass vulnerability in Cisco Secure FMC software is being actively exploited in attacks, posing a significant risk to enterprise networks. Immediate patching and network containment are recommended to mitigate the risk.",
+      "technical_breakdown": "The vulnerability, tracked as CVE-2026-20079, allows attackers to bypass authentication and access sensitive areas of the FMC software. This is due to a flaw in the software's authentication mechanism, which can be exploited by attackers to gain unauthorized access.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Apply the patch for CVE-2026-20079 as soon as possible",
+        "Implement network containment and firewall rules to isolate affected systems",
+        "Monitor logs and detection systems for signs of exploitation"
       ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks \u2014 Impacting Cisco. Immediate patching and log auditing recommended."
+      "telegram_snippet": "Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks. Patch immediately and contain network to mitigate risk.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/",
+      "published_at": "2026-09-09T21:40:44+00:00"
+    },
+    {
+      "title": "AdaptHealth confirms 4.1 million people exposed in July cyberattack",
+      "threat_category": "Data Breach",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Healthcare"
+      ],
+      "affected_vendors": [
+        "AdaptHealth"
+      ],
+      "cve_ids": [
+        "Unknown / Unattributed"
+      ],
+      "threat_actor": "ShinyHunters",
+      "executive_summary": "AdaptHealth suffered a cyberattack in July, exposing data of 4.1 million people. The breach was attributed to the ShinyHunters threat group, posing significant operational risk to the healthcare company.",
+      "technical_breakdown": "The attack exploited vulnerabilities in AdaptHealth's systems, allowing ShinyHunters to access sensitive data. The root cause of the breach remains unclear, but it is believed to have been carried out by the ShinyHunters threat group.",
+      "actionable_mitigations": [
+        "Implement multi-factor authentication and regular security audits",
+        "Conduct thorough vulnerability assessments and patching",
+        "Monitor for suspicious activity and implement incident response plans"
+      ],
+      "telegram_snippet": "AdaptHealth confirms 4.1 million people exposed in July cyberattack attributed to ShinyHunters threat group, posing significant operational risk to the healthcare company.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/adapthealth-confirms-41-million-people-exposed-in-july-cyberattack/",
+      "published_at": "2026-09-09T21:30:36+00:00"
     },
     {
       "title": "Trezor warns users of email provider breach, phishing attacks",
@@ -101,32 +129,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Trezor warns users of email provider breach, phishing attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "AdaptHealth confirms 4.1 million people exposed in July cyberattack",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/adapthealth-confirms-41-million-people-exposed-in-july-cyberattack/",
-      "published_at": "2026-09-09T21:30:36+00:00",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "AdaptHealth confirms 4.1 million people exposed in July cyberattack. Healthcare company AdaptHealth has confirmed that data of 4.1 million people was exposed in a cyberattack discovered in July that was attributed to the ShinyHunters threat group.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: AdaptHealth confirms 4.1 million people exposed in July cyberattack \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "US Government Accuses Chinese AI Firms of Distilling Frontier Models",
