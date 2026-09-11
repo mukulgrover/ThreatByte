@@ -1,9 +1,9 @@
 [
   {
     "date": "2026-09-11",
-    "top_headline": "New Android malware encrypts files, steals data, and harasses victims",
+    "top_headline": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
     "total_incidents": 10,
-    "critical_threats": 0,
+    "critical_threats": 1,
     "overall_threat_level": "GUARDED (LEVEL YELLOW)"
   },
   {
