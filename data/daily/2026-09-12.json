@@ -1,28 +1,26 @@
 {
   "date": "2026-09-12",
-  "generated_at": "2026-09-12 07:21:27 UTC",
+  "generated_at": "2026-09-12 07:41:57 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 2,
+    "critical_threats": 1,
     "high_threats": 4,
-    "medium_threats": 4,
+    "medium_threats": 5,
     "low_threats": 0,
     "unique_cves_count": 1,
     "unique_cves": [
       "CVE-2026-85706"
     ],
     "top_affected_vendors": [
-      "GitLab",
-      "Florida Department of Highway Safety and Motor Vehicles (FLHSMV)",
       "Microsoft"
     ],
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
-    "threat_badge": "CRITICAL RISK"
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)",
+    "threat_badge": "HIGH SURGE"
   },
   "articles": [
     {
-      "title": "AI Governance Can't Wait",
-      "threat_category": "0-Day & Exploit",
+      "title": "Threat Actor Generates 1M Personalized Fraud Emails in 3 Days",
+      "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
       "severity": "CRITICAL",
       "severity_score": 9.0,
       "target_sectors": [
@@ -32,45 +30,41 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Adversaries can manipulate AI defensive reasoning to silently compromise target networks, posing a significant threat to organizations. This vulnerability highlights the need for robust AI governance to prevent such attacks.",
-      "technical_breakdown": "Adversaries can exploit vulnerabilities in AI systems by manipulating defensive reasoning, allowing them to bypass security controls and compromise networks silently. This can be achieved through various means, including data poisoning and model manipulation.",
+      "executive_summary": "Cybercriminals are leveraging AI to generate 1 million personalized fraud emails in just 3 days, increasing the effectiveness of their attacks. This new tactic allows threat actors to maintain credibility without sacrificing volume.",
+      "technical_breakdown": "The use of AI enables cybercriminals to create highly targeted and convincing emails, exploiting human psychology to trick victims into divulging sensitive information. This approach leverages machine learning algorithms to analyze and mimic legitimate email patterns, making it increasingly difficult to detect.",
       "actionable_mitigations": [
-        "Implement robust AI governance frameworks to detect and prevent manipulation of defensive reasoning",
-        "Regularly update and patch AI systems to address known vulnerabilities",
-        "Monitor network traffic for suspicious activity indicative of AI-based attacks"
+        "Implement AI-powered email filtering and detection tools",
+        "Enhance employee training on phishing and social engineering tactics",
+        "Monitor email traffic for suspicious patterns and anomalies"
       ],
-      "telegram_snippet": "Adversaries can manipulate AI defensive reasoning to silently compromise networks, highlighting the need for robust AI governance.",
+      "telegram_snippet": "Cybercriminals use AI to generate 1M personalized fraud emails in 3 days, increasing attack effectiveness.",
       "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyber-risk/ai-governance-cannot-wait",
-      "published_at": "2026-09-11T17:10:56+00:00"
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
+      "published_at": "2026-09-11T19:21:08+00:00"
     },
     {
-      "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 10.0,
+      "title": "Users in Houthi-Held Yemen Tried to Develop Advanced Weapons With AI",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.0,
       "target_sectors": [
-        "Enterprise",
-        "Government"
+        "Government",
+        "Military"
       ],
-      "affected_vendors": [
-        "GitLab"
-      ],
-      "cve_ids": [
-        "CVE-2026-85706"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "GitLab has disclosed a maximum-severity security vulnerability (CVE-2026-85706) that allows unauthenticated users to read arbitrary files. In-the-wild probes have been detected within hours of public disclosure.",
-      "technical_breakdown": "The vulnerability is a path traversal issue in the repository commits API, allowing unauthenticated users to read arbitrary files from the GitLab server.",
+      "affected_vendors": [],
+      "cve_ids": [],
+      "threat_actor": "Houthi",
+      "executive_summary": "Users in Houthi-held Yemen attempted to develop advanced weapons using AI, but failed to field an operational device. The failed test of a guided rocket highlights the potential risks of AI-powered military capabilities.",
+      "technical_breakdown": "The users attempted to leverage AI for developing advanced weapons, but the test of a guided rocket was unsuccessful. The root cause of the failure is unclear, but it may be attributed to technical limitations or lack of expertise.",
       "actionable_mitigations": [
-        "Apply patches released by GitLab",
-        "Implement network containment or firewall rules to restrict access to the affected API",
-        "Monitor logs for suspicious file-read activity"
+        "Implement strict controls on AI-powered military research and development",
+        "Enhance cybersecurity measures to prevent unauthorized access to AI technology",
+        "Monitor and analyze AI-powered military activities for potential threats"
       ],
-      "telegram_snippet": "GitLab has disclosed a CVSS 10 vulnerability allowing unauthenticated file-read, with in-the-wild probes detected within hours.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
-      "published_at": "2026-09-11T16:30:18+00:00"
+      "telegram_snippet": "Houthi-held Yemen users attempted to develop AI-powered advanced weapons, but failed to field an operational device. The failed test of a guided rocket highlights the risks of AI-powered military capabilities.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/users-in-houthi-held-yemen-tried-to-develop-advanced-weapons-with-ai-anthropic-says/",
+      "published_at": "2026-09-12T01:50:53+00:00"
     },
     {
       "title": "Hackers abused Claude to extract secrets from 1.8M Android apps",
@@ -100,129 +94,55 @@
     },
     {
       "title": "Florida confirms DMV database breached via stolen police account",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Government"
-      ],
-      "affected_vendors": [
-        "Florida Department of Highway Safety and Motor Vehicles (FLHSMV)"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Attackers breached the Florida DMV's DAVID driver database using stolen police department credentials, potentially exposing sensitive driver information. The breach highlights the risk of insider threats and the importance of robust account security.",
-      "technical_breakdown": "The attackers exploited stolen credentials belonging to a police department employee to gain unauthorized access to the FLHSMV's DAVID driver database. The breach was likely facilitated by weak account security and inadequate access controls.",
-      "actionable_mitigations": [
-        "Ensure multi-factor authentication is enabled for all employee accounts",
-        "Conduct regular security awareness training for employees",
-        "Implement strict access controls and least privilege principles"
-      ],
-      "telegram_snippet": "Florida DMV database breached via stolen police account, potentially exposing sensitive driver info. Attackers exploited weak account security and inadequate access controls.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/",
-      "published_at": "2026-09-11T19:00:29+00:00"
-    },
-    {
-      "title": "AI-Driven Scams: Manipulating Human Behavior",
-      "threat_category": "Social Engineering",
+      "published_at": "2026-09-11T19:00:29+00:00",
+      "threat_category": "Data Breach",
       "severity": "HIGH",
       "severity_score": 8.2,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
-      "affected_vendors": [],
+      "affected_vendors": [
+        "General Industry"
+      ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Researchers have found that AI-driven frontier models can effectively manipulate human behavior, creating emotional dependency and influencing decision-making. This has significant implications for social engineering attacks, as AI can be used to create highly convincing scams.",
-      "technical_breakdown": "Frontier models use advanced machine learning techniques to analyze human behavior and create personalized, emotionally charged interactions. This allows AI-driven scams to bypass traditional security measures and target individuals on a personal level.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Florida confirms DMV database breached via stolen police account. The Florida Department of Highway Safety and Motor Vehicles (FLHSMV) has confirmed that its DAVID driver database suffered a data breach, saying the attackers gained access using credentials belonging to a police department employee.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Implement robust security awareness training for employees",
-        "Use AI-powered detection tools to identify and flag suspicious activity",
-        "Implement strict access controls and authentication protocols"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "AI-driven frontier models can manipulate human behavior, creating emotional dependency and influencing decision-making. This has significant implications for social engineering attacks, as AI can be used to create highly convincing scams.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyber-risk/ai-scamming-humans",
-      "published_at": "2026-09-11T18:14:06+00:00"
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Florida confirms DMV database breached via stolen police account \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
-      "threat_category": "Phishing",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
+      "published_at": "2026-09-11T17:26:50+00:00",
+      "threat_category": "Ransomware",
       "severity": "HIGH",
-      "severity_score": 8.0,
+      "severity_score": 8.8,
       "target_sectors": [
-        "Enterprise"
+        "Enterprise",
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
         "Microsoft"
       ],
       "cve_ids": [],
-      "threat_actor": "ShinyHunters, Helix, and other extortion gangs",
-      "executive_summary": "Threat actors are using passkey and single sign-on-themed social engineering attacks to compromise corporate Microsoft accounts and steal data from Microsoft 365 services. This poses a significant operational risk to affected organizations.",
-      "technical_breakdown": "The attacks involve phishing emails that trick victims into revealing their Microsoft account credentials, which are then used to access Microsoft 365 services and steal sensitive data. The threat actors are exploiting the trust in passkey and single sign-on authentication methods to gain unauthorized access.",
-      "actionable_mitigations": [
-        "Implement multi-factor authentication (MFA) for all Microsoft accounts",
-        "Monitor Microsoft 365 service logs for suspicious activity",
-        "Educate employees on the risks of phishing attacks and the importance of verifying authentication requests"
-      ],
-      "telegram_snippet": "Threat actors are using passkey-themed phishing attacks to compromise Microsoft accounts and steal data from Microsoft 365 services, posing a significant operational risk to affected organizations.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
-      "published_at": "2026-09-11T17:26:50+00:00"
-    },
-    {
-      "title": "Users in Houthi-Held Yemen Tried to Develop Advanced Weapons With AI, Anthropic Says",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/users-in-houthi-held-yemen-tried-to-develop-advanced-weapons-with-ai-anthropic-says/",
-      "published_at": "2026-09-12T01:50:53+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Users in Houthi-Held Yemen Tried to Develop Advanced Weapons With AI, Anthropic Says. Anthropic said the users did not succeed in \u201cfielding an operational device\u201d but did carry out a failed test of a guided rocket.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Passkey-themed phishing attacks lead to Microsoft 365 data theft. Microsoft says threat actors linked to ShinyHunters, Helix, and other extortion gangs are using passkey and single sign-on-themed social engineering attacks to compromise corporate Microsoft accounts and steal data from Microsoft 365 services.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Users in Houthi-Held Yemen Tried to Develop Advanced Weapons With AI, Anthropic Says \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Threat Actor Generates 1M Personalized Fraud Emails in 3 Days",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
-      "published_at": "2026-09-11T19:21:08+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Threat Actor Generates 1M Personalized Fraud Emails in 3 Days. Cybercriminals behind malicious email campaigns no longer have to compromise volume for credibility, or vice versa, thanks to AI..",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Threat Actor Generates 1M Personalized Fraud Emails in 3 Days \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Passkey-themed phishing attacks lead to Microsoft 365 data theft \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     },
     {
       "title": "CISA Calls for More Guidance, Less Spin, as Cyber Outages Escalate",
@@ -251,10 +171,10 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: CISA Calls for More Guidance, Less Spin, as Cyber Outages Escalate \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Phishing Research Challenges Conventional Security Awareness Testing",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/phishing-research-challenges-conventional-security-awareness-testing/",
-      "published_at": "2026-09-11T17:23:36+00:00",
+      "title": "Why AI Is So Good at Scamming Humans",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/ai-scamming-humans",
+      "published_at": "2026-09-11T18:14:06+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -267,14 +187,89 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Phishing Research Challenges Conventional Security Awareness Testing. Analysis of 2.47 million simulated attacks shows why organizations should measure credential leaks and reporting, not just clicks.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Why AI Is So Good at Scamming Humans. Fred Heiding of Menlo Park Intelligence talks with the Dark Reading News Desk about his research on frontier models, and their ability to influence hu.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Phishing Research Challenges Conventional Security Awareness Testing \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Why AI Is So Good at Scamming Humans \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Phishing Research Challenges Conventional Security Awareness Testing",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 5.0,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Research of 2.47 million simulated phishing attacks reveals that measuring credential leaks and reporting is more effective than tracking clicks in assessing security awareness. This challenges conventional security awareness testing methods.",
+      "technical_breakdown": "The study analyzed simulated phishing attacks to understand the effectiveness of conventional security awareness testing methods. The results showed that tracking clicks alone is insufficient in assessing security awareness.",
+      "actionable_mitigations": [
+        "Implement a more comprehensive security awareness training program that includes measuring credential leaks and reporting"
+      ],
+      "telegram_snippet": "Research challenges conventional security awareness testing methods, suggesting that measuring credential leaks and reporting is more effective than tracking clicks in assessing security awareness.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/phishing-research-challenges-conventional-security-awareness-testing/",
+      "published_at": "2026-09-11T17:23:36+00:00"
+    },
+    {
+      "title": "AI Governance Can't Wait",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/ai-governance-cannot-wait",
+      "published_at": "2026-09-11T17:10:56+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "AI Governance Can't Wait. Adversaries can manipulate AI defensive reasoning to silently compromise target networks..",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: AI Governance Can't Wait \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
+      "published_at": "2026-09-11T16:30:18+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-85706"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure. GitLab has released patches to address multiple flaws, including a maximum-severity security vulnerability that has witnessed in-the-wild probes within hours of public disclosure.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }

@@ -1,10 +1,10 @@
 [
   {
     "date": "2026-09-12",
-    "top_headline": "AI Governance Can't Wait",
+    "top_headline": "Threat Actor Generates 1M Personalized Fraud Emails in 3 Days",
     "total_incidents": 10,
-    "critical_threats": 2,
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
   },
   {
     "date": "2026-09-11",
