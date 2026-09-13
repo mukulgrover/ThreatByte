@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-13",
+    "top_headline": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
+    "total_incidents": 7,
+    "critical_threats": 2,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-09-12",
     "top_headline": "Threat Actor Generates 1M Personalized Fraud Emails in 3 Days",
     "total_incidents": 10,
