@@ -1,6 +1,6 @@
 {
   "date": "2026-09-13",
-  "generated_at": "2026-09-13 07:36:41 UTC",
+  "generated_at": "2026-09-13 07:39:54 UTC",
   "metrics": {
     "total_incidents": 7,
     "critical_threats": 2,
@@ -114,8 +114,8 @@
         "General Industry"
       ],
       "cve_ids": [
-        "CVE-2026-85103",
-        "CVE-2026-85102"
+        "CVE-2026-85102",
+        "CVE-2026-85103"
       ],
       "threat_actor": "Unknown / Under Investigation",
       "executive_summary": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent. The Dutch Nationaal Cyber Security Centrum (NCSC) is warning of imminent exploitation of two critical flaws in Check Point VPN tracked as CVE-2026-85102 and CVE-2026-85103.",
