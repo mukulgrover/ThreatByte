@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-14",
+    "top_headline": "CISA: Hackers now exploit max severity GitLab flaw in attacks",
+    "total_incidents": 4,
+    "critical_threats": 3,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-09-13",
     "top_headline": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
     "total_incidents": 7,
