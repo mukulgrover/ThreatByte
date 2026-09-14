@@ -1,11 +1,11 @@
 {
   "date": "2026-09-14",
-  "generated_at": "2026-09-14 08:07:19 UTC",
+  "generated_at": "2026-09-14 08:34:45 UTC",
   "metrics": {
-    "total_incidents": 4,
-    "critical_threats": 2,
-    "high_threats": 1,
-    "medium_threats": 1,
+    "total_incidents": 7,
+    "critical_threats": 1,
+    "high_threats": 2,
+    "medium_threats": 4,
     "low_threats": 0,
     "unique_cves_count": 2,
     "unique_cves": [
@@ -13,12 +13,12 @@
       "Unknown"
     ],
     "top_affected_vendors": [
+      "Microsoft",
       "GitLab",
-      "Tencent",
-      "Microsoft"
+      "Google"
     ],
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
-    "threat_badge": "CRITICAL RISK"
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)",
+    "threat_badge": "HIGH SURGE"
   },
   "articles": [
     {
@@ -38,67 +38,148 @@
       ],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "Hackers are exploiting a maximum-severity GitLab vulnerability in attacks, posing a significant risk to organizations. The vulnerability allows attackers to gain unauthorized access to sensitive data and systems.",
-      "technical_breakdown": "The vulnerability is a result of a flaw in GitLab's code, which can be exploited by attackers to gain elevated privileges and access sensitive data. The flaw is being actively exploited in the wild, and organizations are advised to take immediate action to mitigate the risk.",
+      "technical_breakdown": "The vulnerability is being exploited through a remote code execution (RCE) attack, allowing hackers to execute arbitrary code on vulnerable systems. The attack vector is likely through phishing or other social engineering tactics.",
       "actionable_mitigations": [
         "Apply the latest patches and updates for GitLab",
         "Implement network segmentation and access controls",
         "Monitor for suspicious activity and log anomalies"
       ],
-      "telegram_snippet": "Hackers are exploiting a max-severity GitLab flaw in attacks, posing a significant risk to organizations. Apply latest patches and updates to mitigate the risk.",
+      "telegram_snippet": "Hackers are exploiting a max-severity GitLab vulnerability, posing a significant risk to organizations. Apply patches and updates immediately to mitigate the risk.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploit-max-severity-gitlab-flaw-in-attacks/",
       "published_at": "2026-09-14T07:06:27+00:00"
     },
     {
-      "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
+      "title": "Malicious Twitch Browser Extension Leaks OAuth Tokens From Nearly 31,000 Users",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html",
+      "published_at": "2026-09-14T07:24:39+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Tencent"
+        "Google"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Malicious Twitch Browser Extension Leaks OAuth Tokens From Nearly 31,000 Users. A malicious cross-store Twitch browser extension has leaked OAuth tokens associated with nearly 31,000 users to proxy servers operated by a Russian commercial bot service.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Malicious Twitch Browser Extension Leaks OAuth Tokens From Nearly 31,000 Users \u2014 Impacting Google. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
+      "published_at": "2026-09-13T14:26:32+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
       ],
       "cve_ids": [
         "CVE-2026-51990"
       ],
-      "threat_actor": "China-aligned espionage group",
-      "executive_summary": "Threat actors are exploiting a critical vulnerability in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor, posing a significant risk to enterprise and government networks. The attack vector involves a China-aligned espionage group.",
-      "technical_breakdown": "The vulnerability (CVE-2026-51990) allows threat actors to deploy the GrayRabbit backdoor, which enables remote access and control over compromised systems. The attack is carried out by exploiting a flaw in Tencent's Sogou Input Method for Windows.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware. Threat actors linked to a China-aligned espionage group are exploiting a critical vulnerability (CVE-2026-51990) in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Apply the patch for CVE-2026-51990 as soon as possible",
-        "Block Sogou Input Method for Windows traffic at the network perimeter",
-        "Monitor for suspicious activity related to GrayRabbit malware"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Threat actors are exploiting a critical vulnerability in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor, posing a significant risk to enterprise and government networks.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
-      "published_at": "2026-09-13T14:26:32+00:00"
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Hackers exploit Tencent app flaw to deploy GrayRabbit malware \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "AI Industry Warned of Potential Swarm Attack on Internet",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.0,
+      "title": "ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/connectwise-patches-screenconnect-vulnerability-exploited-in-worm-like-attacks/",
+      "published_at": "2026-09-14T08:25:14+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
-        "Technology"
+        "Enterprise",
+        "Critical Infrastructure"
       ],
-      "affected_vendors": [],
+      "affected_vendors": [
+        "General Industry"
+      ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Anthropic CEO Dario Amodei warned that AI could lead a swarm of agents taking over the internet within six to 12 months, emphasizing the need for safety measures to catch up. This highlights the potential for a catastrophic AI-powered attack.",
-      "technical_breakdown": "The AI industry is racing to develop safety measures to mitigate the risk of AI-powered attacks, but the pace of progress is uncertain. The potential for a swarm attack on the internet is a pressing concern that requires immediate attention.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks. The flaw allows attackers to send files and execute them without authorization through an active remote session.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Implement robust security measures to detect and prevent AI-powered attacks",
-        "Develop and deploy AI safety protocols to mitigate the risk of swarm attacks",
-        "Conduct regular security audits and risk assessments to identify potential vulnerabilities"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "AI industry warned of potential swarm attack on internet within 6-12 months, highlighting need for safety measures to catch up.",
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Microsoft: September updates break audio on some Windows PCs",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-september-updates-break-audio-on-some-windows-pcs/",
+      "published_at": "2026-09-14T08:08:16+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Microsoft: September updates break audio on some Windows PCs. Microsoft has confirmed that USB audio devices may fail on some Windows systems after installing the KB5124008and KB5124012 September 2026 security updates.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft: September updates break audio on some Windows PCs \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Anthropic CEO Dario Amodei Says AI Industry Needs to Give Safety Measures Time to Catch Up",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
-      "published_at": "2026-09-13T13:27:25+00:00"
+      "published_at": "2026-09-13T13:27:25+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Anthropic CEO Dario Amodei Says AI Industry Needs to Give Safety Measures Time to Catch Up. Dario Amodei warned that within six to 12 months AI could be capable of leading a swarm of agents that could take over the entire internet.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Anthropic CEO Dario Amodei Says AI Industry Needs to Give Safety Measures Time to Catch Up \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data",
