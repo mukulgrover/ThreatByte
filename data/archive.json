@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-15",
+    "top_headline": "Cisco patches Secure Email Gateway zero-day exploited in attacks",
+    "total_incidents": 10,
+    "critical_threats": 5,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-09-14",
     "top_headline": "CISA: Hackers now exploit max severity GitLab flaw in attacks",
     "total_incidents": 7,
