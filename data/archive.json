@@ -1,9 +1,9 @@
 [
   {
     "date": "2026-09-19",
-    "top_headline": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+    "top_headline": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
     "total_incidents": 10,
-    "critical_threats": 4,
+    "critical_threats": 3,
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
   },
   {
