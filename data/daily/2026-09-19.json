@@ -1,30 +1,58 @@
 {
   "date": "2026-09-19",
-  "generated_at": "2026-09-19 07:32:57 UTC",
+  "generated_at": "2026-09-19 07:49:51 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 3,
-    "high_threats": 1,
-    "medium_threats": 6,
-    "low_threats": 0,
-    "unique_cves_count": 4,
+    "high_threats": 3,
+    "medium_threats": 3,
+    "low_threats": 1,
+    "unique_cves_count": 6,
     "unique_cves": [
       "CVE-2023-XXXX",
       "CVE-2025-39682",
       "CVE-2026-76460",
+      "N/A",
+      "RFC 10008",
       "Unknown"
     ],
     "top_affected_vendors": [
+      "Linux kernel",
       "Cisco",
       "Linux Kernel",
-      "Gyazo",
-      "Linux",
-      "Vectra AI"
+      "TanStack",
+      "CrowdSec"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
+    {
+      "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "CRITICAL",
+      "severity_score": 9.8,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "Linux kernel"
+      ],
+      "cve_ids": [
+        "CVE-2025-39682"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "CISA has added three Linux kernel vulnerabilities to its Known Exploited Vulnerabilities catalog, citing evidence of active exploitation. These vulnerabilities pose a significant risk to Linux systems, particularly those in enterprise and government sectors.",
+      "technical_breakdown": "The vulnerabilities are located in the TLS receive path and involve an improper check for unusual or exceptional conditions, allowing attackers to potentially exploit them.",
+      "actionable_mitigations": [
+        "Apply patches for CVE-2025-39682"
+      ],
+      "telegram_snippet": "CISA flags three Linux kernel vulnerabilities exploited in the wild, citing active exploitation. Apply patches for CVE-2025-39682 to mitigate the risk.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+      "published_at": "2026-09-19T06:24:10+00:00"
+    },
     {
       "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
       "threat_category": "Vulnerability / Advisory",
@@ -40,14 +68,14 @@
         "CVE-2026-76460"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A zero-day vulnerability in Cisco's Identity Services Engine (ISE) allows for authentication bypass via API endpoint issues, posing a significant risk to enterprise networks. The flaw received a maximum CVSS score of 10 out of 10, emphasizing the need for immediate action.",
-      "technical_breakdown": "The vulnerability, CVE-2026-76460, impacts the API endpoint authentication mechanism in Cisco's ISE, enabling attackers to bypass authentication and gain unauthorized access. This is attributed to a flaw in the authentication process, allowing for exploitation without proper credentials.",
+      "executive_summary": "A zero-day vulnerability in Cisco's Identity Services Engine (ISE) allows for authentication bypass via API endpoint, posing a significant risk to enterprise networks. The flaw has received a maximum CVSS score of 10 out of 10.",
+      "technical_breakdown": "The vulnerability, CVE-2026-76460, impacts the API endpoint authentication mechanism in Cisco ISE, allowing unauthorized access to sensitive data. The flaw can be exploited by sending a crafted request to the affected endpoint.",
       "actionable_mitigations": [
-        "Apply the latest patches or software updates for Cisco's Identity Services Engine (ISE) to address the vulnerability.",
+        "Apply the latest patch or software update for Cisco ISE to address the vulnerability.",
         "Implement network containment or firewall rules to restrict access to the affected API endpoint.",
         "Monitor logs and detection systems for indicators of potential exploitation, such as unauthorized API requests."
       ],
-      "telegram_snippet": "Cisco's ISE suffers from a critical zero-day vulnerability (CVE-2026-76460) with a CVSS score of 10, allowing authentication bypass via API endpoint issues. Immediate patching and network containment are recommended to mitigate the risk.",
+      "telegram_snippet": "Cisco's Identity Services Engine (ISE) zero-day vulnerability (CVE-2026-76460) allows authentication bypass via API endpoint, with a maximum CVSS score of 10 out of 10. Apply the latest patch and monitor logs for potential exploitation.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
       "published_at": "2026-09-18T19:26:47+00:00"
@@ -68,53 +96,83 @@
         "CVE-2023-XXXX"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A security researcher has released public exploit code for four Linux kernel flaws, allowing local users to gain root access. Affected systems should be updated to the latest kernel version to prevent exploitation.",
-      "technical_breakdown": "The exploits target four Linux kernel flaws, each enabling local users to gain root access. The flaws have been fixed in recent kernel updates.",
+      "executive_summary": "A security researcher has released public exploit code for four Linux kernel flaws, allowing local users to gain root access. Systems running outdated kernels are vulnerable and should be updated immediately.",
+      "technical_breakdown": "The flaws allow local users to gain root access by exploiting vulnerabilities in the Linux kernel. The exploit code has been made public, putting systems running older kernels at risk.",
       "actionable_mitigations": [
         "Update to the latest Linux kernel version",
-        "Apply patches for the affected kernel flaws",
-        "Implement strict access controls to prevent local privilege escalation"
+        "Implement kernel hardening techniques",
+        "Monitor system logs for suspicious activity"
       ],
-      "telegram_snippet": "Public exploit code released for four Linux kernel flaws, enabling local root access. Update to latest kernel version to prevent exploitation.",
+      "telegram_snippet": "Public exploit code released for four Linux kernel flaws, allowing local users to gain root access. Update to latest kernel version to mitigate risk.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
       "published_at": "2026-09-18T18:02:24+00:00"
     },
     {
-      "title": "Gyazo server flaw exploited to steal 23.6 million user records",
+      "title": "TanStack npm Attack Leads to Copy of 170 Private GitHub Repositories",
       "threat_category": "Data Breach",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
+      "severity": "HIGH",
+      "severity_score": 8.0,
       "target_sectors": [
-        "Consumer"
+        "Enterprise",
+        "Government"
       ],
       "affected_vendors": [
-        "Gyazo"
+        "TanStack",
+        "CrowdSec"
+      ],
+      "cve_ids": [
+        "N/A"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "An attacker exploited the TanStack npm attack to steal credentials, which were then used to copy 170 of CrowdSec's private GitHub repositories. This incident highlights the risk of supply chain attacks and the importance of timely patching and access revocation.",
+      "technical_breakdown": "The attacker compromised an employee's laptop in the TanStack supply chain attack, which stole credentials from TanStack's npm packages. These credentials were then used to access CrowdSec's private GitHub repositories.",
+      "actionable_mitigations": [
+        "Ensure timely patching of npm packages and dependencies",
+        "Revoke access to sensitive repositories and services for former employees",
+        "Implement multi-factor authentication and regular security audits"
+      ],
+      "telegram_snippet": "TanStack npm attack leads to copy of 170 private GitHub repos, highlighting supply chain attack risks and importance of timely patching and access revocation.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
+      "published_at": "2026-09-19T07:14:54+00:00"
+    },
+    {
+      "title": "WordPress Click2Shell Flaw Enables Theme Installs Without User Interaction",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "WordPress"
       ],
       "cve_ids": [
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Hackers exploited a server vulnerability to steal 23.6 million user records from Gyazo, a significant data breach that poses a high operational risk. The breach highlights the importance of regular security audits and patching to prevent similar incidents.",
-      "technical_breakdown": "The attackers exploited a server flaw to gain unauthorized access to Gyazo's database, allowing them to extract sensitive user information. The vulnerability was not publicly disclosed, and it is unclear how long it remained unpatched.",
+      "executive_summary": "A newly discovered WordPress vulnerability, known as Click2Shell, allows an attacker to install a theme from the official WordPress.org directory without user interaction, potentially leading to code execution. This flaw can be exploited by a logged-in administrator clicking a crafted web link.",
+      "technical_breakdown": "The Click2Shell flaw exploits a vulnerability in WordPress's theme installation process, allowing an attacker to install a theme without user interaction. This can be achieved by crafting a web link that, when clicked by a logged-in administrator, installs the theme.",
       "actionable_mitigations": [
-        "Ensure all software and systems are up-to-date with the latest security patches",
-        "Implement regular security audits to identify and address vulnerabilities",
-        "Monitor network traffic and system logs for suspicious activity"
+        "Update to the latest version of WordPress",
+        "Restrict theme installation to specific administrators",
+        "Monitor for suspicious theme installation activity"
       ],
-      "telegram_snippet": "Gyazo suffers data breach, 23.6 million user records stolen due to server vulnerability. Hackers exploited an undisclosed flaw to gain unauthorized access to sensitive user information.",
+      "telegram_snippet": "WordPress Click2Shell flaw enables theme installs without user interaction, potentially leading to code execution. Update to latest version and restrict theme installation to specific admins.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
+      "published_at": "2026-09-18T16:56:19+00:00"
+    },
+    {
+      "title": "Gyazo server flaw exploited to steal 23.6 million user records",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/",
-      "published_at": "2026-09-18T16:00:38+00:00"
-    },
-    {
-      "title": "Transparent Tribe Deploys New Rust Backdoor Using Private GitHub Repositories for C2",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
-      "published_at": "2026-09-18T15:24:16+00:00",
-      "threat_category": "Nation-State/APT",
+      "published_at": "2026-09-18T16:00:38+00:00",
+      "threat_category": "Data Breach",
       "severity": "HIGH",
-      "severity_score": 8.5,
+      "severity_score": 8.2,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -124,68 +182,14 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Transparent Tribe Deploys New Rust Backdoor Using Private GitHub Repositories for C2. The Pakistan-aligned threat group tracked as Transparent Tribe (aka APT36 and Earth Karkaddan) has been attributed to a fresh set of cyber attacks targeting government and defense entities in India and Afghanistan.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Gyazo server flaw exploited to steal 23.6 million user records. The Gyazo image-sharing platform has confirmed it suffered a data breach after hackers exploited a server vulnerability that allowed them to steal 23.6 million user records.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Transparent Tribe Deploys New Rust Backdoor Using Private GitHub Repositories for C2 \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
-      "published_at": "2026-09-19T06:24:10+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Linux"
-      ],
-      "cve_ids": [
-        "CVE-2025-39682"
-      ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild. The U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Linux. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild \u2014 Impacting Linux. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "HTTP QUERY Method: The Grey Zone Between GET And POST., (Fri, Sep 18th)",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/33352",
-      "published_at": "2026-09-19T04:51:46+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "HTTP QUERY Method: The Grey Zone Between GET And POST., (Fri, Sep 18th). In June 2026 the IETF published RFC 10008[1], defining a new HTTP method: \"QUERY\".",
-      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: HTTP QUERY Method: The Grey Zone Between GET And POST., (Fri, Sep 18th) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Gyazo server flaw exploited to steal 23.6 million user records \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Vectra AI Launches Ascent to Help Address New Era of AI-Driven Attacks",
@@ -201,13 +205,13 @@
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "Vectra AI has launched Ascent, a new program to address the growing demand for AI expertise and services in complex security environments. This move aims to help organizations combat AI-driven attacks.",
-      "technical_breakdown": "Ascent expands Vectra AI's partner strategy to provide broader AI expertise and security outcomes. The program addresses the increasing use of AI in security environments, creating a demand for specialized services.",
+      "technical_breakdown": "Ascent is designed to provide broader AI expertise and services to help organizations address the increasing complexity of security environments. This includes the growing use of AI in attacks, which requires specialized knowledge and skills to counter.",
       "actionable_mitigations": [
-        "Review and update AI-powered security solutions to ensure they are up-to-date with the latest threat intelligence",
-        "Implement AI-driven security measures to detect and prevent AI-driven attacks",
-        "Monitor and analyze AI-driven attack patterns to improve incident response"
+        "Review and update AI-powered security tools and services",
+        "Implement AI-driven threat detection and response strategies",
+        "Enhance cybersecurity training and awareness programs for AI-related threats"
       ],
-      "telegram_snippet": "Vectra AI launches Ascent to address AI-driven attacks, expanding its partner strategy to provide broader AI expertise and security outcomes.",
+      "telegram_snippet": "Vectra AI has launched Ascent, a new program to address AI-driven attacks in complex security environments, expanding its partner strategy and expertise in AI security.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/vectra-ai-launches-ascent-new-era-ai-driven-attacks",
       "published_at": "2026-09-18T20:24:51+00:00"
@@ -224,7 +228,7 @@
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "A recent survey found that organizations are rapidly deploying AI and autonomous systems, but their oversight and controls are not keeping pace, posing operational risks. This gap in oversight may lead to unforeseen consequences and security vulnerabilities.",
-      "technical_breakdown": "The survey highlights a lack of process and controls in place to manage the implementation of autonomous AI systems, which can lead to security vulnerabilities and unforeseen consequences. This is due to the rapid deployment of AI and autonomous systems without adequate oversight and controls.",
+      "technical_breakdown": "The survey highlights a lack of process and controls in place to manage the implementation of autonomous AI systems, which can lead to security vulnerabilities and unforeseen consequences. This is due to the rapid deployment of these systems without adequate oversight and controls.",
       "actionable_mitigations": [
         "Implement robust oversight and controls to manage AI and autonomous system deployment",
         "Conduct regular risk assessments to identify potential security vulnerabilities",
@@ -262,30 +266,30 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: MFA Won't Save You From OAuth Consent Abuse \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "New WordPress Click2Shell Flaw Forces Theme Installs, Can Chain to Code Execution",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
-      "published_at": "2026-09-18T16:56:19+00:00",
+      "title": "HTTP QUERY Method: The Grey Zone Between GET And POST",
       "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "severity": "LOW",
+      "severity_score": 2.5,
       "target_sectors": [
         "Enterprise",
-        "Critical Infrastructure"
+        "Government"
       ],
-      "affected_vendors": [
-        "General Industry"
+      "affected_vendors": [],
+      "cve_ids": [
+        "RFC 10008"
       ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "New WordPress Click2Shell Flaw Forces Theme Installs, Can Chain to Code Execution. WordPress today released patches to fix a new set of vulnerabilities in its core software, one of which could allow a crafted web link, opened by a logged-in administrator, to install a theme from the official WordPress.org directory without anyone clicking Install.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "The IETF published RFC 10008, defining a new HTTP method: \"QUERY\", which may blur the lines between GET and POST requests, potentially impacting web application security. However, the impact is currently low as the new method is still in its early stages.",
+      "technical_breakdown": "The new QUERY method is designed to provide a more flexible and expressive way of making HTTP requests, but its introduction may lead to confusion and potential security vulnerabilities if not properly implemented. The QUERY method is not yet widely supported and its adoption is still in its early stages.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Review and update web application security policies to account for the new QUERY method",
+        "Monitor for potential security vulnerabilities related to the QUERY method",
+        "Implement additional security controls to mitigate potential risks"
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New WordPress Click2Shell Flaw Forces Theme Installs, Can Chain to Code Execution \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "IETF publishes RFC 10008, introducing a new HTTP method: \"QUERY\", which may impact web application security, but the impact is currently low.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33352",
+      "published_at": "2026-09-19T04:51:46+00:00"
     }
   ]
 }
