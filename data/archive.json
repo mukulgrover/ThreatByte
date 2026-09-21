@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-21",
+    "top_headline": "Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors",
+    "total_incidents": 4,
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+  },
+  {
     "date": "2026-09-20",
     "top_headline": "North Korean WaterPlum hackers infected 30,000 devices worldwide",
     "total_incidents": 10,
