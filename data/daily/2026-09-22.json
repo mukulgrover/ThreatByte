@@ -1,86 +1,56 @@
 {
   "date": "2026-09-22",
-  "generated_at": "2026-09-22 07:57:31 UTC",
+  "generated_at": "2026-09-22 08:15:47 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 4,
-    "high_threats": 2,
-    "medium_threats": 3,
+    "critical_threats": 2,
+    "high_threats": 1,
+    "medium_threats": 7,
     "low_threats": 0,
-    "unique_cves_count": 6,
+    "unique_cves_count": 2,
     "unique_cves": [
-      "CVE-2023-0001",
-      "CVE-2023-0002",
-      "CVE-2023-0003",
       "CVE-2026-7273",
-      "CVE-2026-93485",
-      "Unknown"
+      "CVE-2026-93485"
     ],
     "top_affected_vendors": [
-      "WordPress",
-      "Meta",
+      "Zyxel",
+      "Veeam",
       "Clop",
       "BigCommerce",
-      "Linux kernel"
+      "Linux"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "Meta Muse Backdoor Vulnerability",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Meta"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A hidden setting in Meta's Muse AI assistant can be exploited by malware to take over the assistant, granting attackers broad access to the user's device. This vulnerability allows attackers to intercept voice commands intended for Meta, instead routing them to the attacker.",
-      "technical_breakdown": "The vulnerability works by changing a hidden setting in the Muse app, allowing malware to intercept voice commands and redirect them to the attacker. This is possible because the user has granted the app broad access, which can be exploited by malicious code.",
-      "actionable_mitigations": [
-        "Ensure Muse app is updated to the latest version",
-        "Review and revoke any unnecessary permissions granted to the Muse app",
-        "Implement network monitoring and detection for suspicious Muse app activity"
-      ],
-      "telegram_snippet": "Meta Muse AI assistant vulnerability allows malware to intercept voice commands, granting attackers broad access to user devices. Update Muse app and review permissions to mitigate risk.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
-      "published_at": "2026-09-22T06:33:57+00:00"
-    },
-    {
-      "title": "WordPress Comment2Shell Flaw Can Turn Anonymous Comment XSS Into RCE via Admin Session",
+      "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
       "threat_category": "Vulnerability / Advisory",
       "severity": "CRITICAL",
-      "severity_score": 9.0,
+      "severity_score": 8.8,
       "target_sectors": [
         "Enterprise",
         "Government"
       ],
       "affected_vendors": [
-        "WordPress"
+        "Zyxel",
+        "Veeam"
       ],
       "cve_ids": [
-        "CVE-2026-93485"
+        "CVE-2026-7273"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A newly discovered flaw in WordPress core allows an anonymous visitor to plant a hidden script on a page, which can run code on the site's server when an administrator later opens the page. WordPress has released a patch, tracked as CVE-2026-93485, to fix the issue.",
-      "technical_breakdown": "The flaw allows an anonymous visitor to leave a comment that contains a hidden script, which can be executed when a logged-in administrator views the page. The script can run code on the site's server, potentially leading to remote code execution.",
+      "executive_summary": "The U.S. CISA has added a now-patched security flaw impacting Zyxel GS1900 series switches to its Known Exploited Vulnerabilities catalog, citing evidence of active exploitation. This vulnerability allows for arbitrary operating system access.",
+      "technical_breakdown": "The vulnerability is a stack-based buffer overflow that could result in arbitrary operating system access. It is being actively exploited.",
       "actionable_mitigations": [
-        "Update to WordPress version 7.1.1 or later",
-        "Implement additional security measures to prevent XSS attacks"
+        "Apply the latest patches for Zyxel GS1900 series switches and Veeam products",
+        "Implement network segmentation and access controls to limit the attack surface",
+        "Monitor for suspicious activity and implement detection and log monitoring indicators"
       ],
-      "telegram_snippet": "WordPress has patched a critical flaw, tracked as CVE-2026-93485, that allowed anonymous comments to turn into RCE via admin session. Update to version 7.1.1 or later to mitigate the risk.",
+      "telegram_snippet": "CISA adds Zyxel and Veeam flaws to KEV catalog, citing active exploitation. Apply patches and monitor for suspicious activity to mitigate risk.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html",
-      "published_at": "2026-09-22T06:03:14+00:00"
+      "url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
+      "published_at": "2026-09-22T05:31:59+00:00"
     },
     {
       "title": "ShinyHunters Hacked Clop, Exposing Victims to Renewed Extortion",
@@ -96,68 +66,17 @@
       ],
       "cve_ids": [],
       "threat_actor": "ShinyHunters",
-      "executive_summary": "ShinyHunters hacked Clop's Dark Web site, potentially exposing organizations that paid ransoms to renewed extortion attempts. This incident highlights the ongoing threat of ransomware and the need for organizations to prioritize cybersecurity measures.",
+      "executive_summary": "ShinyHunters hacked Clop's Dark Web site, potentially exposing organizations that paid ransoms to renewed extortion attempts. This incident highlights the ongoing threat of ransomware and the need for organizations to prioritize cybersecurity.",
       "technical_breakdown": "ShinyHunters defaced Clop's Dark Web site, claiming to have stolen victim data. This incident demonstrates the vulnerability of ransomware groups to hacking and the potential for further exploitation.",
       "actionable_mitigations": [
-        "Implement robust cybersecurity measures to prevent future extortion attempts",
-        "Monitor for suspicious activity and adjust security protocols accordingly",
-        "Consider engaging with law enforcement and cybersecurity experts to mitigate potential risks"
+        "Review and update incident response plans to address potential renewed extortion attempts",
+        "Implement additional security measures to protect against future hacking attempts",
+        "Monitor for suspicious activity and adjust detection and log monitoring indicators"
       ],
-      "telegram_snippet": "ShinyHunters hacked Clop's Dark Web site, potentially exposing victims to renewed extortion attempts. Organizations must prioritize cybersecurity measures to prevent further exploitation.",
+      "telegram_snippet": "ShinyHunters hacked Clop's Dark Web site, potentially exposing victims to renewed extortion attempts. Organizations must review incident response plans and implement additional security measures to mitigate this risk.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/shinyhunters-hacked-clop-what-about-clops-victims",
       "published_at": "2026-09-21T20:07:56+00:00"
-    },
-    {
-      "title": "WordPress Click2Shell Flaw Lets Hackers Execute PHP on the Server",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "WordPress"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A new WordPress CSRF vulnerability, dubbed 'Click2Shell', allows hackers to execute PHP code on the server. This flaw affects the platform's Core component and has been publicly disclosed with a proof-of-concept exploit.",
-      "technical_breakdown": "The Click2Shell vulnerability is a CSRF issue that affects the WordPress Core component, allowing attackers to execute arbitrary PHP code on the server. A proof-of-concept exploit has been published, demonstrating the vulnerability's impact.",
-      "actionable_mitigations": [
-        "Update to the latest WordPress version",
-        "Implement a web application firewall (WAF) to block suspicious requests",
-        "Monitor server logs for signs of exploitation"
-      ],
-      "telegram_snippet": "WordPress Click2Shell flaw lets hackers execute PHP on the server. Update to latest version and implement WAF to mitigate.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/wordpress-click2shell-flaw-lets-hackers-execute-php-on-the-server/",
-      "published_at": "2026-09-21T18:23:11+00:00"
-    },
-    {
-      "title": "AI Agents Can Trigger Runaway Costs for Enterprises",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Unbounded consumption by AI agents can lead to runaway costs for enterprises, ranking sixth in OWASP's Top 10 for LLM Applications. This issue poses a significant operational risk, potentially impacting business continuity.",
-      "technical_breakdown": "AI agents can consume excessive resources, leading to uncontrolled costs due to the lack of proper budgeting and monitoring mechanisms. This issue is exacerbated by the complexity of modern cloud infrastructure and the difficulty in tracking resource utilization.",
-      "actionable_mitigations": [
-        "Implement robust budgeting and monitoring tools to track AI agent resource consumption",
-        "Set clear limits and quotas for AI agent usage to prevent unbounded consumption",
-        "Regularly review and optimize AI agent configurations to minimize resource utilization"
-      ],
-      "telegram_snippet": "AI agents can trigger runaway costs for enterprises due to unbounded consumption, posing a significant operational risk. Implement robust budgeting and monitoring tools to mitigate this issue.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/application-security/how-ai-agents-can-trigger-runaway-costs",
-      "published_at": "2026-09-21T21:39:59+00:00"
     },
     {
       "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
@@ -173,11 +92,11 @@
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "Attackers compromised credentials for third-party Ribon applications, allowing them to inject malicious scripts into online stores, resulting in data breaches for multiple BigCommerce merchants. This incident highlights the risk of third-party app vulnerabilities in ecommerce platforms.",
-      "technical_breakdown": "Attackers exploited compromised credentials for Ribon applications to inject malicious scripts into online stores, which were then used to steal sensitive data. The breach was likely facilitated by weak authentication and authorization controls for third-party apps.",
+      "technical_breakdown": "Attackers used compromised credentials to inject malicious scripts into online stores, exploiting the trust relationship between BigCommerce and its third-party Ribon applications. The root cause of the breach was the unauthorized access to Ribon application credentials.",
       "actionable_mitigations": [
-        "Ensure all third-party app credentials are rotated and updated regularly",
-        "Implement additional authentication and authorization controls for third-party apps",
-        "Monitor for suspicious activity and implement detection and log monitoring indicators"
+        "Verify the authenticity of third-party app credentials and monitor for suspicious activity",
+        "Implement additional security measures for third-party app access, such as multi-factor authentication",
+        "Regularly update and patch ecommerce platform and third-party app software"
       ],
       "telegram_snippet": "BigCommerce alerts merchants to data breaches linked to compromised Ribon app credentials, highlighting the risk of third-party app vulnerabilities in ecommerce platforms.",
       "source": "BleepingComputer",
@@ -185,13 +104,39 @@
       "published_at": "2026-09-21T21:18:49+00:00"
     },
     {
-      "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
+      "title": "One Hidden Meta Muse Setting Could Let Attackers Turn the AI Assistant Into a Backdoor",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
-      "published_at": "2026-09-22T05:31:59+00:00",
-      "threat_category": "Cloud & Supply Chain",
+      "url": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
+      "published_at": "2026-09-22T06:33:57+00:00",
+      "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
-      "severity_score": 7.2,
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "One Hidden Meta Muse Setting Could Let Attackers Turn the AI Assistant Into a Backdoor. Malware already running on a Mac can quietly take over Meta's Muse assistant and use the broad access its owner granted the app, security researcher Patrick Wardle has shown in a proof-of-concept released on September 21.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: One Hidden Meta Muse Setting Could Let Attackers Turn the AI Assistant Into a Backdoor \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "WordPress Comment2Shell Flaw Can Turn Anonymous Comment XSS Into RCE via Admin Session",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html",
+      "published_at": "2026-09-22T06:03:14+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -200,17 +145,17 @@
         "General Industry"
       ],
       "cve_ids": [
-        "CVE-2026-7273"
+        "CVE-2026-93485"
       ],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access. The U.S.",
+      "executive_summary": "WordPress Comment2Shell Flaw Can Turn Anonymous Comment XSS Into RCE via Admin Session. A new flaw in WordPress core let an anonymous visitor leave a comment that planted a hidden script on the page.",
       "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: WordPress Comment2Shell Flaw Can Turn Anonymous Comment XSS Into RCE via Admin Session \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "US Proposes AI Incident Alert System in Talks With China, Bessent Says",
@@ -225,11 +170,11 @@
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "The US government is proposing an AI incident alert system in talks with China, aiming to mitigate potential risks associated with AI development. This move comes as the US seeks to maintain its competitive edge in AI technology.",
-      "technical_breakdown": "The proposed system would provide real-time alerts on AI-related incidents, enabling swift response and mitigation. The system's effectiveness would depend on the quality of data sharing and collaboration between the US and China.",
+      "technical_breakdown": "The proposed alert system would provide real-time notifications of AI-related incidents, enabling swift response and mitigation. This system would help identify and address potential vulnerabilities in AI systems.",
       "actionable_mitigations": [
         "Implement AI-specific incident response plans",
-        "Enhance data sharing and collaboration with international partners",
-        "Monitor AI-related news and updates for potential security risks"
+        "Establish clear communication channels for AI-related incident reporting",
+        "Conduct regular AI system audits and vulnerability assessments"
       ],
       "telegram_snippet": "US proposes AI incident alert system in talks with China to mitigate potential risks and maintain competitive edge in AI technology.",
       "source": "SecurityWeek",
@@ -237,34 +182,56 @@
       "published_at": "2026-09-22T02:01:24+00:00"
     },
     {
-      "title": "CISA alerts of active exploitation of three Linux kernel flaws",
+      "title": "How AI Agents Can Trigger Runaway Costs for Enterprises",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/how-ai-agents-can-trigger-runaway-costs",
+      "published_at": "2026-09-21T21:39:59+00:00",
       "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL | HIGH | MEDIUM | LOW",
-      "severity_score": 9.0,
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Linux kernel"
+        "General Industry"
       ],
-      "cve_ids": [
-        "CVE-2023-0001",
-        "CVE-2023-0002",
-        "CVE-2023-0003"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Hackers are actively exploiting three Linux kernel vulnerabilities, one of which is critical, putting Linux systems at risk of compromise. Users are advised to apply patches and updates to mitigate the risk of exploitation.",
-      "technical_breakdown": "The vulnerabilities are being exploited through network attacks, allowing attackers to gain elevated privileges and execute arbitrary code. The root cause of the issue is a flaw in the Linux kernel's handling of certain system calls.",
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "How AI Agents Can Trigger Runaway Costs for Enterprises. Unbounded consumption is an issue that OWASP currently ranks sixth in its Top 10 for LLM Applications, and it could be an extremely costly one..",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Apply patches and updates for the affected Linux kernel versions",
-        "Implement network segmentation and isolation to contain the spread of the vulnerability",
-        "Monitor system logs for signs of exploitation and implement detection and response measures"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "CISA warns of active exploitation of three Linux kernel vulnerabilities, one critical, urging users to apply patches and updates to mitigate risk.",
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: How AI Agents Can Trigger Runaway Costs for Enterprises \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "CISA alerts of active exploitation of three Linux kernel flaws",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/",
-      "published_at": "2026-09-21T20:12:17+00:00"
+      "published_at": "2026-09-21T20:12:17+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Linux"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "CISA alerts of active exploitation of three Linux kernel flaws. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Linux. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: CISA alerts of active exploitation of three Linux kernel flaws \u2014 Impacting Linux. Immediate patching and log auditing recommended."
     },
     {
       "title": "Cybercriminals Are Hiding New Malware in Torrents for Popular Films",
@@ -291,6 +258,32 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Cybercriminals Are Hiding New Malware in Torrents for Popular Films \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "WordPress Click2Shell flaw lets hackers execute PHP on the server",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/wordpress-click2shell-flaw-lets-hackers-execute-php-on-the-server/",
+      "published_at": "2026-09-21T18:23:11+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "WordPress Click2Shell flaw lets hackers execute PHP on the server. Technical details and a proof-of-concept exploit have been published for a new WordPress cross-site request forgery (CSRF) vulnerability dubbed 'Click2Shell' that affects the platform's Core component.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: WordPress Click2Shell flaw lets hackers execute PHP on the server \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
