@@ -1,11 +1,11 @@
 {
   "date": "2026-09-23",
-  "generated_at": "2026-09-23 07:58:39 UTC",
+  "generated_at": "2026-09-23 08:18:03 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 4,
-    "high_threats": 6,
-    "medium_threats": 0,
+    "critical_threats": 2,
+    "high_threats": 3,
+    "medium_threats": 5,
     "low_threats": 0,
     "unique_cves_count": 1,
     "unique_cves": [
@@ -13,9 +13,6 @@
     ],
     "top_affected_vendors": [
       "F5 Networks",
-      "Next.js",
-      "FBI",
-      "Milj\u00f6data",
       "Microsoft"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
@@ -28,7 +25,8 @@
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
-        "Enterprise"
+        "Enterprise",
+        "Government"
       ],
       "affected_vendors": [
         "F5 Networks"
@@ -37,121 +35,43 @@
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Unauthenticated attackers are exploiting a critical zero-day vulnerability in F5 BIG-IP to achieve remote code execution, posing a significant risk to enterprise networks. Organizations using BIG-IP are advised to take immediate action to mitigate this vulnerability.",
-      "technical_breakdown": "Attackers can send malicious traffic to BIG-IP, which lacks authentication, allowing for remote code execution. The vulnerability is being actively exploited, making it a high-priority issue for affected organizations.",
+      "executive_summary": "Unauthenticated attackers are exploiting a critical zero-day vulnerability in F5 BIG-IP to achieve remote code execution, posing a significant risk to organizations relying on these devices. This vulnerability allows attackers to send malicious traffic to BIG-IP, bypassing authentication and executing arbitrary code.",
+      "technical_breakdown": "Attackers can send malicious traffic to BIG-IP, which is then executed by the device without authentication, allowing for remote code execution. The root cause of the vulnerability lies in the BIG-IP's handling of unauthenticated traffic.",
       "actionable_mitigations": [
-        "Apply the latest patches or software upgrades for BIG-IP",
+        "Apply patches or software upgrades as soon as possible",
         "Implement network containment or firewall rules to block malicious traffic",
         "Monitor logs for suspicious activity and implement detection indicators"
       ],
-      "telegram_snippet": "F5 BIG-IP zero-day vulnerability exploited for remote code execution; apply patches and monitor logs to mitigate risk.",
+      "telegram_snippet": "F5 BIG-IP zero-day vulnerability exploited for remote code execution, posing significant risk to organizations. Apply patches and monitor logs to mitigate the threat.",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/critical-f5-big-ip-vulnerability-exploited-as-zero-day/",
       "published_at": "2026-09-23T07:34:18+00:00"
     },
     {
       "title": "F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/",
+      "published_at": "2026-09-23T07:17:23+00:00",
       "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "F5 Networks"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "F5 Networks has released security updates to address a critical BIG-IP APM zero-day vulnerability being exploited in remote code execution attacks. The vulnerability allows attackers to execute arbitrary code on affected systems.",
-      "technical_breakdown": "The vulnerability is a zero-day flaw in the BIG-IP APM product, which allows attackers to execute arbitrary code on affected systems. The flaw is being exploited in remote code execution attacks.",
-      "actionable_mitigations": [
-        "Apply the latest security updates from F5 Networks",
-        "Implement network containment or firewall rules to block unauthorized access",
-        "Monitor system logs for suspicious activity and implement detection indicators"
-      ],
-      "telegram_snippet": "F5 Networks has released security updates to address a critical BIG-IP APM zero-day vulnerability being exploited in remote code execution attacks. Apply the latest security updates to protect your systems.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/",
-      "published_at": "2026-09-23T07:17:23+00:00"
-    },
-    {
-      "title": "Critical Next.js ImageResponse Flaw Can Lead to Server Code Execution via Crafted SVG Input",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Next.js"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A critical vulnerability in Next.js ImageResponse allows attackers to run code on a server via crafted SVG input, posing a significant risk when app values are controlled by an attacker. Vercel has fixed the flaw in version 13.1.0.",
-      "technical_breakdown": "The vulnerability occurs when an app puts values controlled by an attacker into the ImageResponse, allowing for server code execution. This is possible due to the lack of proper input validation in Next.js.",
-      "actionable_mitigations": [
-        "Upgrade to Next.js version 13.1.0 or later",
-        "Implement proper input validation for ImageResponse values",
-        "Monitor for suspicious ImageResponse requests"
-      ],
-      "telegram_snippet": "Critical Next.js ImageResponse flaw allows server code execution via crafted SVG input, fixed in version 13.1.0. Upgrade ASAP to prevent potential attacks.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html",
-      "published_at": "2026-09-23T07:04:40+00:00"
-    },
-    {
-      "title": "Rogue external MFA providers can steal passwords during logins",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Security researchers discovered an attack that allows hackers to steal passwords during legitimate login attempts by registering a rogue external MFA provider. This attack has significant operational risk, particularly for organizations that rely on external MFA services.",
-      "technical_breakdown": "The attack involves hackers with privileged access registering a rogue external MFA provider, which then intercepts and steals users' passwords during login attempts. This is achieved by exploiting the trust placed in external MFA providers.",
-      "actionable_mitigations": [
-        "Verify the authenticity of external MFA providers and ensure they are registered through approved channels",
-        "Implement additional authentication factors, such as biometric authentication or U2F keys",
-        "Monitor login attempts and detect anomalies indicative of this attack"
-      ],
-      "telegram_snippet": "Researchers discovered an attack that steals passwords during login attempts by registering a rogue external MFA provider. Organizations must verify external MFA providers and implement additional security measures to mitigate this risk.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-      "published_at": "2026-09-22T21:45:45+00:00"
-    },
-    {
-      "title": "ShinyHunters Claims FBI Hack, Demands Retraction of Threat Report",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Government"
-      ],
-      "affected_vendors": [
-        "FBI"
+        "General Industry"
       ],
       "cve_ids": [],
-      "threat_actor": "ShinyHunters",
-      "executive_summary": "ShinyHunters, a cybercrime group, claims to have hacked the FBI and is demanding a retraction of a threat report that they feel inaccurately describes them. The group threatens to leak stolen information if their demands are not met.",
-      "technical_breakdown": "The exact details of the hack are unclear, but ShinyHunters claims to have accessed sensitive information and is now using it to pressure the FBI into retracting the report. The group's motivations and potential next steps are unknown.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks. F5 has released security updates to address a critical BIG-IP APM zero-day vulnerability being exploited in remote code execution attacks.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Implement additional security measures to protect against similar attacks",
-        "Conduct a thorough review of existing threat reports to ensure accuracy",
-        "Monitor for potential leaks of stolen information"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "ShinyHunters claims to have hacked the FBI, demanding a retraction of a threat report and threatening to leak stolen information if their demands are not met.",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/shinyhunters-claims-fbi-hack-demands-retraction-of-threat-report/",
-      "published_at": "2026-09-23T07:13:49+00:00"
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants",
@@ -178,32 +98,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Sweden fines Milj\u00f6data $183,000 over breach affecting 2.2 million",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Government",
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "Milj\u00f6data"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Sweden's data privacy regulator, IMY, fined Milj\u00f6data $183,000 for inadequate security measures leading to a breach affecting 2.2 million people. The breach occurred in August 2025, highlighting the importance of robust security measures in protecting sensitive data.",
-      "technical_breakdown": "The breach was caused by inadequate security measures, which allowed unauthorized access to sensitive data. The incident highlights the need for regular security audits and vulnerability assessments to prevent similar breaches.",
-      "actionable_mitigations": [
-        "Conduct regular security audits and vulnerability assessments",
-        "Implement robust security measures to protect sensitive data",
-        "Monitor and analyze network logs for suspicious activity"
-      ],
-      "telegram_snippet": "Sweden's data privacy regulator fined Milj\u00f6data $183,000 for a breach affecting 2.2 million people due to inadequate security measures. The incident highlights the importance of robust security measures in protecting sensitive data.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/sweden-fines-milj-data-183-000-over-breach-affecting-22-million/",
-      "published_at": "2026-09-22T21:40:37+00:00"
     },
     {
       "title": "Relays Are Masking Chinese Access to Frontier AI Models in the US",
@@ -258,29 +152,134 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Chinese hackers exploit WordPress, Zyxel flaws to steal govt data \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Microsoft Disrupts EvilTokens Device Code Phishing Service",
-      "threat_category": "Phishing",
-      "severity": "HIGH",
-      "severity_score": 8.0,
+      "title": "ShinyHunters Claims FBI Hack, Demands Retraction of Threat Report",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/shinyhunters-claims-fbi-hack-demands-retraction-of-threat-report/",
+      "published_at": "2026-09-23T07:13:49+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
-        "Enterprise"
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "ShinyHunters Claims FBI Hack, Demands Retraction of Threat Report. The cybercrime group is unhappy with its description in an FBI report and threatens to leak stolen information.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: ShinyHunters Claims FBI Hack, Demands Retraction of Threat Report \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Critical Next.js ImageResponse Flaw Can Lead to Server Code Execution via Crafted SVG Input",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html",
+      "published_at": "2026-09-23T07:04:40+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Critical Next.js ImageResponse Flaw Can Lead to Server Code Execution via Crafted SVG Input. A new security vulnerability in Next.js could allow attackers to run code on a server via ImageResponse, the feature that generates Open Graph and other social preview images, Vercel said.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Critical Next.js ImageResponse Flaw Can Lead to Server Code Execution via Crafted SVG Input \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Rogue external MFA providers can steal passwords during logins",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+      "published_at": "2026-09-22T21:45:45+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Rogue external MFA providers can steal passwords during logins. Security researchers developed an attack that lets hackers with privileged access register a rogue external MFA provider that steals users' passwords during legitimate login attempts.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Rogue external MFA providers can steal passwords during logins \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Sweden fines Milj\u00f6data $183,000 over breach affecting 2.2 million",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/sweden-fines-milj-data-183-000-over-breach-affecting-22-million/",
+      "published_at": "2026-09-22T21:40:37+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Sweden fines Milj\u00f6data $183,000 over breach affecting 2.2 million. Sweden's data privacy regulator, IMY, has imposed a $183,000 (SEK 1.8 million) fine on IT systems provider Milj\u00f6data for inadequate security measures leading to a breach in August 2025 affecting 2.2 million people.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Sweden fines Milj\u00f6data $183,000 over breach affecting 2.2 million \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Microsoft Disrupts EvilTokens Device Code Phishing Service",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/identity-access-management-security/microsoft-disrupts-eviltokens-device-code-phishing-service",
+      "published_at": "2026-09-22T20:02:02+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
         "Microsoft"
       ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Microsoft disrupted a phishing-as-a-service platform targeting Microsoft 365 accounts, seizing 50 websites and disabling 150 domains. This operation mitigates the risk of compromised credentials and potential data breaches.",
-      "technical_breakdown": "The phishing platform used device code phishing tactics to target Microsoft 365 users, exploiting the trust in Microsoft's authentication process. Microsoft's disruption effort aimed to prevent further exploitation and protect user credentials.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Microsoft Disrupts EvilTokens Device Code Phishing Service. Microsoft seized 50 websites and disabled more than 150 domains as part of a coordinated disruption effort against a phishing-as-a-service platform ta.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Implement multi-factor authentication for all Microsoft 365 accounts",
-        "Regularly monitor and update Microsoft 365 security settings",
-        "Educate users on phishing tactics and best practices for secure authentication"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Microsoft disrupted a phishing-as-a-service platform targeting Microsoft 365 accounts, seizing 50 websites and disabling 150 domains to mitigate credential compromise and data breaches.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/identity-access-management-security/microsoft-disrupts-eviltokens-device-code-phishing-service",
-      "published_at": "2026-09-22T20:02:02+00:00"
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft Disrupts EvilTokens Device Code Phishing Service \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     }
   ]
 }
