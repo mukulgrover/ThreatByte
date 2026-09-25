@@ -1,11 +1,11 @@
 {
   "date": "2026-09-25",
-  "generated_at": "2026-09-25 08:06:35 UTC",
+  "generated_at": "2026-09-25 08:11:53 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 4,
-    "high_threats": 4,
-    "medium_threats": 2,
+    "critical_threats": 1,
+    "high_threats": 3,
+    "medium_threats": 6,
     "low_threats": 0,
     "unique_cves_count": 3,
     "unique_cves": [
@@ -14,11 +14,8 @@
       "Unknown"
     ],
     "top_affected_vendors": [
-      "WSO2",
-      "Adobe Commerce",
-      "OnePlus",
-      "OPPO",
-      "Roundcube"
+      "Cloudflare",
+      "Salesforce"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
@@ -36,124 +33,17 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Russia",
-      "executive_summary": "Russia is waging a hybrid cyber-physical war in Europe, targeting nations that support Ukraine with cyber sabotage, disinformation, and drone attacks, posing a significant operational risk to European nations.",
-      "technical_breakdown": "The attack involves a combination of cyber and physical components, including drone attacks and disinformation campaigns, which are likely being coordinated by Russia to disrupt European nations' support for Ukraine.",
+      "executive_summary": "Russia is waging a hybrid cyber-physical war in Europe, combining cyber sabotage, disinformation, and drone attacks to target nations supporting Ukraine. This multi-faceted approach poses a significant operational risk to European nations.",
+      "technical_breakdown": "The exploitation mechanics involve a combination of social engineering, malware, and drone-based attacks, with the root cause being Russia's desire to disrupt European support for Ukraine.",
       "actionable_mitigations": [
-        "Implement robust cybersecurity measures to protect against cyber sabotage",
-        "Enhance situational awareness and threat intelligence to detect and respond to disinformation campaigns",
-        "Implement drone detection and tracking systems to prevent physical attacks"
+        "Implement robust cybersecurity measures to prevent social engineering attacks",
+        "Enhance network defenses against malware and other cyber threats",
+        "Monitor drone activity and implement counter-drone measures"
       ],
-      "telegram_snippet": "Russia's hybrid cyber-physical war in Europe intensifies, targeting nations that support Ukraine with cyber sabotage, disinformation, and drone attacks.",
+      "telegram_snippet": "Russia's hybrid cyber-physical war in Europe combines cyber sabotage, disinformation, and drone attacks to target nations supporting Ukraine, posing a significant operational risk.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
       "published_at": "2026-09-25T07:00:00+00:00"
-    },
-    {
-      "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.8,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "WSO2",
-        "Adobe Commerce"
-      ],
-      "cve_ids": [
-        "CVE-2026-5430"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two critical security flaws impacting WSO2 and Adobe Commerce to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation. These vulnerabilities pose a significant risk to enterprise and government sectors.",
-      "technical_breakdown": "The vulnerabilities are a path traversal vulnerability in WSO2 API Control Plane and an unspecified flaw in Adobe Commerce and Magento. These flaws allow attackers to exploit sensitive data and disrupt operations.",
-      "actionable_mitigations": [
-        "Apply patches for CVE-2026-5430",
-        "Implement network containment and firewall rules",
-        "Monitor logs for suspicious activity"
-      ],
-      "telegram_snippet": "CISA adds WSO2 and Adobe Commerce flaws to KEV catalog due to active exploitation, posing significant risk to enterprise and government sectors.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
-      "published_at": "2026-09-25T04:46:34+00:00"
-    },
-    {
-      "title": "New Carbonato malware uses AI agents to hijack exposed Docker hosts",
-      "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Carbonato malware targets exposed Docker hosts to install the Hermes Agent AI framework, allowing attackers to take control. This botnet malware poses a significant threat to organizations with insecure Docker daemons.",
-      "technical_breakdown": "Carbonato malware exploits exposed Docker hosts by installing the Hermes Agent AI framework, which enables attackers to gain control over the compromised systems. The malware leverages AI agents to hijack the hosts, making it a sophisticated and challenging threat to detect.",
-      "actionable_mitigations": [
-        "Ensure Docker daemons are not exposed to the internet",
-        "Implement strict network segmentation and access controls",
-        "Monitor for suspicious AI-related activity and Hermes Agent framework indicators"
-      ],
-      "telegram_snippet": "Carbonato malware targets exposed Docker hosts to install AI-powered Hermes Agent framework, posing a significant threat to organizations with insecure Docker daemons.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
-      "published_at": "2026-09-24T20:10:48+00:00"
-    },
-    {
-      "title": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Consumer",
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "OnePlus",
-        "OPPO"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A researcher discovered two unpatched flaws in OnePlus's software that allow a malicious app to gain root access without permissions, posing a significant risk to device security. This vulnerability affects multiple OnePlus and OPPO devices running the latest OxygenOS.",
-      "technical_breakdown": "The researcher chained two flaws in OnePlus's software to gain root access, exploiting the lack of proper permission checks and allowing malicious apps to escalate privileges. The flaws are present in the latest OxygenOS version, making it a critical issue that requires immediate attention.",
-      "actionable_mitigations": [
-        "Ensure all devices are running the latest OxygenOS version, as patches may be available to address the flaws. Implement strict permission controls and monitor app installations for suspicious activity. Use a reputable antivirus app to scan for malware and update it regularly."
-      ],
-      "telegram_snippet": "Unpatched OnePlus flaws allow malicious apps to gain root access without permissions, affecting multiple devices running the latest OxygenOS. Users are advised to update their devices and monitor app installations for suspicious activity.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
-      "published_at": "2026-09-24T18:10:18+00:00"
-    },
-    {
-      "title": "Roundcube Webmail Vulnerability Exploited by Attackers",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Roundcube"
-      ],
-      "cve_ids": [
-        "CVE-2026-48842"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Attackers are exploiting an SQL injection vulnerability in Roundcube Webmail without authentication, posing a significant risk to organizations using the platform. This vulnerability can be exploited to gain unauthorized access to sensitive data.",
-      "technical_breakdown": "The vulnerability, tracked as CVE-2026-48842, is an SQL injection bug that can be exploited without authentication. This allows attackers to inject malicious SQL code, potentially leading to data theft or other malicious activities.",
-      "actionable_mitigations": [
-        "Apply the latest patches or updates for Roundcube Webmail",
-        "Implement authentication and access controls to prevent unauthorized access",
-        "Monitor logs and network traffic for suspicious activity"
-      ],
-      "telegram_snippet": "Roundcube Webmail vulnerability exploited by attackers, posing risk to organizations using the platform. Apply latest patches and monitor logs for suspicious activity.",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/",
-      "published_at": "2026-09-25T06:57:40+00:00"
     },
     {
       "title": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data",
@@ -161,7 +51,8 @@
       "severity": "HIGH",
       "severity_score": 8.0,
       "target_sectors": [
-        "Enterprise"
+        "Enterprise",
+        "Government"
       ],
       "affected_vendors": [
         "Cloudflare"
@@ -170,14 +61,13 @@
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A flaw in Cloudflare Containers allowed a paying customer to read data left behind by other customers on the same server, posing a risk to sensitive information. Cloudflare has since fixed the issue, but the incident highlights the importance of secure containerization.",
-      "technical_breakdown": "The flaw allowed a container to access disk space previously used by other containers, enabling the reading of leftover data. The issue was not related to live workloads, but rather the reuse of disk space.",
+      "executive_summary": "Cloudflare Containers had a flaw that allowed a paying customer to read leftover disk data from other customers' containers on the same server. This data was not from live workloads and the attacker could not choose whose data they got.",
+      "technical_breakdown": "The flaw occurred when earlier containers gave up disk space, leaving behind data that was not properly cleaned up. An attacker could exploit this by accessing the leftover disk space.",
       "actionable_mitigations": [
-        "Verify disk space usage and cleanup procedures for containers",
-        "Implement secure containerization practices to prevent data exposure",
-        "Regularly review and update container configurations to ensure security"
+        "Ensure proper cleanup of disk space after container usage",
+        "Implement access controls to restrict container access to shared disk space"
       ],
-      "telegram_snippet": "Cloudflare has fixed a flaw in its Containers that allowed customers to read leftover data from other customers' containers, highlighting the importance of secure containerization practices.",
+      "telegram_snippet": "Cloudflare fixed a flaw in its Containers that let a paying customer read leftover disk data from other customers' containers on the same server.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
       "published_at": "2026-09-25T04:49:22+00:00"
@@ -197,14 +87,14 @@
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Agentic AI exploits Salesforce agents to smuggle arbitrary instructions into trusted internal communications channels, enabling Slack phishing attacks. This vulnerability poses a significant operational risk to enterprises relying on Salesforce and Slack integrations.",
-      "technical_breakdown": "Agentic AI leverages Salesforce agents to inject malicious code into trusted internal communications channels, bypassing security controls. This allows attackers to phish employees through Slack, compromising sensitive information and potentially leading to further attacks.",
+      "executive_summary": "Agentic AI exploits Salesforce agents to smuggle arbitrary instructions into trusted internal communications channels, enabling Slack phishing. This attack vector poses a significant operational risk to enterprises.",
+      "technical_breakdown": "The attack leverages Salesforce agents to inject malicious code into trusted internal communications channels, bypassing security controls. This allows attackers to phish employees through Slack, compromising sensitive information.",
       "actionable_mitigations": [
         "Upgrade Salesforce agents to the latest version",
         "Implement strict network segmentation and access controls",
         "Monitor Slack communications for suspicious activity and implement detection and log monitoring indicators"
       ],
-      "telegram_snippet": "Salesforce agents exploited to enable Slack phishing attacks, posing significant operational risk to enterprises. Upgrade agents and implement strict security controls to mitigate this vulnerability.",
+      "telegram_snippet": "Salesforce agents exploited to enable Slack phishing, posing significant operational risk to enterprises. Upgrade agents and implement strict network segmentation to mitigate.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing",
       "published_at": "2026-09-24T21:04:03+00:00"
@@ -221,23 +111,79 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A new variant of the MacSync malware targets macOS systems, using public iCloud calendar events to deliver native payloads. This tactic allows the malware to bypass traditional security measures.",
-      "technical_breakdown": "The MacSync malware exploits public iCloud calendar events to deliver payloads, evading traditional security measures. This tactic leverages the trust inherent in public calendar events to spread malware.",
+      "executive_summary": "A new variant of the MacSync malware targets macOS systems, using public iCloud calendar events to deliver native payloads. This tactic increases the malware's stealth and evasion capabilities.",
+      "technical_breakdown": "The MacSync malware exploits public iCloud calendar events to deliver payloads, taking advantage of the platform's trust in calendar invitations. This allows the malware to bypass traditional security measures.",
       "actionable_mitigations": [
-        "Ensure all macOS systems are running the latest version of the operating system and software",
-        "Disable public iCloud calendar events on company devices",
-        "Implement additional security measures to monitor and block suspicious calendar events"
+        "Verify the authenticity of calendar invitations before accepting them",
+        "Implement strict access controls for iCloud calendars",
+        "Monitor for suspicious activity related to calendar events"
       ],
-      "telegram_snippet": "New MacSync malware variant uses public iCloud calendar events to deliver payloads on macOS systems, evading traditional security measures.",
+      "telegram_snippet": "New MacSync malware variant uses public iCloud calendars to deliver payloads, increasing stealth and evasion capabilities.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/macsync-malware-uses-public-icloud-calendars-to-deliver-new-payloads/",
       "published_at": "2026-09-24T20:53:35+00:00"
     },
     {
+      "title": "Roundcube Webmail Vulnerability in Attackers\u2019 Crosshairs",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/",
+      "published_at": "2026-09-25T06:57:40+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-48842"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Roundcube Webmail Vulnerability in Attackers\u2019 Crosshairs. Tracked as CVE-2026-48842, the exploited bug is an SQL injection that can be exploited without authentication.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Roundcube Webmail Vulnerability in Attackers\u2019 Crosshairs \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+      "published_at": "2026-09-25T04:46:34+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-5430"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
       "title": "Autonomous AI Hacks Raise Thorny Questions of Legal Accountability",
       "threat_category": "0-Day & Exploit",
       "severity": "MEDIUM",
-      "severity_score": 6.0,
+      "severity_score": 5.5,
       "target_sectors": [
         "Enterprise",
         "Government"
@@ -245,11 +191,11 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The rise of autonomous AI hacks raises questions about legal accountability, with lawsuits and criminal investigations possible but uncertain. The burden of proof in such cases is expected to be extremely high.",
-      "technical_breakdown": "Autonomous AI hacks exploit vulnerabilities in AI systems, often through unpatched software or misconfigured networks. The root cause of these hacks is often a combination of human error and system design flaws.",
+      "executive_summary": "The rise of autonomous AI hacks raises questions about legal accountability, with lawsuits and criminal investigations possible but uncertain. The burden of proof for such cases is expected to be extremely high.",
+      "technical_breakdown": "Autonomous AI hacks exploit vulnerabilities in AI systems, often through unpatched software or misconfigured networks. The root cause of these hacks is often the lack of clear regulations and guidelines for AI development and deployment.",
       "actionable_mitigations": [
         "Regularly update and patch AI software and systems",
-        "Implement robust network segmentation and access controls",
+        "Implement robust network security measures, including firewalls and intrusion detection systems",
         "Monitor AI system logs for suspicious activity"
       ],
       "telegram_snippet": "Autonomous AI hacks raise questions about legal accountability, with lawsuits and investigations possible but uncertain due to high burden of proof.",
@@ -282,6 +228,58 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SectopRAT Returns, Hiding Inside a Legitimate Application \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "New Carbonato malware uses AI agents to hijack exposed Docker hosts",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
+      "published_at": "2026-09-24T20:10:48+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "New Carbonato malware uses AI agents to hijack exposed Docker hosts. A new botnet malware called Carbonato is targeting insecure hosts running Docker daemons to install the Hermes Agent AI framework and take control.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New Carbonato malware uses AI agents to hijack exposed Docker hosts \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
+      "published_at": "2026-09-24T18:10:18+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions. A OnePlus 15 running the latest OxygenOS can be rooted by a malicious app the owner installs, one that asks for no special permissions.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
