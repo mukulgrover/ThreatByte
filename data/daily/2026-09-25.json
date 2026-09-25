@@ -1,21 +1,24 @@
 {
   "date": "2026-09-25",
-  "generated_at": "2026-09-25 08:11:53 UTC",
+  "generated_at": "2026-09-25 08:32:58 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 1,
-    "high_threats": 3,
-    "medium_threats": 6,
+    "critical_threats": 4,
+    "high_threats": 1,
+    "medium_threats": 5,
     "low_threats": 0,
-    "unique_cves_count": 3,
+    "unique_cves_count": 4,
     "unique_cves": [
       "CVE-2026-48842",
       "CVE-2026-5430",
-      "Unknown"
+      "Unknown",
+      "Unknown / Unattributed"
     ],
     "top_affected_vendors": [
-      "Cloudflare",
-      "Salesforce"
+      "Salesforce",
+      "Unknown / Unattributed",
+      "OnePlus",
+      "OPPO"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
@@ -34,49 +37,22 @@
       "cve_ids": [],
       "threat_actor": "Russia",
       "executive_summary": "Russia is waging a hybrid cyber-physical war in Europe, combining cyber sabotage, disinformation, and drone attacks to target nations supporting Ukraine. This multi-faceted approach poses a significant operational risk to European nations.",
-      "technical_breakdown": "The exploitation mechanics involve a combination of social engineering, malware, and drone-based attacks, with the root cause being Russia's desire to disrupt European support for Ukraine.",
+      "technical_breakdown": "The exploitation mechanics involve a combination of social engineering, malware, and drone-based attacks, while the root cause is Russia's desire to disrupt European support for Ukraine.",
       "actionable_mitigations": [
         "Implement robust cybersecurity measures to prevent social engineering attacks",
         "Enhance network defenses against malware and other cyber threats",
         "Monitor drone activity and implement counter-drone measures"
       ],
-      "telegram_snippet": "Russia's hybrid cyber-physical war in Europe combines cyber sabotage, disinformation, and drone attacks to target nations supporting Ukraine, posing a significant operational risk.",
+      "telegram_snippet": "Russia's hybrid cyber-physical war in Europe escalates, combining cyber sabotage, disinformation, and drone attacks to target nations supporting Ukraine, posing a significant operational risk.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
       "published_at": "2026-09-25T07:00:00+00:00"
     },
     {
-      "title": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Cloudflare"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Cloudflare Containers had a flaw that allowed a paying customer to read leftover disk data from other customers' containers on the same server. This data was not from live workloads and the attacker could not choose whose data they got.",
-      "technical_breakdown": "The flaw occurred when earlier containers gave up disk space, leaving behind data that was not properly cleaned up. An attacker could exploit this by accessing the leftover disk space.",
-      "actionable_mitigations": [
-        "Ensure proper cleanup of disk space after container usage",
-        "Implement access controls to restrict container access to shared disk space"
-      ],
-      "telegram_snippet": "Cloudflare fixed a flaw in its Containers that let a paying customer read leftover disk data from other customers' containers on the same server.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
-      "published_at": "2026-09-25T04:49:22+00:00"
-    },
-    {
       "title": "Salesbleed Exploits Salesforce Agents to Enable Slack Phishing",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "HIGH",
-      "severity_score": 8.2,
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
       "target_sectors": [
         "Enterprise"
       ],
@@ -87,17 +63,73 @@
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Agentic AI exploits Salesforce agents to smuggle arbitrary instructions into trusted internal communications channels, enabling Slack phishing. This attack vector poses a significant operational risk to enterprises.",
-      "technical_breakdown": "The attack leverages Salesforce agents to inject malicious code into trusted internal communications channels, bypassing security controls. This allows attackers to phish employees through Slack, compromising sensitive information.",
+      "executive_summary": "Agentic AI can smuggle arbitrary instructions from the Web, across multiple apps, into trusted internal communications channels, enabling Slack phishing. This exploit compromises Salesforce agents, posing a significant threat to enterprise security.",
+      "technical_breakdown": "The Salesbleed exploit leverages Salesforce agents to inject malicious code into trusted internal communications channels, allowing attackers to smuggle arbitrary instructions from the Web. This is achieved by exploiting the integration between Salesforce and Slack.",
       "actionable_mitigations": [
         "Upgrade Salesforce agents to the latest version",
         "Implement strict network segmentation and access controls",
         "Monitor Slack communications for suspicious activity and implement detection and log monitoring indicators"
       ],
-      "telegram_snippet": "Salesforce agents exploited to enable Slack phishing, posing significant operational risk to enterprises. Upgrade agents and implement strict network segmentation to mitigate.",
+      "telegram_snippet": "Salesforce agents exploited to enable Slack phishing, compromising enterprise security. Upgrade agents and implement strict network controls to mitigate risk.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing",
       "published_at": "2026-09-24T21:04:03+00:00"
+    },
+    {
+      "title": "SectopRAT Returns, Hiding Inside a Legitimate Application",
+      "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [
+        "Unknown / Unattributed"
+      ],
+      "cve_ids": [
+        "Unknown / Unattributed"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "SectopRAT, a remote access Trojan, has been found hiding inside a legitimate application, highlighting the importance of monitoring application behavior to prevent attacks. This tactic allows attackers to bypass traditional security measures and gain unauthorized access to sensitive data.",
+      "technical_breakdown": "SectopRAT uses social engineering tactics to trick users into installing the malware, which is then hidden inside a legitimate application. Once installed, the malware allows attackers to remotely access and control the compromised system, enabling them to steal sensitive data or disrupt operations.",
+      "actionable_mitigations": [
+        "Implement behavior-based monitoring to detect and block suspicious application activity",
+        "Use endpoint detection and response (EDR) tools to identify and contain malware",
+        "Enforce strict software validation and whitelisting policies to prevent malicious applications from running"
+      ],
+      "telegram_snippet": "SectopRAT, a remote access Trojan, has been found hiding inside a legitimate application, highlighting the importance of monitoring application behavior to prevent attacks.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application",
+      "published_at": "2026-09-24T20:32:50+00:00"
+    },
+    {
+      "title": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
+      "target_sectors": [
+        "Consumer",
+        "Enterprise"
+      ],
+      "affected_vendors": [
+        "OnePlus",
+        "OPPO"
+      ],
+      "cve_ids": [
+        "Unknown"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A researcher discovered two unpatched flaws in OnePlus's software that allow a malicious app to gain root access without special permissions, posing a significant risk to users. This vulnerability affects multiple OnePlus and OPPO devices running the latest OxygenOS.",
+      "technical_breakdown": "The researcher chained two flaws in OnePlus's software to gain root access, exploiting a lack of proper permission checks and a vulnerability in the company's own software. This allowed the malicious app to bypass security restrictions and gain the highest level of control over the device.",
+      "actionable_mitigations": [
+        "Ensure all software is up-to-date, including OxygenOS and installed apps",
+        "Use a reputable antivirus app to scan for malware",
+        "Enable the 'Verify apps' setting to scan apps for malware before installation"
+      ],
+      "telegram_snippet": "Unpatched OnePlus flaws allow malicious apps to gain root access without permissions, affecting multiple devices running OxygenOS. Users are advised to keep software up-to-date and enable 'Verify apps' to mitigate the risk.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
+      "published_at": "2026-09-24T18:10:18+00:00"
     },
     {
       "title": "MacSync malware uses public iCloud calendars to deliver new payloads",
@@ -111,14 +143,14 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A new variant of the MacSync malware targets macOS systems, using public iCloud calendar events to deliver native payloads. This tactic increases the malware's stealth and evasion capabilities.",
-      "technical_breakdown": "The MacSync malware exploits public iCloud calendar events to deliver payloads, taking advantage of the platform's trust in calendar invitations. This allows the malware to bypass traditional security measures.",
+      "executive_summary": "A new variant of the MacSync malware targets macOS systems, using public iCloud calendar events to deliver native payloads. This tactic allows the malware to bypass traditional security measures.",
+      "technical_breakdown": "The malware exploits public iCloud calendar events to deliver payloads, evading traditional security measures. This tactic leverages the trust inherent in public calendar events to spread malware.",
       "actionable_mitigations": [
-        "Verify the authenticity of calendar invitations before accepting them",
-        "Implement strict access controls for iCloud calendars",
-        "Monitor for suspicious activity related to calendar events"
+        "Verify iCloud calendar event permissions and access controls",
+        "Monitor for suspicious calendar event creations",
+        "Implement additional security measures to detect and block malware delivery"
       ],
-      "telegram_snippet": "New MacSync malware variant uses public iCloud calendars to deliver payloads, increasing stealth and evasion capabilities.",
+      "telegram_snippet": "New MacSync malware variant uses public iCloud calendars to deliver payloads, targeting macOS systems and evading traditional security measures.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/macsync-malware-uses-public-icloud-calendars-to-deliver-new-payloads/",
       "published_at": "2026-09-24T20:53:35+00:00"
@@ -152,6 +184,32 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Roundcube Webmail Vulnerability in Attackers\u2019 Crosshairs \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
+      "title": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
+      "published_at": "2026-09-25T04:49:22+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data. A flaw in Cloudflare Containers let a paying customer read data that other customers' containers had left behind on the same server, Cloudflare and the researchers who found it said on Thursday.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
       "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
@@ -183,7 +241,7 @@
       "title": "Autonomous AI Hacks Raise Thorny Questions of Legal Accountability",
       "threat_category": "0-Day & Exploit",
       "severity": "MEDIUM",
-      "severity_score": 5.5,
+      "severity_score": 6.0,
       "target_sectors": [
         "Enterprise",
         "Government"
@@ -191,43 +249,17 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The rise of autonomous AI hacks raises questions about legal accountability, with lawsuits and criminal investigations possible but uncertain. The burden of proof for such cases is expected to be extremely high.",
-      "technical_breakdown": "Autonomous AI hacks exploit vulnerabilities in AI systems, often through unpatched software or misconfigured networks. The root cause of these hacks is often the lack of clear regulations and guidelines for AI development and deployment.",
+      "executive_summary": "The rise of autonomous AI hacks raises questions about legal accountability, with lawsuits and criminal investigations possible but uncertain. The burden of proof in such cases is expected to be extremely high.",
+      "technical_breakdown": "The hacks are attributed to autonomous AI systems, which raises questions about the role of human intent and the definition of a 'hacker'. The lack of clear regulations and laws governing AI-powered attacks complicates the investigation and prosecution process.",
       "actionable_mitigations": [
-        "Regularly update and patch AI software and systems",
-        "Implement robust network security measures, including firewalls and intrusion detection systems",
-        "Monitor AI system logs for suspicious activity"
+        "Review and update incident response plans to address AI-powered attacks",
+        "Implement robust logging and monitoring to detect and respond to autonomous AI hacks",
+        "Stay informed about emerging regulations and laws related to AI-powered attacks"
       ],
       "telegram_snippet": "Autonomous AI hacks raise questions about legal accountability, with lawsuits and investigations possible but uncertain due to high burden of proof.",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/autonomous-ai-hacks-raise-thorny-questions-of-legal-accountability/",
       "published_at": "2026-09-24T20:35:21+00:00"
-    },
-    {
-      "title": "SectopRAT Returns, Hiding Inside a Legitimate Application",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application",
-      "published_at": "2026-09-24T20:32:50+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "SectopRAT Returns, Hiding Inside a Legitimate Application. The latest activity from the remote access Trojan (RAT) shows why organizations should monitor the behavior of applications rather than blindly trusti.",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SectopRAT Returns, Hiding Inside a Legitimate Application \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "New Carbonato malware uses AI agents to hijack exposed Docker hosts",
@@ -254,32 +286,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New Carbonato malware uses AI agents to hijack exposed Docker hosts \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
-      "published_at": "2026-09-24T18:10:18+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions. A OnePlus 15 running the latest OxygenOS can be rooted by a malicious app the owner installs, one that asks for no special permissions.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
