@@ -1,55 +1,54 @@
 {
   "date": "2026-09-27",
-  "generated_at": "2026-09-27 08:34:34 UTC",
+  "generated_at": "2026-09-27 08:57:35 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 4,
-    "high_threats": 1,
-    "medium_threats": 4,
+    "high_threats": 2,
+    "medium_threats": 3,
     "low_threats": 1,
-    "unique_cves_count": 2,
+    "unique_cves_count": 3,
     "unique_cves": [
       "CVE-2026-35273",
+      "N/A",
       "Unknown"
     ],
     "top_affected_vendors": [
-      "Oracle",
       "Citrix",
+      "Oracle",
       "AMD",
-      "Microsoft",
-      "OpenAI"
+      "Google",
+      "Microsoft"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
+      "title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
+      "published_at": "2026-09-27T07:47:57+00:00",
       "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
         "Citrix"
       ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Two unpatched zero-day vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway appliances are being actively exploited, allowing remote code execution. Citrix has not confirmed the flaws or published a fix, prompting some administrators to take appliances offline.",
-      "technical_breakdown": "The vulnerabilities allow remote code execution through unspecified attack vectors, with Citrix appliances being taken offline to prevent exploitation. The root cause of the issue is the presence of unpatched zero-day vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway appliances.",
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation. Two new unpatched zero-day vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway appliances that allow remote code execution are being actively exploited in the wild, security firm watchTowr said on September 26.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Citrix. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Take Citrix appliances offline until a patch is available",
-        "Implement network segmentation and isolation",
-        "Monitor for suspicious activity and implement detection and log monitoring indicators"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Two unpatched Citrix NetScaler zero-day vulnerabilities are being actively exploited, allowing remote code execution. Citrix has not confirmed the flaws or published a fix, prompting some administrators to take appliances offline.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
-      "published_at": "2026-09-27T07:47:57+00:00"
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation \u2014 Impacting Citrix. Immediate patching and log auditing recommended."
     },
     {
       "title": "ShinyHunters uses WAF bypass trick in Oracle PeopleSoft attacks",
@@ -66,14 +65,14 @@
         "CVE-2026-35273"
       ],
       "threat_actor": "ShinyHunters",
-      "executive_summary": "ShinyHunters is exploiting the Oracle PeopleSoft CVE-2026-35273 flaw by bypassing web application firewall rules using a URL-encoding trick, allowing them to compromise vulnerable servers. This attack poses a significant operational risk to organizations that have not patched the vulnerability.",
+      "executive_summary": "ShinyHunters is exploiting the Oracle PeopleSoft CVE-2026-35273 flaw by bypassing web application firewall rules using a URL-encoding trick, allowing them to compromise vulnerable servers. This attack poses a significant operational risk to organizations using Oracle PeopleSoft.",
       "technical_breakdown": "The ShinyHunters gang is using a URL-encoding trick to bypass WAF rules, allowing them to exploit the Oracle PeopleSoft CVE-2026-35273 flaw. This trick enables the threat actors to evade detection and compromise vulnerable servers.",
       "actionable_mitigations": [
-        "Apply the patch for CVE-2026-35273 to Oracle PeopleSoft servers",
-        "Implement URL-encoding filtering on WAF rules",
-        "Monitor for suspicious activity and log anomalies related to the CVE-2026-35273 flaw"
+        "Apply the patch for CVE-2026-35273 as soon as possible",
+        "Review and update WAF rules to prevent URL-encoding tricks",
+        "Monitor for suspicious activity and implement detection and log monitoring indicators"
       ],
-      "telegram_snippet": "ShinyHunters is exploiting the Oracle PeopleSoft CVE-2026-35273 flaw by bypassing WAF rules using a URL-encoding trick, posing a significant operational risk to unpatched servers.",
+      "telegram_snippet": "ShinyHunters is exploiting the Oracle PeopleSoft CVE-2026-35273 flaw by bypassing WAF rules using a URL-encoding trick, posing a significant operational risk to vulnerable organizations.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
       "published_at": "2026-09-26T19:03:34+00:00"
@@ -94,45 +93,72 @@
         "Unknown"
       ],
       "threat_actor": "Lunex",
-      "executive_summary": "The Lunex Stealer malware is abusing AMD drivers to disable security monitoring and steal browser credentials from Ukrainian-speaking users. This is part of a four-stage attack chain distributed via compromised Ukrainian websites.",
-      "technical_breakdown": "The attack chain begins with a fake CAPTCHA page and uses ClickFix-style Cloudflare verification checks to distribute the Psychedelic Stealer malware. The malware then abuses AMD drivers to disable security monitoring and steal browser credentials.",
+      "executive_summary": "The Lunex Stealer malware targets Ukrainian-speaking users via a four-stage attack chain, abusing AMD drivers to disable security monitoring and steal browser credentials. This activity is part of a wider malware-as-a-service (MaaS) platform.",
+      "technical_breakdown": "The attack chain begins with a fake CAPTCHA page and uses ClickFix-style Cloudflare verification checks to distribute the Psychedelic Stealer malware via compromised Ukrainian websites. The malware then exploits AMD drivers to disable security monitoring and steal browser credentials.",
       "actionable_mitigations": [
         "Ensure AMD drivers are up-to-date and patched",
-        "Implement network containment or firewall rules to block suspicious traffic",
-        "Monitor for detection and log monitoring indicators related to the Lunex Stealer malware"
+        "Implement additional security monitoring and logging to detect potential exploitation",
+        "Monitor for suspicious Cloudflare verification checks and CAPTCHA pages"
       ],
-      "telegram_snippet": "Lunex Stealer malware abuses AMD drivers to disable security monitoring and steal browser credentials from Ukrainian-speaking users via compromised websites.",
+      "telegram_snippet": "Lunex Stealer malware targets Ukrainian-speaking users via a four-stage attack chain, abusing AMD drivers to disable security monitoring and steal browser credentials. Update AMD drivers and implement additional security measures to mitigate the risk.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
       "published_at": "2026-09-26T18:22:52+00:00"
     },
     {
       "title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
+      "published_at": "2026-09-26T11:46:40+00:00",
       "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
-      "severity_score": 9.8,
+      "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Oracle"
+        "Google"
       ],
       "cve_ids": [
         "CVE-2026-35273"
       ],
-      "threat_actor": "ShinyHunters-linked",
-      "executive_summary": "Attackers are exploiting a critical security vulnerability in Oracle PeopleSoft to deploy web shells, bypassing WAFs and targeting multiple sectors globally. This campaign involves the weaponization of CVE-2026-35273, a zero-day vulnerability with a CVSS score of 9.8.",
-      "technical_breakdown": "The vulnerability allows for unauthenticated remote code execution, enabling attackers to deploy web shells and gain unauthorized access to systems. The exploit is being used to target multiple sectors globally, with WAFs being bypassed to facilitate the attack.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells. Google is warning of renewed mass exploitation of a known security vulnerability in Oracle PeopleSoft as part of a campaign targeting multiple sectors globally.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Apply the patch for CVE-2026-35273 as soon as possible",
-        "Implement network containment and firewall rules to block suspicious traffic",
-        "Monitor logs and detection systems for indicators of the exploit"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "ShinyHunters-linked attackers are exploiting CVE-2026-35273 in Oracle PeopleSoft to deploy web shells, targeting multiple sectors globally with a CVSS score of 9.8.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
-      "published_at": "2026-09-26T11:46:40+00:00"
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells \u2014 Impacting Google. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Microsoft pauses KB5002907 update after Office license deactivations",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [
+        "N/A"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Microsoft has paused the rollout of the KB5002907 update after users reported that it deactivated or removed perpetual Office 2016 and Office 2019 installations. This issue poses a significant operational risk to organizations relying on these Office versions.",
+      "technical_breakdown": "The KB5002907 update appears to have triggered a license deactivation mechanism, leading to the removal of Office 2016 and Office 2019 installations. The root cause is likely related to the update's interaction with Microsoft's licensing system.",
+      "actionable_mitigations": [
+        "Do not install the KB5002907 update until further notice",
+        "Verify Office license status before applying updates",
+        "Monitor for similar issues with other Microsoft updates"
+      ],
+      "telegram_snippet": "Microsoft pauses KB5002907 update after reports of Office license deactivations, posing operational risk to organizations relying on Office 2016 and Office 2019.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
+      "published_at": "2026-09-26T15:50:38+00:00"
     },
     {
       "title": "New x47.c Windows Botnet Weaponizes xAI Grok, AI API Draining",
@@ -145,14 +171,14 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A new Windows botnet leverages AI to maintain persistence, using xAI Grok to choose from predefined actions, posing a significant threat to enterprise networks. The botnet's AI-driven approach makes it challenging to detect and mitigate.",
-      "technical_breakdown": "The botnet relies on xAI Grok, an AI API, to select from predefined actions, allowing it to adapt and evade detection. This AI-driven approach enables the botnet to maintain persistence and evade traditional security measures.",
+      "executive_summary": "A new Windows botnet leverages AI to maintain persistence, posing a significant threat to enterprise networks. The botnet uses xAI Grok to choose from predefined actions, making it difficult to detect and mitigate.",
+      "technical_breakdown": "The botnet relies on xAI Grok, an AI API, to select from a set of predefined actions, allowing it to adapt and evade detection. This AI-driven approach enables the botnet to maintain persistence and evade traditional security measures.",
       "actionable_mitigations": [
-        "Implement xAI Grok API restrictions and access controls",
+        "Implement AI-powered threat detection and response solutions",
         "Monitor network traffic for suspicious AI-driven activity",
-        "Implement AI-powered threat detection and response tools"
+        "Update Windows systems with the latest security patches"
       ],
-      "telegram_snippet": "New Windows botnet uses AI to maintain persistence, posing a significant threat to enterprise networks. AI-driven approach makes detection and mitigation challenging.",
+      "telegram_snippet": "New Windows botnet uses AI to maintain persistence, posing a significant threat to enterprise networks. Botnet leverages xAI Grok to choose from predefined actions, making it difficult to detect and mitigate.",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
       "published_at": "2026-09-26T12:00:00+00:00"
@@ -184,32 +210,6 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Claude Opus 5.5 uses 95% fewer em dashes, but its answers are getting longer \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Microsoft pauses KB5002907 update after Office license deactivations",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
-      "published_at": "2026-09-26T15:50:38+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft pauses KB5002907 update after Office license deactivations. Microsoft has paused the rollout of the KB5002907 Microsoft 365 update after users report that it deactivated, or in some cases completely removed, perpetual Office 2016 and Office 2019 installations.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft pauses KB5002907 update after Office license deactivations \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
-    },
-    {
       "title": "GitHub Actions re-enabled with Mini Shai-Hulud payload still active",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/",
@@ -236,35 +236,36 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: GitHub Actions re-enabled with Mini Shai-Hulud payload still active \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "OpenAI's AI Agents Accidentally Upload User-Provided Images to Third-Party Sites",
-      "threat_category": "Data Breach",
-      "severity": "MEDIUM",
-      "severity_score": 6.2,
-      "target_sectors": [
-        "Technology"
-      ],
-      "affected_vendors": [
-        "OpenAI"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "OpenAI's AI agents inadvertently uploaded user-provided images to third-party image-hosting services, potentially exposing sensitive data. This incident highlights the risks of AI systems interacting with external services without proper controls.",
-      "technical_breakdown": "The AI agents were designed to carry out research and evaluation tasks, which involved uploading images to third-party services for processing. However, the agents did not have adequate controls to prevent the upload of sensitive data.",
-      "actionable_mitigations": [
-        "Review and update AI system configurations to prevent unauthorized data uploads",
-        "Implement additional controls to ensure sensitive data is not shared with third-party services",
-        "Monitor AI system logs for suspicious activity"
-      ],
-      "telegram_snippet": "OpenAI's AI agents accidentally uploaded user-provided images to third-party sites, potentially exposing sensitive data. Incident highlights risks of AI systems interacting with external services without proper controls.",
+      "title": "OpenAI's AI agents accidentally uploaded user-provided images to third-party sites",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
-      "published_at": "2026-09-26T12:28:41+00:00"
+      "published_at": "2026-09-26T12:28:41+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "OpenAI's AI agents accidentally uploaded user-provided images to third-party sites. OpenAI says its AI agents uploaded user-provided images to third-party image-hosting services while carrying out research and evaluation tasks.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI's AI agents accidentally uploaded user-provided images to third-party sites \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "US and China Agree to Establish AI Safety Channel",
       "threat_category": "Nation-State/APT",
       "severity": "LOW",
-      "severity_score": 2.5,
+      "severity_score": 2.0,
       "target_sectors": [
         "Government",
         "Enterprise"
@@ -272,13 +273,14 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The US and China have agreed to establish a communication mechanism for AI-related incidents, aiming to prevent potential security risks. This move is part of ongoing trade and military talks between the two nations.",
-      "technical_breakdown": "The AI safety channel will serve as a platform for the US and China to share information and coordinate responses to potential AI-related security incidents. This initiative is expected to enhance cooperation and trust between the two nations.",
+      "executive_summary": "The US and China agreed to establish a communication mechanism for AI-related incidents, aiming to prevent potential security risks. This move is part of ongoing trade and military talks between the two nations.",
+      "technical_breakdown": "The agreement focuses on setting up a channel for reporting and addressing AI-related incidents, with the goal of preventing potential security risks. The exact mechanics of the channel are not specified.",
       "actionable_mitigations": [
-        "Monitor AI-related security updates and advisories from both US and Chinese authorities",
-        "Implement robust incident response plans for AI-related security incidents"
+        "Review and update incident response plans to include AI-related incidents",
+        "Establish clear communication channels with international partners",
+        "Monitor AI-related security advisories and updates"
       ],
-      "telegram_snippet": "US and China agree to establish AI safety channel to prevent potential AI-related security risks, as part of ongoing trade and military talks.",
+      "telegram_snippet": "US and China agree to establish AI safety channel to prevent potential security risks from AI-related incidents.",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
       "published_at": "2026-09-26T18:09:28+00:00"
