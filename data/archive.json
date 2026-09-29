@@ -1,9 +1,9 @@
 [
   {
     "date": "2026-09-29",
-    "top_headline": "Apple patches CoreGraphics zero-day flaw exploited in attacks",
+    "top_headline": "Kiteworks patches critical flaw, brings customer systems online",
     "total_incidents": 10,
-    "critical_threats": 3,
+    "critical_threats": 4,
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
   },
   {
