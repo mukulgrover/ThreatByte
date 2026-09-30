@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-30",
+    "top_headline": "South Africa Seeks Help After Cyberattack Targets Air Traffic Control",
+    "total_incidents": 10,
+    "critical_threats": 5,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-09-29",
     "top_headline": "Kiteworks patches critical flaw, brings customer systems online",
     "total_incidents": 10,
