@@ -1,67 +1,37 @@
 {
   "date": "2026-09-30",
-  "generated_at": "2026-09-30 09:01:43 UTC",
+  "generated_at": "2026-09-30 09:20:36 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 3,
-    "high_threats": 0,
-    "medium_threats": 7,
-    "low_threats": 0,
+    "critical_threats": 2,
+    "high_threats": 2,
+    "medium_threats": 5,
+    "low_threats": 1,
     "unique_cves_count": 3,
     "unique_cves": [
       "CVE-2026-86950",
       "CVE-2026-88772",
-      "Unknown"
+      "CVE-2026-XXXX"
     ],
     "top_affected_vendors": [
-      "Linux",
-      "South African Air Traffic Control",
       "Apple",
-      "Unsloth Studio",
-      "Citrix"
+      "OpenSSL",
+      "WolfSSL",
+      "Citrix",
+      "Linux"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "South Africa Seeks Help After Cyberattack Targets Air Traffic Control",
-      "threat_category": "Ransomware",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Aviation"
-      ],
-      "affected_vendors": [
-        "South African Air Traffic Control"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "South Africa's air traffic control systems have been targeted by a ransomware attack, compromising operational networks. The attack highlights the growing vulnerability of aviation infrastructure to cyber threats.",
-      "technical_breakdown": "A ransomware toolkit was installed on at least one operational network, exploiting vulnerabilities in the system to disrupt air traffic control operations. The root cause of the attack is currently unknown, but it is believed to be the result of a targeted cyberattack.",
-      "actionable_mitigations": [
-        "Implement robust network segmentation and access controls",
-        "Conduct regular vulnerability assessments and penetration testing",
-        "Monitor for suspicious activity and implement detection and response measures"
-      ],
-      "telegram_snippet": "South Africa's air traffic control systems targeted by ransomware attack, compromising operational networks. Aviation infrastructure faces growing cyber threats, highlighting need for enhanced security measures.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
-      "published_at": "2026-09-30T07:00:00+00:00"
-    },
-    {
-      "title": "Apple Zero-Day Vulnerability Weaponized in Targeted Attacks",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
-      "published_at": "2026-09-29T21:31:29+00:00",
+      "title": "Apple Zero-Day Vulnerability Exploited in Targeted Attacks",
       "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
-        "Critical Infrastructure"
+        "Government"
       ],
       "affected_vendors": [
         "Apple"
@@ -69,52 +39,51 @@
       "cve_ids": [
         "CVE-2026-86950"
       ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Apple Zero-Day Vulnerability Weaponized in Targeted Attacks. Attackers are exploiting CVE-2026-86950, an out-of-bounds write flaw, in an extremely sophisticated fashion, according to Apple..",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting Apple. Further technical telemetry is developing.",
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Attackers are exploiting a zero-day vulnerability in Apple products, targeting high-value assets with sophisticated attacks. The vulnerability, CVE-2026-86950, is an out-of-bounds write flaw.",
+      "technical_breakdown": "The attackers are using the CVE-2026-86950 vulnerability to execute arbitrary code, taking advantage of an out-of-bounds write flaw in Apple's software. This flaw allows for the exploitation of sensitive data and system manipulation.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Apply the upcoming patch from Apple as soon as it is released",
+        "Implement network segmentation and access controls to limit the spread of the attack",
+        "Monitor for suspicious activity and implement detection and response measures"
       ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Apple Zero-Day Vulnerability Weaponized in Targeted Attacks \u2014 Impacting Apple. Immediate patching and log auditing recommended."
+      "telegram_snippet": "Apple zero-day vulnerability exploited in targeted attacks, using CVE-2026-86950 to execute arbitrary code. Users advised to wait for patch release and implement network segmentation.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
+      "published_at": "2026-09-29T21:31:29+00:00"
     },
     {
-      "title": "Unsloth Studio Flaw Turns Routine Model Inspection Into Code Execution",
-      "threat_category": "Vulnerability / Advisory",
+      "title": "Custom ChatGPTs push ClickFix attacks to deploy RAT malware",
+      "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
       "severity": "CRITICAL",
       "severity_score": 9.0,
       "target_sectors": [
         "Enterprise",
-        "Research"
+        "Government"
       ],
-      "affected_vendors": [
-        "Unsloth Studio"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
+      "affected_vendors": [],
+      "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A patched Unsloth Studio vulnerability allows malicious AI models to execute arbitrary Python code during inspection, posing a significant risk to organizations using the platform. This flaw can be exploited by an attacker with access to the trust_remote_code setting.",
-      "technical_breakdown": "The vulnerability occurs when the trust_remote_code setting is enabled, allowing malicious AI models to execute arbitrary Python code during inspection. This can be exploited by an attacker to gain unauthorized access to the system.",
+      "executive_summary": "Custom ChatGPT variants are promoting malicious sites that use ClickFix attacks to deliver RAT malware, posing a significant risk to unsuspecting users. This tactic exploits users' trust in AI-powered chatbots, making it a highly effective attack vector.",
+      "technical_breakdown": "The attackers are using sponsored Google results to promote custom ChatGPT variants, which then direct users to malicious sites that employ ClickFix attacks to deliver RAT malware. This tactic leverages the trust users have in AI-powered chatbots to bypass traditional security measures.",
       "actionable_mitigations": [
-        "Disable the trust_remote_code setting by default",
-        "Implement strict access controls and monitoring for AI model inspection",
-        "Apply the latest patches and updates for Unsloth Studio"
+        "Disable JavaScript in web browsers to prevent ClickFix attacks",
+        "Use ad blockers to reduce the effectiveness of sponsored Google results",
+        "Implement robust security software and keep it up-to-date to detect and prevent RAT malware delivery"
       ],
-      "telegram_snippet": "Unsloth Studio vulnerability patched: malicious AI models can execute arbitrary Python code during inspection, posing a significant risk to organizations using the platform.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution",
-      "published_at": "2026-09-29T21:08:42+00:00"
+      "telegram_snippet": "Custom ChatGPT variants are promoting malicious sites that use ClickFix attacks to deliver RAT malware, posing a significant risk to unsuspecting users. Disable JavaScript and use ad blockers to reduce the risk.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
+      "published_at": "2026-09-29T20:59:39+00:00"
     },
     {
-      "title": "High-Severity Vulnerabilities Patched in OpenSSL, WolfSSL",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/high-severity-vulnerabilities-patched-in-openssl-wolfssl/",
-      "published_at": "2026-09-30T06:55:50+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "title": "South Africa Seeks Help After Cyberattack Targets Air Traffic Control",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
+      "published_at": "2026-09-30T07:00:00+00:00",
+      "threat_category": "Ransomware",
+      "severity": "HIGH",
+      "severity_score": 8.8,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -124,14 +93,43 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "High-Severity Vulnerabilities Patched in OpenSSL, WolfSSL. Roughly a dozen vulnerabilities have been patched in each of the open source cryptographic libraries.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "South Africa Seeks Help After Cyberattack Targets Air Traffic Control. As aviation infrastructure suffers more cyberattacks, air traffic systems are the latest target, with a ransomware toolkit installed on at least one o.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: High-Severity Vulnerabilities Patched in OpenSSL, WolfSSL \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: South Africa Seeks Help After Cyberattack Targets Air Traffic Control \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "High-Severity Vulnerabilities Patched in OpenSSL, WolfSSL",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "OpenSSL",
+        "WolfSSL"
+      ],
+      "cve_ids": [
+        "CVE-2026-XXXX"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "High-severity vulnerabilities have been patched in OpenSSL and WolfSSL, open source cryptographic libraries. These vulnerabilities could allow for remote code execution and other attacks if left unpatched.",
+      "technical_breakdown": "The vulnerabilities were discovered in the cryptographic libraries and could be exploited to perform remote code execution and other attacks. The vulnerabilities were patched to prevent exploitation.",
+      "actionable_mitigations": [
+        "Apply patches for OpenSSL and WolfSSL",
+        "Upgrade to the latest version of the libraries",
+        "Implement additional security measures to prevent exploitation"
+      ],
+      "telegram_snippet": "High-severity vulnerabilities patched in OpenSSL and WolfSSL; apply patches to prevent exploitation.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/high-severity-vulnerabilities-patched-in-openssl-wolfssl/",
+      "published_at": "2026-09-30T06:55:50+00:00"
     },
     {
       "title": "Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution",
@@ -188,33 +186,6 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Trump Says Top Tech Firms Have Signed Accord to \u2018Self-Police\u2019 AI Development \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Microsoft is rolling out Linux container support to WSL",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-is-rolling-out-linux-container-support-to-wsl/",
-      "published_at": "2026-09-30T00:40:57+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft",
-        "Linux"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft is rolling out Linux container support to WSL. Microsoft is taking Windows Subsystem for Linux beyond just running Linux distributions, as WSL Containers is now generally available.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft, Linux. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft is rolling out Linux container support to WSL \u2014 Impacting Microsoft, Linux. Immediate patching and log auditing recommended."
-    },
-    {
       "title": "Signal adds encypted local backup support to iOS, desktop apps",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
@@ -241,10 +212,10 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Signal adds encypted local backup support to iOS, desktop apps \u2014 Impacting Linux. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Custom ChatGPTs push ClickFix attacks to deploy RAT malware",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
-      "published_at": "2026-09-29T20:59:39+00:00",
+      "title": "Unsloth Studio Flaw Turns Routine Model Inspection Into Code Execution",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution",
+      "published_at": "2026-09-29T21:08:42+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -253,18 +224,18 @@
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Google"
+        "General Industry"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Custom ChatGPTs push ClickFix attacks to deploy RAT malware. Custom variants of OpenAI's ChatGPT promoted in sponsored Google results are directing unsuspecting users to malicious sites that use ClickFix attacks to deliver malware.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "executive_summary": "Unsloth Studio Flaw Turns Routine Model Inspection Into Code Execution. A patched Unsloth Studio vulnerability allows malicious AI models to execute arbitrary Python code during inspection, via the trust_remote_code settin.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Custom ChatGPTs push ClickFix attacks to deploy RAT malware \u2014 Impacting Google. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Unsloth Studio Flaw Turns Routine Model Inspection Into Code Execution \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "OpenAI CEO Announces New AI Agent and Avoids Mention of Security Concerns at Developer Conference",
@@ -291,6 +262,31 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI CEO Announces New AI Agent and Avoids Mention of Security Concerns at Developer Conference \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Microsoft Rolls Out Linux Container Support to WSL",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "LOW",
+      "severity_score": 2.0,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Microsoft has released WSL Containers, allowing users to run Linux containers on Windows. This feature is designed to improve developer productivity and flexibility.",
+      "technical_breakdown": "WSL Containers utilizes the Docker runtime to run Linux containers on Windows, providing a consistent development environment across platforms.",
+      "actionable_mitigations": [
+        "Review Docker configuration and ensure proper container isolation",
+        "Verify that container images are up-to-date and patched",
+        "Monitor container logs for suspicious activity"
+      ],
+      "telegram_snippet": "Microsoft releases WSL Containers, enabling Linux container support on Windows for improved developer productivity.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-is-rolling-out-linux-container-support-to-wsl/",
+      "published_at": "2026-09-30T00:40:57+00:00"
     }
   ]
 }
