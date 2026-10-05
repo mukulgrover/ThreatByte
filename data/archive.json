@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-05",
+    "top_headline": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+    "total_incidents": 10,
+    "critical_threats": 4,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-10-04",
     "top_headline": "Google Gemini could soon get full access to your Mac\u2019s files, apps and the web",
     "total_incidents": 10,
