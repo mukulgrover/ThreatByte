@@ -1,9 +1,9 @@
 [
   {
     "date": "2026-10-05",
-    "top_headline": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+    "top_headline": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
     "total_incidents": 10,
-    "critical_threats": 4,
+    "critical_threats": 3,
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
   },
   {
