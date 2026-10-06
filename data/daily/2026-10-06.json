@@ -1,30 +1,78 @@
 {
   "date": "2026-10-06",
-  "generated_at": "2026-10-06 09:26:37 UTC",
+  "generated_at": "2026-10-06 09:47:40 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 4,
-    "high_threats": 3,
-    "medium_threats": 1,
-    "low_threats": 2,
-    "unique_cves_count": 4,
+    "critical_threats": 5,
+    "high_threats": 1,
+    "medium_threats": 4,
+    "low_threats": 0,
+    "unique_cves_count": 2,
     "unique_cves": [
-      "CVE-2023-XXXX",
       "CVE-2026-21589",
-      "CVE-2026-61500",
       "Unknown"
     ],
     "top_affected_vendors": [
-      "Atlassian",
       "Microsoft",
-      "Multiple IoT device manufacturers",
-      "Rejetto",
-      "Unknown / Unattributed"
+      "Google",
+      "Denmark\u2019s Central Person Register",
+      "Atlassian",
+      "Danish company"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
+    {
+      "title": "8.8 Million Impacted by Data Breach at Denmark\u2019s Central Person Register",
+      "threat_category": "Data Breach",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Government"
+      ],
+      "affected_vendors": [
+        "Denmark\u2019s Central Person Register"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Hackers exploited a company\u2019s lawful access to Denmark\u2019s Central Person Register to steal the personal information of 8.8 million registered citizens, posing a significant risk to their identity and financial security. The breach highlights the importance of robust access controls and monitoring to prevent insider threats.",
+      "technical_breakdown": "The attackers abused a company\u2019s legitimate access to the CPR system, allowing them to extract sensitive personal data without being detected. The breach was only discovered after an external party reported suspicious activity.",
+      "actionable_mitigations": [
+        "Implement multi-factor authentication for all access to sensitive systems and data",
+        "Regularly monitor access logs for suspicious activity",
+        "Conduct thorough risk assessments for all third-party vendors with access to sensitive systems"
+      ],
+      "telegram_snippet": "Denmark\u2019s Central Person Register breached, 8.8 million citizens\u2019 personal info stolen by hackers exploiting a company\u2019s lawful access.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/",
+      "published_at": "2026-10-06T09:38:30+00:00"
+    },
+    {
+      "title": "Former Engineer Sentenced for Locking Thousands of Devices in Ransomware-Style Attack",
+      "threat_category": "Ransomware",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
+      "target_sectors": [
+        "Industrial"
+      ],
+      "affected_vendors": [
+        "Unknown"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A former engineer was sentenced to 32 months in prison for locking over 3,000 devices on his employer's network in a ransomware-style attack, causing significant operational disruption. The attack highlights the insider threat risk and the importance of robust access controls and monitoring.",
+      "technical_breakdown": "The engineer exploited his privileged access to lock devices, using a ransomware-style attack to extort his employer. The root cause of the incident was the engineer's malicious intent and lack of oversight.",
+      "actionable_mitigations": [
+        "Implement robust access controls and monitoring to detect and prevent insider threats",
+        "Conduct regular security awareness training for employees with privileged access",
+        "Develop and enforce incident response plans to quickly contain and respond to security incidents"
+      ],
+      "telegram_snippet": "Former engineer sentenced to 32 months for locking 3,000 devices in ransomware-style attack, highlighting insider threat risk and need for robust access controls.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
+      "published_at": "2026-10-06T08:19:24+00:00"
+    },
     {
       "title": "Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products",
       "threat_category": "Vulnerability / Advisory",
@@ -40,17 +88,42 @@
         "CVE-2026-21589"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A critical flaw in 8 Atlassian Data Center products allows unauthenticated attackers to read specific files in each product's web application root directory, provided the attacker knows the file's exact name and path. This vulnerability poses a significant operational risk.",
-      "technical_breakdown": "The flaw allows an attacker to read specific files in the web application root directory without authentication, but the attacker must already know the file's exact name and path. The vulnerability is due to a misconfigured access control mechanism.",
+      "executive_summary": "A critical flaw in 8 Atlassian Data Center products allows unauthenticated attackers to read specific files in each product's web application root directory, provided they know the file's exact name and path. This vulnerability poses a significant operational risk, as attackers can potentially access sensitive information.",
+      "technical_breakdown": "The flaw allows attackers to read specific files in the web application root directory without authentication, but they must already know the file's exact name and path. This is due to a misconfiguration in the product's security settings.",
       "actionable_mitigations": [
         "Apply the patch provided by Atlassian to address the vulnerability",
         "Implement network containment or firewall rules to restrict access to the affected products",
-        "Monitor logs for suspicious activity and implement detection indicators for the vulnerability"
+        "Monitor logs for suspicious activity and implement detection indicators for potential exploitation"
       ],
-      "telegram_snippet": "Critical Atlassian flaw (CVE-2026-21589) allows unauthenticated attackers to read specific files in 8 Data Center products, posing significant operational risk.",
+      "telegram_snippet": "Critical Atlassian flaw (CVE-2026-21589) allows unauthenticated attackers to read known files across 8 products, posing significant operational risk. Patch and implement network containment measures to mitigate the vulnerability.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
       "published_at": "2026-10-06T06:58:56+00:00"
+    },
+    {
+      "title": "Denmark Says Attackers Accessed 8.8 Million People's CPR Data via Company Account",
+      "threat_category": "Data Breach",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Government"
+      ],
+      "affected_vendors": [
+        "Danish company"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Unauthorized parties accessed 8.8 million people's CPR data via a private Danish company's account, compromising names, addresses, and personal identification numbers. The breach highlights the risk of data exposure through third-party access.",
+      "technical_breakdown": "Attackers exploited a company's lawful right to access the Central Person Register (CPR), allowing them to view sensitive information. The breach was discovered when the ministry notified individuals to be cautious with their data.",
+      "actionable_mitigations": [
+        "Verify third-party access controls and permissions",
+        "Implement multi-factor authentication for sensitive systems",
+        "Monitor for suspicious activity and data exfiltration indicators"
+      ],
+      "telegram_snippet": "Denmark's 8.8 million people's CPR data accessed via company account, compromising sensitive info. Unauthorized parties exploited a company's lawful access rights.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html",
+      "published_at": "2026-10-06T06:00:30+00:00"
     },
     {
       "title": "ClickFix Smuggles Payloads Through Browser Cache to Bypass Windows Run Limits",
@@ -69,98 +142,16 @@
       ],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "A new ClickFix attack bypasses Windows run limits by pre-fetching a malicious script payload into a web browser's cache, disguised as a PNG file. This attack vector exploits the browser's cache to execute the payload without user interaction.",
-      "technical_breakdown": "The attack involves compromised websites pre-fetching a script payload into the browser cache, which is then executed without user interaction. This is achieved by disguising the payload as a PNG file, allowing it to bypass Windows run limits.",
+      "technical_breakdown": "The attack involves compromised websites pre-fetching a script payload into the browser cache, which is then executed without user interaction. The payload is disguised as a PNG file to evade detection.",
       "actionable_mitigations": [
-        "Disable pre-fetching of scripts in web browsers",
-        "Implement strict cache controls and validation",
+        "Disable or limit the use of browser caching",
+        "Implement strict Content Security Policy (CSP) to block malicious scripts",
         "Monitor browser cache for suspicious activity"
       ],
-      "telegram_snippet": "New ClickFix attack bypasses Windows run limits by pre-fetching malicious payload into browser cache, exploiting cache to execute payload without user interaction.",
+      "telegram_snippet": "New ClickFix attack bypasses Windows run limits by pre-fetching malicious payload into browser cache, disguised as PNG file. Disable browser caching and implement CSP to mitigate.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
       "published_at": "2026-10-06T05:22:55+00:00"
-    },
-    {
-      "title": "ClingSTUN Turns Vulnerable IoT Devices Into Proxy Nodes",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Government",
-        "Consumer"
-      ],
-      "affected_vendors": [
-        "Multiple IoT device manufacturers"
-      ],
-      "cve_ids": [
-        "CVE-2023-XXXX"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "ClingSTUN exploits 24 known vulnerabilities to compromise IoT devices, turning them into proxy nodes for malicious communications. This poses a significant risk to organizations and individuals relying on these devices.",
-      "technical_breakdown": "The Linux backdoor exploits a range of known flaws, including buffer overflows and authentication bypasses, to gain unauthorized access to IoT devices. It then uses legitimate public STUN servers to obscure communications, making it difficult to detect.",
-      "actionable_mitigations": [
-        "Apply patches and updates for affected IoT devices",
-        "Implement network segmentation and isolation",
-        "Monitor for suspicious traffic and log anomalies"
-      ],
-      "telegram_snippet": "ClingSTUN exploits 24 known flaws to compromise IoT devices, turning them into proxy nodes for malicious communications. Organizations and individuals must take immediate action to patch and secure their IoT devices.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/iot/clingstun-vulnerable-iot-devices-proxy-nodes",
-      "published_at": "2026-10-05T21:25:08+00:00"
-    },
-    {
-      "title": "Rejetto HFS servers now actively scanned for critical RCE flaw",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Rejetto"
-      ],
-      "cve_ids": [
-        "CVE-2026-61500"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Hackers are actively scanning for a critical RCE flaw in Rejetto HFS servers, allowing session forgery, account takeover, and remote code execution. Immediate patching is required to prevent exploitation.",
-      "technical_breakdown": "The vulnerability, tracked as CVE-2026-61500, is due to a weak signing key in Rejetto HFS, allowing attackers to forge sessions, take over accounts, and execute remote code. The flaw is actively being exploited by hackers.",
-      "actionable_mitigations": [
-        "Apply the latest patch from Rejetto to address the vulnerability",
-        "Implement network segmentation and firewall rules to contain affected servers",
-        "Monitor logs for suspicious activity and implement detection indicators"
-      ],
-      "telegram_snippet": "Rejetto HFS servers are being actively scanned for a critical RCE flaw (CVE-2026-61500). Patch immediately to prevent exploitation and account takeover.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/rejetto-hfs-servers-now-actively-scanned-for-critical-rce-flaw/",
-      "published_at": "2026-10-05T20:20:05+00:00"
-    },
-    {
-      "title": "Former Engineer Sentenced for Locking Thousands of Devices in Ransomware-Style Attack",
-      "threat_category": "Ransomware",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "Unknown / Unattributed"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A former engineer was sentenced to 32 months in prison for locking over 3,000 devices on his employer's network in a ransomware-style attack, causing significant operational disruption. The attack highlights the insider threat risk and the importance of robust access controls and monitoring.",
-      "technical_breakdown": "The engineer exploited his privileged access to deploy a custom ransomware-like tool, locking devices and disrupting business operations. The attack was carried out without the use of known malware, making it difficult to detect.",
-      "actionable_mitigations": [
-        "Implement robust access controls and monitoring to detect insider threats",
-        "Conduct regular security awareness training for employees",
-        "Review and update incident response plans to address insider threats"
-      ],
-      "telegram_snippet": "Former engineer sentenced to 32 months for locking 3,000 devices in ransomware-style attack, highlighting insider threat risk and need for robust access controls.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
-      "published_at": "2026-10-06T08:19:24+00:00"
     },
     {
       "title": "FBI Removes Accenture Contractor After Patch Failure Led to ShinyHunters Breach",
@@ -178,112 +169,113 @@
       "executive_summary": "A ShinyHunters breach led to the theft of personal details of thousands of FBI employees due to a security failure by an Accenture contractor. The contractor has been removed by the FBI.",
       "technical_breakdown": "The breach occurred due to a patch failure by the Accenture contractor, which allowed ShinyHunters to exploit the vulnerability. The incident highlights the importance of timely patching and security updates.",
       "actionable_mitigations": [
-        "Ensure timely patching and security updates",
-        "Conduct regular vulnerability assessments",
-        "Implement robust access controls"
+        "Ensure timely patching and security updates for all systems and applications",
+        "Conduct regular vulnerability assessments and penetration testing",
+        "Implement robust incident response and threat hunting capabilities"
       ],
-      "telegram_snippet": "FBI removes Accenture contractor after ShinyHunters breach exposes personal details of thousands of employees due to patch failure.",
+      "telegram_snippet": "FBI removes Accenture contractor after ShinyHunters breach exposes thousands of employee details due to patch failure.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html",
       "published_at": "2026-10-06T06:56:57+00:00"
     },
     {
-      "title": "IQVIA fined $7.8 million for failing to properly anonymize health data",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.0,
+      "title": "More RMM Tools In the Wild",
+      "threat_category": "0-Day & Exploit",
+      "severity": "MEDIUM",
+      "severity_score": 6.0,
       "target_sectors": [
-        "Healthcare"
+        "Enterprise"
       ],
       "affected_vendors": [
-        "IQVIA"
+        "ScreenConnect"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "IQVIA was fined $7.8 million for failing to properly anonymize health data, putting one million patients at risk of data exposure and de-anonymization. The agency found poor data-processing practices that could have led to sensitive information being compromised.",
-      "technical_breakdown": "The GPDP found that IQVIA's data-processing practices were inadequate, allowing sensitive patient information to be potentially exposed and de-anonymized. The agency cited poor anonymization techniques as the root cause of the issue.",
+      "executive_summary": "Threat actors are abusing RMM tools for malicious activities. This trend indicates a potential increase in remote access attacks.",
+      "technical_breakdown": "RMM tools like ScreenConnect are being exploited for unauthorized access. The root cause is the misuse of legitimate tools for malicious purposes.",
       "actionable_mitigations": [
-        "Implement robust data anonymization techniques to protect sensitive patient information",
-        "Conduct regular security audits to identify and address data-processing vulnerabilities",
-        "Develop and enforce strict data access controls to prevent unauthorized access"
+        "Review and restrict RMM tool access",
+        "Implement multi-factor authentication",
+        "Monitor for suspicious login attempts"
       ],
-      "telegram_snippet": "IQVIA fined $7.8M for failing to properly anonymize health data, putting 1M patients at risk of exposure.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
-      "published_at": "2026-10-05T17:19:53+00:00"
+      "telegram_snippet": "Threat actors are abusing RMM tools for malicious activities, indicating a potential increase in remote access attacks.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33400",
+      "published_at": "2026-10-06T09:34:56+00:00"
     },
     {
-      "title": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html",
-      "published_at": "2026-10-06T06:00:30+00:00",
-      "threat_category": "Vulnerability / Advisory",
+      "title": "Nikkei discloses breaches of employees\u2019 Microsoft, Google email accounts",
+      "threat_category": "Data Breach",
       "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "severity_score": 6.0,
       "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
+        "Media"
       ],
       "affected_vendors": [
-        "General Industry"
+        "Microsoft",
+        "Google"
       ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account. Unauthorized parties have gained access to the names, addresses, and personal identification numbers of about 8.8 million people, living and dead, in Denmark's national population register, the country's digitalization ministry said on October 5.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Nikkei disclosed breaches of two employee email accounts, used to send thousands of phishing emails, posing a moderate operational risk to the company.",
+      "technical_breakdown": "Attackers breached two employee email accounts, using one to send phishing emails, exploiting the trust in email communications.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Implement multi-factor authentication for email accounts",
+        "Monitor email logs for suspicious activity",
+        "Educate employees on phishing email detection and reporting"
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "Nikkei discloses breaches of two employee email accounts, used to send thousands of phishing emails, posing a moderate operational risk.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/",
+      "published_at": "2026-10-06T09:25:50+00:00"
+    },
+    {
+      "title": "Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.0,
+      "target_sectors": [
+        "Technology"
+      ],
+      "affected_vendors": [
+        "Google"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Google has paused its OSS product bug bounty rewards due to a surge in invalid automated reports, allowing researchers to submit security flaws in open-source software projects for a reward. This change affects projects like Go, Angular, and Protocol Buffers, but supply chain compromise reports are still accepted.",
+      "technical_breakdown": "The surge in invalid automated reports overwhelmed Google's bug bounty program, prompting the company to pause rewards for OSS product vulnerability reports. This change aims to prevent abuse and ensure the quality of submitted reports.",
+      "actionable_mitigations": [
+        "Review and validate all submitted reports manually",
+        "Implement additional checks to prevent automated report submissions",
+        "Monitor and analyze report submission patterns for anomalies"
+      ],
+      "telegram_snippet": "Google pauses OSS product bug bounty rewards due to surge in invalid automated reports, affecting projects like Go, Angular, and Protocol Buffers.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html",
+      "published_at": "2026-10-06T09:21:47+00:00"
     },
     {
       "title": "Social Engineering Detection Moves Into the Live Conversation",
       "threat_category": "Vulnerability / Advisory",
-      "severity": "LOW",
-      "severity_score": 3.0,
+      "severity": "MEDIUM",
+      "severity_score": 5.0,
       "target_sectors": [
         "Enterprise"
       ],
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Companies are investing heavily in security awareness training, but its effectiveness against social engineering attacks is unclear. This highlights the need for more proactive measures to detect and prevent such threats.",
-      "technical_breakdown": "Security awareness training is being implemented by companies to combat social engineering, but its actual impact is uncertain. This lack of evidence underscores the importance of developing more effective detection methods.",
+      "executive_summary": "Companies are investing heavily in security awareness training, but its effectiveness against social engineering attacks remains uncertain. Live conversation detection tools aim to bridge this gap by identifying potential threats in real-time.",
+      "technical_breakdown": "Security awareness training programs often fail to prevent social engineering attacks due to their reliance on static content and lack of real-time threat detection. Live conversation detection tools leverage AI and machine learning to identify suspicious conversations and alert security teams.",
       "actionable_mitigations": [
-        "Implement real-time conversation monitoring to detect suspicious interactions",
-        "Enhance employee training to focus on live conversation detection",
-        "Develop and deploy AI-powered chatbots to identify and flag potential social engineering threats"
+        "Implement live conversation detection tools to identify potential social engineering threats",
+        "Enhance security awareness training programs with real-time threat detection and scenario-based training",
+        "Monitor employee conversations and adjust security policies accordingly"
       ],
-      "telegram_snippet": "Security awareness training may not be effective against social engineering attacks, highlighting the need for proactive measures to detect and prevent such threats.",
+      "telegram_snippet": "Security awareness training may not be enough to prevent social engineering attacks. Live conversation detection tools aim to bridge this gap by identifying threats in real-time.",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/",
       "published_at": "2026-10-06T08:38:14+00:00"
-    },
-    {
-      "title": "OpenAI adds invisible watermarks to ChatGPT and Codex text in the EU",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "LOW",
-      "severity_score": 2.5,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "OpenAI"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "OpenAI is adding invisible watermarks to ChatGPT and Codex text in the EU to prevent misuse. This move aims to protect intellectual property and prevent the spread of misinformation.",
-      "technical_breakdown": "OpenAI is using digital watermarks to embed metadata into generated text, which can be detected by law enforcement and other authorized parties. This technology is designed to prevent the misuse of AI-generated content.",
-      "actionable_mitigations": [
-        "Review and update content detection and monitoring systems to identify and flag AI-generated content"
-      ],
-      "telegram_snippet": "OpenAI adds invisible watermarks to ChatGPT and Codex text in the EU to prevent misuse and protect intellectual property.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/",
-      "published_at": "2026-10-05T22:46:33+00:00"
     }
   ]
 }
