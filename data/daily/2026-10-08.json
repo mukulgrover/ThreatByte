@@ -1,22 +1,23 @@
 {
   "date": "2026-10-08",
-  "generated_at": "2026-10-08 09:30:25 UTC",
+  "generated_at": "2026-10-08 10:03:09 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 6,
-    "high_threats": 2,
-    "medium_threats": 1,
+    "critical_threats": 3,
+    "high_threats": 3,
+    "medium_threats": 3,
     "low_threats": 1,
     "unique_cves_count": 2,
     "unique_cves": [
-      "CVE-2022-42475",
-      "Unknown"
+      "CVE-2021-XXXX",
+      "CVE-2026-XXXX"
     ],
     "top_affected_vendors": [
       "MonsterCloud",
-      "Fortinet",
-      "Tensorlake",
-      "Microsoft"
+      "Oracle Health",
+      "Microsoft",
+      "Samsung",
+      "Fortinet"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
@@ -34,8 +35,8 @@
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A ransomware recovery scheme involved paying ransoms and then charging victims $11 million in markups for remediation. The scheme used fake decryption tools to mask the true nature of the operation.",
-      "technical_breakdown": "The attacker paid ransoms to obtain decryption keys and then used fake decryption tools to charge victims substantially more for remediation. The scheme relied on the use of fake tools to deceive victims into paying the inflated prices.",
+      "executive_summary": "A ransomware recovery scheme involved paying ransoms and then charging victims $11 million in markups for remediation. The scheme used fake decryption tools to deceive victims.",
+      "technical_breakdown": "The attacker paid ransoms to obtain decryption keys and then used fake decryption tools to deceive victims into paying substantially more for remediation. The scheme relied on the attacker's ability to obtain decryption keys and create fake tools to deceive victims.",
       "actionable_mitigations": [
         "Implement robust incident response plans to detect and prevent similar schemes",
         "Use reputable decryption tools and services to avoid falling victim to fake tools",
@@ -45,6 +46,31 @@
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/",
       "published_at": "2026-10-08T09:27:55+00:00"
+    },
+    {
+      "title": "Oracle Health Data Breach Tally Climbs to Nearly 20 Million",
+      "threat_category": "Data Breach",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Healthcare"
+      ],
+      "affected_vendors": [
+        "Oracle Health"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A significant data breach at Oracle Health has exposed nearly 20 million patient records, significantly higher than initially reported. This breach poses a substantial operational risk to affected patients and healthcare providers.",
+      "technical_breakdown": "The breach is attributed to unauthorized access to Oracle Health's systems, allowing attackers to extract sensitive patient data. The root cause of the breach remains unclear, but it is believed to have occurred over an extended period.",
+      "actionable_mitigations": [
+        "Implement multi-factor authentication for all users",
+        "Conduct regular security audits and penetration testing",
+        "Monitor for suspicious login activity and data exfiltration indicators"
+      ],
+      "telegram_snippet": "Oracle Health data breach exposes nearly 20 million patient records, significantly higher than initially reported, posing substantial operational risk to affected patients and healthcare providers.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/oracle-health-data-breach-tally-climbs-to-nearly-20-million/",
+      "published_at": "2026-10-08T08:23:31+00:00"
     },
     {
       "title": "MonsterCloud Owner Accused of Billing Over $19M While Secretly Paying Ransoms to Decrypt Data",
@@ -60,76 +86,78 @@
       ],
       "cve_ids": [],
       "threat_actor": "Zohar Pinhasi (aka Zack Silver and Zack Green)",
-      "executive_summary": "MonsterCloud's owner allegedly defrauded ransomware victims by secretly paying attackers to obtain decryptors, claiming to use proprietary tools to recover data. This scheme resulted in over $19M in billed services.",
-      "technical_breakdown": "The attacker secretly paid ransomware attackers to obtain decryptors, while billing victims for proprietary recovery tools. This scheme was used to defraud victims out of over $19M.",
+      "executive_summary": "MonsterCloud's owner allegedly defrauded ransomware victims by secretly paying attackers to obtain decryptors, while claiming to use proprietary tools to recover data. This scheme resulted in over $19M in billed services.",
+      "technical_breakdown": "The attacker used a scheme to secretly pay ransomware attackers to obtain decryptors, while billing victims for proprietary recovery tools. This allowed the attacker to profit from the scheme.",
       "actionable_mitigations": [
-        "Verify the legitimacy of data recovery services and their methods",
+        "Verify the authenticity of any third-party recovery services",
         "Implement robust logging and monitoring to detect suspicious activity",
-        "Use reputable and trusted data recovery services"
+        "Use reputable and trusted recovery services"
       ],
-      "telegram_snippet": "MonsterCloud's owner charged with $19M fraud scheme: secretly paid ransomware attackers to decrypt data while billing victims for proprietary tools.",
+      "telegram_snippet": "MonsterCloud's owner charged with $19M scheme: secretly paid ransomware attackers to decrypt data while billing victims for proprietary tools.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/monstercloud-owner-accused-of-billing.html",
       "published_at": "2026-10-08T07:41:44+00:00"
     },
     {
-      "title": "Samsung Galaxy S26 hacked three more times at Pwn2Own Ireland",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
-      "published_at": "2026-10-08T06:32:16+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
+      "title": "U.S. Offers Up to $10 Million for Tips on Zhang Yu, Charged in HAFNIUM Hacks",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.0,
       "target_sectors": [
         "Enterprise",
-        "Critical Infrastructure"
+        "Government"
       ],
       "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Samsung Galaxy S26 hacked three more times at Pwn2Own Ireland. \u200b\u200b\u200bOn the second day of Pwn2Own Ireland 2026, security researchers collected $232,500 in cash awards after exploiting 45 unique zero-day vulnerabilities.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Samsung Galaxy S26 hacked three more times at Pwn2Own Ireland \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "Tensorlake"
+        "Microsoft"
       ],
       "cve_ids": [
-        "Unknown"
+        "CVE-2021-XXXX"
+      ],
+      "threat_actor": "Zhang Yu",
+      "executive_summary": "The U.S. State Department is offering a $10 million reward for information leading to the identification or location of Zhang Yu, a Chinese national charged in the 2021 HAFNIUM hacks. The hacks targeted Microsoft Exchange Server.",
+      "technical_breakdown": "The HAFNIUM attacks exploited vulnerabilities in Microsoft Exchange Server, allowing attackers to gain access to sensitive data. Zhang Yu's involvement is believed to be related to these attacks.",
+      "actionable_mitigations": [
+        "Apply patches for Microsoft Exchange Server vulnerabilities",
+        "Implement robust network segmentation and access controls",
+        "Monitor for suspicious activity related to HAFNIUM attacks"
+      ],
+      "telegram_snippet": "U.S. offers $10 million reward for info on Zhang Yu, charged in 2021 HAFNIUM hacks targeting Microsoft Exchange Server.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
+      "published_at": "2026-10-08T07:42:04+00:00"
+    },
+    {
+      "title": "Samsung Galaxy S26 hacked three more times at Pwn2Own Ireland",
+      "threat_category": "0-Day & Exploit",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Consumer Electronics"
+      ],
+      "affected_vendors": [
+        "Samsung"
+      ],
+      "cve_ids": [
+        "CVE-2026-XXXX"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The Tensorlake npm package was compromised in a supply chain attack, delivering a credential-stealing worm that harvests credentials, exfiltrates secrets, and establishes persistence. This attack poses a significant operational risk to organizations using the compromised package.",
-      "technical_breakdown": "The malicious version 0.5.144 of the tensorlake package contains obfuscated malware that executes remotely supplied code, indicating a sophisticated exploitation mechanism. The root cause of the compromise is attributed to a ChainDrop / Shai-Hulud supply chain attack.",
+      "executive_summary": "Security researchers exploited 45 unique zero-day vulnerabilities in the Samsung Galaxy S26 at Pwn2Own Ireland, collecting $232,500 in cash awards. This highlights the vulnerability of modern smartphones to zero-day attacks.",
+      "technical_breakdown": "Researchers used zero-day vulnerabilities to gain unauthorized access to the Samsung Galaxy S26, demonstrating the potential for exploitation of unpatched vulnerabilities in modern smartphones.",
       "actionable_mitigations": [
-        "Upgrade to a trusted version of the tensorlake package",
-        "Monitor for suspicious network activity and log anomalies",
-        "Implement strict access controls and least privilege principles"
+        "Ensure all software and firmware on the device are up-to-date",
+        "Implement a mobile security solution that detects and blocks zero-day threats",
+        "Use a reputable antivirus solution to scan for malware"
       ],
-      "telegram_snippet": "Tensorlake npm package compromised in supply chain attack, delivering credential-stealing worm. Organizations using the package must upgrade to a trusted version immediately.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
-      "published_at": "2026-10-08T05:46:20+00:00"
+      "telegram_snippet": "Researchers exploit 45 zero-day vulnerabilities in Samsung Galaxy S26 at Pwn2Own Ireland, collecting $232,500 in cash awards.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
+      "published_at": "2026-10-08T06:32:16+00:00"
     },
     {
       "title": "Ransomware recovery CEO charged over secret ransom payments",
       "threat_category": "Ransomware",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
+      "severity": "HIGH",
+      "severity_score": 8.0,
       "target_sectors": [
         "Enterprise",
         "Government"
@@ -139,54 +167,26 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The CEO of MonsterCloud, a ransomware remediation company, has been charged with secretly paying ransomware attackers while claiming to use proprietary technology to recover encrypted data, defrauding victims in the process. This incident highlights the potential for malicious actors to infiltrate and manipulate the ransomware recovery industry.",
-      "technical_breakdown": "The CEO allegedly used secret payments to obtain decryptors from ransomware attackers, then misrepresented the method of recovery to victims, exploiting their trust and vulnerability. This scheme allowed the CEO to profit from the misfortune of others.",
+      "executive_summary": "The CEO of MonsterCloud, a ransomware remediation company, has been charged with secretly paying ransomware attackers while claiming to use proprietary technology to recover encrypted data. This scheme allegedly defrauded ransomware victims out of their payments.",
+      "technical_breakdown": "The CEO allegedly used secret payments to ransomware attackers to obtain decryptors, while misrepresenting the use of proprietary technology to recover encrypted data. This scheme exploited the trust of ransomware victims and undermined the effectiveness of ransomware recovery efforts.",
       "actionable_mitigations": [
-        "Verify the legitimacy of ransomware recovery services and their methods",
-        "Monitor for suspicious activity and communication with known ransomware attackers",
-        "Implement robust due diligence and background checks on service providers"
+        "Verify the legitimacy of ransomware recovery services and their claims of proprietary technology",
+        "Monitor for suspicious activity and ensure transparency in ransomware recovery processes",
+        "Implement robust detection and log monitoring to identify potential secret payments"
       ],
-      "telegram_snippet": "MonsterCloud CEO charged with secretly paying ransomware attackers, defrauding victims with false recovery claims.",
+      "telegram_snippet": "MonsterCloud CEO charged with secretly paying ransomware attackers, allegedly defrauding victims out of their payments.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
       "published_at": "2026-10-07T23:04:37+00:00"
     },
     {
-      "title": "FBI: Ongoing FortiBleed attacks lock out FortiGate VPN admins",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Fortinet"
-      ],
-      "cve_ids": [
-        "CVE-2022-42475"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The FBI warns of ongoing FortiBleed attacks targeting exposed Fortinet FortiGate firewalls and SSL VPN gateways, locking out legitimate administrators. These attacks exploit a vulnerability to gain unauthorized access.",
-      "technical_breakdown": "FortiBleed attacks exploit CVE-2022-42475, a vulnerability in Fortinet FortiGate firewalls and SSL VPN gateways, to gain unauthorized access and lock out legitimate administrators.",
-      "actionable_mitigations": [
-        "Apply the Fortinet FortiGate firewall and SSL VPN patch (PSV-2022-0005) to address CVE-2022-42475",
-        "Implement network segmentation and access controls to limit exposure",
-        "Monitor for suspicious activity and implement detection and response measures"
-      ],
-      "telegram_snippet": "Ongoing FortiBleed attacks targeting exposed Fortinet FortiGate firewalls and SSL VPN gateways, locking out admins. Apply Fortinet patch (PSV-2022-0005) to mitigate.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
-      "published_at": "2026-10-07T21:28:54+00:00"
-    },
-    {
-      "title": "Oracle Health Data Breach Tally Climbs to Nearly 20 Million",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/oracle-health-data-breach-tally-climbs-to-nearly-20-million/",
-      "published_at": "2026-10-08T08:23:31+00:00",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.2,
+      "title": "16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
+      "published_at": "2026-10-08T09:46:32+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -196,40 +196,14 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Oracle Health Data Breach Tally Climbs to Nearly 20 Million. The figure is far higher than the counts that surfaced in earlier filings and patient notifications.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases. Cybersecurity researchers have discovered a cluster of 16 malicious Mozilla Firefox extensions that are capable of stealing cryptocurrency wallet recovery phrases and private keys.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Oracle Health Data Breach Tally Climbs to Nearly 20 Million \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "U.S. Offers Up to $10 Million for Tips on Zhang Yu, Charged in HAFNIUM Hacks",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
-      "published_at": "2026-10-08T07:42:04+00:00",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "U.S. Offers Up to $10 Million for Tips on Zhang Yu, Charged in HAFNIUM Hacks. The U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: U.S. Offers Up to $10 Million for Tips on Zhang Yu, Charged in HAFNIUM Hacks \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: 16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "FortiBleed Attackers Locking Victims Out of Fortinet Devices",
@@ -258,24 +232,50 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FortiBleed Attackers Locking Victims Out of Fortinet Devices \u2014 Impacting Fortinet. Immediate patching and log auditing recommended."
     },
     {
+      "title": "Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+      "published_at": "2026-10-08T05:46:20+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm. The npm package known as \"tensorlake,\" a TypeScript software development kit (SDK) for Tensorlake applications, sandboxes, and cloud services, was compromised as part of a ChainDrop / Shai-Hulud supply chain attack.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
       "title": "Australian Gov't Considers Mandatory AI Incident Reporting",
-      "threat_category": "Regulation / Compliance",
+      "threat_category": "Regulation / Advisory",
       "severity": "LOW",
-      "severity_score": 2.0,
+      "severity_score": 2.5,
       "target_sectors": [
         "Government"
       ],
       "affected_vendors": [],
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The Australian government is exploring regulations for AI companies following an attack on its Medicare systems. The proposed rules would require incident reporting, potentially enhancing cybersecurity.",
-      "technical_breakdown": "The government is considering regulations to address the growing use of AI, including requirements for incident reporting and potential cybersecurity enhancements. The exact details of the proposed rules are still unclear.",
+      "executive_summary": "The Australian government is exploring regulations for AI companies following an attack on its Medicare systems. The proposed rules would require incident reporting, aiming to enhance cybersecurity and trust in AI technologies.",
+      "technical_breakdown": "The government's move is a response to the growing use of AI in critical infrastructure, with the aim of mitigating potential risks and vulnerabilities. The proposed regulations would focus on incident reporting, rather than specific technical requirements.",
       "actionable_mitigations": [
         "Review and update incident response plans to include AI-related incidents",
         "Establish clear communication channels for reporting AI-related incidents",
-        "Consider implementing AI-specific security controls and monitoring"
+        "Conduct regular risk assessments to identify potential AI-related vulnerabilities"
       ],
-      "telegram_snippet": "Australia's government considers mandatory AI incident reporting regulations following a Medicare system attack, potentially enhancing cybersecurity.",
+      "telegram_snippet": "Australia's government considers mandatory AI incident reporting regulations following a Medicare system attack, aiming to enhance cybersecurity and trust in AI technologies.",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
       "published_at": "2026-10-07T21:42:55+00:00"
