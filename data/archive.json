@@ -3,8 +3,8 @@
     "date": "2026-10-11",
     "top_headline": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
     "total_incidents": 9,
-    "critical_threats": 3,
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
   },
   {
     "date": "2026-10-10",
