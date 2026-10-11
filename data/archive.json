@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-11",
+    "top_headline": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+    "total_incidents": 9,
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+  },
+  {
     "date": "2026-10-10",
     "top_headline": "FBI Arrests Founder of Ransomware Negotiation Firm",
     "total_incidents": 10,
