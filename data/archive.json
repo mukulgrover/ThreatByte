@@ -1,10 +1,10 @@
 [
   {
     "date": "2026-10-11",
-    "top_headline": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+    "top_headline": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
     "total_incidents": 9,
-    "critical_threats": 1,
-    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+    "critical_threats": 3,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
   },
   {
     "date": "2026-10-10",
