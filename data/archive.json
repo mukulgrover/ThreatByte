@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-12",
+    "top_headline": "Critical SonicWall Vulnerability Exploited Days After Disclosure",
+    "total_incidents": 5,
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+  },
+  {
     "date": "2026-10-11",
     "top_headline": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
     "total_incidents": 9,
