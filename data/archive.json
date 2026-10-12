@@ -3,7 +3,7 @@
     "date": "2026-10-12",
     "top_headline": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
     "total_incidents": 6,
-    "critical_threats": 5,
+    "critical_threats": 4,
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
   },
   {

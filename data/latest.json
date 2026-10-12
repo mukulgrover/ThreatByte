@@ -1,21 +1,22 @@
 {
   "date": "2026-10-12",
-  "generated_at": "2026-10-12 09:48:03 UTC",
+  "generated_at": "2026-10-12 10:16:19 UTC",
   "metrics": {
     "total_incidents": 6,
-    "critical_threats": 5,
+    "critical_threats": 4,
     "high_threats": 0,
     "medium_threats": 1,
-    "low_threats": 0,
-    "unique_cves_count": 3,
+    "low_threats": 1,
+    "unique_cves_count": 4,
     "unique_cves": [
       "CVE-2026-102255",
       "CVE-2026-85097",
+      "N/A",
       "Unknown"
     ],
     "top_affected_vendors": [
-      "SonicWall",
       "WordPress",
+      "Bricksforge",
       "E-commerce platforms",
       "Nippon Columbia",
       "Daiichi Kosho"
@@ -26,58 +27,32 @@
   "articles": [
     {
       "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-      "published_at": "2026-10-12T09:02:14+00:00",
-      "threat_category": "0-Day & Exploit",
+      "threat_category": "Vulnerability / Advisory",
       "severity": "CRITICAL",
-      "severity_score": 9.5,
+      "severity_score": 10.0,
       "target_sectors": [
         "Enterprise",
-        "Critical Infrastructure"
+        "Government"
       ],
       "affected_vendors": [
-        "General Industry"
+        "WordPress",
+        "Bricksforge"
       ],
       "cve_ids": [
         "CVE-2026-85097"
       ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE. A maximum-severity security flaw impacting the Bricksforge plugin for WordPress has come under active exploitation in the wild, according to Patchstack.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Critical SonicWall Vulnerability Exploited Days After Disclosure",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "SonicWall"
-      ],
-      "cve_ids": [
-        "CVE-2026-102255"
-      ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A critical pre-authenticated SSRF vulnerability in SonicWall products was exploited days after disclosure, allowing unauthorized operations. This vulnerability poses a significant operational risk to affected organizations.",
-      "technical_breakdown": "The CVE-2026-102255 vulnerability is a pre-authenticated SSRF flaw that can be exploited without authentication. Attackers can use this vulnerability to perform unauthorized operations.",
+      "executive_summary": "A critical vulnerability in the Bricksforge WordPress plugin has been exploited in the wild, allowing unauthenticated attackers to execute arbitrary PHP code and gain RCE. This flaw has a CVSS score of 10.0, indicating maximum severity.",
+      "technical_breakdown": "The vulnerability, CVE-2026-85097, allows unauthenticated attackers to upload and execute arbitrary PHP code on vulnerable WordPress websites, resulting in RCE. This is due to a critical flaw in the Bricksforge plugin.",
       "actionable_mitigations": [
-        "Apply the latest patches or software updates provided by SonicWall",
-        "Implement network segmentation and access controls",
-        "Monitor logs and network traffic for suspicious activity"
+        "Update to the latest version of the Bricksforge plugin",
+        "Apply the patch for CVE-2026-85097",
+        "Implement network containment or firewall rules to block suspicious traffic"
       ],
-      "telegram_snippet": "Critical SonicWall vulnerability exploited days after disclosure, allowing unauthorized operations. Apply latest patches and monitor logs to mitigate risk.",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/",
-      "published_at": "2026-10-12T08:36:01+00:00"
+      "telegram_snippet": "Critical vulnerability in Bricksforge WordPress plugin exploited in the wild, allowing unauthenticated RCE with CVSS score 10.0. Update to latest plugin version and apply patch to mitigate.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+      "published_at": "2026-10-12T09:02:14+00:00"
     },
     {
       "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
@@ -94,14 +69,14 @@
       ],
       "cve_ids": [],
       "threat_actor": "CyberXero",
-      "executive_summary": "CyberXero conducted an AI-augmented initial access campaign targeting Ukrainian WordPress sites, e-commerce platforms, and critical infrastructure, stealing over 628,000 records. This campaign leverages Cobalt Strike and Anthropic's Claude Code for orchestration.",
-      "technical_breakdown": "The campaign combines commodity tools like Cobalt Strike with an AI-powered orchestration layer, utilizing Claude Code to enhance the attack's efficiency and stealth. This integration enables CyberXero to automate and optimize the attack process.",
+      "executive_summary": "CyberXero conducted an AI-augmented initial access campaign targeting Ukrainian WordPress sites, e-commerce platforms, and critical infrastructure, stealing over 628,000 records. This campaign combines commodity tools like Cobalt Strike with Anthropic's Claude Code for orchestration.",
+      "technical_breakdown": "The campaign uses Cobalt Strike for initial access and Claude Code for AI-powered orchestration, allowing for efficient targeting and exploitation of vulnerabilities. The use of Claude Code enables CyberXero to automate and optimize their attack workflow.",
       "actionable_mitigations": [
-        "Implement security patches and updates for WordPress and e-commerce platforms",
-        "Enforce strict network segmentation and access controls",
-        "Monitor for suspicious activity and implement AI-powered threat detection"
+        "Implement security patches for WordPress and e-commerce platforms",
+        "Monitor network traffic for Cobalt Strike indicators",
+        "Implement AI-powered threat detection and response systems"
       ],
-      "telegram_snippet": "CyberXero's AI-augmented campaign stole over 628,000 Ukrainian records, targeting WordPress sites, e-commerce platforms, and critical infrastructure with Cobalt Strike and Claude Code.",
+      "telegram_snippet": "CyberXero's AI-augmented campaign stole over 628,000 Ukrainian records, combining Cobalt Strike with Anthropic's Claude Code for efficient targeting and exploitation.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
       "published_at": "2026-10-12T07:26:12+00:00"
@@ -112,7 +87,8 @@
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
-        "Entertainment"
+        "Enterprise",
+        "Government"
       ],
       "affected_vendors": [
         "Nippon Columbia",
@@ -121,10 +97,10 @@
       "cve_ids": [],
       "threat_actor": "Unknown / Unattributed",
       "executive_summary": "A malware infection at Nippon Columbia exposed 8.6 million customer and employee records, posing a significant risk to personal data and potentially enabling identity theft. The incident highlights the importance of robust cybersecurity measures in the entertainment industry.",
-      "technical_breakdown": "The malware infection occurred at Nippon Columbia, a contractor of Daiichi Kosho, and exposed sensitive customer and employee data. The incident is believed to have been caused by a malware infection, which was not specified in the disclosure.",
+      "technical_breakdown": "The malware infection occurred at Nippon Columbia, a contractor of Daiichi Kosho, and exposed sensitive customer and employee data. The incident is believed to have been caused by a lack of robust cybersecurity measures at the affected company.",
       "actionable_mitigations": [
         "Implement robust cybersecurity measures, including regular software updates and employee training",
-        "Conduct thorough risk assessments to identify and mitigate potential vulnerabilities",
+        "Conduct thorough risk assessments to identify and address vulnerabilities",
         "Implement data encryption and access controls to protect sensitive information"
       ],
       "telegram_snippet": "Malware incident at Nippon Columbia exposes 8.6 million records, posing significant risk to personal data and potentially enabling identity theft. Incident highlights importance of robust cybersecurity measures in the entertainment industry.",
@@ -148,23 +124,23 @@
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The P7 DarkSword iOS exploit kit has been discovered, featuring reduced on-device footprint, crypto-wallet data theft, and remote commands. This variant poses a significant threat to iOS users, allowing attackers to steal sensitive financial information and gain unauthorized control.",
+      "executive_summary": "The P7 DarkSword iOS exploit kit has been discovered, featuring reduced on-device footprint, crypto-wallet theft, and two-way C2 communication with attackers. This variant poses a significant threat to iOS users, allowing attackers to steal sensitive data and execute remote commands.",
       "technical_breakdown": "The P7 DarkSword exploit kit reduces its on-device footprint by utilizing advanced evasion techniques, allowing it to evade detection. It also steals on-device keychain and crypto-wallet data, and enables two-way C2 communication with the attacker's infrastructure.",
       "actionable_mitigations": [
         "Ensure all iOS devices are running the latest version of the operating system",
         "Implement strict network segmentation and access controls",
         "Monitor for suspicious activity and implement detection and log monitoring indicators"
       ],
-      "telegram_snippet": "P7 DarkSword iOS exploit kit discovered, stealing crypto-wallet data and enabling remote commands. Update iOS devices to latest version and implement network segmentation to mitigate risk.",
+      "telegram_snippet": "P7 DarkSword iOS exploit kit discovered, featuring crypto-wallet theft and remote commands. Ensure all iOS devices are running the latest OS version and implement strict network segmentation.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
       "published_at": "2026-10-11T04:24:34+00:00"
     },
     {
-      "title": "Let\u2019s Encrypt Cuts Default Certificate Validity to 64 Days Ahead of 45-Day Switch",
+      "title": "Critical SonicWall Vulnerability Exploited Days After Disclosure",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
-      "published_at": "2026-10-12T07:53:28+00:00",
+      "url": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/",
+      "published_at": "2026-10-12T08:36:01+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -175,16 +151,46 @@
       "affected_vendors": [
         "General Industry"
       ],
-      "cve_ids": [],
+      "cve_ids": [
+        "CVE-2026-102255"
+      ],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Let\u2019s Encrypt Cuts Default Certificate Validity to 64 Days Ahead of 45-Day Switch. Beginning February 2027, all newly issued certificates will have a 64-day validity period by default.",
+      "executive_summary": "Critical SonicWall Vulnerability Exploited Days After Disclosure. CVE-2026-102255 is a pre-authenticated SSRF flaw that could allow attackers to perform unauthorized operations.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Let\u2019s Encrypt Cuts Default Certificate Validity to 64 Days Ahead of 45-Day Switch \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Critical SonicWall Vulnerability Exploited Days After Disclosure \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Let\u2019s Encrypt Cuts Default Certificate Validity to 64 Days Ahead of 45-Day Switch",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "LOW",
+      "severity_score": 2.5,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "Let's Encrypt"
+      ],
+      "cve_ids": [
+        "N/A"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Let\u2019s Encrypt is reducing the default validity period of SSL/TLS certificates from 90 days to 64 days, ahead of a planned 45-day switch. This change aims to reduce the risk of certificate misuse and improve security.",
+      "technical_breakdown": "The change is intended to reduce the window of opportunity for attackers to obtain and use compromised certificates. The 64-day validity period is seen as a compromise between security and operational convenience.",
+      "actionable_mitigations": [
+        "Verify certificate validity periods and update certificate renewal processes accordingly",
+        "Monitor certificate issuance and revocation logs for suspicious activity",
+        "Implement certificate pinning or other certificate validation mechanisms"
+      ],
+      "telegram_snippet": "Let\u2019s Encrypt reduces default SSL/TLS certificate validity to 64 days, ahead of planned 45-day switch, to improve security and reduce certificate misuse risk.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
+      "published_at": "2026-10-12T07:53:28+00:00"
     }
   ]
 }
