@@ -1,116 +1,30 @@
 {
-  "date": "2026-10-12",
-  "generated_at": "2026-10-12 10:16:19 UTC",
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13 09:40:25 UTC",
   "metrics": {
-    "total_incidents": 6,
-    "critical_threats": 4,
-    "high_threats": 0,
-    "medium_threats": 1,
-    "low_threats": 1,
-    "unique_cves_count": 4,
+    "total_incidents": 10,
+    "critical_threats": 2,
+    "high_threats": 3,
+    "medium_threats": 5,
+    "low_threats": 0,
+    "unique_cves_count": 1,
     "unique_cves": [
-      "CVE-2026-102255",
-      "CVE-2026-85097",
-      "N/A",
       "Unknown"
     ],
     "top_affected_vendors": [
-      "WordPress",
-      "Bricksforge",
-      "E-commerce platforms",
-      "Nippon Columbia",
-      "Daiichi Kosho"
+      "Multiple Android device manufacturers using MediaTek platforms",
+      "Yandex",
+      "Ahold Delhaize",
+      "Microsoft",
+      "Xandr"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 10.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "WordPress",
-        "Bricksforge"
-      ],
-      "cve_ids": [
-        "CVE-2026-85097"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A critical vulnerability in the Bricksforge WordPress plugin has been exploited in the wild, allowing unauthenticated attackers to execute arbitrary PHP code and gain RCE. This flaw has a CVSS score of 10.0, indicating maximum severity.",
-      "technical_breakdown": "The vulnerability, CVE-2026-85097, allows unauthenticated attackers to upload and execute arbitrary PHP code on vulnerable WordPress websites, resulting in RCE. This is due to a critical flaw in the Bricksforge plugin.",
-      "actionable_mitigations": [
-        "Update to the latest version of the Bricksforge plugin",
-        "Apply the patch for CVE-2026-85097",
-        "Implement network containment or firewall rules to block suspicious traffic"
-      ],
-      "telegram_snippet": "Critical vulnerability in Bricksforge WordPress plugin exploited in the wild, allowing unauthenticated RCE with CVSS score 10.0. Update to latest plugin version and apply patch to mitigate.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-      "published_at": "2026-10-12T09:02:14+00:00"
-    },
-    {
-      "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
-      "threat_category": "Nation-State/APT",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Government",
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "WordPress",
-        "E-commerce platforms"
-      ],
-      "cve_ids": [],
-      "threat_actor": "CyberXero",
-      "executive_summary": "CyberXero conducted an AI-augmented initial access campaign targeting Ukrainian WordPress sites, e-commerce platforms, and critical infrastructure, stealing over 628,000 records. This campaign combines commodity tools like Cobalt Strike with Anthropic's Claude Code for orchestration.",
-      "technical_breakdown": "The campaign uses Cobalt Strike for initial access and Claude Code for AI-powered orchestration, allowing for efficient targeting and exploitation of vulnerabilities. The use of Claude Code enables CyberXero to automate and optimize their attack workflow.",
-      "actionable_mitigations": [
-        "Implement security patches for WordPress and e-commerce platforms",
-        "Monitor network traffic for Cobalt Strike indicators",
-        "Implement AI-powered threat detection and response systems"
-      ],
-      "telegram_snippet": "CyberXero's AI-augmented campaign stole over 628,000 Ukrainian records, combining Cobalt Strike with Anthropic's Claude Code for efficient targeting and exploitation.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
-      "published_at": "2026-10-12T07:26:12+00:00"
-    },
-    {
-      "title": "Nippon Columbia malware incident exposes 8.6 million karaoke fan records",
-      "threat_category": "Data Breach",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Nippon Columbia",
-        "Daiichi Kosho"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A malware infection at Nippon Columbia exposed 8.6 million customer and employee records, posing a significant risk to personal data and potentially enabling identity theft. The incident highlights the importance of robust cybersecurity measures in the entertainment industry.",
-      "technical_breakdown": "The malware infection occurred at Nippon Columbia, a contractor of Daiichi Kosho, and exposed sensitive customer and employee data. The incident is believed to have been caused by a lack of robust cybersecurity measures at the affected company.",
-      "actionable_mitigations": [
-        "Implement robust cybersecurity measures, including regular software updates and employee training",
-        "Conduct thorough risk assessments to identify and address vulnerabilities",
-        "Implement data encryption and access controls to protect sensitive information"
-      ],
-      "telegram_snippet": "Malware incident at Nippon Columbia exposes 8.6 million records, posing significant risk to personal data and potentially enabling identity theft. Incident highlights importance of robust cybersecurity measures in the entertainment industry.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
-      "published_at": "2026-10-11T14:23:46+00:00"
-    },
-    {
-      "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
-      "threat_category": "0-Day & Exploit",
+      "title": "Low-Cost Android Phones Ship With Preinstalled Malware",
+      "threat_category": "Ransomware | Data Breach | 0-Day & Exploit | Nation-State/APT | Cloud & Supply Chain | Vulnerability / Advisory",
       "severity": "CRITICAL",
       "severity_score": 9.0,
       "target_sectors": [
@@ -118,29 +32,130 @@
         "Government"
       ],
       "affected_vendors": [
-        "Apple"
+        "Multiple Android device manufacturers using MediaTek platforms"
       ],
       "cve_ids": [
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The P7 DarkSword iOS exploit kit has been discovered, featuring reduced on-device footprint, crypto-wallet theft, and two-way C2 communication with attackers. This variant poses a significant threat to iOS users, allowing attackers to steal sensitive data and execute remote commands.",
-      "technical_breakdown": "The P7 DarkSword exploit kit reduces its on-device footprint by utilizing advanced evasion techniques, allowing it to evade detection. It also steals on-device keychain and crypto-wallet data, and enables two-way C2 communication with the attacker's infrastructure.",
+      "executive_summary": "Low-cost Android smartphones have been shipped with preinstalled malware, allowing bad actors to install apps, conduct ad fraud, and turn devices into residential proxies. This activity is being tracked by Bitdefender under the moniker Midnight Mimosa.",
+      "technical_breakdown": "The malware is preinstalled in the device firmware, allowing it to operate covertly and evade detection. The malicious software targets Android devices built on MediaTek platforms across several brands.",
       "actionable_mitigations": [
-        "Ensure all iOS devices are running the latest version of the operating system",
-        "Implement strict network segmentation and access controls",
-        "Monitor for suspicious activity and implement detection and log monitoring indicators"
+        "Verify device firmware and software integrity",
+        "Implement robust mobile security solutions",
+        "Monitor for suspicious app installations and network activity"
       ],
-      "telegram_snippet": "P7 DarkSword iOS exploit kit discovered, featuring crypto-wallet theft and remote commands. Ensure all iOS devices are running the latest OS version and implement strict network segmentation.",
+      "telegram_snippet": "Low-cost Android phones shipped with preinstalled malware, enabling ad fraud and residential proxy activity. Multiple device manufacturers affected, with Bitdefender tracking the activity under Midnight Mimosa.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-      "published_at": "2026-10-11T04:24:34+00:00"
+      "url": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
+      "published_at": "2026-10-13T06:00:11+00:00"
     },
     {
-      "title": "Critical SonicWall Vulnerability Exploited Days After Disclosure",
+      "title": "Yandex Confirms Service Outage Due to Drone Attacks on Data Centers",
+      "threat_category": "Nation-State/APT",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
+      "target_sectors": [
+        "Cloud & Technology"
+      ],
+      "affected_vendors": [
+        "Yandex"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Yandex's cloud services were disrupted after drone attacks damaged three of its data centers, resulting in service outages and potential data loss for users. The incident highlights the increasing threat of physical attacks on critical infrastructure.",
+      "technical_breakdown": "The drone attacks targeted Yandex's data centers, causing damage to the facilities and disrupting services. The incident is believed to be a deliberate act of sabotage.",
+      "actionable_mitigations": [
+        "Implement robust physical security measures to protect data centers",
+        "Develop incident response plans for physical attacks",
+        "Conduct regular risk assessments to identify vulnerabilities"
+      ],
+      "telegram_snippet": "Yandex's cloud services were disrupted after drone attacks damaged three of its data centers, resulting in service outages and potential data loss for users.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+      "published_at": "2026-10-12T19:23:01+00:00"
+    },
+    {
+      "title": "Cyberattack Prompts Ahold Delhaize to Disconnect Systems",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Retail"
+      ],
+      "affected_vendors": [
+        "Ahold Delhaize"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Ahold Delhaize disconnected some of its systems to contain a security issue within its network, indicating a potential data breach. The company has not disclosed further details about the incident.",
+      "technical_breakdown": "The exact nature of the security issue is unknown, but the company took swift action to disconnect affected systems to prevent further potential damage. The incident highlights the importance of having robust incident response plans in place.",
+      "actionable_mitigations": [
+        "Review and update incident response plans to ensure swift action in case of a security issue",
+        "Implement network segmentation to limit the spread of potential threats",
+        "Monitor system logs for suspicious activity"
+      ],
+      "telegram_snippet": "Ahold Delhaize disconnected systems to contain a security issue, indicating a potential data breach. No further details have been disclosed about the incident.",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/",
-      "published_at": "2026-10-12T08:36:01+00:00",
+      "url": "https://www.securityweek.com/cyberattack-prompts-ahold-delhaize-to-disconnect-systems/",
+      "published_at": "2026-10-13T09:37:12+00:00"
+    },
+    {
+      "title": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "Microsoft",
+        "Xandr"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Norway's Data Protection Authority fined Xandr $9.6 million for unlawfully processing and sharing Grindr user data. This incident highlights the importance of data protection and compliance with regulations.",
+      "technical_breakdown": "Xandr processed and shared Grindr user data without consent, violating Norway's data protection regulations. The incident was discovered and reported by the Norwegian Data Protection Authority.",
+      "actionable_mitigations": [
+        "Review and update data processing and sharing policies to ensure compliance with regulations",
+        "Implement robust consent mechanisms for user data",
+        "Conduct regular data protection audits to identify and address vulnerabilities"
+      ],
+      "telegram_snippet": "Norway fines Microsoft's Xandr $9.6M for unlawfully sharing Grindr user data, highlighting the importance of data protection and compliance.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+      "published_at": "2026-10-12T20:13:52+00:00"
+    },
+    {
+      "title": "Prominent Ransomware Negotiator Faces Extortion Charges",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A prominent ransomware negotiator was arrested and charged with conspiracy to extort money, highlighting the blurring of lines between legitimate cybersecurity and illicit activities. This development poses operational risk to organizations that engage with such individuals, potentially compromising their security posture.",
+      "technical_breakdown": "The suspect's alleged activities involved leveraging their position to extort money from victims, exploiting the trust placed in them as a ransomware negotiator. The root cause of this incident lies in the lack of regulation and oversight in the cybersecurity industry, allowing malicious actors to infiltrate and manipulate legitimate operations.",
+      "actionable_mitigations": [
+        "Conduct thorough background checks on third-party vendors and partners",
+        "Implement strict access controls and monitoring for sensitive transactions",
+        "Enhance cybersecurity awareness and training for employees"
+      ],
+      "telegram_snippet": "Prominent ransomware negotiator arrested and charged with conspiracy to extort money, highlighting operational risk to organizations that engage with such individuals.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+      "published_at": "2026-10-12T20:00:53+00:00"
+    },
+    {
+      "title": "Attackers Heat French Supermarket Fridges Up to 50\u00b0C by Hijacking Danfoss Controllers",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html",
+      "published_at": "2026-10-13T08:48:41+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -151,46 +166,120 @@
       "affected_vendors": [
         "General Industry"
       ],
-      "cve_ids": [
-        "CVE-2026-102255"
-      ],
+      "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Critical SonicWall Vulnerability Exploited Days After Disclosure. CVE-2026-102255 is a pre-authenticated SSRF flaw that could allow attackers to perform unauthorized operations.",
+      "executive_summary": "Attackers Heat French Supermarket Fridges Up to 50\u00b0C by Hijacking Danfoss Controllers. Attackers took remote control of fridges and freezers at hundreds of French supermarkets on the night of October 11 and warmed them, forcing stores to throw food away, several retail chains said.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Attackers Heat French Supermarket Fridges Up to 50\u00b0C by Hijacking Danfoss Controllers \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
+      "published_at": "2026-10-13T08:44:01+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control. Two of 31 newly disclosed flaws in Progress Software's MarkLogic Server database could let an account given only some management privileges take administrator control of the server, the company says.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html",
+      "published_at": "2026-10-13T08:43:37+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code. GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Refrigeration Controller Hack Spoils Food Across European Supermarkets",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/",
+      "published_at": "2026-10-13T08:28:51+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Refrigeration Controller Hack Spoils Food Across European Supermarkets. A cyberattack targeted refrigeration controllers, setting refrigerators and freezers across hundreds of supermarkets to defrost.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Critical SonicWall Vulnerability Exploited Days After Disclosure \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Refrigeration Controller Hack Spoils Food Across European Supermarkets \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Let\u2019s Encrypt Cuts Default Certificate Validity to 64 Days Ahead of 45-Day Switch",
+      "title": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
+      "published_at": "2026-10-12T21:42:42+00:00",
       "threat_category": "Vulnerability / Advisory",
-      "severity": "LOW",
-      "severity_score": 2.5,
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Let's Encrypt"
+        "General Industry"
       ],
-      "cve_ids": [
-        "N/A"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Let\u2019s Encrypt is reducing the default validity period of SSL/TLS certificates from 90 days to 64 days, ahead of a planned 45-day switch. This change aims to reduce the risk of certificate misuse and improve security.",
-      "technical_breakdown": "The change is intended to reduce the window of opportunity for attackers to obtain and use compromised certificates. The 64-day validity period is seen as a compromise between security and operational convenience.",
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack. Attackers are currently targeting a critical vulnerability in SMA 1000 appliances, putting SonicWall customers in a familiar yet unenviable position..",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Verify certificate validity periods and update certificate renewal processes accordingly",
-        "Monitor certificate issuance and revocation logs for suspicious activity",
-        "Implement certificate pinning or other certificate validation mechanisms"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Let\u2019s Encrypt reduces default SSL/TLS certificate validity to 64 days, ahead of planned 45-day switch, to improve security and reduce certificate misuse risk.",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
-      "published_at": "2026-10-12T07:53:28+00:00"
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
