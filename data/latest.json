@@ -1,193 +1,120 @@
 {
-  "date": "2026-10-13",
-  "generated_at": "2026-10-13 10:07:31 UTC",
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14 07:56:19 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 4,
+    "critical_threats": 3,
     "high_threats": 2,
-    "medium_threats": 4,
+    "medium_threats": 5,
     "low_threats": 0,
-    "unique_cves_count": 2,
+    "unique_cves_count": 3,
     "unique_cves": [
-      "CVE-2023-XXXX",
+      "CVE-2024-XXXX",
+      "CVE-2026-XXXX",
       "Unknown"
     ],
     "top_affected_vendors": [
-      "Progress Software",
-      "Refrigeration controller manufacturers (unspecified)",
-      "SonicWall",
-      "Yandex",
-      "Danfoss"
+      "Microsoft",
+      "SAP",
+      "OpenAI",
+      "Fortinet",
+      "Ivanti"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control",
+      "title": "SAP Patches Critical NetWeaver, S/4HANA Vulnerabilities",
       "threat_category": "Vulnerability / Advisory",
       "severity": "CRITICAL",
-      "severity_score": 9.0,
+      "severity_score": 9.5,
       "target_sectors": [
         "Enterprise"
       ],
       "affected_vendors": [
-        "Progress Software"
-      ],
-      "cve_ids": [
-        "CVE-2023-XXXX"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Two critical vulnerabilities in MarkLogic Server database allow delegated managers to gain persistent admin control, posing significant operational risk. Fixes have been available since September 10, but affected organizations must apply patches to mitigate the risk.",
-      "technical_breakdown": "The vulnerabilities, disclosed in 31 flaws, allow an account with limited management privileges to escalate to administrator control, exploiting weaknesses in MarkLogic Server's access control mechanisms. The flaws can be exploited through specific management actions, enabling attackers to gain persistent admin control.",
-      "actionable_mitigations": [
-        "Apply patches in MarkLogic 11.3.7 and MarkLogic 12.1.0 to address the vulnerabilities",
-        "Implement network containment or firewall rules to limit access to the affected system",
-        "Monitor system logs for suspicious activity and implement detection indicators to identify potential exploitation"
-      ],
-      "telegram_snippet": "Critical MarkLogic flaws allow delegated managers to gain persistent admin control, posing significant operational risk. Apply patches in MarkLogic 11.3.7 and MarkLogic 12.1.0 to mitigate the risk.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
-      "published_at": "2026-10-13T08:44:01+00:00"
-    },
-    {
-      "title": "Refrigeration Controller Hack Spoils Food Across European Supermarkets",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Retail"
-      ],
-      "affected_vendors": [
-        "Refrigeration controller manufacturers (unspecified)"
+        "SAP"
       ],
       "cve_ids": [
         "Unknown"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A cyberattack targeted refrigeration controllers, causing hundreds of supermarkets across Europe to defrost, resulting in spoiled food. The attack highlights the vulnerability of industrial control systems to cyber threats.",
-      "technical_breakdown": "The attackers exploited a previously unknown vulnerability in refrigeration controllers to gain access and manipulate temperature settings, leading to the defrosting of refrigerators and freezers.",
+      "executive_summary": "SAP has patched critical vulnerabilities in NetWeaver and S/4HANA that could allow attackers to invoke internal operations and execute code, completely compromising the system. These vulnerabilities pose a significant operational risk to SAP customers.",
+      "technical_breakdown": "The bugs could be exploited by attackers to invoke internal operations and execute code, completely compromising the system. The vulnerabilities are likely to be exploited through remote code execution.",
       "actionable_mitigations": [
-        "Implement regular software updates and patches for refrigeration controllers",
-        "Conduct thorough vulnerability assessments and penetration testing",
-        "Implement network segmentation and isolation for industrial control systems"
+        "Apply the latest SAP patches for NetWeaver and S/4HANA",
+        "Implement network segmentation and access controls",
+        "Monitor system logs for suspicious activity"
       ],
-      "telegram_snippet": "Cyberattack targets refrigeration controllers, spoiling food across hundreds of European supermarkets. Unknown vulnerability exploited to manipulate temperature settings.",
+      "telegram_snippet": "SAP has patched critical vulnerabilities in NetWeaver and S/4HANA that could allow attackers to execute code and compromise the system. Apply the latest patches to mitigate the risk.",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/",
-      "published_at": "2026-10-13T08:28:51+00:00"
+      "url": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
+      "published_at": "2026-10-14T06:12:10+00:00"
     },
     {
-      "title": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack",
+      "title": "Microsoft Patches Record 1,413 Flaws, Including Exploited Windows Shell Bug",
       "threat_category": "Vulnerability / Advisory",
       "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "SonicWall"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Attackers are targeting a critical vulnerability in SonicWall SMA 1000 appliances, putting customers at risk of exploitation. This vulnerability is a maximum-severity SSRF flaw, allowing attackers to potentially access sensitive data and systems.",
-      "technical_breakdown": "The vulnerability is a Server-Side Request Forgery (SSRF) flaw, allowing attackers to send unauthorized requests on behalf of the affected device. This flaw can be exploited to access sensitive data and systems, potentially leading to data breaches or other malicious activities.",
-      "actionable_mitigations": [
-        "Apply the latest patches or software updates for SonicWall SMA 1000 appliances",
-        "Implement network segmentation and access controls to limit exposure",
-        "Monitor logs and network traffic for suspicious activity"
-      ],
-      "telegram_snippet": "SonicWall customers, beware: attackers are targeting a critical SSRF flaw in SMA 1000 appliances, putting sensitive data and systems at risk. Patch now to prevent exploitation.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
-      "published_at": "2026-10-12T21:42:42+00:00"
-    },
-    {
-      "title": "Yandex Confirms Service Outage Due to Drone Attacks on Data Centers",
-      "threat_category": "Nation-State/APT",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Cloud & Technology"
-      ],
-      "affected_vendors": [
-        "Yandex"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Yandex's cloud services were disrupted due to drone attacks on its data centers, resulting in service outages and potential data loss. This incident highlights the increasing threat of physical attacks on critical infrastructure.",
-      "technical_breakdown": "The drone attacks damaged three Yandex data centers, forcing the company to shut down two facilities and partially disable a third. This physical disruption highlights the vulnerability of cloud infrastructure to physical attacks.",
-      "actionable_mitigations": [
-        "Implement robust physical security measures for data centers, including surveillance and access controls",
-        "Develop incident response plans for physical attacks, including communication protocols and business continuity strategies",
-        "Conduct regular risk assessments to identify vulnerabilities in physical security"
-      ],
-      "telegram_snippet": "Yandex's cloud services were disrupted due to drone attacks on its data centers, resulting in service outages and potential data loss. Physical attacks on critical infrastructure pose a significant threat to cloud services.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
-      "published_at": "2026-10-12T19:23:01+00:00"
-    },
-    {
-      "title": "Attackers Hijack Danfoss Controllers to Wreck French Supermarket Fridges",
-      "threat_category": "0-Day & Exploit",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Retail"
-      ],
-      "affected_vendors": [
-        "Danfoss"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Attackers exploited a vulnerability in Danfoss controllers to hijack hundreds of fridges and freezers at French supermarkets, forcing stores to discard perishable food. The incident highlights the potential for critical infrastructure disruption through IoT device exploitation.",
-      "technical_breakdown": "Attackers targeted Danfoss controllers, which allow remote management by maintenance firms, to gain unauthorized access to supermarket refrigeration systems. The exploit leveraged a previously unknown vulnerability in the device's software.",
-      "actionable_mitigations": [
-        "Ensure all Danfoss controllers are updated to the latest firmware version",
-        "Implement network segmentation and access controls for remote management systems",
-        "Monitor refrigeration system logs for suspicious activity"
-      ],
-      "telegram_snippet": "French supermarkets hit by coordinated attack on Danfoss-controlled fridges, forcing stores to discard food. Investigation ongoing to identify vulnerability and attacker motivations.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html",
-      "published_at": "2026-10-13T08:48:41+00:00"
-    },
-    {
-      "title": "Prominent Ransomware Negotiator Faces Extortion Charges",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.0,
+      "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
         "Government"
       ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A prominent ransomware negotiator was arrested and charged with conspiracy to extort money, highlighting the blurring of lines between legitimate cybersecurity and illicit activities. This development poses operational risk to organizations that engage with such individuals, potentially compromising their security posture.",
-      "technical_breakdown": "The individual in question leveraged their expertise in ransomware negotiations to extort money, exploiting their position of trust within the cybersecurity community. The root cause of this incident lies in the lack of effective regulation and oversight of cybersecurity professionals.",
-      "actionable_mitigations": [
-        "Conduct thorough background checks on third-party vendors and partners",
-        "Implement strict policies and procedures for engaging with cybersecurity professionals",
-        "Monitor for suspicious activity and report any concerns to law enforcement"
+      "affected_vendors": [
+        "Microsoft"
       ],
-      "telegram_snippet": "Prominent ransomware negotiator arrested and charged with conspiracy to extort money, highlighting operational risk to organizations that engage with such individuals.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
-      "published_at": "2026-10-12T20:00:53+00:00"
+      "cve_ids": [
+        "CVE-2026-XXXX"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Microsoft patched 1,413 vulnerabilities, including a Windows Shell bug under active exploitation, posing a significant risk of privilege escalation and remote code execution. The sheer number of vulnerabilities highlights the importance of timely patching and vulnerability management.",
+      "technical_breakdown": "The exploited Windows Shell bug allows for privilege escalation and remote code execution, while the majority of vulnerabilities (over 670) relate to privilege escalation, followed by over 300 remote code execution flaws. ",
+      "actionable_mitigations": [
+        "Apply all available patches for Windows, Office, Developer Tools, SharePoint Server, and SQL Server",
+        "Implement network segmentation and access controls to limit lateral movement",
+        "Monitor for suspicious activity and implement detection and response measures"
+      ],
+      "telegram_snippet": "Microsoft patches record 1,413 flaws, including exploited Windows Shell bug, emphasizing the need for timely patching and vulnerability management.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html",
+      "published_at": "2026-10-14T04:34:43+00:00"
     },
     {
-      "title": "Cyberattack Prompts Ahold Delhaize to Disconnect Systems",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/cyberattack-prompts-ahold-delhaize-to-disconnect-systems/",
-      "published_at": "2026-10-13T09:37:12+00:00",
+      "title": "Microsoft Patches Over 1,400 Security Flaws",
       "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [
+        "CVE-2024-XXXX"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Microsoft has released a record-breaking patch batch to address over 1,400 security vulnerabilities in its Windows operating systems and other software, posing a significant operational risk to affected organizations. The sheer number of fixes underscores the importance of timely patching and vulnerability management.",
+      "technical_breakdown": "The vulnerabilities were discovered in Microsoft's Windows operating systems and other software, with the majority being remote code execution (RCE) flaws that could be exploited by attackers to gain unauthorized access to systems. The epic patch batch is a testament to the ongoing cat-and-mouse game between Microsoft and threat actors.",
+      "actionable_mitigations": [
+        "Apply all available Windows updates as soon as possible",
+        "Implement a robust vulnerability management program to stay ahead of emerging threats",
+        "Monitor system logs for suspicious activity and implement detection and response measures"
+      ],
+      "telegram_snippet": "Microsoft has released a record-breaking patch batch to address over 1,400 security vulnerabilities in its Windows operating systems and other software, posing a significant operational risk to affected organizations. Apply all available Windows updates as soon as possible to mitigate potential threats.",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+      "published_at": "2026-10-13T23:24:53+00:00"
+    },
+    {
+      "title": "Ransomware Gangs Embrace Physical Threats, Family Stalking?",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
+      "published_at": "2026-10-14T05:00:00+00:00",
+      "threat_category": "Ransomware",
+      "severity": "HIGH",
+      "severity_score": 8.8,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -197,20 +124,127 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Cyberattack Prompts Ahold Delhaize to Disconnect Systems. The company says it took some of its systems offline to contain a security issue within its network.",
+      "executive_summary": "Ransomware Gangs Embrace Physical Threats, Family Stalking?. Organizations are reporting that employees face threats to their families, stalking, physical violence, and abduction.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Ransomware Gangs Embrace Physical Threats, Family Stalking? \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "OpenAI Employee Arrested for Allegedly Planting Hidden Recorder in Executive Conference Room",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Technology"
+      ],
+      "affected_vendors": [
+        "OpenAI"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Abdulrahman Alfozan",
+      "executive_summary": "An OpenAI employee allegedly planted a hidden recorder in an executive conference room to covertly record sensitive conversations, posing a significant risk to corporate confidentiality and intellectual property.",
+      "technical_breakdown": "The alleged device was used to intercept oral communications, potentially capturing sensitive information such as business strategies and trade secrets.",
+      "actionable_mitigations": [
+        "Conduct thorough background checks on employees with access to sensitive areas",
+        "Implement secure communication protocols, such as encrypted phone lines or video conferencing",
+        "Regularly inspect conference rooms and meeting spaces for hidden devices"
+      ],
+      "telegram_snippet": "OpenAI employee arrested for allegedly planting hidden recorder in executive conference room, posing risk to corporate confidentiality and intellectual property.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html",
+      "published_at": "2026-10-14T01:59:25+00:00"
+    },
+    {
+      "title": "Chrome, Firefox Updates Patch 114 Flaws as Mozilla Unveils Firefox Enterprise",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/chrome-firefox-updates-patch-114-flaws-as-mozilla-unveils-firefox-enterprise/",
+      "published_at": "2026-10-14T07:38:51+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Chrome, Firefox Updates Patch 114 Flaws as Mozilla Unveils Firefox Enterprise. Mozilla has introduced Firefox Enterprise for organizations with strict compliance, governance, and security requirements.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Cyberattack Prompts Ahold Delhaize to Disconnect Systems \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Chrome, Firefox Updates Patch 114 Flaws as Mozilla Unveils Firefox Enterprise \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code",
+      "title": "Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
+      "published_at": "2026-10-14T07:26:35+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Fortinet",
+        "Ivanti",
+        "Citrix"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products. Critical-severity flaws could lead to authentication bypass, code execution, and sensitive authentication information leaks.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Fortinet, Ivanti, Citrix. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products \u2014 Impacting Fortinet, Ivanti, Citrix. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Orphaned VBA Projects Inside DWG Files",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "AutoCAD"
+      ],
+      "cve_ids": [
+        "Unknown"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Old VBA projects stored inside AutoCAD drawing files (.dwg) can pose a security risk if not properly handled. These orphaned projects can potentially be exploited by attackers.",
+      "technical_breakdown": "VBA code stored inside .dwg files can be executed if the file is opened in an environment where macros are enabled. This can lead to potential security risks if the code is malicious.",
+      "actionable_mitigations": [
+        "Disable macros in AutoCAD and other applications that support .dwg files",
+        "Use a reputable antivirus solution to scan .dwg files for malware",
+        "Avoid opening .dwg files from untrusted sources"
+      ],
+      "telegram_snippet": "Old VBA projects in AutoCAD .dwg files can pose a security risk if not handled properly. Disable macros and use antivirus to scan files from untrusted sources.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33420",
+      "published_at": "2026-10-14T06:49:46+00:00"
+    },
+    {
+      "title": "Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html",
-      "published_at": "2026-10-13T08:43:37+00:00",
+      "url": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
+      "published_at": "2026-10-14T05:52:28+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -223,20 +257,20 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code. GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.",
+      "executive_summary": "Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave. Security researchers ran their own code inside a protected part of Windows that is meant to stay sealed off even when the rest of the computer is taken over.",
       "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
-      "published_at": "2026-10-13T06:00:11+00:00",
+      "title": "Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/",
+      "published_at": "2026-10-13T23:07:00+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -249,40 +283,14 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies. Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say. Saudi national Abdulrahman Alfozan was arrested Friday and terminated by OpenAI.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
-      "published_at": "2026-10-12T20:13:52+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing. Norway's Data Protection Authority (Datatilsynet) has fined Microsoft-owned advertising company Xandr NOK 92 million ($9.6M) for unlawfully processing and sharing sensitive data belonging to Grindr users in the country.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Norway fines Microsoft ad firm $9.6 million over Grindr data sharing \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
