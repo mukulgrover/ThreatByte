@@ -1,9 +1,9 @@
 [
   {
     "date": "2026-10-14",
-    "top_headline": "Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products",
+    "top_headline": "Four-Byte Write and Timing Bug Lets Researchers Run Code in Windows SmartScreen Enclave",
     "total_incidents": 10,
-    "critical_threats": 5,
+    "critical_threats": 2,
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
   },
   {
