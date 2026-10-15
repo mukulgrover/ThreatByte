@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-15",
+    "top_headline": "Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution",
+    "total_incidents": 10,
+    "critical_threats": 5,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-10-14",
     "top_headline": "Four-Byte Write and Timing Bug Lets Researchers Run Code in Windows SmartScreen Enclave",
     "total_incidents": 10,
