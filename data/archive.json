@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-18",
+    "top_headline": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+    "total_incidents": 8,
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+  },
+  {
     "date": "2026-10-17",
     "top_headline": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
     "total_incidents": 10,
