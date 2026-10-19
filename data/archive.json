@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-19",
+    "top_headline": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+    "total_incidents": 7,
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+  },
+  {
     "date": "2026-10-18",
     "top_headline": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
     "total_incidents": 8,

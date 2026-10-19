@@ -1,114 +1,87 @@
 {
-  "date": "2026-10-18",
-  "generated_at": "2026-10-18 07:47:25 UTC",
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19 08:01:39 UTC",
   "metrics": {
-    "total_incidents": 8,
+    "total_incidents": 7,
     "critical_threats": 1,
-    "high_threats": 0,
-    "medium_threats": 7,
-    "low_threats": 0,
+    "high_threats": 1,
+    "medium_threats": 4,
+    "low_threats": 1,
     "unique_cves_count": 1,
     "unique_cves": [
-      "CVE-2026-103849"
+      "Unknown"
     ],
     "top_affected_vendors": [
-      "Microsoft",
-      "Cisco",
-      "Ivanti",
-      "Palo Alto"
+      "SiteGuard",
+      "ConnectWise",
+      "Google",
+      "Anthropic",
+      "Opaque Systems"
     ],
     "overall_threat_level": "GUARDED (LEVEL YELLOW)",
     "threat_badge": "HIGH SURGE"
   },
   "articles": [
     {
-      "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
-      "published_at": "2026-10-16T20:34:37+00:00",
-      "threat_category": "0-Day & Exploit",
+      "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+      "threat_category": "Vulnerability / Advisory",
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
+        "Enterprise"
       ],
       "affected_vendors": [
-        "Cisco",
-        "Ivanti",
-        "Palo Alto"
+        "SiteGuard"
       ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs. Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week.",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting Cisco, Ivanti, Palo Alto. Further technical telemetry is developing.",
+      "cve_ids": [
+        "Unknown"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Attackers are exploiting an OS command injection vulnerability in SiteGuard Server Edition to execute commands as root or SYSTEM on affected servers, posing a significant risk to enterprise networks.",
+      "technical_breakdown": "The vulnerability allows attackers to inject malicious commands, which are then executed with elevated privileges, enabling them to gain unauthorized access and control over affected servers.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Apply the latest patches or updates for SiteGuard Server Edition to address the vulnerability.",
+        "Implement network segmentation and isolation to contain the spread of the attack.",
+        "Monitor system logs and network traffic for suspicious activity and implement detection and response measures."
       ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs \u2014 Impacting Cisco, Ivanti, Palo Alto. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+      "telegram_snippet": "Hackers are exploiting a SiteGuard WAF flaw to run commands as admins, targeting enterprise networks. Update SiteGuard Server Edition to the latest version to mitigate the risk.",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
-      "published_at": "2026-10-17T15:18:51+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack. ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+      "published_at": "2026-10-18T14:23:16+00:00"
     },
     {
-      "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
-      "published_at": "2026-10-17T14:32:48+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
+      "title": "ConnectWise Suspends Cloud Backup After Microsoft 365 Tenant Compromise",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.0,
       "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
+        "Enterprise"
       ],
       "affected_vendors": [
-        "General Industry"
+        "ConnectWise"
       ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Drupal patches critical RCE flaws, warns exploits may emerge soon. Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "ConnectWise has suspended its Cloud Backup service after unknown threat actors compromised Microsoft 365 tenants, gaining unauthorized access to application identities. This incident poses a significant operational risk to ConnectWise customers.",
+      "technical_breakdown": "The attackers exploited ConnectWise application identities to compromise Microsoft 365 tenants, highlighting the importance of identity management and access controls. The root cause of the incident is still under investigation.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Review and update Microsoft 365 tenant security settings",
+        "Implement multi-factor authentication for all users",
+        "Monitor for suspicious activity in Microsoft 365 tenant logs"
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Drupal patches critical RCE flaws, warns exploits may emerge soon \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
+      "telegram_snippet": "ConnectWise suspends Cloud Backup service after unknown threat actors compromise Microsoft 365 tenants, highlighting the importance of identity management and access controls.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-      "published_at": "2026-10-17T11:11:56+00:00",
-      "threat_category": "Cloud & Supply Chain",
+      "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
+      "published_at": "2026-10-18T08:23:02+00:00"
+    },
+    {
+      "title": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
+      "published_at": "2026-10-19T06:29:44+00:00",
+      "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
-      "severity_score": 7.2,
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -118,20 +91,46 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon. Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX.",
+      "executive_summary": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers. A flaw in Broadcom's Wi-Fi setup software lets an attacker within radio range run code as root on Broadcom-based routers, without the network password or any pairing step, security researcher Quentin Kaiser disclosed on October 16.",
       "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Israeli Ad Firm Doubled as Candiru\u2019s Zero-Click Spyware Delivery Channel",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-      "published_at": "2026-10-17T11:00:00+00:00",
+      "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+      "published_at": "2026-10-19T06:07:08+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Google"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys. An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys \u2014 Impacting Google. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33434",
+      "published_at": "2026-10-18T12:59:30+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -144,94 +143,66 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Israeli Ad Firm Doubled as Candiru\u2019s Zero-Click Spyware Delivery Channel. Israeli company Discover-Tech\u2019s ads allow threat actors to fingerprint and track devices at scale and infect selected targets.",
+      "executive_summary": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th). Here is the YARA rule I used to detect \"Orphaned VBA Projects Inside DWG Files\"..",
+      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
+      "published_at": "2026-10-18T11:00:00+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars. CyberSN\u2019s Cybersecurity Jobs Report provides visibility into the US cybersecurity job market.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Israeli Ad Firm Doubled as Candiru\u2019s Zero-Click Spyware Delivery Channel \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-      "published_at": "2026-10-17T06:16:46+00:00",
+      "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
       "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
+      "severity": "LOW",
+      "severity_score": 2.0,
       "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
+        "Technology"
       ],
       "affected_vendors": [
-        "Microsoft"
+        "Anthropic",
+        "Opaque Systems"
       ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants. Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to customers' M365 environments.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Anthropic has acquired Opaque Systems, a startup that developed technology to protect sensitive data used by AI systems. This acquisition aims to enhance AI security and confidentiality.",
+      "technical_breakdown": "Opaque Systems' technology leverages underlying hardware to protect sensitive data, ensuring confidentiality and security in AI systems. The acquisition is expected to improve AI security and reduce the risk of data breaches.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Review and assess the security implications of using AI systems with sensitive data",
+        "Implement robust access controls and data encryption",
+        "Monitor for potential security vulnerabilities in AI systems"
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
-      "published_at": "2026-10-16T20:00:59+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [
-        "CVE-2026-103849"
-      ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Critical BlockStrap flaw lets hackers run code on Magento servers. Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Critical BlockStrap flaw lets hackers run code on Magento servers \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
-      "published_at": "2026-10-16T19:49:30+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk. Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "Anthropic acquires Opaque Systems, a startup that developed AI security technology to protect sensitive data. The acquisition aims to enhance AI security and confidentiality.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
+      "published_at": "2026-10-19T07:45:25+00:00"
     }
   ]
 }
