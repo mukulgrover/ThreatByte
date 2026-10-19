@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-10-19",
-    "top_headline": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers Run Code as Root on Routers",
+    "top_headline": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
     "total_incidents": 7,
     "critical_threats": 2,
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
