@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-22",
+    "top_headline": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
+    "total_incidents": 10,
+    "critical_threats": 0,
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)"
+  },
+  {
     "date": "2026-10-21",
     "top_headline": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2)",
     "total_incidents": 10,
