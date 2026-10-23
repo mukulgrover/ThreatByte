@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-23",
+    "top_headline": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+    "total_incidents": 10,
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+  },
+  {
     "date": "2026-10-22",
     "top_headline": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
     "total_incidents": 10,

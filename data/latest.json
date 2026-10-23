@@ -1,112 +1,78 @@
 {
-  "date": "2026-10-22",
-  "generated_at": "2026-10-22 08:19:26 UTC",
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23 07:51:28 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 1,
-    "high_threats": 4,
-    "medium_threats": 3,
-    "low_threats": 1,
-    "unique_cves_count": 4,
-    "unique_cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619",
-      "CVE-2026-XXXX",
-      "N/A"
-    ],
+    "high_threats": 5,
+    "medium_threats": 4,
+    "low_threats": 0,
+    "unique_cves_count": 0,
+    "unique_cves": [],
     "top_affected_vendors": [
-      "Onamae Desktop Cloud",
-      "Meta",
-      "ConnectWise",
-      "Oracle",
-      "Google"
+      "Microsoft"
     ],
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
-    "threat_badge": "CRITICAL RISK"
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)",
+    "threat_badge": "HIGH SURGE"
   },
   "articles": [
     {
-      "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
-      "threat_category": "Data Breach",
+      "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+      "published_at": "2026-10-22T19:05:17+00:00",
+      "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Onamae Desktop Cloud"
+        "General Industry"
       ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Hackers compromised Onamae Desktop Cloud's infrastructure, installing malware on up to 26,739 customers' servers, posing a significant operational risk. The breach highlights the importance of robust security measures for cloud service providers.",
-      "technical_breakdown": "The attackers exploited vulnerabilities in Onamae Desktop Cloud's infrastructure to gain unauthorized access, allowing them to install malware on customers' servers. The root cause of the breach is attributed to inadequate security controls and lack of timely patching.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks. Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Ensure timely patching and updates for all cloud services",
-        "Implement robust security controls, including firewalls and intrusion detection systems",
-        "Monitor server logs for suspicious activity and implement detection and response measures"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Onamae Desktop Cloud hacked, up to 27,000 servers affected; unknown threat actors exploited vulnerabilities to install malware, posing significant operational risk.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
-      "published_at": "2026-10-21T21:43:27+00:00"
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Government",
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "Meta"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Meta has been ordered to pay $25 billion to New Mexico for deceiving users about privacy on Facebook. This fine far exceeds the $5 billion fine levied by the FTC in 2019, highlighting the severity of the issue.",
-      "technical_breakdown": "The deception was rooted in Meta's failure to disclose how user data was being used for targeted advertising, leading to a loss of trust among users. This lack of transparency ultimately led to the massive fine.",
-      "actionable_mitigations": [
-        "Review and update privacy policies to ensure transparency",
-        "Implement robust data protection measures",
-        "Conduct regular audits to ensure compliance"
-      ],
-      "telegram_snippet": "Meta ordered to pay $25 billion to New Mexico for deceiving users about Facebook privacy, exceeding 2019 FTC fine by $20 billion.",
+      "title": "Iran\u2019s Prince of Persia APT Hosts C&C in US for First Time Since 2016",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/",
-      "published_at": "2026-10-22T07:26:54+00:00"
-    },
-    {
-      "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
-      "threat_category": "Cloud & Supply Chain",
+      "url": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
+      "published_at": "2026-10-23T06:39:29+00:00",
+      "threat_category": "Nation-State/APT",
       "severity": "HIGH",
-      "severity_score": 8.0,
+      "severity_score": 8.5,
       "target_sectors": [
-        "Enterprise"
+        "Enterprise",
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "ConnectWise"
+        "General Industry"
       ],
       "cve_ids": [],
-      "threat_actor": "Storm-0940 (China state-aligned)",
-      "executive_summary": "A China state-aligned actor, Storm-0940, compromised the ConnectWise Cloud Backup application using ARTEX AI agents, potentially impacting enterprise customers. The attack highlights the risks of supply chain vulnerabilities and the use of AI-powered tools in cyberattacks.",
-      "technical_breakdown": "Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework, to speed up scanning and compromise the ConnectWise Cloud Backup application. The attack leveraged the framework's capabilities to target the application's vulnerabilities.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Iran\u2019s Prince of Persia APT Hosts C&C in US for First Time Since 2016. After a three-month lull, Prince of Persia hid a Tornado C&C server on US shared hosting, its first US-based server since 2016.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Review and update software dependencies and supply chain configurations",
-        "Implement AI-powered threat detection and monitoring",
-        "Enforce strict access controls and authentication protocols"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "China state-aligned actor Storm-0940 compromised ConnectWise Cloud Backup using ARTEX AI agents, highlighting supply chain risks and AI-powered threats.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
-      "published_at": "2026-10-22T04:21:26+00:00"
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Iran\u2019s Prince of Persia APT Hosts C&C in US for First Time Since 2016 \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
+      "title": "State Bank of India Suffers a Customer PII Data Leak",
       "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
-      "published_at": "2026-10-21T21:15:39+00:00",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
+      "published_at": "2026-10-23T03:30:00+00:00",
       "threat_category": "Data Breach",
       "severity": "HIGH",
       "severity_score": 8.2,
@@ -119,102 +85,23 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "TiDB Breach Exposes Flawed Cloud Security Assumptions. Cloud providers may be storing sensitive customer data, without either party knowing it.",
+      "executive_summary": "State Bank of India Suffers a Customer PII Data Leak. Relatively small data breaches in India can turn quite serious, thanks to a sophisticated underground market for trading PII..",
       "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: TiDB Breach Exposes Flawed Cloud Security Assumptions \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: State Bank of India Suffers a Customer PII Data Leak \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Lazarus hackers use post-quantum cryptography for malware delivery",
+      "title": "What We Missed: Feds Lasso Texas Laptop Farms",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
+      "published_at": "2026-10-22T20:33:10+00:00",
       "threat_category": "Nation-State/APT",
       "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "Lazarus",
-      "executive_summary": "Lazarus hackers are using post-quantum cryptography to deliver malware, combining old and new malware in their operations. This new tactic increases the difficulty of detecting and disrupting their malicious activities.",
-      "technical_breakdown": "The hackers are utilizing a post-quantum cryptographic mechanism to secure the delivery of their malicious payload, making it challenging for security systems to detect and intercept the malware. This approach combines the use of old and new malware, increasing the complexity of the attack.",
-      "actionable_mitigations": [
-        "Implement post-quantum cryptography detection and analysis tools",
-        "Enhance network traffic monitoring and anomaly detection",
-        "Update security software and plugins to address potential vulnerabilities"
-      ],
-      "telegram_snippet": "Lazarus hackers use post-quantum cryptography to deliver malware, combining old and new malware in their operations, increasing the difficulty of detection and disruption.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
-      "published_at": "2026-10-21T20:31:48+00:00"
-    },
-    {
-      "title": "Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL | HIGH | MEDIUM | LOW",
       "severity_score": 8.5,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "Oracle"
-      ],
-      "cve_ids": [
-        "CVE-2026-XXXX"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Oracle released a CPU patching over 1,200 vulnerabilities, with nearly 100 critical severity ratings. Fusion Middleware received the most patches, posing a significant operational risk to affected organizations.",
-      "technical_breakdown": "The vulnerabilities were discovered through internal testing and external reporting, with the majority being assigned a high or critical severity rating. The patches address a range of issues, including remote code execution and denial-of-service vulnerabilities.",
-      "actionable_mitigations": [
-        "Apply the latest Oracle CPU patches to affected systems",
-        "Implement network segmentation and access controls to limit exposure",
-        "Monitor system logs for signs of exploitation"
-      ],
-      "telegram_snippet": "Oracle released a CPU patching over 1,200 vulnerabilities, with nearly 100 critical severity ratings. Affected organizations must apply the latest patches to mitigate operational risk.",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
-      "published_at": "2026-10-22T07:38:14+00:00"
-    },
-    {
-      "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 5.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Google"
-      ],
-      "cve_ids": [
-        "N/A"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Google Chrome has introduced Gemini-powered scam detection to identify deceptive websites and warn users of ClickFix attacks. This feature aims to protect users from falling victim to scams and phishing attempts.",
-      "technical_breakdown": "Gemini uses machine learning algorithms to detect suspicious websites and commands, and Chrome will display a warning to users when it detects a potential scam. This warning will alert users to the potential threat and prevent them from executing malicious commands.",
-      "actionable_mitigations": [
-        "Keep Chrome up-to-date with the latest version",
-        "Be cautious when copying and pasting commands from unknown sources",
-        "Monitor browser activity for suspicious behavior"
-      ],
-      "telegram_snippet": "Google Chrome introduces Gemini-powered scam detection to warn users of ClickFix attacks and protect against phishing attempts.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
-      "published_at": "2026-10-21T22:16:26+00:00"
-    },
-    {
-      "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) [infocon yellow], (Wed, Oct 21st)",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/33440",
-      "published_at": "2026-10-21T21:02:43+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -222,25 +109,100 @@
       "affected_vendors": [
         "General Industry"
       ],
-      "cve_ids": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
+      "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) [infocon yellow], (Wed, Oct 21st). PHP.net announced that it will release a critical update today.",
-      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "What We Missed: Feds Lasso Texas Laptop Farms. In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from busting up North Korea's stateside infrastructure.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) [infocon yellow], (Wed, Oct 21st) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: What We Missed: Feds Lasso Texas Laptop Farms \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security",
+      "title": "Capcom confirms data breach affecting 11.7 million accounts",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+      "published_at": "2026-10-22T20:22:45+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Capcom confirms data breach affecting 11.7 million accounts. Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Capcom confirms data breach affecting 11.7 million accounts \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+      "published_at": "2026-10-22T19:05:35+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat. Right now, there is probably an AI agent running on a laptop somewhere in your network.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Railway warns devs to rotate secrets after potential breach",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+      "published_at": "2026-10-22T21:25:31+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Railway warns devs to rotate secrets after potential breach. Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Railway warns devs to rotate secrets after potential breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
       "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
-      "published_at": "2026-10-21T20:14:42+00:00",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
+      "published_at": "2026-10-22T20:42:17+00:00",
       "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
       "severity_score": 7.2,
@@ -253,37 +215,66 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security. The effort is aimed at standardizing a NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure..",
+      "executive_summary": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack. The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants..",
       "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     },
     {
-      "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "LOW",
-      "severity_score": 2.5,
-      "target_sectors": [
-        "Government"
-      ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "The UAE government is transitioning 50% of its services to agentic AI, aiming to enhance security and safety. This move is part of a broader effort to modernize public services.",
-      "technical_breakdown": "The UAE is leveraging agentic AI to automate and streamline public services, reducing the risk of human error and enhancing overall efficiency.",
-      "actionable_mitigations": [
-        "Regularly review and update AI-powered systems to ensure they align with security and safety standards",
-        "Implement robust monitoring and logging to detect potential security incidents",
-        "Conduct thorough risk assessments before integrating AI into critical services"
-      ],
-      "telegram_snippet": "UAE transitions 50% of gov't services to agentic AI, aiming to enhance security and safety, as part of broader public service modernization efforts.",
+      "title": "Les supermarch\u00e9s de l'UE paient d'un firmware de r\u00e9frig\u00e9rateur non mis \u00e0 jour",
       "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
-      "published_at": "2026-10-22T05:00:00+00:00"
+      "url": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
+      "published_at": "2026-10-22T19:30:20+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Les supermarch\u00e9s de l'UE paient d'un firmware de r\u00e9frig\u00e9rateur non mis \u00e0 jour. Des centaines de magasins ont subi des pertes se chiffrant en millions d'euros parce qu'ils avaient fait appel \u00e0 des tiers pour g\u00e9rer le micrologiciel.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Les supermarch\u00e9s de l'UE paient d'un firmware de r\u00e9frig\u00e9rateur non mis \u00e0 jour \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+      "published_at": "2026-10-22T19:12:51+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "LiteLLM release pipeline hacked to distribute info-stealer malware. Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: LiteLLM release pipeline hacked to distribute info-stealer malware \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
