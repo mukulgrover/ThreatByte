@@ -1,217 +1,29 @@
 {
-  "date": "2026-10-23",
-  "generated_at": "2026-10-23 08:16:10 UTC",
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24 07:32:36 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 2,
-    "high_threats": 6,
-    "medium_threats": 2,
+    "critical_threats": 0,
+    "high_threats": 2,
+    "medium_threats": 8,
     "low_threats": 0,
-    "unique_cves_count": 3,
-    "unique_cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619",
-      "CVE-2026-111497"
-    ],
+    "unique_cves_count": 0,
+    "unique_cves": [],
     "top_affected_vendors": [
-      "Node.js",
-      "PHP2Shell",
-      "State Bank of India",
-      "Railway",
-      "ConnectWise"
+      "Microsoft"
     ],
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
-    "threat_badge": "CRITICAL RISK"
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)",
+    "threat_badge": "MODERATE"
   },
   "articles": [
     {
-      "title": "Node.js Build Vulnerable to RCE via Crafted Brotli Data",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Node.js"
-      ],
-      "cve_ids": [
-        "CVE-2026-111497"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Security researchers have demonstrated a remote code execution (RCE) vulnerability in Node.js, allowing attackers to run malicious code on an official build of Node.js by feeding crafted Brotli data to the bundled Brotli decoder. This vulnerability affects Node.js 24.22.0 and potentially other versions.",
-      "technical_breakdown": "The vulnerability is caused by a flaw in the Brotli decoder, which can be exploited by feeding crafted Brotli data to the decoder. This allows attackers to execute arbitrary code on the affected system.",
-      "actionable_mitigations": [
-        "Apply the patch for Node.js 24.22.0 as soon as possible",
-        "Disable the Brotli decoder if not in use",
-        "Monitor system logs for suspicious activity related to Brotli data"
-      ],
-      "telegram_snippet": "Node.js build vulnerable to RCE via crafted Brotli data, affecting Node.js 24.22.0 and potentially other versions. Patch available, apply ASAP.",
+      "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
-      "published_at": "2026-10-23T07:50:01+00:00"
-    },
-    {
-      "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.2,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "PHP2Shell"
-      ],
-      "cve_ids": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Threat actors are attempting to exploit PHP2Shell vulnerabilities to deploy Mirai malware, targeting millions of systems. The attacks aim to compromise systems and integrate them into a Mirai botnet variant called Potassium.",
-      "technical_breakdown": "Attackers are attempting to exploit CVE-2026-109618 and CVE-2026-109619, two newly disclosed vulnerabilities in PHP2Shell, to gain unauthenticated remote code execution. The flaws have a CVSS score of 9.2, indicating a high severity.",
-      "actionable_mitigations": [
-        "Apply patches for CVE-2026-109618 and CVE-2026-109619",
-        "Implement network segmentation and isolation",
-        "Monitor for suspicious traffic and log anomalies"
-      ],
-      "telegram_snippet": "Threat actors are attempting to exploit PHP2Shell vulnerabilities to deploy Mirai malware, targeting millions of systems. Apply patches and monitor for suspicious traffic to mitigate the risk.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-      "published_at": "2026-10-23T07:40:45+00:00"
-    },
-    {
-      "title": "Iran\u2019s Prince of Persia APT Hosts C&C in US for First Time Since 2016",
+      "url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
+      "published_at": "2026-10-23T18:50:13+00:00",
       "threat_category": "Nation-State/APT",
       "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Government",
-        "Enterprise"
-      ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "Prince of Persia",
-      "executive_summary": "The Prince of Persia APT has resumed its operations after a three-month lull, hosting a command and control (C&C) server in the US for the first time since 2016. This move poses a significant threat to organizations in the US and globally, highlighting the need for enhanced cybersecurity measures.",
-      "technical_breakdown": "The Tornado C&C server was hidden on a US shared hosting platform, demonstrating the group's ability to adapt and evade detection. This tactic allows the group to maintain a low profile while still conducting malicious activities.",
-      "actionable_mitigations": [
-        "Implement enhanced network monitoring and intrusion detection systems to detect and prevent C&C communication",
-        "Conduct regular security audits and vulnerability assessments to identify and patch potential weaknesses",
-        "Implement a robust incident response plan to quickly respond to and contain potential threats"
-      ],
-      "telegram_snippet": "Prince of Persia APT resumes operations, hosting C&C server in US for the first time since 2016, posing a significant threat to organizations globally.",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
-      "published_at": "2026-10-23T06:39:29+00:00"
-    },
-    {
-      "title": "State Bank of India Suffers a Customer PII Data Leak",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Finance"
-      ],
-      "affected_vendors": [
-        "State Bank of India"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A data leak at the State Bank of India exposed customer PII, which can be traded on the sophisticated underground market for Indian PII. This incident highlights the potential for relatively small breaches to have serious consequences.",
-      "technical_breakdown": "The data leak was likely caused by a vulnerability in the bank's systems or a phishing attack that compromised employee credentials. The stolen data was then sold on the dark web.",
-      "actionable_mitigations": [
-        "Implement multi-factor authentication for all employees",
-        "Conduct regular security awareness training",
-        "Monitor dark web marketplaces for stolen data"
-      ],
-      "telegram_snippet": "State Bank of India suffers customer PII data leak, exposing sensitive info on the dark web. Incident highlights the need for robust security measures to prevent and detect data breaches.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
-      "published_at": "2026-10-23T03:30:00+00:00"
-    },
-    {
-      "title": "Railway warns devs to rotate secrets after potential breach",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "Railway"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Railway detected suspicious activity on its systems storing customer environment variables, prompting an urgent warning to users to rotate their secrets. The potential breach may have exposed sensitive information.",
-      "technical_breakdown": "The suspicious activity was detected on Railway's systems earlier this week, and the company is urging users to rotate their secrets as a precautionary measure. The root cause of the breach is currently unknown.",
-      "actionable_mitigations": [
-        "Rotate environment variables and secrets immediately",
-        "Monitor account activity for suspicious behavior",
-        "Implement multi-factor authentication"
-      ],
-      "telegram_snippet": "Railway warns devs to rotate secrets after potential breach, urging users to take immediate action to protect sensitive information.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
-      "published_at": "2026-10-22T21:25:31+00:00"
-    },
-    {
-      "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "ConnectWise"
-      ],
-      "cve_ids": [],
-      "threat_actor": "China-linked",
-      "executive_summary": "A China-linked actor used an AI-enabled penetration-testing tool to attack over 2,200 ConnectWise tenants, highlighting the risk of supply chain attacks. This incident demonstrates the need for robust security measures in software development and deployment.",
-      "technical_breakdown": "The actor leveraged an AI-enabled penetration-testing tool to automate and accelerate the attack, exploiting vulnerabilities in the ConnectWise platform. The tool's AI capabilities enabled the actor to quickly identify and target vulnerable tenants.",
-      "actionable_mitigations": [
-        "Review and update software development and deployment processes to prevent similar supply chain attacks",
-        "Implement AI-powered security tools to detect and prevent automated attacks",
-        "Monitor and analyze network traffic for suspicious activity related to penetration-testing tools"
-      ],
-      "telegram_snippet": "China-linked actor uses AI-enabled tool to attack 2,200+ ConnectWise tenants, highlighting supply chain attack risks.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
-      "published_at": "2026-10-22T20:42:17+00:00"
-    },
-    {
-      "title": "Feds Bust North Korea's Stateside Infrastructure in Operation Lonestar Justice",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.0,
-      "target_sectors": [
-        "Government",
-        "Enterprise"
-      ],
-      "affected_vendors": [],
-      "cve_ids": [],
-      "threat_actor": "North Korea",
-      "executive_summary": "US authorities have dismantled North Korea's stateside infrastructure, disrupting potential cyber threats. The operation highlights the ongoing efforts to combat nation-state-backed cyber attacks.",
-      "technical_breakdown": "The operation involved law enforcement agencies working together to identify and dismantle North Korea's infrastructure, including command and control servers and other key systems. This disruption will make it more difficult for North Korea to launch cyber attacks from within the US.",
-      "actionable_mitigations": [
-        "Implement additional security measures to protect against nation-state-backed attacks",
-        "Monitor for suspicious activity and update threat intelligence",
-        "Review and update incident response plans"
-      ],
-      "telegram_snippet": "US authorities dismantle North Korea's stateside infrastructure, disrupting potential cyber threats in Operation Lonestar Justice.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
-      "published_at": "2026-10-22T20:33:10+00:00"
-    },
-    {
-      "title": "Capcom confirms data breach affecting 11.7 million accounts",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
-      "published_at": "2026-10-22T20:22:45+00:00",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.2,
+      "severity_score": 8.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -221,20 +33,124 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Capcom confirms data breach affecting 11.7 million accounts. Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information.",
+      "executive_summary": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations. Diplomatic organizations in Central Asia have been targeted by a sophisticated new Unified Extensible Firmware Interface (UEFI) bootkit called BlackX.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+      "published_at": "2026-10-23T17:50:47+00:00",
+      "threat_category": "Ransomware",
+      "severity": "HIGH",
+      "severity_score": 8.8,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions. Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+      "published_at": "2026-10-23T20:57:56+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It. Threat actors don't need to rely on malware to breach organizations anymore.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+      "published_at": "2026-10-23T20:55:05+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks. Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers.",
       "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Capcom confirms data breach affecting 11.7 million accounts \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Abandoned Popcorn Time app exposed millions of devices to RCE attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "LiteLLM Compromised in Fresh Supply Chain Attack",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/",
-      "published_at": "2026-10-23T08:10:46+00:00",
+      "title": "(Reliable)? php2shell exploitability, (Fri, Oct 23rd)",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33452",
+      "published_at": "2026-10-23T20:04:47+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "(Reliable)? php2shell exploitability, (Fri, Oct 23rd). Yesterday everyone was running around like crazy (me included :) because of the php2shell vulnerability..",
+      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: (Reliable)? php2shell exploitability, (Fri, Oct 23rd) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+      "published_at": "2026-10-23T19:41:23+00:00",
       "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
       "severity_score": 7.2,
@@ -247,20 +163,46 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "LiteLLM Compromised in Fresh Supply Chain Attack. Hackers used compromised GitHub CLI OAuth tokens to push and approve malicious packages on PyPI and Docker.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice. Fixing the critical PHP flaws is not as simple as clicking \"Update.\" Here's how to assess your risk, and what you can do to protect yourself..",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: LiteLLM Compromised in Fresh Supply Chain Attack \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Exposed to PHP2Shell? Cyber Experts Weigh in With Advice \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Atlassian Patches 75 Flaws in Data Center and Server Products",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
-      "published_at": "2026-10-23T07:54:47+00:00",
+      "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+      "published_at": "2026-10-23T18:54:41+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Microsoft Teams to get AI-powered, context-aware phishing detection. Microsoft has announced plans to add AI-powered phishing detection to Teams messages starting in early November 2026.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft Teams to get AI-powered, context-aware phishing detection \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+      "published_at": "2026-10-23T17:54:08+00:00",
       "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
       "severity_score": 7.2,
@@ -273,14 +215,66 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Atlassian Patches 75 Flaws in Data Center and Server Products. Atlassian\u2019s October bulletin lists 176 vulnerability entries, including 14 critical-severity issues, all in third-party components.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws. Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Atlassian Patches 75 Flaws in Data Center and Server Products \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "AI Tools Are Generating Massive Attacks for Little Cost",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
+      "published_at": "2026-10-23T17:26:59+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "AI Tools Are Generating Massive Attacks for Little Cost. One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: AI Tools Are Generating Massive Attacks for Little Cost \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Microsoft: Windows Server 2016 reaches end of support in January",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+      "published_at": "2026-10-23T17:05:07+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Microsoft: Windows Server 2016 reaches end of support in January. Microsoft says Windows Server 2016 will stop receiving security updates after it reaches the end of support in January 2027.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft: Windows Server 2016 reaches end of support in January \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     }
   ]
 }
