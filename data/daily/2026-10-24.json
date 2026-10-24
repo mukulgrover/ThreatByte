@@ -1,21 +1,163 @@
 {
   "date": "2026-10-24",
-  "generated_at": "2026-10-24 07:36:44 UTC",
+  "generated_at": "2026-10-24 07:53:52 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 0,
-    "high_threats": 2,
-    "medium_threats": 8,
+    "critical_threats": 4,
+    "high_threats": 3,
+    "medium_threats": 3,
     "low_threats": 0,
-    "unique_cves_count": 0,
-    "unique_cves": [],
+    "unique_cves_count": 3,
+    "unique_cves": [
+      "CVE-2026-110447",
+      "CVE-2026-XXXX",
+      "Unknown"
+    ],
     "top_affected_vendors": [
+      "Time4Popcorn",
+      "PHP",
+      "GitLab",
       "Microsoft"
     ],
-    "overall_threat_level": "NOMINAL (LEVEL BLUE)",
-    "threat_badge": "MODERATE"
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
+    "threat_badge": "CRITICAL RISK"
   },
   "articles": [
+    {
+      "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+      "published_at": "2026-10-24T06:25:57+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-110447"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
+      "target_sectors": [
+        "Consumer",
+        "Home Users"
+      ],
+      "affected_vendors": [
+        "Time4Popcorn"
+      ],
+      "cve_ids": [
+        "Unknown"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A critical vulnerability in the abandoned Time4Popcorn app allowed attackers to execute malicious code with elevated privileges on millions of computers. Researchers remotely disabled the vulnerable updater, mitigating the risk of RCE attacks.",
+      "technical_breakdown": "The vulnerability was caused by an insecure updater that allowed attackers to execute arbitrary code. The updater was remotely disabled by researchers, preventing further exploitation.",
+      "actionable_mitigations": [
+        "Uninstall the Time4Popcorn app",
+        "Disable any related system services",
+        "Monitor for suspicious activity"
+      ],
+      "telegram_snippet": "Abandoned Popcorn Time app exposed to RCE attacks, millions of devices at risk. Researchers remotely disabled vulnerable updater to mitigate risk.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+      "published_at": "2026-10-23T20:55:05+00:00"
+    },
+    {
+      "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [
+        "PHP"
+      ],
+      "cve_ids": [
+        "Unknown"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Cyber experts advise on assessing risk and protecting against critical PHP flaws, emphasizing the need for careful evaluation and targeted mitigation strategies.",
+      "technical_breakdown": "The PHP flaws are caused by unpatched versions of PHP, which can be exploited by attackers using PHP2Shell. To mitigate, users must update their PHP installations to the latest version.",
+      "actionable_mitigations": [
+        "Update PHP to the latest version",
+        "Implement network segmentation and access controls",
+        "Monitor for suspicious activity and implement detection and response measures"
+      ],
+      "telegram_snippet": "Cyber experts warn of critical PHP flaws, urging users to update PHP to the latest version and implement targeted mitigation strategies to protect against exploitation.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+      "published_at": "2026-10-23T19:41:23+00:00"
+    },
+    {
+      "title": "Four Critical GitLab RCE Flaws Patched in Ruby Regex Engine Fixes",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "GitLab"
+      ],
+      "cve_ids": [
+        "CVE-2026-XXXX"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "GitLab patched four critical RCE flaws in their servers due to specially crafted regex patterns that could corrupt memory and lead to code execution. The vulnerabilities were fixed in Ruby versions 4.0.9, 3.4.12, and 3.3.13.",
+      "technical_breakdown": "The bugs in Onigmo, Ruby's regex engine, allowed for memory corruption during pattern compilation, potentially enabling code execution on GitLab servers. The issues were addressed in recent Ruby patch releases.",
+      "actionable_mitigations": [
+        "Upgrade to Ruby versions 4.0.9, 3.4.12, or 3.3.13",
+        "Implement network segmentation and firewall rules to limit regex pattern processing",
+        "Monitor logs for suspicious regex pattern compilation activity"
+      ],
+      "telegram_snippet": "GitLab patched four critical RCE flaws in their servers due to regex pattern vulnerabilities. Upgrade to Ruby versions 4.0.9, 3.4.12, or 3.3.13 to mitigate the risk.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+      "published_at": "2026-10-23T17:54:08+00:00"
+    },
+    {
+      "title": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It",
+      "threat_category": "Social Engineering",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Threat actors are using AI-powered social engineering tactics to breach organizations by calling help desks and requesting access, exploiting human trust and lack of verification.",
+      "technical_breakdown": "Threat actors utilize AI to craft convincing calls, bypassing traditional security measures, and exploit human psychology to gain access to sensitive systems.",
+      "actionable_mitigations": [
+        "Implement multi-factor verification for all help desk requests",
+        "Train employees to recognize and report suspicious calls",
+        "Monitor and analyze help desk call logs for anomalies"
+      ],
+      "telegram_snippet": "Threat actors use AI to breach orgs by calling help desks, exploiting human trust. Implement MFA and employee training to mitigate.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+      "published_at": "2026-10-23T20:57:56+00:00"
+    },
     {
       "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
       "source": "The Hacker News",
@@ -69,58 +211,6 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
-      "published_at": "2026-10-23T20:57:56+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It. Threat actors don't need to rely on malware to breach organizations anymore.",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
-      "published_at": "2026-10-23T20:55:05+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks. Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Abandoned Popcorn Time app exposed millions of devices to RCE attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
       "title": "(Reliable)? php2shell exploitability, (Fri, Oct 23rd)",
       "source": "SANS Internet Storm Center",
       "url": "https://isc.sans.edu/diary/rss/33452",
@@ -145,32 +235,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: (Reliable)? php2shell exploitability, (Fri, Oct 23rd) \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
-      "published_at": "2026-10-23T19:41:23+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice. Fixing the critical PHP flaws is not as simple as clicking \"Update.\" Here's how to assess your risk, and what you can do to protect yourself..",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Exposed to PHP2Shell? Cyber Experts Weigh in With Advice \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
@@ -199,32 +263,6 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft Teams to get AI-powered, context-aware phishing detection \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
-      "published_at": "2026-10-23T17:54:08+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws. Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
       "title": "AI Tools Are Generating Massive Attacks for Little Cost",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
@@ -249,32 +287,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: AI Tools Are Generating Massive Attacks for Little Cost \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Microsoft: Windows Server 2016 reaches end of support in January",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
-      "published_at": "2026-10-23T17:05:07+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft: Windows Server 2016 reaches end of support in January. Microsoft says Windows Server 2016 will stop receiving security updates after it reaches the end of support in January 2027.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft: Windows Server 2016 reaches end of support in January \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     }
   ]
 }

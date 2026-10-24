@@ -1,10 +1,10 @@
 [
   {
     "date": "2026-10-24",
-    "top_headline": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
+    "top_headline": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
     "total_incidents": 10,
-    "critical_threats": 0,
-    "overall_threat_level": "NOMINAL (LEVEL BLUE)"
+    "critical_threats": 4,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
   },
   {
     "date": "2026-10-23",
