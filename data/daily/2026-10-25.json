@@ -1,0 +1,261 @@
+{
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25 07:45:34 UTC",
+  "metrics": {
+    "total_incidents": 9,
+    "critical_threats": 1,
+    "high_threats": 2,
+    "medium_threats": 6,
+    "low_threats": 0,
+    "unique_cves_count": 2,
+    "unique_cves": [
+      "CVE-2026-110447",
+      "CVE-2026-111497"
+    ],
+    "top_affected_vendors": [
+      "Google"
+    ],
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)",
+    "threat_badge": "HIGH SURGE"
+  },
+  "articles": [
+    {
+      "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+      "published_at": "2026-10-24T06:25:57+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-110447"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
+      "published_at": "2026-10-24T14:17:32+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot. A new UEFI bootkit named BlackX, deployed in an espionage campaign in early 2026, exploited the old Baton Drop vulnerability to bypass Secure Boot and load a malicious driver designed to interfere with security solutions from Kaspersky and Avast.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+      "published_at": "2026-10-24T11:03:33+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline. LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to push a malicious version of the popular Python package.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+      "published_at": "2026-10-24T11:09:29+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Google"
+      ],
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software. A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software \u2014 Impacting Google. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+      "published_at": "2026-10-24T10:36:33+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Google"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads. Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve targeted ads to users based on their activity on other connected Google services.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads \u2014 Impacting Google. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+      "published_at": "2026-10-24T09:04:24+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet. Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to take over the machine.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+      "published_at": "2026-10-23T20:57:56+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It. Threat actors don't need to rely on malware to breach organizations anymore.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+      "published_at": "2026-10-23T20:55:05+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks. Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Abandoned Popcorn Time app exposed millions of devices to RCE attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "(Reliable)? php2shell exploitability, (Fri, Oct 23rd)",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33452",
+      "published_at": "2026-10-23T20:04:47+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "(Reliable)? php2shell exploitability, (Fri, Oct 23rd). Yesterday everyone was running around like crazy (me included :) because of the php2shell vulnerability..",
+      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: (Reliable)? php2shell exploitability, (Fri, Oct 23rd) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    }
+  ]
+}

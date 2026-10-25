@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-25",
+    "top_headline": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+    "total_incidents": 9,
+    "critical_threats": 1,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+  },
+  {
     "date": "2026-10-24",
     "top_headline": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
     "total_incidents": 10,
