@@ -1,11 +1,11 @@
 {
   "date": "2026-10-25",
-  "generated_at": "2026-10-25 07:45:34 UTC",
+  "generated_at": "2026-10-25 07:49:29 UTC",
   "metrics": {
     "total_incidents": 9,
     "critical_threats": 1,
-    "high_threats": 2,
-    "medium_threats": 6,
+    "high_threats": 3,
+    "medium_threats": 5,
     "low_threats": 0,
     "unique_cves_count": 2,
     "unique_cves": [
@@ -100,6 +100,29 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
+      "title": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It",
+      "threat_category": "Social Engineering",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Threat actors are using AI-powered social engineering tactics to breach organizations by calling help desks and requesting access, highlighting the need for improved trust and authentication measures.",
+      "technical_breakdown": "Threat actors utilize AI to craft convincing calls to help desks, exploiting human trust and lack of authentication protocols, allowing them to gain unauthorized access.",
+      "actionable_mitigations": [
+        "Implement multi-factor authentication for all help desk requests",
+        "Train employees to recognize and report suspicious calls",
+        "Use AI-powered detection tools to identify and block suspicious activity"
+      ],
+      "telegram_snippet": "Threat actors use AI to breach orgs by calling help desks, exploiting human trust. Implement MFA and employee training to mitigate risk.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+      "published_at": "2026-10-23T20:57:56+00:00"
+    },
+    {
       "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
@@ -178,32 +201,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
-      "published_at": "2026-10-23T20:57:56+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It. Threat actors don't need to rely on malware to breach organizations anymore.",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
