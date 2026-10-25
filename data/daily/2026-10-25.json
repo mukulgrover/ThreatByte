@@ -1,11 +1,11 @@
 {
   "date": "2026-10-25",
-  "generated_at": "2026-10-25 07:49:29 UTC",
+  "generated_at": "2026-10-25 08:07:55 UTC",
   "metrics": {
     "total_incidents": 9,
     "critical_threats": 1,
-    "high_threats": 3,
-    "medium_threats": 5,
+    "high_threats": 2,
+    "medium_threats": 6,
     "low_threats": 0,
     "unique_cves_count": 2,
     "unique_cves": [
@@ -100,27 +100,30 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It",
-      "threat_category": "Social Engineering",
-      "severity": "HIGH",
-      "severity_score": 8.0,
+      "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+      "published_at": "2026-10-25T06:54:29+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
-        "Enterprise"
+        "Enterprise",
+        "Critical Infrastructure"
       ],
-      "affected_vendors": [],
+      "affected_vendors": [
+        "General Industry"
+      ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Threat actors are using AI-powered social engineering tactics to breach organizations by calling help desks and requesting access, highlighting the need for improved trust and authentication measures.",
-      "technical_breakdown": "Threat actors utilize AI to craft convincing calls to help desks, exploiting human trust and lack of authentication protocols, allowing them to gain unauthorized access.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication. OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Implement multi-factor authentication for all help desk requests",
-        "Train employees to recognize and report suspicious calls",
-        "Use AI-powered detection tools to identify and block suspicious activity"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Threat actors use AI to breach orgs by calling help desks, exploiting human trust. Implement MFA and employee training to mitigate risk.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
-      "published_at": "2026-10-23T20:57:56+00:00"
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
@@ -203,6 +206,32 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
+      "title": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+      "published_at": "2026-10-23T20:57:56+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It. Threat actors don't need to rely on malware to breach organizations anymore.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Trust Is Not What It Seems \u2014 And Fraudsters Are Counting on It \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
       "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
@@ -227,32 +256,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Abandoned Popcorn Time app exposed millions of devices to RCE attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "(Reliable)? php2shell exploitability, (Fri, Oct 23rd)",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/33452",
-      "published_at": "2026-10-23T20:04:47+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "(Reliable)? php2shell exploitability, (Fri, Oct 23rd). Yesterday everyone was running around like crazy (me included :) because of the php2shell vulnerability..",
-      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: (Reliable)? php2shell exploitability, (Fri, Oct 23rd) \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
