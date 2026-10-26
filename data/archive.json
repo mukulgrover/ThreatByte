@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-26",
+    "top_headline": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
+    "total_incidents": 7,
+    "critical_threats": 0,
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)"
+  },
+  {
     "date": "2026-10-25",
     "top_headline": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
     "total_incidents": 9,
