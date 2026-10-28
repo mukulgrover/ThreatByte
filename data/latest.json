@@ -1,25 +1,58 @@
 {
   "date": "2026-10-28",
-  "generated_at": "2026-10-28 09:00:09 UTC",
+  "generated_at": "2026-10-28 09:19:32 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 1,
+    "critical_threats": 3,
     "high_threats": 2,
-    "medium_threats": 7,
+    "medium_threats": 5,
     "low_threats": 0,
-    "unique_cves_count": 2,
+    "unique_cves_count": 4,
     "unique_cves": [
+      "CVE-2026-101767",
       "CVE-2026-111497",
-      "CVE-2026-35273"
+      "CVE-2026-35273",
+      "Unknown"
     ],
     "top_affected_vendors": [
-      "Linux",
-      "Google"
+      "Google",
+      "Tailscale",
+      "GMO Group",
+      "Apple",
+      "Microsoft"
     ],
-    "overall_threat_level": "GUARDED (LEVEL YELLOW)",
-    "threat_badge": "HIGH SURGE"
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
+    "threat_badge": "CRITICAL RISK"
   },
   "articles": [
+    {
+      "title": "Tailscale Patches SSH Flaws Allowing Root Access on Other Servers",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "Tailscale"
+      ],
+      "cve_ids": [
+        "Unknown"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Tailscale has released a patch to fix critical SSH flaws that could allow an attacker to gain root access on other servers. The flaws are related to how Tailscale SSH forwards network connections with root privileges.",
+      "technical_breakdown": "The flaws are in the Tailscale SSH server, specifically in how it forwards network connections. An attacker must exploit these flaws to gain root access on other servers.",
+      "actionable_mitigations": [
+        "Update to version 1.104.4 or later",
+        "Disable Tailscale SSH if not in use",
+        "Implement network segmentation and access controls"
+      ],
+      "telegram_snippet": "Tailscale patches critical SSH flaws allowing root access on other servers. Update to version 1.104.4 or later to mitigate the risk.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
+      "published_at": "2026-10-28T06:20:37+00:00"
+    },
     {
       "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
       "source": "The Hacker News",
@@ -49,6 +82,63 @@
       "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
+      "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
+      "threat_category": "Ransomware",
+      "severity": "CRITICAL",
+      "severity_score": 9.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "GMO Group"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "GMO Group's Onamae Desktop Cloud was breached, and a threat actor threatened to launch a ransomware attack. Customers are advised to disconnect systems from the internet and shut down computers.",
+      "technical_breakdown": "The breach occurred through an unknown vulnerability in GMO Group's Onamae Desktop Cloud, allowing the threat actor to gain unauthorized access. The actor threatened to launch a ransomware attack, prompting the company to take immediate action.",
+      "actionable_mitigations": [
+        "Disconnect systems from the internet",
+        "Shut down computers",
+        "Implement network segmentation and isolation"
+      ],
+      "telegram_snippet": "GMO Group's Onamae Desktop Cloud breached, customers advised to shut down PCs amid ransomware threat.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+      "published_at": "2026-10-27T23:35:51+00:00"
+    },
+    {
+      "title": "Anthropic's Unreleased AI Model Chains Flaws into Working Exploits",
+      "threat_category": "0-Day & Exploit",
+      "severity": "HIGH",
+      "severity_score": 8.0,
+      "target_sectors": [
+        "Enterprise",
+        "Government"
+      ],
+      "affected_vendors": [
+        "Google",
+        "Apple",
+        "Microsoft",
+        "Linux"
+      ],
+      "cve_ids": [
+        "Unknown"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "An unreleased Anthropic AI model discovered security flaws in multiple browsers and operating systems, which were then chained into working proof-of-concept exploits. The flaws were reported to vendors and patched before any real-world attacks could occur.",
+      "technical_breakdown": "The AI model was prompted to identify security flaws in Chrome, Safari, Android, Windows, and Linux, which were then exploited using proof-of-concept exploits. The flaws were patched by vendors before any real-world attacks could occur.",
+      "actionable_mitigations": [
+        "Ensure all software is up-to-date with the latest patches",
+        "Implement a robust vulnerability management program",
+        "Monitor for suspicious activity and implement detection and log monitoring indicators"
+      ],
+      "telegram_snippet": "Anthropic's unreleased AI model discovered security flaws in multiple browsers and operating systems, which were then chained into working proof-of-concept exploits. All flaws have been patched by vendors.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
+      "published_at": "2026-10-28T08:15:07+00:00"
+    },
+    {
       "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
@@ -75,13 +165,13 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
-      "published_at": "2026-10-27T23:35:51+00:00",
-      "threat_category": "Ransomware",
-      "severity": "HIGH",
-      "severity_score": 8.8,
+      "title": "Hackers Start Probing Fresh Oracle EBS Vulnerability",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/",
+      "published_at": "2026-10-28T09:14:23+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -89,16 +179,18 @@
       "affected_vendors": [
         "General Industry"
       ],
-      "cve_ids": [],
+      "cve_ids": [
+        "CVE-2026-101767"
+      ],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Japan's GMO urges customers to shut down PCs amid ransomware threat. The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Hackers Start Probing Fresh Oracle EBS Vulnerability. CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Japan's GMO urges customers to shut down PCs amid ransomware threat \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Start Probing Fresh Oracle EBS Vulnerability \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts",
@@ -127,32 +219,6 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
-      "published_at": "2026-10-28T08:15:07+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Linux"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits. An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Linux. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits \u2014 Impacting Linux. Immediate patching and log auditing recommended."
-    },
-    {
       "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
@@ -177,32 +243,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
-      "published_at": "2026-10-28T06:20:37+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers. Tailscale has released version 1.104.4 to fix flaws in its built-in SSH server that could let an attacker reach services and files on other servers that only the root user should be able to touch.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
@@ -257,32 +297,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges \u2014 Impacting Google. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
-      "published_at": "2026-10-27T22:43:27+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests. OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
