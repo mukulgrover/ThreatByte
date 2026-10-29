@@ -1,21 +1,21 @@
 {
   "date": "2026-10-29",
-  "generated_at": "2026-10-29 08:48:08 UTC",
+  "generated_at": "2026-10-29 08:56:31 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 4,
+    "critical_threats": 2,
     "high_threats": 1,
-    "medium_threats": 5,
+    "medium_threats": 7,
     "low_threats": 0,
-    "unique_cves_count": 2,
+    "unique_cves_count": 1,
     "unique_cves": [
-      "CVE-2026-41709",
-      "PHP2Shell vulnerabilities"
+      "CVE-2026-41709"
     ],
     "top_affected_vendors": [
       "CrowdStrike",
       "VMware",
-      "Palo Alto Networks"
+      "Cisco",
+      "Palo Alto"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
@@ -79,59 +79,6 @@
       "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility \u2014 Impacting CrowdStrike, VMware. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise"
-      ],
-      "affected_vendors": [
-        "Palo Alto Networks"
-      ],
-      "cve_ids": [
-        "PHP2Shell vulnerabilities"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Threat actors are exploiting PHP2Shell vulnerabilities in publicly-accessible Palo Alto Networks management interfaces, posing a significant risk to exposed networks. This active exploitation highlights the importance of timely patching and secure configuration of management interfaces.",
-      "technical_breakdown": "The exploitation of PHP2Shell vulnerabilities allows attackers to gain unauthorized access to management interfaces, which can be used to launch further attacks or exfiltrate sensitive data. The root cause of the issue lies in the publicly-exposed management interfaces, which are being exploited due to the lack of timely patching or secure configuration.",
-      "actionable_mitigations": [
-        "Apply the latest patches for PHP2Shell vulnerabilities",
-        "Restrict access to management interfaces to only necessary personnel and IP addresses",
-        "Implement network segmentation and monitoring to detect potential exploitation attempts"
-      ],
-      "telegram_snippet": "Threat actors are actively exploiting PHP2Shell vulnerabilities in exposed Palo Alto Networks management interfaces, posing a critical risk to affected networks. Patching and secure configuration are essential to mitigate this threat.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
-      "published_at": "2026-10-29T05:50:17+00:00"
-    },
-    {
-      "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
-      "published_at": "2026-10-28T18:08:33+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns. The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
       "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
@@ -158,28 +105,56 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
-      "threat_category": "0-Day & Exploit",
+      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+      "published_at": "2026-10-29T08:24:22+00:00",
+      "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
-      "severity_score": 6.0,
+      "severity_score": 6.5,
       "target_sectors": [
-        "Government",
-        "Enterprise"
+        "Enterprise",
+        "Critical Infrastructure"
       ],
-      "affected_vendors": [],
+      "affected_vendors": [
+        "Cisco"
+      ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Researchers are investigating a unique set of cyber threats targeting Italy, with unclear motivations and attack vectors. The lack of clear cause is hindering efforts to develop effective countermeasures.",
-      "technical_breakdown": "The cyber threats in Italy appear to be distinct from those seen elsewhere, with researchers struggling to identify a common exploitation mechanism or root cause. This is making it challenging to develop targeted mitigation strategies.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys. Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Cisco. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Enhance network monitoring and log analysis to detect unusual activity",
-        "Implement additional security controls and threat intelligence feeds",
-        "Conduct regular vulnerability assessments and penetration testing"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Italy under cyber siege: Researchers investigate unique threats with unclear motivations and attack vectors.",
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys \u2014 Impacting Cisco. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
-      "published_at": "2026-10-29T08:00:00+00:00"
+      "published_at": "2026-10-29T08:00:00+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause. Researchers can't quite explain why cyber threats look so different in Italy compared to everywhere else..",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Cyber Vulnerabilities Besiege Italy, Absent Clear Cause \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
@@ -206,6 +181,32 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+      "published_at": "2026-10-29T05:50:17+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Palo Alto"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces. Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Palo Alto. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces \u2014 Impacting Palo Alto. Immediate patching and log auditing recommended."
     },
     {
       "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
