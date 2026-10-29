@@ -1,63 +1,31 @@
 {
-  "date": "2026-10-28",
-  "generated_at": "2026-10-28 09:19:32 UTC",
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29 08:48:08 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 3,
-    "high_threats": 2,
+    "critical_threats": 4,
+    "high_threats": 1,
     "medium_threats": 5,
     "low_threats": 0,
-    "unique_cves_count": 4,
+    "unique_cves_count": 2,
     "unique_cves": [
-      "CVE-2026-101767",
-      "CVE-2026-111497",
-      "CVE-2026-35273",
-      "Unknown"
+      "CVE-2026-41709",
+      "PHP2Shell vulnerabilities"
     ],
     "top_affected_vendors": [
-      "Google",
-      "Tailscale",
-      "GMO Group",
-      "Apple",
-      "Microsoft"
+      "CrowdStrike",
+      "VMware",
+      "Palo Alto Networks"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "Tailscale Patches SSH Flaws Allowing Root Access on Other Servers",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "Tailscale"
-      ],
-      "cve_ids": [
-        "Unknown"
-      ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Tailscale has released a patch to fix critical SSH flaws that could allow an attacker to gain root access on other servers. The flaws are related to how Tailscale SSH forwards network connections with root privileges.",
-      "technical_breakdown": "The flaws are in the Tailscale SSH server, specifically in how it forwards network connections. An attacker must exploit these flaws to gain root access on other servers.",
-      "actionable_mitigations": [
-        "Update to version 1.104.4 or later",
-        "Disable Tailscale SSH if not in use",
-        "Implement network segmentation and access controls"
-      ],
-      "telegram_snippet": "Tailscale patches critical SSH flaws allowing root access on other servers. Update to version 1.104.4 or later to mitigate the risk.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
-      "published_at": "2026-10-28T06:20:37+00:00"
-    },
-    {
-      "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
-      "published_at": "2026-10-28T06:04:58+00:00",
+      "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day/",
+      "published_at": "2026-10-29T08:01:05+00:00",
       "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
       "severity_score": 9.5,
@@ -69,83 +37,108 @@
         "General Industry"
       ],
       "cve_ids": [
-        "CVE-2026-35273"
+        "CVE-2026-41709"
       ],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws. The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day. CVE-2026-41709 allows attackers with administrative privileges to perform operations without being logged.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
-      "threat_category": "Ransomware",
-      "severity": "CRITICAL",
-      "severity_score": 9.0,
-      "target_sectors": [
-        "Enterprise",
-        "Government"
-      ],
-      "affected_vendors": [
-        "GMO Group"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "GMO Group's Onamae Desktop Cloud was breached, and a threat actor threatened to launch a ransomware attack. Customers are advised to disconnect systems from the internet and shut down computers.",
-      "technical_breakdown": "The breach occurred through an unknown vulnerability in GMO Group's Onamae Desktop Cloud, allowing the threat actor to gain unauthorized access. The actor threatened to launch a ransomware attack, prompting the company to take immediate action.",
-      "actionable_mitigations": [
-        "Disconnect systems from the internet",
-        "Shut down computers",
-        "Implement network segmentation and isolation"
-      ],
-      "telegram_snippet": "GMO Group's Onamae Desktop Cloud breached, customers advised to shut down PCs amid ransomware threat.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
-      "published_at": "2026-10-27T23:35:51+00:00"
-    },
-    {
-      "title": "Anthropic's Unreleased AI Model Chains Flaws into Working Exploits",
+      "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+      "published_at": "2026-10-29T06:22:33+00:00",
       "threat_category": "0-Day & Exploit",
-      "severity": "HIGH",
-      "severity_score": 8.0,
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
-        "Government"
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Google",
-        "Apple",
-        "Microsoft",
-        "Linux"
+        "CrowdStrike",
+        "VMware"
       ],
       "cve_ids": [
-        "Unknown"
+        "CVE-2026-41709"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting CrowdStrike, VMware. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility \u2014 Impacting CrowdStrike, VMware. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [
+        "Palo Alto Networks"
+      ],
+      "cve_ids": [
+        "PHP2Shell vulnerabilities"
       ],
       "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "An unreleased Anthropic AI model discovered security flaws in multiple browsers and operating systems, which were then chained into working proof-of-concept exploits. The flaws were reported to vendors and patched before any real-world attacks could occur.",
-      "technical_breakdown": "The AI model was prompted to identify security flaws in Chrome, Safari, Android, Windows, and Linux, which were then exploited using proof-of-concept exploits. The flaws were patched by vendors before any real-world attacks could occur.",
+      "executive_summary": "Threat actors are exploiting PHP2Shell vulnerabilities in publicly-accessible Palo Alto Networks management interfaces, posing a significant risk to exposed networks. This active exploitation highlights the importance of timely patching and secure configuration of management interfaces.",
+      "technical_breakdown": "The exploitation of PHP2Shell vulnerabilities allows attackers to gain unauthorized access to management interfaces, which can be used to launch further attacks or exfiltrate sensitive data. The root cause of the issue lies in the publicly-exposed management interfaces, which are being exploited due to the lack of timely patching or secure configuration.",
       "actionable_mitigations": [
-        "Ensure all software is up-to-date with the latest patches",
-        "Implement a robust vulnerability management program",
-        "Monitor for suspicious activity and implement detection and log monitoring indicators"
+        "Apply the latest patches for PHP2Shell vulnerabilities",
+        "Restrict access to management interfaces to only necessary personnel and IP addresses",
+        "Implement network segmentation and monitoring to detect potential exploitation attempts"
       ],
-      "telegram_snippet": "Anthropic's unreleased AI model discovered security flaws in multiple browsers and operating systems, which were then chained into working proof-of-concept exploits. All flaws have been patched by vendors.",
+      "telegram_snippet": "Threat actors are actively exploiting PHP2Shell vulnerabilities in exposed Palo Alto Networks management interfaces, posing a critical risk to affected networks. Patching and secure configuration are essential to mitigate this threat.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
-      "published_at": "2026-10-28T08:15:07+00:00"
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+      "published_at": "2026-10-29T05:50:17+00:00"
     },
     {
-      "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
+      "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
-      "published_at": "2026-10-28T07:13:21+00:00",
-      "threat_category": "Ransomware",
+      "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+      "published_at": "2026-10-28T18:08:33+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns. The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
+      "published_at": "2026-10-29T08:27:16+00:00",
+      "threat_category": "Data Breach",
       "severity": "HIGH",
-      "severity_score": 8.8,
+      "severity_score": 8.2,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -155,100 +148,44 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach. Japan's GMO Internet Group is offering up to $1 million in total for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Hackers Start Probing Fresh Oracle EBS Vulnerability",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/",
-      "published_at": "2026-10-28T09:14:23+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [
-        "CVE-2026-101767"
-      ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers Start Probing Fresh Oracle EBS Vulnerability. CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution.",
+      "executive_summary": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million. Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Start Probing Fresh Oracle EBS Vulnerability \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/",
-      "published_at": "2026-10-28T08:37:24+00:00",
-      "threat_category": "Vulnerability / Advisory",
+      "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
+      "threat_category": "0-Day & Exploit",
       "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "severity_score": 6.0,
       "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
+        "Government",
+        "Enterprise"
       ],
-      "affected_vendors": [
-        "General Industry"
-      ],
+      "affected_vendors": [],
       "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts. CISA added the Brotli flaw to its KEV catalog, and two honeypot operators logged attempts, including one that used a broken exploit.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Researchers are investigating a unique set of cyber threats targeting Italy, with unclear motivations and attack vectors. The lack of clear cause is hindering efforts to develop effective countermeasures.",
+      "technical_breakdown": "The cyber threats in Italy appear to be distinct from those seen elsewhere, with researchers struggling to identify a common exploitation mechanism or root cause. This is making it challenging to develop targeted mitigation strategies.",
       "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
+        "Enhance network monitoring and log analysis to detect unusual activity",
+        "Implement additional security controls and threat intelligence feeds",
+        "Conduct regular vulnerability assessments and penetration testing"
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
-      "published_at": "2026-10-28T07:37:50+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering. The U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
+      "telegram_snippet": "Italy under cyber siege: Researchers investigate unique threats with unclear motivations and attack vectors.",
       "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
-      "published_at": "2026-10-28T06:00:00+00:00",
+      "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
+      "published_at": "2026-10-29T08:00:00+00:00"
+    },
+    {
+      "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33470",
+      "published_at": "2026-10-29T06:17:41+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -261,20 +198,72 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature. Interpol's annual Operation Serengeti, now on its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 millio.",
+      "executive_summary": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th). Building your malware analysis lab is a key point before playing with malware.",
+      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+      "published_at": "2026-10-28T20:47:22+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime. U.S.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Police seize Virtualine bulletproof service tied to ransowmare, cybercrime \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
+      "published_at": "2026-10-28T19:39:00+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub. The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit..",
       "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-      "published_at": "2026-10-28T05:42:26+00:00",
+      "title": "Discord to let search engines index public server messages",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
+      "published_at": "2026-10-28T18:44:16+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -283,20 +272,18 @@
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Google"
+        "General Industry"
       ],
-      "cve_ids": [
-        "CVE-2026-111497"
-      ],
+      "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges. The U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "executive_summary": "Discord to let search engines index public server messages. Discord will allow search engines to index discussions in Discoverable Servers and make them accessible on the web to users outside the platform without an account or invitation.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges \u2014 Impacting Google. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Discord to let search engines index public server messages \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
