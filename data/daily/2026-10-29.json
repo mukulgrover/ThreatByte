@@ -1,26 +1,54 @@
 {
   "date": "2026-10-29",
-  "generated_at": "2026-10-29 08:56:31 UTC",
+  "generated_at": "2026-10-29 09:23:50 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 2,
+    "critical_threats": 3,
     "high_threats": 1,
-    "medium_threats": 7,
-    "low_threats": 0,
-    "unique_cves_count": 1,
+    "medium_threats": 5,
+    "low_threats": 1,
+    "unique_cves_count": 2,
     "unique_cves": [
+      "CVE-2023-XXXX",
       "CVE-2026-41709"
     ],
     "top_affected_vendors": [
+      "Cisco",
       "CrowdStrike",
       "VMware",
-      "Cisco",
       "Palo Alto"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
+    {
+      "title": "Hackers Exploit Cisco SD-WAN Flaw to Steal Encryption Keys",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise"
+      ],
+      "affected_vendors": [
+        "Cisco"
+      ],
+      "cve_ids": [
+        "CVE-2023-XXXX"
+      ],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "Hackers exploited a critical Cisco SD-WAN flaw to plant custom malware, KeyDrift, designed to steal encryption keys. The attacks are considered historical, but the exact timeframe is unknown.",
+      "technical_breakdown": "The attackers exploited a previously fixed Cisco Catalyst SD-WAN flaw to plant malware inside SD-WAN network control systems. The malware, KeyDrift, copies and stores encryption keys for later use.",
+      "actionable_mitigations": [
+        "Apply the February patch for the Cisco Catalyst SD-WAN flaw",
+        "Implement network containment and firewall rules to prevent lateral movement",
+        "Monitor for detection and log indicators of the KeyDrift malware"
+      ],
+      "telegram_snippet": "Hackers exploited a Cisco SD-WAN flaw to plant malware stealing encryption keys, using a previously fixed vulnerability.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+      "published_at": "2026-10-29T08:24:22+00:00"
+    },
     {
       "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
       "source": "SecurityWeek",
@@ -105,32 +133,6 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
-      "published_at": "2026-10-29T08:24:22+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Cisco"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys. Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Cisco. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys \u2014 Impacting Cisco. Immediate patching and log auditing recommended."
-    },
-    {
       "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
@@ -155,32 +157,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Cyber Vulnerabilities Besiege Italy, Absent Clear Cause \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/33470",
-      "published_at": "2026-10-29T06:17:41+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th). Building your malware analysis lab is a key point before playing with malware.",
-      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th) \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
@@ -285,6 +261,28 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Discord to let search engines index public server messages \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Malware Analysis Lab Data Loss Prevention",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "LOW",
+      "severity_score": 2.5,
+      "target_sectors": [
+        "Research"
+      ],
+      "affected_vendors": [],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Unattributed",
+      "executive_summary": "A malware analysis lab may lose data if a VM is reverted to a previous snapshot, highlighting the need to store data outside the VM. This issue can be mitigated by implementing proper data backup and storage procedures.",
+      "technical_breakdown": "The issue arises from the fact that changes made to a VM are lost when reverting to a previous snapshot. To prevent data loss, data should be stored on a separate, external system.",
+      "actionable_mitigations": [
+        "Implement data backup and storage procedures to ensure data is stored outside the VM",
+        "Use version control systems to track changes and maintain a record of all data"
+      ],
+      "telegram_snippet": "Malware analysis lab data loss prevention: store data outside the VM to prevent loss when reverting to previous snapshots.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33470",
+      "published_at": "2026-10-29T06:17:41+00:00"
     }
   ]
 }

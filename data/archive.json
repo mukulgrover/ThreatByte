@@ -1,9 +1,9 @@
 [
   {
     "date": "2026-10-29",
-    "top_headline": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
+    "top_headline": "Hackers Exploit Cisco SD-WAN Flaw to Steal Encryption Keys",
     "total_incidents": 10,
-    "critical_threats": 2,
+    "critical_threats": 3,
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
   },
   {
