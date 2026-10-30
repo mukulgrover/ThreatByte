@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-30",
+    "top_headline": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+    "total_incidents": 10,
+    "critical_threats": 1,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-10-29",
     "top_headline": "Hackers Exploit Cisco SD-WAN Flaw to Steal Encryption Keys",
     "total_incidents": 10,

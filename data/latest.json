@@ -1,62 +1,61 @@
 {
-  "date": "2026-10-29",
-  "generated_at": "2026-10-29 09:23:50 UTC",
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30 08:53:06 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 3,
-    "high_threats": 1,
-    "medium_threats": 5,
-    "low_threats": 1,
-    "unique_cves_count": 2,
+    "critical_threats": 1,
+    "high_threats": 3,
+    "medium_threats": 6,
+    "low_threats": 0,
+    "unique_cves_count": 3,
     "unique_cves": [
-      "CVE-2023-XXXX",
-      "CVE-2026-41709"
+      "CVE-2026-111585",
+      "CVE-2026-118539",
+      "CVE-2026-97229"
     ],
     "top_affected_vendors": [
-      "Cisco",
-      "CrowdStrike",
-      "VMware",
-      "Palo Alto"
+      "Cisco"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "Hackers Exploit Cisco SD-WAN Flaw to Steal Encryption Keys",
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "published_at": "2026-10-30T07:27:05+00:00",
       "threat_category": "0-Day & Exploit",
       "severity": "CRITICAL",
       "severity_score": 9.5,
       "target_sectors": [
-        "Enterprise"
+        "Enterprise",
+        "Critical Infrastructure"
       ],
       "affected_vendors": [
         "Cisco"
       ],
       "cve_ids": [
-        "CVE-2023-XXXX"
+        "CVE-2026-97229"
       ],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "Hackers exploited a critical Cisco SD-WAN flaw to plant custom malware, KeyDrift, designed to steal encryption keys. The attacks are considered historical, but the exact timeframe is unknown.",
-      "technical_breakdown": "The attackers exploited a previously fixed Cisco Catalyst SD-WAN flaw to plant malware inside SD-WAN network control systems. The malware, KeyDrift, copies and stores encryption keys for later use.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Cisco. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Apply the February patch for the Cisco Catalyst SD-WAN flaw",
-        "Implement network containment and firewall rules to prevent lateral movement",
-        "Monitor for detection and log indicators of the KeyDrift malware"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Hackers exploited a Cisco SD-WAN flaw to plant malware stealing encryption keys, using a previously fixed vulnerability.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
-      "published_at": "2026-10-29T08:24:22+00:00"
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV \u2014 Impacting Cisco. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
+      "title": "$6 Billion Binance Hack Bears Hallmarks of North Korea\u2019s TraderTraitor",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day/",
-      "published_at": "2026-10-29T08:01:05+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
+      "url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/",
+      "published_at": "2026-10-30T08:16:26+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -64,53 +63,48 @@
       "affected_vendors": [
         "General Industry"
       ],
-      "cve_ids": [
-        "CVE-2026-41709"
-      ],
+      "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day. CVE-2026-41709 allows attackers with administrative privileges to perform operations without being logged.",
+      "executive_summary": "$6 Billion Binance Hack Bears Hallmarks of North Korea\u2019s TraderTraitor. Blockchain analysts link the record crypto theft to North Korean hackers, as Binance probes a possibly compromised engineer laptop.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: $6 Billion Binance Hack Bears Hallmarks of North Korea\u2019s TraderTraitor \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
-      "published_at": "2026-10-29T06:22:33+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
+      "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
+      "published_at": "2026-10-30T08:00:00+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "CrowdStrike",
-        "VMware"
+        "General Industry"
       ],
-      "cve_ids": [
-        "CVE-2026-41709"
-      ],
+      "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility. The U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting CrowdStrike, VMware. Further technical telemetry is developing.",
+      "executive_summary": "As Russia's Cyberwar Evolves, Belarus Steps Forward. The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Rus.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility \u2014 Impacting CrowdStrike, VMware. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: As Russia's Cyberwar Evolves, Belarus Steps Forward \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
-      "published_at": "2026-10-29T08:27:16+00:00",
+      "title": "Japan Airlines suffers third-party data breach exposing passenger info",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
+      "published_at": "2026-10-29T22:08:04+00:00",
       "threat_category": "Data Breach",
       "severity": "HIGH",
       "severity_score": 8.2,
@@ -123,72 +117,76 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million. Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications.",
+      "executive_summary": "Japan Airlines suffers third-party data breach exposing passenger info. Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Japan Airlines suffers third-party data breach exposing passenger info \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians\u2019 Machines",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
+      "published_at": "2026-10-30T08:44:49+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-111585"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians\u2019 Machines. An integer overflow tracked as CVE-2026-111585 could be used to execute arbitrary code on the viewer\u2019s system.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians\u2019 Machines \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
-      "published_at": "2026-10-29T08:00:00+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause. Researchers can't quite explain why cyber threats look so different in Italy compared to everywhere else..",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Cyber Vulnerabilities Besiege Italy, Absent Clear Cause \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+      "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
-      "published_at": "2026-10-29T05:50:17+00:00",
-      "threat_category": "Cloud & Supply Chain",
+      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+      "published_at": "2026-10-30T07:45:30+00:00",
+      "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
-      "severity_score": 7.2,
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Palo Alto"
+        "General Industry"
       ],
-      "cve_ids": [],
+      "cve_ids": [
+        "CVE-2026-118539"
+      ],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces. Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting Palo Alto. Further technical telemetry is developing.",
+      "executive_summary": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw. Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces \u2014 Impacting Palo Alto. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
-      "published_at": "2026-10-28T20:47:22+00:00",
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+      "published_at": "2026-10-30T04:14:59+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -201,46 +199,20 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime. U.S.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen. Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Police seize Virtualine bulletproof service tied to ransowmare, cybercrime \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
-      "published_at": "2026-10-28T19:39:00+00:00",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "MEDIUM",
-      "severity_score": 7.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub. The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit..",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Discord to let search engines index public server messages",
+      "title": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
-      "published_at": "2026-10-28T18:44:16+00:00",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
+      "published_at": "2026-10-29T23:35:52+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -253,36 +225,66 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Discord to let search engines index public server messages. Discord will allow search engines to index discussions in Discoverable Servers and make them accessible on the web to users outside the platform without an account or invitation.",
+      "executive_summary": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut. OpenAI says it won't reduce usage limits for the $100, $200, and $500 ChatGPT Pro plans, as well as Business Premium, and it also promised to keep Dots usage independent.",
       "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Discord to let search engines index public server messages \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Malware Analysis Lab Data Loss Prevention",
-      "threat_category": "Cloud & Supply Chain",
-      "severity": "LOW",
-      "severity_score": 2.5,
+      "title": "Binance probes potential $5.8 billion crypto-theft hack",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+      "published_at": "2026-10-29T22:45:23+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
-        "Research"
+        "Enterprise",
+        "Critical Infrastructure"
       ],
-      "affected_vendors": [],
+      "affected_vendors": [
+        "General Industry"
+      ],
       "cve_ids": [],
-      "threat_actor": "Unknown / Unattributed",
-      "executive_summary": "A malware analysis lab may lose data if a VM is reverted to a previous snapshot, highlighting the need to store data outside the VM. This issue can be mitigated by implementing proper data backup and storage procedures.",
-      "technical_breakdown": "The issue arises from the fact that changes made to a VM are lost when reverting to a previous snapshot. To prevent data loss, data should be stored on a separate, external system.",
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Binance probes potential $5.8 billion crypto-theft hack. Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
-        "Implement data backup and storage procedures to ensure data is stored outside the VM",
-        "Use version control systems to track changes and maintain a record of all data"
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "Malware analysis lab data loss prevention: store data outside the VM to prevent loss when reverting to previous snapshots.",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/33470",
-      "published_at": "2026-10-29T06:17:41+00:00"
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Binance probes potential $5.8 billion crypto-theft hack \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
+      "published_at": "2026-10-29T22:09:24+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Hugging Face malware campaign returns to hijack GPUs for crypto mining. A crypto-mining campaign abusing Hugging Face models returned days after takedown, hijacking GPU servers and planting backdoors, with one model downloaded over 28,000 times.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hugging Face malware campaign returns to hijack GPUs for crypto mining \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
