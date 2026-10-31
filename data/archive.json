@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-31",
+    "top_headline": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+    "total_incidents": 10,
+    "critical_threats": 0,
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)"
+  },
+  {
     "date": "2026-10-30",
     "top_headline": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
     "total_incidents": 10,
