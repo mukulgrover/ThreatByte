@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "generated_at": "2026-11-01 09:34:30 UTC",
+  "generated_at": "2026-11-01 09:46:25 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 0,
@@ -69,6 +69,32 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OneNote File Extraction, (Sun, Nov 1st) \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
+      "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+      "published_at": "2026-11-01T08:51:31+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key. A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
       "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
@@ -95,6 +121,32 @@
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
+      "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+      "published_at": "2026-11-01T07:03:00+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
       "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
@@ -119,32 +171,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-      "published_at": "2026-11-01T06:44:27+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist. The U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Northflank security breach leads to abuse of customers' AI API keys",
@@ -251,32 +277,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era. \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
-      "published_at": "2026-10-31T12:01:56+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data. American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
