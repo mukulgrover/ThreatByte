@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-02",
+    "top_headline": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+    "total_incidents": 10,
+    "critical_threats": 2,
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)"
+  },
+  {
     "date": "2026-11-01",
     "top_headline": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
     "total_incidents": 10,

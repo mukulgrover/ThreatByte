@@ -1,0 +1,287 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02 09:50:46 UTC",
+  "metrics": {
+    "total_incidents": 10,
+    "critical_threats": 2,
+    "high_threats": 1,
+    "medium_threats": 7,
+    "low_threats": 0,
+    "unique_cves_count": 2,
+    "unique_cves": [
+      "CVE-2026-111357",
+      "CVE-2026-118527"
+    ],
+    "top_affected_vendors": [
+      "Ivanti",
+      "Linux"
+    ],
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
+    "threat_badge": "CRITICAL RISK"
+  },
+  "articles": [
+    {
+      "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+      "published_at": "2026-11-02T09:33:26+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Ivanti"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Ivanti patches two more Connect Secure zero-days chained in attacks. Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Ivanti. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Ivanti patches two more Connect Secure zero-days chained in attacks \u2014 Impacting Ivanti. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
+      "published_at": "2026-11-02T07:57:49+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Ivanti"
+      ],
+      "cve_ids": [
+        "CVE-2026-118527",
+        "CVE-2026-111357"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain. CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Ivanti. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain \u2014 Impacting Ivanti. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+      "published_at": "2026-11-01T19:57:53+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "FBI links $6.3 billion Binance crypto heist to North Korean hackers. The FBI has confirmed that North Korean state-sponsored hackers known as TraderTraitor were behind the $6.3 billion crypto-theft attack on Binance, making it the largest cryptocurrency heist on record.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: FBI links $6.3 billion Binance crypto heist to North Korean hackers \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
+      "published_at": "2026-11-02T09:33:15+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack. DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "FBI Flags Over 600 Addresses Tied to North Korea\u2019s Binance Heist",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+      "published_at": "2026-11-02T08:40:36+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "FBI Flags Over 600 Addresses Tied to North Korea\u2019s Binance Heist. The FBI has officially pinned the $6 billion Binance hack on North Korea\u2019s TraderTraitor as the attackers launder the stolen crypto.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FBI Flags Over 600 Addresses Tied to North Korea\u2019s Binance Heist \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+      "published_at": "2026-11-02T05:51:07+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value. Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+      "published_at": "2026-11-01T15:11:21+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Linux"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Alpine Linux rebuilds GitLab after attempted RCE attack. Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Linux. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Alpine Linux rebuilds GitLab after attempted RCE attack \u2014 Impacting Linux. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
+      "published_at": "2026-11-01T13:53:11+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat. OpenAI has just confirmed that it's rolling out ChatGPT Work capabilities directly into regular Chat, while also combining usage allowances across ChatGPT and Codex.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI says it's doubling Pro usage limits and bringing Work features to Chat \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/",
+      "published_at": "2026-11-01T11:15:00+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations. The startup maps how identities, assets and vulnerabilities connect, and uses AI agents to find and fix risky combinations of issues.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "OneNote File Extraction, (Sun, Nov 1st)",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33478",
+      "published_at": "2026-11-01T09:12:23+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "OneNote File Extraction, (Sun, Nov 1st). Recently, I had to extract embedded files from a set of OneNote files (extension .one)..",
+      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OneNote File Extraction, (Sun, Nov 1st) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    }
+  ]
+}
