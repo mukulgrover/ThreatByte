@@ -1,11 +1,11 @@
 {
   "date": "2026-11-02",
-  "generated_at": "2026-11-02 10:00:12 UTC",
+  "generated_at": "2026-11-02 10:34:50 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 2,
-    "high_threats": 1,
-    "medium_threats": 7,
+    "high_threats": 2,
+    "medium_threats": 6,
     "low_threats": 0,
     "unique_cves_count": 2,
     "unique_cves": [
@@ -62,8 +62,8 @@
         "Ivanti"
       ],
       "cve_ids": [
-        "CVE-2026-118527",
-        "CVE-2026-111357"
+        "CVE-2026-111357",
+        "CVE-2026-118527"
       ],
       "threat_actor": "Unknown / Under Investigation",
       "executive_summary": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain. CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks.",
@@ -74,6 +74,32 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain \u2014 Impacting Ivanti. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
+      "published_at": "2026-11-02T10:27:49+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack. The attackers used offensive agentic techniques to access the company\u2019s systems and internal tools.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Chainalysis Discloses Data Breach Following AI-Driven Cyberattack \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
@@ -256,32 +282,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "OneNote File Extraction, (Sun, Nov 1st)",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/33478",
-      "published_at": "2026-11-01T09:12:23+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "OneNote File Extraction, (Sun, Nov 1st). Recently, I had to extract embedded files from a set of OneNote files (extension .one)..",
-      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OneNote File Extraction, (Sun, Nov 1st) \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
