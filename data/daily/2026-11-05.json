@@ -1,11 +1,11 @@
 {
   "date": "2026-11-05",
-  "generated_at": "2026-11-05 09:52:17 UTC",
+  "generated_at": "2026-11-05 10:23:10 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 2,
+    "critical_threats": 1,
     "high_threats": 1,
-    "medium_threats": 7,
+    "medium_threats": 8,
     "low_threats": 0,
     "unique_cves_count": 1,
     "unique_cves": [
@@ -15,8 +15,8 @@
       "Apple",
       "Linux"
     ],
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
-    "threat_badge": "CRITICAL RISK"
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)",
+    "threat_badge": "HIGH SURGE"
   },
   "articles": [
     {
@@ -46,32 +46,6 @@
       "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
-      "published_at": "2026-11-04T20:58:19+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches. Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Zyxel fixes zero-day exploited to hack nearly 1,000 network switches \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
       "title": "Want to Rent an Internet Address at the White House?",
       "source": "Krebs on Security",
       "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
@@ -96,6 +70,32 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Want to Rent an Internet Address at the White House? \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/",
+      "published_at": "2026-11-05T10:02:00+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks. OpenAI says its Critical-rated cyber model met fewer hidden task goals when work was framed as AI safety research, often silently.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
