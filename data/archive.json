@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-08",
+    "top_headline": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+    "total_incidents": 7,
+    "critical_threats": 0,
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)"
+  },
+  {
     "date": "2026-11-07",
     "top_headline": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
     "total_incidents": 10,
