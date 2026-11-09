@@ -1,10 +1,10 @@
 {
   "date": "2026-11-09",
-  "generated_at": "2026-11-09 10:08:53 UTC",
+  "generated_at": "2026-11-09 10:24:17 UTC",
   "metrics": {
-    "total_incidents": 8,
+    "total_incidents": 9,
     "critical_threats": 0,
-    "high_threats": 0,
+    "high_threats": 1,
     "medium_threats": 8,
     "low_threats": 0,
     "unique_cves_count": 2,
@@ -19,6 +19,32 @@
     "threat_badge": "MODERATE"
   },
   "articles": [
+    {
+      "title": "Over 3 Million People Hit by Frontline Education Data Breach",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/",
+      "published_at": "2026-11-09T10:09:02+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Over 3 Million People Hit by Frontline Education Data Breach. Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Over 3 Million People Hit by Frontline Education Data Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
     {
       "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
       "source": "The Hacker News",
