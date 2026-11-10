@@ -1,32 +1,34 @@
 {
-  "date": "2026-11-09",
-  "generated_at": "2026-11-09 10:55:46 UTC",
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10 10:15:38 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 0,
-    "high_threats": 1,
-    "medium_threats": 9,
+    "critical_threats": 2,
+    "high_threats": 2,
+    "medium_threats": 6,
     "low_threats": 0,
     "unique_cves_count": 2,
     "unique_cves": [
-      "CVE-2026-123158",
-      "CVE-2026-19868"
+      "CVE-2026-116779",
+      "CVE-2026-123218"
     ],
     "top_affected_vendors": [
-      "Google"
+      "Google",
+      "Microsoft",
+      "SAP"
     ],
-    "overall_threat_level": "NOMINAL (LEVEL BLUE)",
-    "threat_badge": "MODERATE"
+    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
+    "threat_badge": "CRITICAL RISK"
   },
   "articles": [
     {
-      "title": "Over 3 Million People Hit by Frontline Education Data Breach",
+      "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/",
-      "published_at": "2026-11-09T10:09:02+00:00",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.2,
+      "url": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/",
+      "published_at": "2026-11-10T09:56:28+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -36,75 +38,23 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Over 3 Million People Hit by Frontline Education Data Breach. Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students.",
+      "executive_summary": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days. Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Over 3 Million People Hit by Frontline Education Data Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
-      "published_at": "2026-11-09T10:01:21+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks. Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
-      "published_at": "2026-11-09T09:01:50+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records. A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Google DeepMind\u2019s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
-      "published_at": "2026-11-09T08:35:50+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+      "published_at": "2026-11-10T08:51:25+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -114,128 +64,72 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Google DeepMind\u2019s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack. Working with cryptographers, DeepMind\u2019s AI agents cut the cost of forging RSA-1024 signatures and found a cheaper way to factor keys.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "executive_summary": "Google patches eighth Chrome zero-day exploited in attacks this year. Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Google DeepMind\u2019s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack \u2014 Impacting Google. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Google patches eighth Chrome zero-day exploited in attacks this year \u2014 Impacting Google. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
-      "published_at": "2026-11-09T07:05:48+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room. The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
-      "published_at": "2026-11-09T06:15:10+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses. U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
-      "published_at": "2026-11-09T06:05:24+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [
-        "CVE-2026-19868"
-      ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation. The U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/33498",
-      "published_at": "2026-11-08T15:44:33+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [
-        "CVE-2026-123158"
-      ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th). Our honeypots use \"Cowrie\" to collect SSH data.",
-      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th) \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+      "title": "Turla hackers use new Cereal malware to spy on govt Exchange servers",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-      "published_at": "2026-11-08T15:43:08+00:00",
+      "url": "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/",
+      "published_at": "2026-11-10T10:04:32+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Turla hackers use new Cereal malware to spy on govt Exchange servers. The Russian state-backed threat group Turla has been using a new malicious toolset called 'Cereal' to intercept emails on Microsoft Exchange servers at government organizations.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Turla hackers use new Cereal malware to spy on govt Exchange servers \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/",
+      "published_at": "2026-11-10T07:35:05+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators. France summoned the Iranian ambassador and said it would seek European sanctions against those responsible for the attack The post France Blames Iran .",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/",
+      "published_at": "2026-11-10T10:10:20+00:00",
       "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
       "severity_score": 7.2,
@@ -248,20 +142,75 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Iris Ohyama data cloud breach exposes info of 7.7 million customers. Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used.",
+      "executive_summary": "Hackers now exploit critical Barracuda ESG flaws to gain root access. Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run commands with root privileges.",
       "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Iris Ohyama data cloud breach exposes info of 7.7 million customers \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers now exploit critical Barracuda ESG flaws to gain root access \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+      "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+      "published_at": "2026-11-10T10:02:40+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "SAP"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution. Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day\u2014the vendor rates all four 10.0, the maximum CVSS score.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting SAP. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution \u2014 Impacting SAP. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
-      "published_at": "2026-11-08T12:14:00+00:00",
+      "url": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+      "published_at": "2026-11-10T09:42:27+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-116779",
+        "CVE-2026-123218"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks. CISA has added CVE-2026-123218 and CVE-2026-116779 to KEV, urging federal agencies to patch them within three days.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+      "published_at": "2026-11-10T09:08:20+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -274,14 +223,66 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Brava Security Emerges From Stealth With $15 Million in Funding. Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites. An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Brava Security Emerges From Stealth With $15 Million in Funding \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+      "published_at": "2026-11-10T08:16:14+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark. Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Fireworks AI discloses new breach after cloud provider hack",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
+      "published_at": "2026-11-10T07:49:58+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Fireworks AI discloses new breach after cloud provider hack. AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Fireworks AI discloses new breach after cloud provider hack \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
