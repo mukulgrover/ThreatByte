@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "generated_at": "2026-11-11 09:52:27 UTC",
+  "generated_at": "2026-11-11 10:23:23 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 2,
@@ -13,14 +13,40 @@
       "CVE-2026-20320"
     ],
     "top_affected_vendors": [
-      "Microsoft",
       "Cisco",
+      "Microsoft",
       "Apple"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
     "threat_badge": "CRITICAL RISK"
   },
   "articles": [
+    {
+      "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
+      "published_at": "2026-11-11T10:12:08+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Cisco"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks. The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Cisco. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: CISA flags Cisco BroadWorks flaw as actively exploited in attacks \u2014 Impacting Cisco. Immediate patching and log auditing recommended."
+    },
     {
       "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
       "source": "The Hacker News",
@@ -48,32 +74,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches \u2014 Impacting Cisco. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
-      "published_at": "2026-11-10T22:26:51+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "November Patch Tuesday: An Overflowing Cornucopia of CVEs. Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted .",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: November Patch Tuesday: An Overflowing Cornucopia of CVEs \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     },
     {
       "title": "Microsoft fixes Exchange sign-ins broken by Windows Server updates",
