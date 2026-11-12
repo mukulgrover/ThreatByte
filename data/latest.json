@@ -1,11 +1,11 @@
 {
   "date": "2026-11-12",
-  "generated_at": "2026-11-12 10:21:30 UTC",
+  "generated_at": "2026-11-12 10:40:16 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 1,
-    "high_threats": 2,
-    "medium_threats": 7,
+    "high_threats": 1,
+    "medium_threats": 8,
     "low_threats": 0,
     "unique_cves_count": 2,
     "unique_cves": [
@@ -14,6 +14,7 @@
     ],
     "top_affected_vendors": [
       "Linux",
+      "Microsoft",
       "Apache"
     ],
     "overall_threat_level": "GUARDED (LEVEL YELLOW)",
@@ -73,13 +74,13 @@
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Maersk Confirms Data Theft Amid $5 Million Extortion Attempt \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
-      "published_at": "2026-11-12T01:00:00+00:00",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.5,
+      "title": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
+      "published_at": "2026-11-12T10:39:34+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -89,14 +90,40 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Chinese AI Project Scouts Spies in Taiwan Chip Industry. The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them.",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Hackers Deploy Malware in Fresh ScreenConnect Campaign. The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Chinese AI Project Scouts Spies in Taiwan Chip Industry \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Deploy Malware in Fresh ScreenConnect Campaign \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Microsoft confirms Windows security updates installation issues",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
+      "published_at": "2026-11-12T10:24:07+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Microsoft confirms Windows security updates installation issues. Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft confirms Windows security updates installation issues \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     },
     {
       "title": "Hackers plant GSocket on Linux servers for persistent access",
@@ -258,32 +285,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely \u2014 Impacting Linux, Apache. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
-      "published_at": "2026-11-12T04:39:48+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients. ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
