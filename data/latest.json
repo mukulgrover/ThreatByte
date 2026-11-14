@@ -1,110 +1,32 @@
 {
-  "date": "2026-11-13",
-  "generated_at": "2026-11-13 10:33:58 UTC",
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14 09:16:37 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 2,
-    "high_threats": 0,
-    "medium_threats": 8,
+    "critical_threats": 0,
+    "high_threats": 1,
+    "medium_threats": 9,
     "low_threats": 0,
     "unique_cves_count": 1,
     "unique_cves": [
-      "CVE-2026-123039"
+      "CVE-2026-6460"
     ],
     "top_affected_vendors": [
-      "Citrix",
-      "Microsoft"
+      "Microsoft",
+      "VMware"
     ],
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
-    "threat_badge": "CRITICAL RISK"
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)",
+    "threat_badge": "MODERATE"
   },
   "articles": [
     {
-      "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit \u2018SignDrop\u2019",
+      "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
-      "published_at": "2026-11-13T08:50:36+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Nightmare Eclipse Drops Windows Zero-Day Exploit \u2018SignDrop\u2019. It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Nightmare Eclipse Drops Windows Zero-Day Exploit \u2018SignDrop\u2019 \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
-      "published_at": "2026-11-13T07:20:50+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication. Dubbed 4EverAble2Shell, the flaw could allow remote, unauthenticated attackers to execute code with root privileges.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Hackers Exploit New N-central Zero-Day Hours After PoC Publication \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
-      "published_at": "2026-11-13T09:36:56+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Citrix"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Citrix Patches 10 Critical NetScaler Vulnerabilities. Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Citrix. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Citrix Patches 10 Critical NetScaler Vulnerabilities \u2014 Impacting Citrix. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Microsoft confirms Windows activation failures after November updates",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
-      "published_at": "2026-11-13T09:36:18+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "url": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
+      "published_at": "2026-11-13T15:20:00+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -114,20 +36,20 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft confirms Windows activation failures after November updates. Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "executive_summary": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach. Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight backdoors.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft confirms Windows activation failures after November updates \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     },
     {
-      "title": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
+      "title": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
-      "published_at": "2026-11-13T09:21:01+00:00",
+      "url": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
+      "published_at": "2026-11-14T08:40:22+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -140,20 +62,20 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools. Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches.",
+      "executive_summary": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update. Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Police arrest 354 suspects in dark web cybercrime crackdown",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
-      "published_at": "2026-11-13T08:34:20+00:00",
+      "title": "FAA Ground Stop Issued Due to \u2018Extraordinary Circumstances\u2019",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
+      "published_at": "2026-11-13T21:33:27+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -166,23 +88,75 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Police arrest 354 suspects in dark web cybercrime crackdown. Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces.",
+      "executive_summary": "FAA Ground Stop Issued Due to \u2018Extraordinary Circumstances\u2019. Federal officials have yet to say what caused the communications disruption or whether they are investigating a possible cyberattack.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FAA Ground Stop Issued Due to \u2018Extraordinary Circumstances\u2019 \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
+      "published_at": "2026-11-13T20:20:27+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI. The Android malware has expanded from focusing on crypto theft to full device control, and the attackers have added advanced analysis of stolen inform.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: ArcticRAT Cybercrime Gang Profiles Victim Finances With AI \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+      "published_at": "2026-11-13T19:38:36+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Trezor confirms crypto-stealing implants in three wallets, releases fix. Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks.",
       "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Police arrest 354 suspects in dark web cybercrime crackdown \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Trezor confirms crypto-stealing implants in three wallets, releases fix \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
-      "published_at": "2026-11-13T08:05:49+00:00",
-      "threat_category": "Cloud & Supply Chain",
+      "title": "German military drone operations disrupted by cyberattack",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+      "published_at": "2026-11-13T17:31:56+00:00",
+      "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
-      "severity_score": 7.2,
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -192,23 +166,23 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files. An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "German military drone operations disrupted by cyberattack. German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"ho.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: German military drone operations disrupted by cyberattack \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
-      "published_at": "2026-11-13T07:39:04+00:00",
-      "threat_category": "Vulnerability / Advisory",
+      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "published_at": "2026-11-13T16:53:08+00:00",
+      "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "severity_score": 7.2,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -217,23 +191,49 @@
         "General Industry"
       ],
       "cve_ids": [
-        "CVE-2026-123039"
+        "CVE-2026-6460"
       ],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks. PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE. A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: PHP2Shell Exploited in Destructive Check Point Gateway Attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+      "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+      "published_at": "2026-11-13T16:21:43+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "VMware"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper. Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting VMware. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper \u2014 Impacting VMware. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
-      "published_at": "2026-11-13T05:43:28+00:00",
+      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "published_at": "2026-11-13T15:27:05+00:00",
       "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
       "severity_score": 7.2,
@@ -246,20 +246,20 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2. N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell.",
+      "executive_summary": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs. Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out.",
       "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2 \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
-      "published_at": "2026-11-13T02:28:21+00:00",
+      "title": "How one AI agent exposed five critical enterprise security gaps",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+      "published_at": "2026-11-13T15:01:11+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -272,14 +272,14 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance. Also Thursday, the FBI blamed North Korea for a separate social engineering scheme that officials say resulted in the theft of $400 million worth of cryptocurrency.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "How one AI agent exposed five critical enterprise security gaps. An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: How one AI agent exposed five critical enterprise security gaps \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
