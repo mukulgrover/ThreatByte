@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-15",
+    "top_headline": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
+    "total_incidents": 7,
+    "critical_threats": 0,
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)"
+  },
+  {
     "date": "2026-11-14",
     "top_headline": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
     "total_incidents": 10,

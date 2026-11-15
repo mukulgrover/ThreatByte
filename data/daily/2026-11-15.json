@@ -1,0 +1,206 @@
+{
+  "date": "2026-11-15",
+  "generated_at": "2026-11-15 09:46:45 UTC",
+  "metrics": {
+    "total_incidents": 7,
+    "critical_threats": 0,
+    "high_threats": 2,
+    "medium_threats": 5,
+    "low_threats": 0,
+    "unique_cves_count": 1,
+    "unique_cves": [
+      "CVE-2026-114713"
+    ],
+    "top_affected_vendors": [
+      "Apple"
+    ],
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)",
+    "threat_badge": "MODERATE"
+  },
+  "articles": [
+    {
+      "title": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "published_at": "2026-11-15T08:22:04+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension. The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "US disrupts North Korean campaign behind $400 million crypto theft",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+      "published_at": "2026-11-14T15:15:49+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "US disrupts North Korean campaign behind $400 million crypto theft. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: US disrupts North Korean campaign behind $400 million crypto theft \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Cursor confirms security breach led to malicious Claude Code extension",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+      "published_at": "2026-11-14T17:27:25+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Cursor confirms security breach led to malicious Claude Code extension. Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Cursor confirms security breach led to malicious Claude Code extension \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Is AI Making Us Worse at Cybersecurity?",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+      "published_at": "2026-11-14T14:00:00+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Is AI Making Us Worse at Cybersecurity?. Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there\u2019s no playbook.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Is AI Making Us Worse at Cybersecurity? \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "published_at": "2026-11-14T12:38:35+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-114713"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+      "published_at": "2026-11-14T11:00:00+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Apple"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data. The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Apple. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Apple Reveals How Secure Exclaves Shield Camera and Microphone Data \u2014 Impacting Apple. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
+      "published_at": "2026-11-14T08:40:22+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update. Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    }
+  ]
+}
