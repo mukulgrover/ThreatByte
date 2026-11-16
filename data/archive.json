@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-16",
+    "top_headline": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+    "total_incidents": 10,
+    "critical_threats": 0,
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)"
+  },
+  {
     "date": "2026-11-15",
     "top_headline": "US disrupts North Korean campaign behind $400 million crypto theft",
     "total_incidents": 7,
