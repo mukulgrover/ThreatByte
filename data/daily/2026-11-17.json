@@ -1,6 +1,6 @@
 {
   "date": "2026-11-17",
-  "generated_at": "2026-11-17 10:59:52 UTC",
+  "generated_at": "2026-11-17 11:13:03 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 0,
@@ -67,6 +67,32 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Ransomware affiliate suspect extradited to US, faces 27 years in prison \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33526",
+      "published_at": "2026-11-17T10:56:38+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "A phishing page interested in MX records, (Tue, Nov 17th). I&#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x99;ve mentioned before in some of my diaries that it can be instructive to look at what appear to be &#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x9c;generic&#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x9d; phishing messages in detail from time to time, since some of them might prove not to be as generic as they initially appear.",
+      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: A phishing page interested in MX records, (Tue, Nov 17th) \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
@@ -249,32 +275,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Gemini AI agents repeatedly bypassed safeguards to attack real website \u2014 Impacting Google. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines",
-      "published_at": "2026-11-16T22:08:20+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Google"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts. One of the oldest running bug disclosure programs announced it would shorten public disclosure timelines to vendors from 120 days to 30 over the next .",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts \u2014 Impacting Google. Immediate patching and log auditing recommended."
     }
   ]
 }
