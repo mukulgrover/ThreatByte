@@ -1,81 +1,26 @@
 {
-  "date": "2026-11-16",
-  "generated_at": "2026-11-16 10:40:17 UTC",
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17 10:59:52 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 0,
-    "high_threats": 3,
-    "medium_threats": 7,
+    "high_threats": 2,
+    "medium_threats": 8,
     "low_threats": 0,
     "unique_cves_count": 0,
     "unique_cves": [],
     "top_affected_vendors": [
-      "Microsoft",
-      "VMware",
-      "Linux",
-      "Apache"
+      "Google"
     ],
-    "overall_threat_level": "GUARDED (LEVEL YELLOW)",
-    "threat_badge": "HIGH SURGE"
+    "overall_threat_level": "NOMINAL (LEVEL BLUE)",
+    "threat_badge": "MODERATE"
   },
   "articles": [
     {
-      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-      "published_at": "2026-11-16T07:34:21+00:00",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys. Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-      "published_at": "2026-11-16T06:53:34+00:00",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "VMware"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server. An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting VMware. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server \u2014 Impacting VMware. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "TSMC employee data breach linked to cloud provider",
+      "title": "Uber notifies drivers of data breach affecting nearly 150,000 people",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
-      "published_at": "2026-11-15T15:23:48+00:00",
+      "url": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
+      "published_at": "2026-11-17T08:35:42+00:00",
       "threat_category": "Data Breach",
       "severity": "HIGH",
       "severity_score": 8.2,
@@ -88,47 +33,46 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "TSMC employee data breach linked to cloud provider. Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction.",
+      "executive_summary": "Uber notifies drivers of data breach affecting nearly 150,000 people. Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October.",
       "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: TSMC employee data breach linked to cloud provider \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Uber notifies drivers of data breach affecting nearly 150,000 people \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
+      "title": "Ransomware affiliate suspect extradited to US, faces 27 years in prison",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
-      "published_at": "2026-11-16T09:30:04+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "url": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+      "published_at": "2026-11-17T07:25:44+00:00",
+      "threat_category": "Ransomware",
+      "severity": "HIGH",
+      "severity_score": 8.8,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Linux",
-        "Apache"
+        "General Industry"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "New NoisyTCP vulnerability lets attackers crash Linux servers. An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Linux, Apache. Further technical telemetry is developing.",
+      "executive_summary": "Ransomware affiliate suspect extradited to US, faces 27 years in prison. A Kazakh national has been extradited from Italy to face charges alleging he targeted US schools, hospitals, and healthcare entities in ransomware attacks.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New NoisyTCP vulnerability lets attackers crash Linux servers \u2014 Impacting Linux, Apache. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Ransomware affiliate suspect extradited to US, faces 27 years in prison \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
+      "title": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
-      "published_at": "2026-11-16T08:55:32+00:00",
+      "url": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/",
+      "published_at": "2026-11-17T10:22:20+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -141,98 +85,20 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Tor Updates DoS Defenses Again as Relay Attacks Continue. Tor 0.4.9.17 patches several security issues, including one related to how built-in DoS protections deal with IPv6.",
+      "executive_summary": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites. Affected organizations include BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Tor Updates DoS Defenses Again as Relay Attacks Continue \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Optimizely Vulnerability Exploited to Serve Malware on Major Websites \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+      "title": "Court clears brothers of $25 million Ethereum crypto heist charges",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
-      "published_at": "2026-11-16T08:26:52+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft pushes Windows emergency updates to fix activation failures. Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft pushes Windows emergency updates to fix activation failures \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-      "published_at": "2026-11-16T08:15:12+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign. Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
-      "published_at": "2026-11-15T18:29:53+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "FBI warns ARTEX AI hacking tool is powering global cyberattacks. The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: FBI warns ARTEX AI hacking tool is powering global cyberattacks \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/33496",
-      "published_at": "2026-11-15T18:17:27+00:00",
+      "url": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
+      "published_at": "2026-11-17T09:44:22+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -245,20 +111,20 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "YARA-X 1.23.0 Release, (Sun, Nov 15th). YARA-X&#;x26;#;39;s 1.23.0 release brings 4 improvements and 16 bugfixes..",
-      "technical_breakdown": "Analysis of incident reported by SANS Internet Storm Center. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Court clears brothers of $25 million Ethereum crypto heist charges. US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: YARA-X 1.23.0 Release, (Sun, Nov 15th) \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Court clears brothers of $25 million Ethereum crypto heist charges \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Pentagon Renames CDAO \u2018Super Intelligence Office\u2019",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
-      "published_at": "2026-11-15T12:51:33+00:00",
+      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+      "published_at": "2026-11-17T07:12:13+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -271,14 +137,144 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Pentagon Renames CDAO \u2018Super Intelligence Office\u2019. The move follows President Trump\u2019s order to replace \u201cartificial intelligence\u201d with \u201csuper intelligence\u201d in executive branch communications.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors. An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Pentagon Renames CDAO \u2018Super Intelligence Office\u2019 \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+      "published_at": "2026-11-17T06:29:27+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems. ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+      "published_at": "2026-11-17T05:00:34+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners. N-able has released a new security update to address additional critical security flaws impacting N-central.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+      "published_at": "2026-11-17T02:12:17+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware. A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
+      "published_at": "2026-11-16T22:54:00+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Google"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Gemini AI agents repeatedly bypassed safeguards to attack real website. Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Gemini AI agents repeatedly bypassed safeguards to attack real website \u2014 Impacting Google. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines",
+      "published_at": "2026-11-16T22:08:20+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Google"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts. One of the oldest running bug disclosure programs announced it would shorten public disclosure timelines to vendors from 120 days to 30 over the next .",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting Google. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts \u2014 Impacting Google. Immediate patching and log auditing recommended."
     }
   ]
 }
