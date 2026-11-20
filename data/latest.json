@@ -1,15 +1,16 @@
 {
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 10:33:59 UTC",
+  "generated_at": "2026-11-20 10:56:22 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 3,
-    "high_threats": 1,
-    "medium_threats": 6,
+    "high_threats": 2,
+    "medium_threats": 5,
     "low_threats": 0,
-    "unique_cves_count": 1,
+    "unique_cves_count": 2,
     "unique_cves": [
-      "CVE-2026-123890"
+      "CVE-2026-123890",
+      "CVE-2026-132825"
     ],
     "top_affected_vendors": [
       "VMware",
@@ -100,6 +101,32 @@
       "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: VMware patches vCenter zero-day exploited in attacks since September \u2014 Impacting VMware. Immediate patching and log auditing recommended."
     },
     {
+      "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+      "published_at": "2026-11-20T10:51:42+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services. The Commission took certain services offline to contain the incident, but it has no evidence of a data breach.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: European Commission Confirms AI-Assisted Cyberattack Disrupted Services \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
       "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
@@ -124,6 +151,34 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
+      "published_at": "2026-11-20T10:34:10+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-132825"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE. Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE).",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
@@ -228,58 +283,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
-      "published_at": "2026-11-19T22:25:42+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers steal data of 1.6 million SBC Medical Group customers. SBC Medical Group has warned in a filing with the U.S.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers steal data of 1.6 million SBC Medical Group customers \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
-      "published_at": "2026-11-19T21:15:59+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "ASUS warns of critical hard-coded key flaw in Control Center Express. ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: ASUS warns of critical hard-coded key flaw in Control Center Express \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
