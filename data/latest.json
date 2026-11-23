@@ -1,11 +1,11 @@
 {
   "date": "2026-11-23",
-  "generated_at": "2026-11-23 11:18:44 UTC",
+  "generated_at": "2026-11-23 11:50:34 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 2,
-    "high_threats": 2,
-    "medium_threats": 6,
+    "high_threats": 0,
+    "medium_threats": 8,
     "low_threats": 0,
     "unique_cves_count": 1,
     "unique_cves": [
@@ -13,6 +13,8 @@
     ],
     "top_affected_vendors": [
       "Cisco",
+      "SAP",
+      "CrowdStrike",
       "Microsoft"
     ],
     "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
@@ -74,13 +76,13 @@
       "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: CISA flags critical Cisco RCE flaw as actively exploited in attacks \u2014 Impacting Cisco. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-      "published_at": "2026-11-22T15:43:04+00:00",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.2,
+      "title": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+      "published_at": "2026-11-23T11:44:18+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -90,40 +92,67 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach. E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted. Backdoors on low-cost consumer devices served modules for ad fraud and for turning devices into residential proxies.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Cleverbridge warns hackers stole credit card numbers, CVVs in data breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
-      "published_at": "2026-11-22T15:15:25+00:00",
-      "threat_category": "Nation-State/APT",
-      "severity": "HIGH",
-      "severity_score": 8.5,
+      "title": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+      "published_at": "2026-11-23T11:35:15+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "General Industry"
+        "Cisco",
+        "SAP"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android. Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks. Threat actors could exploit them to leak or modify server information and to execute commands as root.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Cisco, SAP. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Signal to block Siri, Gemini AI from capturing chats on iOS, Android \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks \u2014 Impacting Cisco, SAP. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
+      "published_at": "2026-11-23T11:31:44+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "CrowdStrike"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal. CrowdStrike expects the combined company to have more than $10 billion in annual recurring revenue.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting CrowdStrike. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: CrowdStrike to Acquire Zscaler in $43.9 Billion Deal \u2014 Impacting CrowdStrike. Immediate patching and log auditing recommended."
     },
     {
       "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
@@ -254,32 +283,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: A brief history of syslog timestamps, (Sun, Nov 22nd) \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-      "published_at": "2026-11-22T05:06:55+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms. Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
