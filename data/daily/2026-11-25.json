@@ -1,19 +1,19 @@
 {
   "date": "2026-11-25",
-  "generated_at": "2026-11-25 11:46:13 UTC",
+  "generated_at": "2026-11-25 12:09:40 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 1,
-    "high_threats": 0,
-    "medium_threats": 9,
+    "high_threats": 1,
+    "medium_threats": 8,
     "low_threats": 0,
-    "unique_cves_count": 1,
+    "unique_cves_count": 2,
     "unique_cves": [
-      "CVE-2026-131914"
+      "CVE-2026-131914",
+      "CVE-2026-132165"
     ],
     "top_affected_vendors": [
-      "Microsoft",
-      "Palo Alto"
+      "Microsoft"
     ],
     "overall_threat_level": "GUARDED (LEVEL YELLOW)",
     "threat_badge": "HIGH SURGE"
@@ -46,6 +46,32 @@
       "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Hackers now exploit critical Drupal RCE flaw to hijack sites \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
+      "title": "Credential Remediation Is Slow When You Don\u2019t Know What Will Break",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+      "published_at": "2026-11-25T11:51:48+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Credential Remediation Is Slow When You Don\u2019t Know What Will Break. TL;DR More than 64% still valid after four years: GitGuardian\u2019s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Credential Remediation Is Slow When You Don\u2019t Know What Will Break \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
       "title": "Cyber Insurers See New Divide: AI Defense 'Haves' & 'Have Nots'",
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
@@ -70,6 +96,34 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Cyber Insurers See New Divide: AI Defense 'Haves' & 'Have Nots' \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+      "published_at": "2026-11-25T11:23:26+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [
+        "CVE-2026-132165"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation. The U.S.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
       "title": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
@@ -228,58 +282,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft confirms authentication issues after November updates \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
-      "published_at": "2026-11-25T08:12:24+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Palo Alto"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls. A China-linked hacking group chained PHP2Shell with Fragnesia in AI-assisted attacks that hit 25 servers.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting Palo Alto. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls \u2014 Impacting Palo Alto. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
-      "published_at": "2026-11-25T08:01:06+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks. CISA has added the vulnerability to its KEV catalog and instructed federal agencies to patch it within three days.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Drupal Flaw Found by Anthropic Scanner Exploited in Attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
