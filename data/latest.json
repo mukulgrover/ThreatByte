@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "generated_at": "2026-11-26 11:22:03 UTC",
+  "generated_at": "2026-11-26 11:31:07 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 0,
@@ -140,8 +140,8 @@
         "General Industry"
       ],
       "cve_ids": [
-        "CVE-2026-136716",
-        "CVE-2026-132165"
+        "CVE-2026-132165",
+        "CVE-2026-136716"
       ],
       "threat_actor": "Unknown / Under Investigation",
       "executive_summary": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation. Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild.",
