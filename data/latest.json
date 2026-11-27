@@ -1,33 +1,33 @@
 {
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26 11:55:35 UTC",
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27 11:15:26 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 1,
-    "high_threats": 1,
-    "medium_threats": 8,
+    "critical_threats": 0,
+    "high_threats": 3,
+    "medium_threats": 7,
     "low_threats": 0,
-    "unique_cves_count": 3,
+    "unique_cves_count": 1,
     "unique_cves": [
-      "CVE-2026-132165",
-      "CVE-2026-133275",
-      "CVE-2026-136716"
+      "CVE-2026-99362"
     ],
     "top_affected_vendors": [
-      "Palo Alto"
+      "SAP",
+      "Microsoft",
+      "Linux"
     ],
-    "overall_threat_level": "ELEVATED (LEVEL ORANGE)",
-    "threat_badge": "CRITICAL RISK"
+    "overall_threat_level": "GUARDED (LEVEL YELLOW)",
+    "threat_badge": "HIGH SURGE"
   },
   "articles": [
     {
-      "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks",
+      "title": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities",
       "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
-      "published_at": "2026-11-26T11:35:25+00:00",
-      "threat_category": "0-Day & Exploit",
-      "severity": "CRITICAL",
-      "severity_score": 9.5,
+      "url": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+      "published_at": "2026-11-27T11:00:00+00:00",
+      "threat_category": "Ransomware",
+      "severity": "HIGH",
+      "severity_score": 8.8,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -37,23 +37,23 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks. Accenture says hackers exploited MiCollab flaws before Mitel\u2019s advisory, likely aided by AI, in a suspected extortion campaign.",
+      "executive_summary": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities. Noteworthy stories that might have slipped under the radar: RansomwareHelp accused of profiting from ransom payments, USDA payment systems breach, cybersecurity firm Radware hacked.",
       "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers",
-      "published_at": "2026-11-26T08:00:00+00:00",
-      "threat_category": "Nation-State/APT",
+      "title": "100,000 Potentially Impacted by Colorado Data Breach",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
+      "published_at": "2026-11-27T09:30:54+00:00",
+      "threat_category": "Data Breach",
       "severity": "HIGH",
-      "severity_score": 8.5,
+      "severity_score": 8.2,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -63,20 +63,46 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Cyprus Becomes Espionage Target for Iranian Hackers. A previously undocumented Iranian threat group called \"Volant Manticore\" is targeting Cypriot organizations as part of an intelligence-gathering effor.",
-      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "100,000 Potentially Impacted by Colorado Data Breach. Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Cyprus Becomes Espionage Target for Iranian Hackers \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: 100,000 Potentially Impacted by Colorado Data Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
-      "published_at": "2026-11-26T11:50:17+00:00",
+      "title": "Hex Package Manager Warns of Potential Data Breach",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+      "published_at": "2026-11-27T07:44:49+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Hex Package Manager Warns of Potential Data Breach. A vulnerability in hex.pm allowed hackers to run commands on web servers.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Hex Package Manager Warns of Potential Data Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+      "published_at": "2026-11-27T10:32:18+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -89,20 +115,46 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "SYS010 malware abuses browser management to spy on Gmail, Outlook. A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails.",
+      "executive_summary": "How to Keep Your Security Picture Current When Attackers Move at AI Speed. Most security metrics are not built to be used.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: How to Keep Your Security Picture Current When Attackers Move at AI Speed \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Drupal warns of new site takeover flaw exploited in attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+      "published_at": "2026-11-27T10:10:15+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Drupal warns of new site takeover flaw exploited in attacks. The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites.",
       "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SYS010 malware abuses browser management to spy on Gmail, Outlook \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Drupal warns of new site takeover flaw exploited in attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
-      "published_at": "2026-11-26T10:57:55+00:00",
+      "title": "SAP confirms security incident after suspicious GitHub activity",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+      "published_at": "2026-11-27T09:56:36+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -111,105 +163,24 @@
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "General Industry"
+        "SAP"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls. Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "executive_summary": "SAP confirms security incident after suspicious GitHub activity. SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting SAP. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SAP confirms security incident after suspicious GitHub activity \u2014 Impacting SAP. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/",
-      "published_at": "2026-11-26T09:12:26+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting. Drupal warns that its previous installer patch left some websites vulnerable to takeover, with attackers already exploiting the gap.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Drupal Installer Patch Left a Gap Attackers Are Already Exploiting \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "1Password Breach Exposes Customer Data, Internal Source Code",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/",
-      "published_at": "2026-11-26T08:32:10+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "1Password Breach Exposes Customer Data, Internal Source Code. A hacker used a compromised employee GitHub account to push malicious code and steal customer records, but vaults were not accessed.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: 1Password Breach Exposes Customer Data, Internal Source Code \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
-      "published_at": "2026-11-26T07:02:34+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [
-        "CVE-2026-132165",
-        "CVE-2026-136716"
-      ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation. Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
-      "published_at": "2026-11-26T06:44:46+00:00",
+      "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+      "published_at": "2026-11-27T09:29:30+00:00",
       "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
       "severity_score": 7.2,
@@ -220,50 +191,22 @@
       "affected_vendors": [
         "General Industry"
       ],
-      "cve_ids": [
-        "CVE-2026-133275"
-      ],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products. The U.S.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
-      "published_at": "2026-11-26T03:48:52+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps. Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment.",
+      "executive_summary": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware. Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website.",
       "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: 13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+      "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
-      "published_at": "2026-11-25T22:05:09+00:00",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+      "published_at": "2026-11-27T09:08:16+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -272,18 +215,72 @@
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Palo Alto"
+        "Microsoft"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks. Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Palo Alto. Further technical telemetry is developing.",
+      "executive_summary": "Microsoft pushes emergency hotpatch to fix Windows Server crashes. Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077).",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks \u2014 Impacting Palo Alto. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft pushes emergency hotpatch to fix Windows Server crashes \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+      "published_at": "2026-11-27T08:06:58+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Linux"
+      ],
+      "cve_ids": [
+        "CVE-2026-99362"
+      ],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "New NFS2ROOT Linux flaw can let attackers gain root privileges. \u200bA 12-year-old critical vulnerability in the Linux kernel's Network File System (NFS) server, tracked as CVE-2026-99362, allows remote attackers to gain root privileges.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Linux. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New NFS2ROOT Linux flaw can let attackers gain root privileges \u2014 Impacting Linux. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+      "published_at": "2026-11-27T07:36:14+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "SAP"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "SAP Confirms Cyberattack, Source Code Reportedly Compromised. SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code.",
+      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting SAP. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SAP Confirms Cyberattack, Source Code Reportedly Compromised \u2014 Impacting SAP. Immediate patching and log auditing recommended."
     }
   ]
 }
