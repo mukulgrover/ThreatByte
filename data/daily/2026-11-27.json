@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-27 11:26:34 UTC",
+  "generated_at": "2026-11-27 11:47:32 UTC",
   "metrics": {
     "total_incidents": 10,
     "critical_threats": 0,
@@ -12,8 +12,8 @@
       "CVE-2026-99362"
     ],
     "top_affected_vendors": [
-      "SAP",
       "Microsoft",
+      "SAP",
       "Linux"
     ],
     "overall_threat_level": "GUARDED (LEVEL YELLOW)",
@@ -97,6 +97,32 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Hex Package Manager Warns of Potential Data Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Microsoft removes WSUS server role in Windows Server 2028",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+      "published_at": "2026-11-27T11:18:36+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "Microsoft"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Microsoft removes WSUS server role in Windows Server 2028. Microsoft will remove the WSUS server role from Windows Server 2028, the next major release of its server operating system.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft removes WSUS server role in Windows Server 2028 \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
     },
     {
       "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
@@ -255,32 +281,6 @@
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
       "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New NFS2ROOT Linux flaw can let attackers gain root privileges \u2014 Impacting Linux. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
-      "published_at": "2026-11-27T07:36:14+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "SAP"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "SAP Confirms Cyberattack, Source Code Reportedly Compromised. SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting SAP. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SAP Confirms Cyberattack, Source Code Reportedly Compromised \u2014 Impacting SAP. Immediate patching and log auditing recommended."
     }
   ]
 }
