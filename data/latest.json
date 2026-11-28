@@ -1,137 +1,27 @@
 {
-  "date": "2026-11-27",
-  "generated_at": "2026-11-27 11:47:32 UTC",
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28 10:45:52 UTC",
   "metrics": {
     "total_incidents": 10,
-    "critical_threats": 0,
+    "critical_threats": 1,
     "high_threats": 3,
-    "medium_threats": 7,
+    "medium_threats": 6,
     "low_threats": 0,
-    "unique_cves_count": 1,
-    "unique_cves": [
-      "CVE-2026-99362"
-    ],
-    "top_affected_vendors": [
-      "Microsoft",
-      "SAP",
-      "Linux"
-    ],
+    "unique_cves_count": 0,
+    "unique_cves": [],
+    "top_affected_vendors": [],
     "overall_threat_level": "GUARDED (LEVEL YELLOW)",
     "threat_badge": "HIGH SURGE"
   },
   "articles": [
     {
-      "title": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
-      "published_at": "2026-11-27T11:00:00+00:00",
-      "threat_category": "Ransomware",
-      "severity": "HIGH",
-      "severity_score": 8.8,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities. Noteworthy stories that might have slipped under the radar: RansomwareHelp accused of profiting from ransom payments, USDA payment systems breach, cybersecurity firm Radware hacked.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "100,000 Potentially Impacted by Colorado Data Breach",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
-      "published_at": "2026-11-27T09:30:54+00:00",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "100,000 Potentially Impacted by Colorado Data Breach. Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: 100,000 Potentially Impacted by Colorado Data Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Hex Package Manager Warns of Potential Data Breach",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
-      "published_at": "2026-11-27T07:44:49+00:00",
-      "threat_category": "Data Breach",
-      "severity": "HIGH",
-      "severity_score": 8.2,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hex Package Manager Warns of Potential Data Breach. A vulnerability in hex.pm allowed hackers to run commands on web servers.",
-      "technical_breakdown": "Analysis of incident reported by SecurityWeek. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Hex Package Manager Warns of Potential Data Breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Microsoft removes WSUS server role in Windows Server 2028",
+      "title": "Unpatched Cacti zero-day with public PoC gives remote code execution",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
-      "published_at": "2026-11-27T11:18:36+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "Microsoft"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft removes WSUS server role in Windows Server 2028. Microsoft will remove the WSUS server role from Windows Server 2028, the next major release of its server operating system.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft removes WSUS server role in Windows Server 2028 \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
-      "published_at": "2026-11-27T10:32:18+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "url": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+      "published_at": "2026-11-27T17:06:13+00:00",
+      "threat_category": "0-Day & Exploit",
+      "severity": "CRITICAL",
+      "severity_score": 9.5,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
@@ -141,72 +31,98 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "How to Keep Your Security Picture Current When Attackers Move at AI Speed. Most security metrics are not built to be used.",
-      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
-      "actionable_mitigations": [
-        "Review firewall and perimeter access logs for anomalous traffic patterns.",
-        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
-        "Audit exposed external assets and apply vendor security patches immediately."
-      ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: How to Keep Your Security Picture Current When Attackers Move at AI Speed \u2014 Impacting systems. Immediate patching and log auditing recommended."
-    },
-    {
-      "title": "Drupal warns of new site takeover flaw exploited in attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
-      "published_at": "2026-11-27T10:10:15+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
-      "target_sectors": [
-        "Enterprise",
-        "Critical Infrastructure"
-      ],
-      "affected_vendors": [
-        "General Industry"
-      ],
-      "cve_ids": [],
-      "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Drupal warns of new site takeover flaw exploited in attacks. The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites.",
+      "executive_summary": "Unpatched Cacti zero-day with public PoC gives remote code execution. A zero-day vulnerability in the Cacti network monitoring platform has been publicly disclosed, along with a proof-of-concept exploit that lets unauthenticated attackers execute commands on vulnerable servers.",
       "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Drupal warns of new site takeover flaw exploited in attacks \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *CRITICAL Threat*: Unpatched Cacti zero-day with public PoC gives remote code execution \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "SAP confirms security incident after suspicious GitHub activity",
+      "title": "New Boston Scientific data breach exposes personal, medical info",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
-      "published_at": "2026-11-27T09:56:36+00:00",
-      "threat_category": "Vulnerability / Advisory",
-      "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+      "published_at": "2026-11-27T18:57:42+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "SAP"
+        "General Industry"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "SAP confirms security incident after suspicious GitHub activity. SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting SAP. Further technical telemetry is developing.",
+      "executive_summary": "New Boston Scientific data breach exposes personal, medical info. Medical technology company Boston Scientific is sending data breach notices to individuals affected by a cyberattack on the firm.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: SAP confirms security incident after suspicious GitHub activity \u2014 Impacting SAP. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: New Boston Scientific data breach exposes personal, medical info \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+      "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
-      "published_at": "2026-11-27T09:29:30+00:00",
+      "url": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+      "published_at": "2026-11-27T16:36:11+00:00",
+      "threat_category": "Nation-State/APT",
+      "severity": "HIGH",
+      "severity_score": 8.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign. A Vietnam-sponsored hacking group has been attributed to attacks targeting Southeast Asian military, government, and legislative organizations with an aim to gather intelligence on South China Sea defense and military agreements.",
+      "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+      "published_at": "2026-11-27T15:09:40+00:00",
+      "threat_category": "Data Breach",
+      "severity": "HIGH",
+      "severity_score": 8.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "US Air Force cloud platform reportedly hacked in latest federal breach. Hackers have reportedly breached the US Air Force's Cloud One computing platform, adding to a recent wave of cyberattacks affecting US government agencies, including the FBI, CIA, and Treasury Department.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *HIGH Threat*: US Air Force cloud platform reportedly hacked in latest federal breach \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
+      "published_at": "2026-11-28T08:08:11+00:00",
       "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
       "severity_score": 7.2,
@@ -219,46 +135,46 @@
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware. Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website.",
+      "executive_summary": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts. Cross-platform password manager pCloud Pass has confirmed it was targeted by a cyber attack after users reported seeing unknown devices being connected to their accounts.",
       "technical_breakdown": "Analysis of incident reported by The Hacker News. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware \u2014 Impacting systems. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+      "title": "pCloud confirms password manager hack after suspicious login alerts",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
-      "published_at": "2026-11-27T09:08:16+00:00",
-      "threat_category": "Vulnerability / Advisory",
+      "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+      "published_at": "2026-11-27T19:26:04+00:00",
+      "threat_category": "Cloud & Supply Chain",
       "severity": "MEDIUM",
-      "severity_score": 6.5,
+      "severity_score": 7.2,
       "target_sectors": [
         "Enterprise",
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Microsoft"
+        "General Industry"
       ],
       "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "Microsoft pushes emergency hotpatch to fix Windows Server crashes. Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077).",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Microsoft. Further technical telemetry is developing.",
+      "executive_summary": "pCloud confirms password manager hack after suspicious login alerts. The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Microsoft pushes emergency hotpatch to fix Windows Server crashes \u2014 Impacting Microsoft. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: pCloud confirms password manager hack after suspicious login alerts \u2014 Impacting systems. Immediate patching and log auditing recommended."
     },
     {
-      "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
-      "published_at": "2026-11-27T08:06:58+00:00",
+      "title": "Matters.AI Lands India\u2019s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+      "published_at": "2026-11-27T15:27:20+00:00",
       "threat_category": "Vulnerability / Advisory",
       "severity": "MEDIUM",
       "severity_score": 6.5,
@@ -267,20 +183,96 @@
         "Critical Infrastructure"
       ],
       "affected_vendors": [
-        "Linux"
+        "General Industry"
       ],
-      "cve_ids": [
-        "CVE-2026-99362"
-      ],
+      "cve_ids": [],
       "threat_actor": "Unknown / Under Investigation",
-      "executive_summary": "New NFS2ROOT Linux flaw can let attackers gain root privileges. \u200bA 12-year-old critical vulnerability in the Linux kernel's Network File System (NFS) server, tracked as CVE-2026-99362, allows remote attackers to gain root privileges.",
-      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting Linux. Further technical telemetry is developing.",
+      "executive_summary": "Matters.AI Lands India\u2019s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks. The security startup consolidates four legacy security tools into an autonomous platform that uses context-aware AI to trace sensitive data lineage, a.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
       "actionable_mitigations": [
         "Review firewall and perimeter access logs for anomalous traffic patterns.",
         "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
         "Audit exposed external assets and apply vendor security patches immediately."
       ],
-      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: New NFS2ROOT Linux flaw can let attackers gain root privileges \u2014 Impacting Linux. Immediate patching and log auditing recommended."
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Matters.AI Lands India\u2019s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+      "published_at": "2026-11-27T15:00:10+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs. Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+      "published_at": "2026-11-27T14:22:06+00:00",
+      "threat_category": "Vulnerability / Advisory",
+      "severity": "MEDIUM",
+      "severity_score": 6.5,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026. Malwarebytes' 2026 Black Friday and Cyber Monday sale is now live, offering 50% off security subscriptions for individuals, families, and small businesses, including its antivirus software, VPN, identity theft protection, and personal data removal services.",
+      "technical_breakdown": "Analysis of incident reported by BleepingComputer. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: Malwarebytes Antivirus: Get 50% off during Black Friday 2026 \u2014 Impacting systems. Immediate patching and log auditing recommended."
+    },
+    {
+      "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+      "published_at": "2026-11-27T14:00:00+00:00",
+      "threat_category": "Cloud & Supply Chain",
+      "severity": "MEDIUM",
+      "severity_score": 7.2,
+      "target_sectors": [
+        "Enterprise",
+        "Critical Infrastructure"
+      ],
+      "affected_vendors": [
+        "General Industry"
+      ],
+      "cve_ids": [],
+      "threat_actor": "Unknown / Under Investigation",
+      "executive_summary": "'God Mode' Flaws Could Wreak Border-Control Havoc. Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online v.",
+      "technical_breakdown": "Analysis of incident reported by Dark Reading. The threat involves attack vectors targeting standard services. Further technical telemetry is developing.",
+      "actionable_mitigations": [
+        "Review firewall and perimeter access logs for anomalous traffic patterns.",
+        "Verify all endpoint detection (EDR) agents are updated with latest behavioral signatures.",
+        "Audit exposed external assets and apply vendor security patches immediately."
+      ],
+      "telegram_snippet": "\ud83d\udea8 *MEDIUM Threat*: 'God Mode' Flaws Could Wreak Border-Control Havoc \u2014 Impacting systems. Immediate patching and log auditing recommended."
     }
   ]
 }
